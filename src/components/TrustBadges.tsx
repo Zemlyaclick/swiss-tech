@@ -1,0 +1,143 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { Shield, Award, Building2, Briefcase } from 'lucide-react';
+
+export default function TrustBadges() {
+  const clients = [
+    { name: 'UBS', category: 'Banking' },
+    { name: 'Swiss Re', category: 'Insurance' },
+    { name: 'Novartis', category: 'Pharma' },
+    { name: 'Migros', category: 'Retail' },
+    { name: 'SBB', category: 'Transport' },
+    { name: 'Swisscom', category: 'Telecom' },
+  ];
+
+  const partners = [
+    { name: 'AWS', full: 'Amazon Web Services', tier: 'Partner' },
+    { name: 'GCP', full: 'Google Cloud Platform', tier: 'Partner' },
+    { name: 'Azure', full: 'Microsoft Azure', tier: 'Partner' },
+    { name: 'Stripe', full: 'Stripe Verified', tier: 'Partner' },
+  ];
+
+  const certifications = [
+    { name: 'ISO 27001', description: 'Information Security' },
+    { name: 'GDPR', description: 'Data Protection' },
+    { name: 'Swiss DPA', description: 'Swiss Privacy' },
+    { name: 'OWASP', description: 'Web Security' },
+  ];
+
+  return (
+    <section className="relative py-12 md:py-16 overflow-hidden border-t border-b border-mist-800/20">
+      {/* Background */}
+      <div className="absolute inset-0 bg-void-900/30" />
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6">
+        {/* Clients Row */}
+        <div className="mb-10 md:mb-12">
+          <motion.p 
+            className="text-center text-mist-500 text-xs md:text-sm uppercase tracking-wider mb-6"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            Нам доверяют компании из списка Fortune 500
+          </motion.p>
+          
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+            {clients.map((client, index) => (
+              <motion.div
+                key={client.name}
+                className="group flex flex-col items-center"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+              >
+                <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl bg-void-800/50 border border-mist-700/30 flex items-center justify-center group-hover:border-laser-cyan/30 transition-colors">
+                  <span className="text-mist-300 font-display font-bold text-sm md:text-base group-hover:text-white transition-colors">
+                    {client.name}
+                  </span>
+                </div>
+                <span className="text-mist-600 text-[10px] mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  {client.category}
+                </span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Partners & Certifications */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Cloud Partners */}
+          <motion.div
+            className="p-6 rounded-xl bg-void-900/50 border border-mist-800/30"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center gap-2 mb-4">
+              <Building2 className="w-5 h-5 text-laser-cyan" />
+              <h3 className="text-white font-semibold">Технологические партнёры</h3>
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              {partners.map((partner) => (
+                <div
+                  key={partner.name}
+                  className="p-3 rounded-lg bg-void-800/50 border border-mist-700/20 hover:border-laser-cyan/30 transition-colors"
+                >
+                  <div className="text-white font-mono font-bold text-sm">{partner.name}</div>
+                  <div className="text-mist-500 text-xs">{partner.tier}</div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Certifications */}
+          <motion.div
+            className="p-6 rounded-xl bg-void-900/50 border border-mist-800/30"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center gap-2 mb-4">
+              <Award className="w-5 h-5 text-laser-cyan" />
+              <h3 className="text-white font-semibold">Сертификаты и стандарты</h3>
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              {certifications.map((cert) => (
+                <div
+                  key={cert.name}
+                  className="p-3 rounded-lg bg-void-800/50 border border-mist-700/20 hover:border-laser-cyan/30 transition-colors"
+                >
+                  <div className="text-white font-mono font-bold text-sm">{cert.name}</div>
+                  <div className="text-mist-500 text-xs">{cert.description}</div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Trust indicators */}
+        <motion.div 
+          className="mt-8 flex flex-wrap justify-center gap-4 md:gap-8"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+        >
+          {[
+            { icon: Shield, text: '100% данных в Швейцарии' },
+            { icon: Award, text: 'NDA для каждого проекта' },
+            { icon: Briefcase, text: '€5M страхование ответственности' },
+          ].map((item, index) => (
+            <div key={index} className="flex items-center gap-2 text-mist-400 text-sm">
+              <item.icon className="w-4 h-4 text-laser-cyan" />
+              <span>{item.text}</span>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,183 @@
+{
+  "nav": {
+    "home": "Hei",
+    "services": "Dienschtleischtige",
+    "about": "Über üs",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Ihres Business verdient",
+    "subtitle": "es solids Fundament",
+    "description": "Mir baued kei Websites. Mir entwickled digitali Ökosystem, wo zum Rückgrat vo Ihrem Unternähme werded — sicher, automatisiert und baut, um Ihri Konkurrenz z'überdure.",
+    "cta": "Gratis Audit erhalte",
+    "explore": "So schaffed mir",
+    "badge": "Schwiizer Präzisionstechnik"
+  },
+  "usp": {
+    "title": "Warum Premium-Kunde üs wähled",
+    "subtitle": "Mir sind nöd d'Günstigste. Mir sind die, wo Sie rüefed, wenn Scheitere kei Option isch.",
+    "quality": {
+      "title": "ISO & OWASP Standards",
+      "description": "Mir entwickled Informationssicherheitsprozäss unter Berücksichtigung vo ISO 27001 und OWASP Top 10 Aaforderige. Bi Bedarf binded mir zertifizierti Partner für unabhängigs PenTesting und Sicherheitsaudits ii."
+    },
+    "security": {
+      "title": "Zero Vendor Lock-in",
+      "description": "Mir binded Sie nöd a en Uftraggnämer, e Plattform oder Technologie. De Code ghört Ihne. D'Dokumentation ghört Ihne. Jedes anderi Team cha s'System ohni üsi Beteiligung warte und wiiterentwickle."
+    },
+    "support": {
+      "title": "Läbelanger Support",
+      "description": "Mir verschwinded nöd nach em Launch. Für jedes Projekt bieted mir flexibli langfrischtig Support-Optione — vo einmalige Beratige bis zum vollständige SLA. Konditione werded individuell bsproche."
+    },
+    "ecosystem": {
+      "title": "Microservices Architektur",
+      "description": "Modulari Architektur mit unabhängige Services ermöglicht es Ihne, einzelni Komponente z'skaliere, s'System schrittwiis z'aktualisiere und Risike bi Änderige z'minimiere."
+    },
+    "guarantee": {
+      "title": "Kei versteckti Gebühre. Kei Abos.",
+      "description": "Zahled für Ergebnis, nöd für Verspräche. Support-Konditione werded für jedes Projekt individuell bsproche.",
+      "badge": "GARANTIERT"
+    }
+  },
+  "metrics": {
+    "title": "Ergebnis wo mir astrebend",
+    "subtitle": "Jedes Projekt isch einzigartig. Konkreti Kennzahle werded i individuellen SLA-Vereinbarige festglegt.",
+    "speed": {
+      "value": "↑",
+      "label": "Systemleischtig"
+    },
+    "cost": {
+      "value": "↓",
+      "label": "Supportchoschte"
+    },
+    "uptime": {
+      "value": "SLA",
+      "label": "Vertraglichi Verfügbarkeit"
+    },
+    "efficiency": {
+      "value": "↑",
+      "label": "Betriebseffizienz"
+    },
+    "disclaimer": "Ergebnis variered je nach Projekt. Garantie werded individuell bsproche und vertraglich festghalte."
+  },
+  "stats": {
+    "projects": "Projekt abglieferet",
+    "satisfaction": "Kundezfrideheit",
+    "years": "Jahr Erfahrig",
+    "support": "Support-Reaktion"
+  },
+  "services": {
+    "title": "Üsi Dienschtleischtige",
+    "subtitle": "Umfassendi IT-Lösige nach Mass. Vo de Konzeption bis zur Uslieferig — mir strebend nach einwandfreie Ergebnis.",
+    "cloud": {
+      "title": "Cloud Migration",
+      "description": "Mir helfed bi de Migration vo de Infrastruktur i d'Cloud mit minimalem Usfallrisiko. AWS, Azure, GCP — mir wähled d'Plattform basierend uf Ihre Bedürfnis und Budget."
+    },
+    "telegram_bots": {
+      "title": "Telegram Bots",
+      "description": "Mir entwickled Bots zur Automatisierig vo Kommunikation und Gschäftsprozäss. Vo Benachrichtigunge bis zu komplexe Szenarie mit Zahligs- und CRM-Integration."
+    },
+    "telegram_apps": {
+      "title": "Telegram Mini Apps",
+      "description": "Mir erstellend Apps innerhalb vo Telegram — kei App Store Installation nötig. Shops, Buechigsdienst, Kundeportale. Zugang zum Messenger-Publikum ohni Barriere."
+    },
+    "websites": {
+      "title": "Webentwicklig",
+      "description": "Mir entwickled Websites mit Fokus uf Performance und Conversion. Moderne Stack, SEO-Optimierig, responsives Design. Vo Landingpages bis zu komplexe Webplattforme."
+    },
+    "mobile": {
+      "title": "Mobili Apps",
+      "description": "Mir erstellend iOS und Android Apps mit nativer Performance. UX-Design, Entwicklig und Unterstützig bi de Store-Veröffentlichig."
+    },
+    "automation": {
+      "title": "Gschäftsautomatisierig",
+      "description": "Mir automatisiered Routine-Operatione: Bricht, Datesynchronisation, Benachrichtigunge. Ziel — manuelli Arbet reduziere und Fehler minimiere."
+    },
+    "ai": {
+      "title": "KI-Integration",
+      "description": "Mir implementiered KI-basierti Lösige: Chatbots, Dateanalyse, Personalisierig. Mir nutze OpenAI, Claude und anderi Plattforme — usgwählt nach konkrete Ufgabe."
+    },
+    "digital_reboot": {
+      "title": "Digitali Transformation",
+      "description": "Umfassends Update vo de digitale Präsenz: Redesign, Automatisierig, CRM- und Analytics-Integration. Mir schaffed es verbundenes Ökosystem statt isolierti Tools."
+    },
+    "turnkey": {
+      "title": "Schlüsselfertige IT-Partnerschaft",
+      "description": "Mir schaffed als Ihri externi IT-Abteilig. Entwicklig, Support, Beratig — ohni Personal istelle z'müesse. Flexibli Kooperationsbedingige für konkreti Projekt."
+    },
+    "research": {
+      "title": "Marktforschig & Strategie",
+      "description": "Mir erforschend de Markt, analysierend Wettbewerber und entwickled Strategie. Sie erhaltend en strukturierte Plan mit Empfehlige und Prioritäte."
+    },
+    "security": {
+      "title": "Cybersicherheit",
+      "description": "Mir führed Sicherheitsaudits dur und implementiered Schutzmassnahme: Verschlüsselig, 2FA, Monitoring. Mir helfed bi de Ihaltig vo GDPR und Swiss DPA."
+    },
+    "documentation": {
+      "title": "Vollständigi Dokumentation",
+      "description": "Mir erstellend vollständigi Dokumentation für jedes Projekt: technischi Spezifikatione, Benutzerhandbüecher, Deployment-Aleitige."
+    },
+    "accessibility": {
+      "title": "Barrierefreiheit",
+      "description": "Mir passend Produkt für Nutzer mit Iischränkige a. WCAG-Konformität, Screenreader-Unterstützig, Hochkontrast-Modi."
+    },
+    "devops": {
+      "title": "DevOps & SRE",
+      "description": "Mir richted CI/CD-Pipelines, Containerisierig, Monitoring und Alerting i. Mir helfed bim Ufbau vo zuverlässige Liefer- und Betriebsprozäss."
+    },
+    "integration": {
+      "title": "Integratione & API",
+      "description": "Mir verbinded Ihri System unterenand und mit externe Dienst. Mir entwickled und dokumentiered APIs. Integration mit CRM, ERP, Zahlungssystem."
+    },
+    "discovery": {
+      "title": "Product Discovery",
+      "description": "Mir helfed bi de Formulierig und Validierig vo Idee vor em Entwickligsbeginn. Nutzerforschig, Prototyping, Hypothesevalidierig."
+    },
+    "training": {
+      "title": "Team-Schulige",
+      "description": "Mir führed Workshops und Schulige für Ihri Mitarbeiter dur. Moderni Technologie, Entwickligsmethode, Tool-Kompetenz."
+    },
+    "maintenance": {
+      "title": "Technische Support",
+      "description": "Mir gwährleischted de stabil Betrieb vo Ihre System. Monitoring, Updates, Fehlerbehebig. Flexibli SLA-Bedingige nach Ihre Bedürfnis."
+    }
+  },
+  "tech": {
+    "title": "Technologie wo mir beherrsche",
+    "subtitle": "Mir nutze di neuschte Technologie für robuschti, skalierbari Lösige",
+    "more": "Docker • Kubernetes • AWS • Azure • GCP • Microservices • CI/CD"
+  },
+  "process": {
+    "title": "Wie mir schaffed",
+    "subtitle": "E bewährti Methodik wo Ergebnis pünktlich und im Budget lieferet",
+    "discovery": {
+      "title": "Entdeckig",
+      "description": "Mir tauched tüf i Ihri Gschäftsaaforderige, Ziil und Herusforderige y."
+    },
+    "planning": {
+      "title": "Planig",
+      "description": "Detaillierte Fahrplan mit klare Meilestei, Zytplän und Liefergegenständ."
+    },
+    "development": {
+      "title": "Entwicklig",
+      "description": "Agili Entwicklig mit regelmässige Updates, Code-Reviews und Qualitätssicherig."
+    },
+    "launch": {
+      "title": "Launch",
+      "description": "Gründlichi Tests, Bereitstellig und Optimierig für en erfolgriche Start."
+    },
+    "support": {
+      "title": "Support",
+      "description": "Laufendi Wartig, Updates und 24/7-Support für de perfekt Betrieb."
+    }
+  },
+  "cta_section": {
+    "title": "Parat für d'digitali Transformation?",
+    "description": "Lönd üs bespräche, wie mir Ihres Unternähme i es nahtloses digitals Ökosystem verwandle chönd. Gratis Strategiesitzig inbegriffe.",
+    "button": "Gspräch vereinbare"
+  },
+  "footer": {
+    "company": "Swiss Tech Solutions",
+    "tagline": "Digitali Ökosystem wo Bestand händ",
+    "rights": "Alli Rächt vorbehalte"
+  }
+}

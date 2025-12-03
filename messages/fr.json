@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Votre entreprise mérite",
+    "subtitle": "une base solide",
+    "description": "Nous ne construisons pas de sites web. Nous concevons des écosystèmes digitaux qui deviennent l'épine dorsale de votre entreprise — sécurisés, automatisés et conçus pour surpasser votre concurrence.",
+    "cta": "Obtenez votre audit gratuit",
+    "explore": "Découvrez notre méthode",
+    "badge": "Ingénierie de précision suisse"
+  },
+  "usp": {
+    "title": "Pourquoi les clients premium nous choisissent",
+    "subtitle": "Nous ne sommes pas les moins chers. Nous sommes ceux que vous appelez quand l'échec n'est pas une option.",
+    "quality": {
+      "title": "Standards ISO & OWASP",
+      "description": "Nous développons des processus de sécurité de l'information en tenant compte des exigences ISO 27001 et OWASP Top 10. Si nécessaire, nous engageons des partenaires certifiés pour le PenTesting indépendant et les audits de sécurité."
+    },
+    "security": {
+      "title": "Zero Vendor Lock-in",
+      "description": "Nous ne vous lions à aucun prestataire, plateforme ou technologie. Le code est le vôtre. La documentation est la vôtre. Toute autre équipe peut maintenir et développer le système sans notre participation."
+    },
+    "support": {
+      "title": "Support à vie",
+      "description": "Nous ne disparaissons pas après le lancement. Pour chaque projet, nous proposons des options de support à long terme flexibles — des consultations ponctuelles au SLA complet. Les conditions sont discutées individuellement."
+    },
+    "ecosystem": {
+      "title": "Architecture Microservices",
+      "description": "L'architecture modulaire avec services indépendants vous permet de faire évoluer les composants individuellement, de mettre à jour le système progressivement et de minimiser les risques lors des changements."
+    },
+    "guarantee": {
+      "title": "Pas de frais cachés. Pas d'abonnements.",
+      "description": "Payez pour les résultats, pas les promesses. Les conditions de support sont discutées individuellement pour chaque projet.",
+      "badge": "GARANTI"
+    }
+  },
+  "metrics": {
+    "title": "Résultats que nous visons",
+    "subtitle": "Chaque projet est unique. Les métriques spécifiques sont définies dans les accords SLA individuels.",
+    "speed": {
+      "value": "↑",
+      "label": "Performance système"
+    },
+    "cost": {
+      "value": "↓",
+      "label": "Coûts de support"
+    },
+    "uptime": {
+      "value": "SLA",
+      "label": "Disponibilité contractuelle"
+    },
+    "efficiency": {
+      "value": "↑",
+      "label": "Efficacité opérationnelle"
+    },
+    "disclaimer": "Les résultats varient selon le projet. Les garanties sont discutées individuellement et spécifiées dans les contrats."
+  },
+  "stats": {
+    "projects": "Projets livrés",
+    "satisfaction": "Satisfaction client",
+    "years": "Années d'expérience",
+    "support": "Réponse support"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions IT complètes adaptées à vos besoins. De la conception au déploiement, nous visons des résultats irréprochables.",
+    "cloud": {
+      "title": "Migration Cloud",
+      "description": "Nous aidons à migrer l'infrastructure vers le cloud avec un risque minimal d'interruption. AWS, Azure, GCP — nous sélectionnons la plateforme selon vos besoins et budget."
+    },
+    "telegram_bots": {
+      "title": "Bots Telegram",
+      "description": "Nous développons des bots pour l'automatisation des communications et processus métier. Des notifications aux scénarios complexes avec intégration paiement et CRM."
+    },
+    "telegram_apps": {
+      "title": "Mini Apps Telegram",
+      "description": "Nous créons des applications dans Telegram — sans installation App Store. Boutiques, services de réservation, espaces clients. Accès au public du messager sans barrières."
+    },
+    "websites": {
+      "title": "Développement Web",
+      "description": "Nous développons des sites axés sur la performance et la conversion. Stack moderne, optimisation SEO, design responsive. Des landing pages aux plateformes web complexes."
+    },
+    "mobile": {
+      "title": "Applications Mobiles",
+      "description": "Nous créons des applications iOS et Android avec des performances natives. Design UX, développement et assistance pour la publication en store."
+    },
+    "automation": {
+      "title": "Automatisation d'Entreprise",
+      "description": "Nous automatisons les opérations routinières : rapports, synchronisation des données, notifications. Objectif — réduire le travail manuel et minimiser les erreurs."
+    },
+    "ai": {
+      "title": "Intégration IA",
+      "description": "Nous implémentons des solutions basées sur l'IA : chatbots, analyse de données, personnalisation. Nous utilisons OpenAI, Claude et autres plateformes selon les tâches spécifiques."
+    },
+    "digital_reboot": {
+      "title": "Transformation Digitale",
+      "description": "Mise à jour complète de la présence digitale : refonte, automatisation, intégration CRM et analytics. Nous créons un écosystème connecté au lieu d'outils isolés."
+    },
+    "turnkey": {
+      "title": "Partenariat IT Clé en Main",
+      "description": "Nous travaillons comme votre département IT externe. Développement, support, conseil — sans avoir à embaucher. Conditions de coopération flexibles pour des projets spécifiques."
+    },
+    "research": {
+      "title": "Étude de Marché & Stratégie",
+      "description": "Nous étudions le marché, analysons les concurrents et élaborons une stratégie. Vous recevez un plan structuré avec recommandations et priorités."
+    },
+    "security": {
+      "title": "Cybersécurité",
+      "description": "Nous réalisons des audits de sécurité et mettons en place des mesures de protection : chiffrement, 2FA, monitoring. Nous aidons à la conformité GDPR et Swiss DPA."
+    },
+    "documentation": {
+      "title": "Documentation Complète",
+      "description": "Nous préparons une documentation complète pour chaque projet : spécifications techniques, guides utilisateur, instructions de déploiement."
+    },
+    "accessibility": {
+      "title": "Solutions d'Accessibilité",
+      "description": "Nous adaptons les produits pour les utilisateurs en situation de handicap. Conformité WCAG, support lecteur d'écran, modes à contraste élevé."
+    },
+    "devops": {
+      "title": "DevOps & SRE",
+      "description": "Nous configurons les pipelines CI/CD, la conteneurisation, le monitoring et l'alerting. Nous aidons à construire des processus de livraison et d'exploitation fiables."
+    },
+    "integration": {
+      "title": "Intégrations & API",
+      "description": "Nous connectons vos systèmes entre eux et avec des services externes. Nous développons et documentons les APIs. Intégration CRM, ERP, systèmes de paiement."
+    },
+    "discovery": {
+      "title": "Product Discovery",
+      "description": "Nous aidons à formuler et valider les idées avant le développement. Recherche utilisateur, prototypage, validation d'hypothèses."
+    },
+    "training": {
+      "title": "Formation d'Équipe",
+      "description": "Nous animons des ateliers et formations pour vos employés. Technologies modernes, méthodologies de développement, maîtrise des outils."
+    },
+    "maintenance": {
+      "title": "Support Technique",
+      "description": "Nous assurons le fonctionnement stable de vos systèmes. Monitoring, mises à jour, correction de bugs. Conditions SLA flexibles selon vos besoins."
+    },
+    "modernization": {
+      "title": "Modernisation des Systèmes",
+      "description": "Nous mettons à jour les systèmes legacy en préservant les fonctionnalités essentielles. Refactorisation du code, améliorations d'architecture, optimisation UX."
+    }
+  },
+  "tech": {
+    "title": "Technologies que nous maîtrisons",
+    "subtitle": "Nous utilisons les dernières technologies pour des solutions robustes et évolutives",
+    "more": "Docker • Kubernetes • AWS • Azure • GCP • Microservices • CI/CD"
+  },
+  "process": {
+    "title": "Comment nous travaillons",
+    "subtitle": "Une méthodologie éprouvée qui livre des résultats dans les délais et le budget",
+    "discovery": {
+      "title": "Découverte",
+      "description": "Nous plongeons profondément dans vos besoins commerciaux, objectifs et défis."
+    },
+    "planning": {
+      "title": "Planification",
+      "description": "Feuille de route détaillée avec jalons clairs, délais et livrables sur mesure."
+    },
+    "development": {
+      "title": "Développement",
+      "description": "Développement agile avec mises à jour régulières, revues de code et assurance qualité."
+    },
+    "launch": {
+      "title": "Lancement",
+      "description": "Tests approfondis, déploiement et optimisation pour un lancement réussi."
+    },
+    "support": {
+      "title": "Support",
+      "description": "Maintenance continue, mises à jour et support 24/7 pour un fonctionnement parfait."
+    }
+  },
+  "cta_section": {
+    "title": "Prêt pour la transformation digitale?",
+    "description": "Discutons de comment nous pouvons transformer votre entreprise en un écosystème digital fluide. Session stratégique gratuite incluse.",
+    "button": "Planifier votre appel"
+  },
+  "footer": {
+    "company": "Swiss Tech Solutions",
+    "tagline": "Des écosystèmes digitaux qui durent",
+    "rights": "Tous droits réservés"
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Let's Talk"
+  },
+  "hero": {
+    "title": "Your Business Deserves",
+    "subtitle": "a Solid Foundation",
+    "description": "We don't build websites. We engineer digital ecosystems that become the backbone of your business — secure, automated, and built to outlast your competition.",
+    "cta": "Get Your Free Audit",
+    "explore": "See How We Work",
+    "badge": "Swiss Precision Engineering"
+  },
+  "usp": {
+    "title": "Why Premium Clients Choose Us",
+    "subtitle": "We're not the cheapest. We're the ones you call when failure isn't an option.",
+    "quality": {
+      "title": "ISO & OWASP Standards",
+      "description": "We build information security processes with ISO 27001 and OWASP Top 10 requirements in mind. When needed, we engage certified partners for independent PenTesting and security audits."
+    },
+    "security": {
+      "title": "Zero Vendor Lock-in",
+      "description": "We don't tie you to any contractor, platform, or technology. The code is yours. Documentation is yours. Any other team can maintain and develop the system without our involvement."
+    },
+    "support": {
+      "title": "Lifetime Support",
+      "description": "We don't disappear after launch. For each project, we offer flexible long-term support options — from one-time consultations to full SLA. Terms are discussed individually."
+    },
+    "ecosystem": {
+      "title": "Microservices Architecture",
+      "description": "Modular architecture with independent services allows you to scale individual components, update the system incrementally, and minimize risks during changes."
+    },
+    "guarantee": {
+      "title": "No Hidden Fees. No Monthly Subscriptions.",
+      "description": "Pay for results, not promises. Support terms are discussed individually for each project.",
+      "badge": "GUARANTEED"
+    }
+  },
+  "metrics": {
+    "title": "Results We Aim For",
+    "subtitle": "Every project is unique. Specific metrics are defined in individual SLA agreements.",
+    "speed": {
+      "value": "↑",
+      "label": "System Performance"
+    },
+    "cost": {
+      "value": "↓",
+      "label": "Support Costs"
+    },
+    "uptime": {
+      "value": "SLA",
+      "label": "Contractual Uptime"
+    },
+    "efficiency": {
+      "value": "↑",
+      "label": "Operational Efficiency"
+    },
+    "disclaimer": "Results vary by project. Guarantees are discussed individually and specified in contracts."
+  },
+  "stats": {
+    "projects": "Projects Delivered",
+    "satisfaction": "Client Satisfaction",
+    "years": "Years Experience",
+    "support": "Support Response"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive IT solutions tailored to your needs. From concept to deployment, we strive for impeccable results.",
+    "cloud": {
+      "title": "Cloud Migration",
+      "description": "We help migrate infrastructure to the cloud with minimal downtime risk. AWS, Azure, GCP — we select the platform based on your needs and budget. Goal: cost optimization and flexible scaling."
+    },
+    "modernization": {
+      "title": "System Modernization",
+      "description": "We update legacy systems while preserving core functionality. Code refactoring, architecture improvements, UX optimization. Results depend on the initial project state."
+    },
+    "digital_reboot": {
+      "title": "Digital Reboot",
+      "description": "Comprehensive digital presence update: redesign, automation, CRM and analytics integration. We create a connected ecosystem instead of disconnected tools."
+    },
+    "turnkey": {
+      "title": "Turnkey IT Partner",
+      "description": "We work as your external IT department. Development, support, consulting — without the need to hire staff. Flexible cooperation terms for specific projects."
+    },
+    "research": {
+      "title": "Analytics & Strategy",
+      "description": "We research the market, analyze competitors, and form development strategy. You receive a structured plan with recommendations and priorities."
+    },
+    "telegram_bots": {
+      "title": "Telegram Bots",
+      "description": "We develop bots for communication and business process automation. From notifications to complex scenarios with payment and CRM integration."
+    },
+    "telegram_apps": {
+      "title": "Telegram Mini Apps",
+      "description": "We create apps inside Telegram — no App Store installation needed. Stores, booking services, personal accounts. Access to the messenger's audience without barriers."
+    },
+    "websites": {
+      "title": "Web Development",
+      "description": "We develop websites focused on performance and conversion. Modern stack, SEO optimization, responsive design. From landing pages to complex web platforms."
+    },
+    "mobile": {
+      "title": "Mobile Apps",
+      "description": "We create iOS and Android apps with native performance. UX design, development, and store publishing assistance."
+    },
+    "automation": {
+      "title": "Process Automation",
+      "description": "We automate routine operations: reports, data synchronization, notifications. Goal — reduce manual work and minimize errors."
+    },
+    "ai": {
+      "title": "AI Integration",
+      "description": "We implement AI-based solutions: chatbots, data analysis, personalization. We use OpenAI, Claude and other platforms — selecting based on specific tasks."
+    },
+    "security": {
+      "title": "Cybersecurity",
+      "description": "We conduct security audits and implement protective measures: encryption, 2FA, monitoring. We help comply with GDPR and Swiss DPA requirements."
+    },
+    "documentation": {
+      "title": "Technical Documentation",
+      "description": "We prepare complete documentation for each project: technical specifications, user guides, deployment instructions."
+    },
+    "accessibility": {
+      "title": "Accessibility (a11y)",
+      "description": "We adapt products for users with disabilities. WCAG compliance, screen reader support, high contrast modes."
+    },
+    "devops": {
+      "title": "DevOps & SRE",
+      "description": "We set up CI/CD pipelines, containerization, monitoring and alerting. We help build reliable delivery and operations processes."
+    },
+    "integration": {
+      "title": "Integrations & API",
+      "description": "We connect your systems with each other and external services. We develop and document APIs. Integration with CRM, ERP, payment systems."
+    },
+    "discovery": {
+      "title": "Product Discovery",
+      "description": "We help formulate and validate ideas before development begins. User research, prototyping, hypothesis validation."
+    },
+    "training": {
+      "title": "Team Training",
+      "description": "We conduct workshops and training for your employees. Modern technologies, development methodologies, tool proficiency."
+    },
+    "maintenance": {
+      "title": "Technical Support",
+      "description": "We ensure stable operation of your systems. Monitoring, updates, bug fixes. Flexible SLA terms tailored to your needs."
+    }
+  },
+  "tech": {
+    "title": "Technologies We Master",
+    "subtitle": "We leverage the latest technologies to build robust, scalable solutions",
+    "more": "Docker • Kubernetes • AWS • Azure • GCP • Microservices • CI/CD"
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "A proven methodology that delivers results on time and on budget",
+    "discovery": {
+      "title": "Discovery",
+      "description": "We dive deep into your business needs, goals, and challenges to understand the full picture."
+    },
+    "planning": {
+      "title": "Planning",
+      "description": "Detailed roadmap with clear milestones, timelines, and deliverables tailored to your project."
+    },
+    "development": {
+      "title": "Development",
+      "description": "Agile development with regular updates, code reviews, and quality assurance at every step."
+    },
+    "launch": {
+      "title": "Launch",
+      "description": "Thorough testing, deployment, and optimization to ensure a smooth and successful launch."
+    },
+    "support": {
+      "title": "Support",
+      "description": "Ongoing maintenance, updates, and 24/7 support to keep your solution running perfectly."
+    }
+  },
+  "cta_section": {
+    "title": "Ready for Digital Transformation?",
+    "description": "Let's discuss how we can transform your business into a seamless digital ecosystem. Free strategy session included.",
+    "button": "Schedule Your Call"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real feedback from companies we've worked with"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to the questions we get asked most often"
+  },
+  "footer": {
+    "company": "Swiss Tech Solutions",
+    "tagline": "Engineering digital ecosystems that last",
+    "rights": "All rights reserved"
+  }
+}
