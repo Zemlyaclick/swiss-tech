@@ -49,7 +49,8 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
 
   const moveCursor = useCallback((x: number, y: number) => {
     if (!cursorRef.current) return;
-    gsap.to(cursorRef.current, { x, y, duration: 0.1, ease: 'power3.out' });
+    // Используем set вместо to для мгновенного обновления без анимации
+    gsap.set(cursorRef.current, { x, y });
   }, []);
 
   useEffect(() => {
@@ -97,27 +98,20 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
         return;
       }
       const strength = activeStrengthRef.current.current;
-      if (strength === 0) return;
+      if (strength < 0.01) return; // Пропускаем если strength слишком мал
 
       const cursorX = gsap.getProperty(cursorRef.current, 'x') as number;
       const cursorY = gsap.getProperty(cursorRef.current, 'y') as number;
       const corners = Array.from(cornersRef.current);
 
       corners.forEach((corner, i) => {
-        const currentX = gsap.getProperty(corner, 'x') as number;
-        const currentY = gsap.getProperty(corner, 'y') as number;
         const targetX = targetCornerPositionsRef.current![i].x - cursorX;
         const targetY = targetCornerPositionsRef.current![i].y - cursorY;
-        const finalX = currentX + (targetX - currentX) * strength;
-        const finalY = currentY + (targetY - currentY) * strength;
-        const duration = strength >= 0.99 ? (parallaxOn ? 0.2 : 0) : 0.05;
-
-        gsap.to(corner, {
-          x: finalX,
-          y: finalY,
-          duration: duration,
-          ease: duration === 0 ? 'none' : 'power1.out',
-          overwrite: 'auto'
+        
+        // Используем set для производительности
+        gsap.set(corner, {
+          x: targetX,
+          y: targetY
         });
       });
     };
