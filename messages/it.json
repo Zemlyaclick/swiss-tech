@@ -181,15 +181,202 @@
   },
   "faq": {
     "title": "Domande frequenti",
-    "subtitle": "Risposte alle domande che ci vengono poste più spesso"
+    "subtitle": "Risposte alle domande che ci vengono poste più spesso",
+    "items": [
+      { "question": "Quanto costano i vostri servizi?", "answer": "Il costo dipende dalla complessità del progetto. Un piccolo bot Telegram da 3.000 CHF, sito web da 8.000 CHF, piattaforma complessa da 30.000 CHF. Forniamo una stima precisa dopo aver discusso i requisiti." },
+      { "question": "Quanto dura lo sviluppo?", "answer": "L'MVP è solitamente pronto in 4-8 settimane. Prodotto completo — 2-4 mesi. Soluzioni enterprise complesse — 6-12 mesi. Lavoriamo in Agile con demo settimanali." },
+      { "question": "Lavorate con clienti fuori dalla Svizzera?", "answer": "Sì, il 40% dei nostri clienti proviene da altri paesi: Germania, Austria, paesi CSI. Lavoriamo da remoto, comunichiamo in russo, inglese e tedesco." },
+      { "question": "Cosa succede se il progetto non mi piace?", "answer": "Lavoriamo con un modello a milestone: pagate le fasi man mano che vengono completate e approvate. Se qualcosa non va — rifacciamo a nostre spese." },
+      { "question": "Offrite supporto dopo il lancio?", "answer": "Sì, il supporto a vita è incluso in ogni progetto. Rispondiamo davvero alle domande e aiutiamo con piccoli miglioramenti." },
+      { "question": "Posso iniziare con un piccolo progetto?", "answer": "Certo. Molti clienti iniziano con MVP o progetto pilota. L'80% di loro torna con compiti più grandi." },
+      { "question": "Come garantite la sicurezza dei dati?", "answer": "Lavoriamo secondo gli standard ISO 27001 e OWASP. Tutti i progetti passano una revisione di sicurezza. Conformità GDPR e Swiss DPA." },
+      { "question": "Cosa include la documentazione tecnica?", "answer": "Pacchetto completo: documentazione architetturale, riferimento API, guide per sviluppatori, istruzioni di distribuzione e manutenzione." }
+    ],
+    "cta_text": "Non hai trovato la risposta alla tua domanda?",
+    "cta_link": "Scrivici — risponderemo entro 2 ore"
+  },
+  "ai_chat": {
+    "greeting": "Ciao! 👋 Sono il consulente AI di Swiss Tech Solutions. Come posso aiutarti?",
+    "error": "Spiacente, si è verificato un errore. Riprova più tardi o contattaci tramite il modulo sul sito.",
+    "title": "Consulente AI",
+    "company": "Swiss Tech Solutions",
+    "online": "Online",
+    "placeholder": "Scrivi un messaggio..."
+  },
+  "contact_form": {
+    "success_title": "Richiesta inviata!",
+    "success_message": "Ti contatteremo entro 2 ore durante l'orario lavorativo.",
+    "send_another": "Invia un'altra richiesta",
+    "error_title": "Invio fallito",
+    "error_message": "Riprova o scrivici direttamente a hello@swissmade.it",
+    "name_label": "Nome",
+    "name_placeholder": "Il tuo nome",
+    "name_error": "Inserisci il tuo nome",
+    "email_label": "Email",
+    "email_error": "Inserisci la tua email",
+    "email_invalid": "Email non valida",
+    "company_label": "Azienda",
+    "company_placeholder": "Nome dell'azienda",
+    "phone_label": "Telefono",
+    "phone_placeholder": "+41 12 345 67 89",
+    "service_label": "Servizio desiderato",
+    "service_placeholder": "Seleziona un servizio",
+    "budget_label": "Budget approssimativo",
+    "budget_placeholder": "Seleziona un intervallo",
+    "message_label": "Descrivi il tuo compito",
+    "message_placeholder": "Raccontaci del tuo progetto, compiti, scadenze...",
+    "message_error": "Descrivi il tuo compito",
+    "submit": "Invia richiesta",
+    "submitting": "Invio in corso...",
+    "privacy_text": "Cliccando il pulsante, accetti la",
+    "privacy_link": "politica sulla privacy",
+    "services": [
+      { "value": "digital-reboot", "label": "Riavvio Digitale" },
+      { "value": "turnkey", "label": "Partner IT chiavi in mano" },
+      { "value": "websites", "label": "Sviluppo Web" },
+      { "value": "mobile", "label": "App Mobile" },
+      { "value": "telegram", "label": "Bot/Mini App Telegram" },
+      { "value": "automation", "label": "Automazione" },
+      { "value": "ai", "label": "Integrazione AI" },
+      { "value": "cloud", "label": "Migrazione Cloud" },
+      { "value": "security", "label": "Cybersicurezza" },
+      { "value": "other", "label": "Altro" }
+    ],
+    "budgets": [
+      { "value": "under-5k", "label": "Meno di 5.000 CHF" },
+      { "value": "5k-15k", "label": "5.000 — 15.000 CHF" },
+      { "value": "15k-50k", "label": "15.000 — 50.000 CHF" },
+      { "value": "50k-100k", "label": "50.000 — 100.000 CHF" },
+      { "value": "over-100k", "label": "Oltre 100.000 CHF" },
+      { "value": "not-sure", "label": "Consultazione necessaria" }
+    ]
+  },
+  "price_calculator": {
+    "badge": "Stima in 30 secondi",
+    "title": "Calcolatore dei costi",
+    "description": "Ottieni una stima preliminare del tuo progetto. Preciseremo il prezzo esatto dopo il briefing.",
+    "step1": "1. Tipo di progetto",
+    "step2": "2. Complessità",
+    "step3": "3. Funzionalità aggiuntive",
+    "collapse": "Comprimi",
+    "show_all": "Mostra tutto",
+    "estimate_title": "Stima preliminare",
+    "cost_label": "Costo",
+    "time_label": "Tempo di sviluppo",
+    "fixed_price": "Prezzo fisso",
+    "support_60": "60 giorni di supporto",
+    "nda_included": "NDA incluso",
+    "get_exact": "Ottieni preventivo esatto",
+    "preliminary_note": "Questa è una stima preliminare",
+    "time_2_4_weeks": "2-4 settimane",
+    "time_1_2_months": "1-2 mesi",
+    "time_2_3_months": "2-3 mesi",
+    "time_3_6_months": "3-6 mesi",
+    "project_types": [
+      { "id": "webapp", "name": "App Web", "icon": "🌐" },
+      { "id": "mobile", "name": "App Mobile", "icon": "📱" },
+      { "id": "telegram", "name": "Telegram Mini App", "icon": "✈️" },
+      { "id": "ai", "name": "Integrazione AI", "icon": "🤖" },
+      { "id": "automation", "name": "Automazione", "icon": "⚡" }
+    ],
+    "complexity_levels": [
+      { "id": "simple", "name": "Base", "description": "MVP o prototipo" },
+      { "id": "medium", "name": "Standard", "description": "Progetto tipico" },
+      { "id": "complex", "name": "Avanzato", "description": "Integrazione complessa" }
+    ],
+    "features": [
+      { "id": "auth", "name": "Autenticazione", "description": "OAuth, 2FA, SSO" },
+      { "id": "payments", "name": "Pagamenti", "description": "Stripe, crypto" },
+      { "id": "analytics", "name": "Analitica", "description": "Dashboard, report" },
+      { "id": "multilang", "name": "Multilingua", "description": "i18n, traduzioni" },
+      { "id": "admin", "name": "Pannello Admin", "description": "CMS, gestione" },
+      { "id": "notifications", "name": "Notifiche", "description": "Push, email, SMS" },
+      { "id": "integrations", "name": "Integrazioni API", "description": "Servizi terzi" },
+      { "id": "security", "name": "Sicurezza+", "description": "Audit, pentest" }
+    ]
   },
   "testimonials": {
     "title": "Cosa dicono i nostri clienti",
-    "subtitle": "Feedback autentici da aziende con cui abbiamo lavorato"
+    "subtitle": "Feedback autentici da aziende con cui abbiamo lavorato",
+    "items": [
+      { "quote": "Swiss Tech Solutions ha completamente cambiato il nostro approccio alla tecnologia. In 6 mesi abbiamo automatizzato l'80% delle attività di routine e aumentato il fatturato del 40%.", "author": "Marcus Hofer", "role": "CEO", "company": "FinanceHub AG" },
+      { "quote": "Professionalità e attenzione ai dettagli distinguono questo team. Il nostro bot Telegram gestisce 5000+ richieste al giorno, zero downtime in 2 anni.", "author": "Anna Müller", "role": "Head of Digital", "company": "TravelSmart GmbH" },
+      { "quote": "Abbiamo provato 3 agenzie prima di trovare Swiss Tech Solutions. Finalmente partner che pensano al nostro business come al loro.", "author": "Dmitry Kozlov", "role": "Founder", "company": "MedTech Solutions" },
+      { "quote": "Redesign del sito e integrazione CRM hanno richiesto solo 2 mesi. Il tasso di conversione è passato dall'1,2% al 4,5%.", "author": "Laura Schmidt", "role": "Marketing Director", "company": "Alpine Retail" },
+      { "quote": "Apprezzo particolarmente la loro onestà. Quando volevo aggiungere una funzionalità inutile, mi hanno dissuaso e fatto risparmiare il 30% del budget.", "author": "Thomas Weber", "role": "Product Owner", "company": "CloudServices AG" },
+      { "quote": "Il supporto 24/7 non è un trucco di marketing. Quando il server è andato giù di sabato notte, hanno risolto tutto in 20 minuti.", "author": "Sergey Ivanov", "role": "CTO", "company": "LogiTrans" }
+    ],
+    "stats": [
+      { "value": "98%", "label": "dei clienti ci raccomanda" },
+      { "value": "4.9", "label": "valutazione media dei progetti" },
+      { "value": "80%", "label": "tornano con nuovi progetti" },
+      { "value": "0", "label": "progetti consegnati in ritardo" }
+    ]
   },
   "footer": {
     "company": "Swiss Tech Solutions",
     "tagline": "Ecosistemi digitali che durano",
     "rights": "Tutti i diritti riservati"
+  },
+  "guarantee": {
+    "badge": "Garanzie",
+    "title": "Tranquillità inclusa",
+    "subtitle": "Non promettiamo solo qualità — la garantiamo per iscritto",
+    "items": [
+      {
+        "title": "Codice sorgente completo",
+        "description": "Al termine del progetto, ricevi il codice sorgente completo e documentato. Il tuo progetto — la tua proprietà. Nessun vendor lock-in."
+      },
+      {
+        "title": "Correzione bug gratuita",
+        "description": "Tutti i bug trovati dopo il lancio vengono corretti gratuitamente entro il periodo specificato nel contratto. I dettagli vengono discussi individualmente per ogni progetto."
+      },
+      {
+        "title": "Pagamenti per milestone",
+        "description": "Il pagamento è suddiviso in fasi legate alle milestone del progetto. Controlli il budget e vedi i progressi ad ogni passo."
+      },
+      {
+        "title": "Trasparenza totale",
+        "description": "Accesso al task tracker, report settimanali, demo. Conosci sempre lo stato del progetto e puoi apportare modifiche al volo."
+      },
+      {
+        "title": "NDA e protezione dati",
+        "description": "Firma NDA, conformità GDPR e Swiss DPA. Le tue informazioni aziendali sono protette in modo affidabile."
+      }
+    ],
+    "cta_title": "Pronto a lavorare senza rischi?",
+    "cta_description": "Tutte le condizioni di garanzia sono documentate nei contratti. Siamo aperti a discutere condizioni individuali per il tuo progetto.",
+    "cta_button": "Discuti le garanzie"
+  },
+  "trust_badges": {
+    "clients_title": "Affidato da aziende Fortune 500",
+    "partners_title": "Partner tecnologici",
+    "certifications_title": "Certificazioni & Standard",
+    "indicators": [
+      "100% dati in Svizzera",
+      "NDA per ogni progetto",
+      "€5M assicurazione responsabilità"
+    ]
+  },
+  "not_for_everyone": {
+    "badge": "Onestà prima di tutto",
+    "title": "Non siamo per tutti",
+    "subtitle": "E va bene così. Preferiamo essere onesti con voi fin dall'inizio per risparmiare tempo a entrambe le parti.",
+    "not_for_title": "Non siamo adatti se...",
+    "perfect_for_title": "Siamo perfetti se...",
+    "not_for": [
+      { "text": "Cercate l'opzione più economica", "detail": "Non competiamo con freelancer dall'India o dall'Ucraina sul prezzo" },
+      { "text": "Vi serve \"per ieri\"", "detail": "Lo sviluppo di qualità richiede tempo. Minimo 2-4 settimane per MVP" },
+      { "text": "Volete controllare ogni riga di codice", "detail": "Apprezziamo fiducia e autonomia. Il micromanagement non è il nostro stile" },
+      { "text": "Avete un progetto senza budget", "detail": "Non lavoriamo per equity o \"quando avremo investimenti\"" }
+    ],
+    "perfect_for": [
+      { "text": "Apprezzate qualità e affidabilità", "detail": "Pronti a investire in una soluzione che durerà anni" },
+      { "text": "La sicurezza dei dati conta", "detail": "GDPR, Swiss DPA, dati finanziari o medici" },
+      { "text": "Lavorate per il mercato europeo", "detail": "Qualità svizzera e conformità contano" },
+      { "text": "Avete bisogno di un partner affidabile a lungo termine", "detail": "Non un progetto una tantum, ma una partnership per anni" }
+    ],
+    "cta_text": "Vi siete riconosciuti a destra? Parliamone.",
+    "cta_button": "Discuti il progetto"
   }
 }

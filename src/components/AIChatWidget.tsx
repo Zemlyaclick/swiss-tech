@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, Bot, User } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -9,16 +10,22 @@ interface Message {
 }
 
 export default function AIChatWidget() {
+  const t = useTranslations('ai_chat');
   const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      role: 'assistant',
-      content: 'Привет! 👋 Я AI-консультант Swiss Tech Solutions. Чем могу помочь?'
-    }
-  ]);
+  const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  // Initialize greeting message when component mounts
+  useEffect(() => {
+    setMessages([
+      {
+        role: 'assistant',
+        content: t('greeting')
+      }
+    ]);
+  }, [t]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -54,7 +61,7 @@ export default function AIChatWidget() {
     } catch (error) {
       setMessages(prev => [...prev, { 
         role: 'assistant', 
-        content: 'Извините, произошла ошибка. Попробуйте позже или свяжитесь с нами через форму на сайте.' 
+        content: t('error')
       }]);
     } finally {
       setIsLoading(false);
@@ -95,12 +102,12 @@ export default function AIChatWidget() {
               <Bot className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h3 className="text-white font-semibold">AI Консультант</h3>
-              <p className="text-gray-400 text-sm">Swiss Tech Solutions</p>
+              <h3 className="text-white font-semibold">{t('title')}</h3>
+              <p className="text-gray-400 text-sm">{t('company')}</p>
             </div>
             <div className="ml-auto flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <span className="text-green-400 text-xs">Online</span>
+              <span className="text-green-400 text-xs">{t('online')}</span>
             </div>
           </div>
 
@@ -156,7 +163,7 @@ export default function AIChatWidget() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={handleKeyPress}
-                placeholder="Напишите сообщение..."
+                placeholder={t('placeholder')}
                 className="flex-1 bg-gray-800 text-white placeholder-gray-500 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 border border-gray-700"
                 disabled={isLoading}
               />

@@ -2,12 +2,24 @@
 
 import { useState } from 'react';
 import { Send, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface ContactFormProps {
   locale: 'en' | 'de' | 'fr' | 'it' | 'de-CH' | 'ru';
 }
 
+interface ServiceOption {
+  value: string;
+  label: string;
+}
+
+interface BudgetOption {
+  value: string;
+  label: string;
+}
+
 export default function ContactForm({ locale }: ContactFormProps) {
+  const t = useTranslations('contact_form');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,43 +33,24 @@ export default function ContactForm({ locale }: ContactFormProps) {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const services = [
-    { value: 'digital-reboot', label: 'Цифровая перезагрузка' },
-    { value: 'turnkey', label: 'IT-партнёр под ключ' },
-    { value: 'websites', label: 'Веб-разработка' },
-    { value: 'mobile', label: 'Мобильные приложения' },
-    { value: 'telegram', label: 'Telegram боты/Mini Apps' },
-    { value: 'automation', label: 'Автоматизация' },
-    { value: 'ai', label: 'ИИ-интеграции' },
-    { value: 'cloud', label: 'Облачная миграция' },
-    { value: 'security', label: 'Кибербезопасность' },
-    { value: 'other', label: 'Другое' }
-  ];
-
-  const budgets = [
-    { value: 'under-5k', label: 'До 5 000 CHF' },
-    { value: '5k-15k', label: '5 000 — 15 000 CHF' },
-    { value: '15k-50k', label: '15 000 — 50 000 CHF' },
-    { value: '50k-100k', label: '50 000 — 100 000 CHF' },
-    { value: 'over-100k', label: 'Более 100 000 CHF' },
-    { value: 'not-sure', label: 'Нужна консультация' }
-  ];
+  const services = t.raw('services') as ServiceOption[];
+  const budgets = t.raw('budgets') as BudgetOption[];
 
   const validate = () => {
     const newErrors: Record<string, string> = {};
     
     if (!formData.name.trim()) {
-      newErrors.name = 'Укажите ваше имя';
+      newErrors.name = t('name_error');
     }
     
     if (!formData.email.trim()) {
-      newErrors.email = 'Укажите email';
+      newErrors.email = t('email_error');
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Некорректный email';
+      newErrors.email = t('email_invalid');
     }
     
     if (!formData.message.trim()) {
-      newErrors.message = 'Опишите вашу задачу';
+      newErrors.message = t('message_error');
     }
     
     setErrors(newErrors);
@@ -112,15 +105,15 @@ export default function ContactForm({ locale }: ContactFormProps) {
         <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
           <CheckCircle2 className="w-8 h-8 text-green-500" />
         </div>
-        <h3 className="text-2xl font-bold text-white mb-2">Заявка отправлена!</h3>
+        <h3 className="text-2xl font-bold text-white mb-2">{t('success_title')}</h3>
         <p className="text-mist-400 mb-6">
-          Мы свяжемся с вами в течение 2 часов в рабочее время.
+          {t('success_message')}
         </p>
         <button
           onClick={() => setStatus('idle')}
           className="text-laser-cyan hover:underline"
         >
-          Отправить ещё одну заявку
+          {t('send_another')}
         </button>
       </div>
     );
@@ -132,8 +125,8 @@ export default function ContactForm({ locale }: ContactFormProps) {
         <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-lg flex items-start gap-3">
           <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
           <div>
-            <p className="text-red-400 font-medium">Ошибка отправки</p>
-            <p className="text-red-400/80 text-sm">Попробуйте ещё раз или напишите нам напрямую на hello@swissmade.it</p>
+            <p className="text-red-400 font-medium">{t('error_title')}</p>
+            <p className="text-red-400/80 text-sm">{t('error_message')}</p>
           </div>
         </div>
       )}
@@ -142,7 +135,7 @@ export default function ContactForm({ locale }: ContactFormProps) {
         {/* Name */}
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-mist-300 mb-2">
-            Имя <span className="text-red-400">*</span>
+            {t('name_label')} <span className="text-red-400">*</span>
           </label>
           <input
             type="text"
@@ -153,7 +146,7 @@ export default function ContactForm({ locale }: ContactFormProps) {
             className={`w-full px-4 py-3 bg-void-800 border rounded-lg text-white placeholder:text-mist-600 focus:outline-none focus:border-laser-cyan transition-colors ${
               errors.name ? 'border-red-500' : 'border-mist-700'
             }`}
-            placeholder="Ваше имя"
+            placeholder={t('name_placeholder')}
           />
           {errors.name && <p className="mt-1 text-sm text-red-400">{errors.name}</p>}
         </div>
@@ -161,7 +154,7 @@ export default function ContactForm({ locale }: ContactFormProps) {
         {/* Email */}
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-mist-300 mb-2">
-            Email <span className="text-red-400">*</span>
+            {t('email_label')} <span className="text-red-400">*</span>
           </label>
           <input
             type="email"
@@ -182,7 +175,7 @@ export default function ContactForm({ locale }: ContactFormProps) {
         {/* Company */}
         <div>
           <label htmlFor="company" className="block text-sm font-medium text-mist-300 mb-2">
-            Компания
+            {t('company_label')}
           </label>
           <input
             type="text"
@@ -191,14 +184,14 @@ export default function ContactForm({ locale }: ContactFormProps) {
             value={formData.company}
             onChange={handleChange}
             className="w-full px-4 py-3 bg-void-800 border border-mist-700 rounded-lg text-white placeholder:text-mist-600 focus:outline-none focus:border-laser-cyan transition-colors"
-            placeholder="Название компании"
+            placeholder={t('company_placeholder')}
           />
         </div>
 
         {/* Phone */}
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-mist-300 mb-2">
-            Телефон
+            {t('phone_label')}
           </label>
           <input
             type="tel"
@@ -207,7 +200,7 @@ export default function ContactForm({ locale }: ContactFormProps) {
             value={formData.phone}
             onChange={handleChange}
             className="w-full px-4 py-3 bg-void-800 border border-mist-700 rounded-lg text-white placeholder:text-mist-600 focus:outline-none focus:border-laser-cyan transition-colors"
-            placeholder="+41 12 345 67 89"
+            placeholder={t('phone_placeholder')}
           />
         </div>
       </div>
@@ -216,7 +209,7 @@ export default function ContactForm({ locale }: ContactFormProps) {
         {/* Service */}
         <div>
           <label htmlFor="service" className="block text-sm font-medium text-mist-300 mb-2">
-            Интересующая услуга
+            {t('service_label')}
           </label>
           <select
             id="service"
@@ -225,7 +218,7 @@ export default function ContactForm({ locale }: ContactFormProps) {
             onChange={handleChange}
             className="w-full px-4 py-3 bg-void-800 border border-mist-700 rounded-lg text-white focus:outline-none focus:border-laser-cyan transition-colors appearance-none cursor-pointer"
           >
-            <option value="" className="bg-void-800">Выберите услугу</option>
+            <option value="" className="bg-void-800">{t('service_placeholder')}</option>
             {services.map(service => (
               <option key={service.value} value={service.value} className="bg-void-800">
                 {service.label}
@@ -237,7 +230,7 @@ export default function ContactForm({ locale }: ContactFormProps) {
         {/* Budget */}
         <div>
           <label htmlFor="budget" className="block text-sm font-medium text-mist-300 mb-2">
-            Примерный бюджет
+            {t('budget_label')}
           </label>
           <select
             id="budget"
@@ -246,7 +239,7 @@ export default function ContactForm({ locale }: ContactFormProps) {
             onChange={handleChange}
             className="w-full px-4 py-3 bg-void-800 border border-mist-700 rounded-lg text-white focus:outline-none focus:border-laser-cyan transition-colors appearance-none cursor-pointer"
           >
-            <option value="" className="bg-void-800">Выберите диапазон</option>
+            <option value="" className="bg-void-800">{t('budget_placeholder')}</option>
             {budgets.map(budget => (
               <option key={budget.value} value={budget.value} className="bg-void-800">
                 {budget.label}
@@ -259,7 +252,7 @@ export default function ContactForm({ locale }: ContactFormProps) {
       {/* Message */}
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-mist-300 mb-2">
-          Опишите вашу задачу <span className="text-red-400">*</span>
+          {t('message_label')} <span className="text-red-400">*</span>
         </label>
         <textarea
           id="message"
@@ -270,7 +263,7 @@ export default function ContactForm({ locale }: ContactFormProps) {
           className={`w-full px-4 py-3 bg-void-800 border rounded-lg text-white placeholder:text-mist-600 focus:outline-none focus:border-laser-cyan transition-colors resize-none ${
             errors.message ? 'border-red-500' : 'border-mist-700'
           }`}
-          placeholder="Расскажите о проекте, задачах, сроках..."
+          placeholder={t('message_placeholder')}
         />
         {errors.message && <p className="mt-1 text-sm text-red-400">{errors.message}</p>}
       </div>
@@ -284,20 +277,20 @@ export default function ContactForm({ locale }: ContactFormProps) {
         {status === 'loading' ? (
           <>
             <Loader2 className="w-5 h-5 animate-spin" />
-            Отправка...
+            {t('submitting')}
           </>
         ) : (
           <>
             <Send className="w-5 h-5" />
-            Отправить заявку
+            {t('submit')}
           </>
         )}
       </button>
 
       <p className="text-center text-mist-500 text-sm">
-        Нажимая кнопку, вы соглашаетесь с{' '}
+        {t('privacy_text')}{' '}
         <a href={`/${locale}/privacy`} className="text-laser-cyan hover:underline">
-          политикой конфиденциальности
+          {t('privacy_link')}
         </a>
       </p>
     </form>

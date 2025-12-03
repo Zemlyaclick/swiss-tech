@@ -181,15 +181,202 @@
   },
   "faq": {
     "title": "Hüfig gstellti Frage",
-    "subtitle": "Antworte uf d'Frage, wo üs am hüfigste gstellt werded"
+    "subtitle": "Antworte uf d'Frage, wo üs am hüfigste gstellt werded",
+    "items": [
+      { "question": "Wieviel chosteds Ihri Dienschtleischtige?", "answer": "D'Choschte hänged vo de Projektkomplexität ab. En chline Telegram-Bot ab 3'000 CHF, Website ab 8'000 CHF, komplexe Plattform ab 30'000 CHF. Mir gänd e gnaui Schätzig nach Bäsprächig vo de Aforderige." },
+      { "question": "Wie lang duured d'Entwicklig?", "answer": "MVP isch normalerwiis i 4-8 Wüche fertig. Vollständigs Produkt — 2-4 Mönet. Komplexi Enterprise-Lösige — 6-12 Mönet. Mir schaffed agil mit wöchentliche Demos." },
+      { "question": "Schaffed ihr mit Chunde usserhalb vo de Schwiiz?", "answer": "Ja, 40% vo üsne Chunde chömed us andere Länder: Dütschland, Öschtriich, GUS-Länder. Mir schaffed remote, kommuniziered uf Rüssisch, Änglisch und Dütsch." },
+      { "question": "Was, wenn mir s'Projekt nid gfallt?", "answer": "Mir schaffed nach em Milestone-Modell: Ihr zahled Etappe nach deren Abschluss und Genehmiging. Wenn öppis nid stimmt — mir überarbeited's uf üsni Choschte." },
+      { "question": "Bieteds ihr Support nach em Launch?", "answer": "Ja, läbenslange Support isch i jedem Projekt inbegriffe. Mir beantworte würkli Frage und hälfed bi chline Verbesserige." },
+      { "question": "Chan ich mit emene chline Projekt afange?", "answer": "Natürli. Vieli Chunde fanged mit MVP oder Pilotprojekt a. 80% vo ihne chömed mit grössere Ufgabe zurügg." },
+      { "question": "Wie gewährleischted ihr Datesicherheit?", "answer": "Mir schaffed nach ISO 27001 und OWASP Standards. Alli Projekt durchloufed Security Review. GDPR und Swiss DPA konform." },
+      { "question": "Was beinhaltet d'technisch Dokumentation?", "answer": "Vollständigs Paket: Architekturdokumentation, API-Referenz, Entwicklerhandbiücher, Bereitstelligs- und Wartigsaleitige." }
+    ],
+    "cta_text": "Kei Antwort uf Ihri Frag gfunde?",
+    "cta_link": "Schribed üs — mir antworte innerhalb vo 2 Stund"
+  },
+  "ai_chat": {
+    "greeting": "Grüezi! 👋 Ich bi de KI-Berater vo Swiss Tech Solutions. Wie chan ich hälfe?",
+    "error": "Entschuldigung, es isch en Fehler passiert. Bitte probiere Sie's spöter nomol oder kontaktiere Sie öis übers Formular uf de Website.",
+    "title": "KI-Berater",
+    "company": "Swiss Tech Solutions",
+    "online": "Online",
+    "placeholder": "Nachricht schriibe..."
+  },
+  "contact_form": {
+    "success_title": "Aafrag gschickt!",
+    "success_message": "Mir melde öis innert 2 Stund während de Geschäftsziite.",
+    "send_another": "Weiteri Aafrag schicke",
+    "error_title": "Schicke fehlgschlage",
+    "error_message": "Bitte probiere Sie's nomol oder schriibe Sie öis diräkt uf hello@swissmade.it",
+    "name_label": "Name",
+    "name_placeholder": "Ihre Name",
+    "name_error": "Bitte gäbe Sie Ihre Name ii",
+    "email_label": "E-Mail",
+    "email_error": "Bitte gäbe Sie Ihri E-Mail ii",
+    "email_invalid": "Ungültigi E-Mail",
+    "company_label": "Firma",
+    "company_placeholder": "Firmename",
+    "phone_label": "Telefon",
+    "phone_placeholder": "+41 12 345 67 89",
+    "service_label": "Gwünschti Dienstleistig",
+    "service_placeholder": "Dienst uswähle",
+    "budget_label": "Ungefährs Budget",
+    "budget_placeholder": "Bereich uswähle",
+    "message_label": "Beschriibe Sie Ihri Ufgab",
+    "message_placeholder": "Verzälle Sie öis vo Ihrem Projekt, Ufgabe, Friste...",
+    "message_error": "Bitte beschriibe Sie Ihri Ufgab",
+    "submit": "Aafrag schicke",
+    "submitting": "Am Schicke...",
+    "privacy_text": "Mit em Klick uf de Chnopf stimme Sie de",
+    "privacy_link": "Dateschutzrichtlinie zue",
+    "services": [
+      { "value": "digital-reboot", "label": "Digitale Neustart" },
+      { "value": "turnkey", "label": "Schlüsselfertigi IT-Partnerschaft" },
+      { "value": "websites", "label": "Webentwicklig" },
+      { "value": "mobile", "label": "Mobili Apps" },
+      { "value": "telegram", "label": "Telegram Bots/Mini Apps" },
+      { "value": "automation", "label": "Automatisierig" },
+      { "value": "ai", "label": "KI-Integration" },
+      { "value": "cloud", "label": "Cloud-Migration" },
+      { "value": "security", "label": "Cybersicherheit" },
+      { "value": "other", "label": "Angers" }
+    ],
+    "budgets": [
+      { "value": "under-5k", "label": "Under 5'000 CHF" },
+      { "value": "5k-15k", "label": "5'000 — 15'000 CHF" },
+      { "value": "15k-50k", "label": "15'000 — 50'000 CHF" },
+      { "value": "50k-100k", "label": "50'000 — 100'000 CHF" },
+      { "value": "over-100k", "label": "Über 100'000 CHF" },
+      { "value": "not-sure", "label": "Beratig nötig" }
+    ]
+  },
+  "price_calculator": {
+    "badge": "Schätzig in 30 Sekunde",
+    "title": "Choschtekalkulator",
+    "description": "Überchömed Sie e vorläufigi Schätzig für Ihres Projekt. De genau Priis kläremer nach em Briefing.",
+    "step1": "1. Projekttyp",
+    "step2": "2. Komplexität",
+    "step3": "3. Zusätzlichi Funktione",
+    "collapse": "Iichlape",
+    "show_all": "Alli azeige",
+    "estimate_title": "Vorläufigi Schätzig",
+    "cost_label": "Choschte",
+    "time_label": "Entwickligsziit",
+    "fixed_price": "Festpriis",
+    "support_60": "60 Täg Support",
+    "nda_included": "NDA inklusive",
+    "get_exact": "Genaues Agebot übercho",
+    "preliminary_note": "Das isch e vorläufigi Schätzig",
+    "time_2_4_weeks": "2-4 Wuche",
+    "time_1_2_months": "1-2 Mönet",
+    "time_2_3_months": "2-3 Mönet",
+    "time_3_6_months": "3-6 Mönet",
+    "project_types": [
+      { "id": "webapp", "name": "Web-App", "icon": "🌐" },
+      { "id": "mobile", "name": "Mobili App", "icon": "📱" },
+      { "id": "telegram", "name": "Telegram Mini App", "icon": "✈️" },
+      { "id": "ai", "name": "KI-Integration", "icon": "🤖" },
+      { "id": "automation", "name": "Automatisierig", "icon": "⚡" }
+    ],
+    "complexity_levels": [
+      { "id": "simple", "name": "Basis", "description": "MVP oder Prototyp" },
+      { "id": "medium", "name": "Standard", "description": "Typischs Projekt" },
+      { "id": "complex", "name": "Erwiiteret", "description": "Komplexxi Integration" }
+    ],
+    "features": [
+      { "id": "auth", "name": "Authentifizierig", "description": "OAuth, 2FA, SSO" },
+      { "id": "payments", "name": "Zahlige", "description": "Stripe, Krypto" },
+      { "id": "analytics", "name": "Analytik", "description": "Dashboards, Bricht" },
+      { "id": "multilang", "name": "Mehrsprachigkeit", "description": "i18n, Übersetzig" },
+      { "id": "admin", "name": "Admin-Panel", "description": "CMS, Verwaltig" },
+      { "id": "notifications", "name": "Benachrichtigunge", "description": "Push, E-Mail, SMS" },
+      { "id": "integrations", "name": "API-Integratione", "description": "Drittaabieter-Dienst" },
+      { "id": "security", "name": "Sicherheit+", "description": "Audit, Pentest" }
+    ]
   },
   "testimonials": {
     "title": "Was üsi Chunde säged",
-    "subtitle": "Echts Feedback vo Firmene, mit dene mir zäme gschaffet händ"
+    "subtitle": "Echts Feedback vo Firmene, mit dene mir zäme gschaffet händ",
+    "items": [
+      { "quote": "Swiss Tech Solutions händ üse Technologie-Ansatz komplett verändert. I 6 Mönet händ mir 80% vo de Routine automatisiert und de Umsatz um 40% gsteigert.", "author": "Marcus Hofer", "role": "CEO", "company": "FinanceHub AG" },
+      { "quote": "Professionalität und Liebi zum Detail zeichned das Team us. Üse Telegram-Bot bearbeitet täglich 5000+ Afrage, null Usfäll i 2 Jahr.", "author": "Anna Müller", "role": "Head of Digital", "company": "TravelSmart GmbH" },
+      { "quote": "Mir händ 3 Agenturen probiert, bevor mir Swiss Tech Solutions gfunde händ. Endlich Partner, wo an üs's Gschäft denked wie an ihres eigene.", "author": "Dmitry Kozlov", "role": "Founder", "company": "MedTech Solutions" },
+      { "quote": "Website-Redesign und CRM-Integration händ nur 2 Mönet duurt. Conversion-Rate isch vo 1,2% uf 4,5% gstige.", "author": "Laura Schmidt", "role": "Marketing Director", "company": "Alpine Retail" },
+      { "quote": "Bsunders schätz ich ihri Ehrlichkeit. Wo ich es unnötigs Feature wott hä, händ sie mich devo abbrächt und 30% vom Budget gspart.", "author": "Thomas Weber", "role": "Product Owner", "company": "CloudServices AG" },
+      { "quote": "24/7-Support isch kei Marketing-Trick. Wo de Server Samstig z'Nacht usgfalle isch, händ sie alles i 20 Minute repariert.", "author": "Sergey Ivanov", "role": "CTO", "company": "LogiTrans" }
+    ],
+    "stats": [
+      { "value": "98%", "label": "vo de Chunde empfähled üs" },
+      { "value": "4.9", "label": "durchschnittlichi Projektbewertig" },
+      { "value": "80%", "label": "chömed mit neue Projekt zurügg" },
+      { "value": "0", "label": "Projekt verspötet gliefert" }
+    ]
   },
   "footer": {
     "company": "Swiss Tech Solutions",
     "tagline": "Digitali Ökosystem wo Bestand händ",
     "rights": "Alli Rächt vorbehalte"
+  },
+  "guarantee": {
+    "badge": "Garantie",
+    "title": "Seeläfride inbegriffe",
+    "subtitle": "Mir verspräched nöd nur Qualität — mir garantiered sie schriftlich",
+    "items": [
+      {
+        "title": "Vollständige Quellcode",
+        "description": "Nach em Projektabschluss überchömed Sie de vollständig, dokumentiert Quellcode. Ihres Projekt — Ihres Eigetum. Kei Vendor Lock-in."
+      },
+      {
+        "title": "Gratis Fählerbehebig",
+        "description": "Alli Fähler wo nach em Launch gfunde werded, werded innerhalb vo de im Vertrag fäschtglegta Frischt gratis behoben. Details werded für jedes Projekt individuell bsproche."
+      },
+      {
+        "title": "Miilesteizahlige",
+        "description": "D'Zahlig wird i Etappe ufteilt, wo a Projektmiilestein bunde sind. Sie kontrolliered s'Budget und gsehnd de Fortschritt bi jedem Schritt."
+      },
+      {
+        "title": "Volli Transparänz",
+        "description": "Zuägang zum Task-Tracker, wöchentlichi Bricht, Demos. Sie wüssed immer de Projektstatus und chönd spontan Apassige mache."
+      },
+      {
+        "title": "NDA & Dateschutz",
+        "description": "NDA-Unterzeichnig, GDPR- und Swiss DPA-Konformität. Ihri Gschäftsinformatione sind zuverläsig gschützt."
+      }
+    ],
+    "cta_title": "Parat, ohni Risike z'schaffe?",
+    "cta_description": "Alli Garantiebedingige werded i Verträg dokumentiert. Mir sind offe für individuelli Bedingige für Ihres Projekt.",
+    "cta_button": "Garantie bspräche"
+  },
+  "trust_badges": {
+    "clients_title": "Vo Fortune-500-Firmene vertraut",
+    "partners_title": "Technologiepartner",
+    "certifications_title": "Zertifizierige & Standards",
+    "indicators": [
+      "100% Date i de Schwiiz",
+      "NDA für jedes Projekt",
+      "€5M Haftpflichtversicherig"
+    ]
+  },
+  "not_for_everyone": {
+    "badge": "Ehrlichkeit zerscht",
+    "title": "Mir passed nid zu jedem",
+    "subtitle": "Und das isch okay. Mir sind lieber vo Afang a ehrlich zu euch, zum beidi Site Ziit z'spare.",
+    "not_for_title": "Mir passed nid, wenn ihr...",
+    "perfect_for_title": "Mir passed perfekt, wenn ihr...",
+    "not_for": [
+      { "text": "Die günstigsti Option sueched", "detail": "Mir konkurriered nid mit Freelancer us Indie oder de Ukraine bim Priis" },
+      { "text": "Es \"gäschter\" bruuched", "detail": "Qualitätsentwicklig bruucht Ziit. Mindestens 2-4 Wüche für MVP" },
+      { "text": "Jedi Codezeile kontrolliere wänd", "detail": "Mir schätzed Vertraue und Autonomie. Mikromanagement isch nid üsere Stil" },
+      { "text": "Es Projekt ohni Budget händ", "detail": "Mir schaffed nid für Equity oder \"wenn mir Investment überchömed\"" }
+    ],
+    "perfect_for": [
+      { "text": "Qualität und Zueverlässigkeit schätzed", "detail": "Parat, i es Lösig z'investiere, wo Jahr hälted" },
+      { "text": "Datesicherheit wichtig isch", "detail": "GDPR, Swiss DPA, Finanz- oder Medizindate" },
+      { "text": "Für de europäisch Markt schaffed", "detail": "Schwiizer Qualität und Compliance sind wichtig" },
+      { "text": "En zueverlässige langfristige Partner bruuched", "detail": "Nid es eimaligs Projekt, sondern e Partnerschaft für Jahr" }
+    ],
+    "cta_text": "Händ ihr euch rächts wiedererkannt? Lönd üs rede.",
+    "cta_button": "Projekt bspräche"
   }
 }

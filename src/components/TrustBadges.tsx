@@ -1,9 +1,16 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { Shield, Award, Building2, Briefcase } from 'lucide-react';
 
+const trustIcons = [Shield, Award, Briefcase];
+
 export default function TrustBadges() {
+  const t = useTranslations('trust_badges');
+  
+  const indicators = t.raw('indicators') as string[];
+
   const clients = [
     { name: 'UBS', category: 'Banking' },
     { name: 'Swiss Re', category: 'Insurance' },
@@ -41,7 +48,7 @@ export default function TrustBadges() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            Нам доверяют компании из списка Fortune 500
+            {t('clients_title')}
           </motion.p>
           
           <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
@@ -78,7 +85,7 @@ export default function TrustBadges() {
           >
             <div className="flex items-center gap-2 mb-4">
               <Building2 className="w-5 h-5 text-laser-cyan" />
-              <h3 className="text-white font-semibold">Технологические партнёры</h3>
+              <h3 className="text-white font-semibold">{t('partners_title')}</h3>
             </div>
             <div className="grid grid-cols-2 gap-3">
               {partners.map((partner) => (
@@ -102,7 +109,7 @@ export default function TrustBadges() {
           >
             <div className="flex items-center gap-2 mb-4">
               <Award className="w-5 h-5 text-laser-cyan" />
-              <h3 className="text-white font-semibold">Сертификаты и стандарты</h3>
+              <h3 className="text-white font-semibold">{t('certifications_title')}</h3>
             </div>
             <div className="grid grid-cols-2 gap-3">
               {certifications.map((cert) => (
@@ -126,16 +133,15 @@ export default function TrustBadges() {
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
         >
-          {[
-            { icon: Shield, text: '100% данных в Швейцарии' },
-            { icon: Award, text: 'NDA для каждого проекта' },
-            { icon: Briefcase, text: '€5M страхование ответственности' },
-          ].map((item, index) => (
-            <div key={index} className="flex items-center gap-2 text-mist-400 text-sm">
-              <item.icon className="w-4 h-4 text-laser-cyan" />
-              <span>{item.text}</span>
-            </div>
-          ))}
+          {indicators.map((text, index) => {
+            const Icon = trustIcons[index % trustIcons.length];
+            return (
+              <div key={index} className="flex items-center gap-2 text-mist-400 text-sm">
+                <Icon className="w-4 h-4 text-laser-cyan" />
+                <span>{text}</span>
+              </div>
+            );
+          })}
         </motion.div>
       </div>
     </section>

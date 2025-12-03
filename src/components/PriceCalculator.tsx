@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Calculator, Check, Info, ChevronRight, Zap } from 'lucide-react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 type ProjectType = 'webapp' | 'mobile' | 'telegram' | 'ai' | 'automation';
 type Complexity = 'simple' | 'medium' | 'complex';
@@ -20,36 +21,64 @@ interface Feature {
   description: string;
 }
 
+interface ProjectTypeConfig {
+  id: string;
+  name: string;
+  icon: string;
+}
+
+interface ComplexityLevel {
+  id: string;
+  name: string;
+  description: string;
+}
+
+interface FeatureConfig {
+  id: string;
+  name: string;
+  description: string;
+}
+
+const basePrices: Record<string, number> = {
+  webapp: 15000,
+  mobile: 25000,
+  telegram: 8000,
+  ai: 12000,
+  automation: 10000,
+};
+
+const multipliers: Record<string, number> = {
+  simple: 0.7,
+  medium: 1,
+  complex: 1.8,
+};
+
+const featurePrices: Record<string, number> = {
+  auth: 2000,
+  payments: 3000,
+  analytics: 2500,
+  multilang: 1500,
+  admin: 4000,
+  notifications: 1500,
+  integrations: 3000,
+  security: 3500,
+};
+
 export default function PriceCalculator() {
+  const t = useTranslations('price_calculator');
   const [projectType, setProjectType] = useState<ProjectType>('webapp');
   const [complexity, setComplexity] = useState<Complexity>('medium');
   const [selectedFeatures, setSelectedFeatures] = useState<string[]>([]);
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const projectTypes = [
-    { id: 'webapp', name: 'Веб-приложение', basePrice: 15000, icon: '🌐' },
-    { id: 'mobile', name: 'Мобильное приложение', basePrice: 25000, icon: '📱' },
-    { id: 'telegram', name: 'Telegram Mini App', basePrice: 8000, icon: '✈️' },
-    { id: 'ai', name: 'AI интеграция', basePrice: 12000, icon: '🤖' },
-    { id: 'automation', name: 'Автоматизация', basePrice: 10000, icon: '⚡' },
-  ];
+  const projectTypes = t.raw('project_types') as ProjectTypeConfig[];
+  const complexityLevels = t.raw('complexity_levels') as ComplexityLevel[];
+  const featuresConfig = t.raw('features') as FeatureConfig[];
 
-  const complexityLevels = [
-    { id: 'simple', name: 'Базовый', multiplier: 0.7, description: 'MVP или прототип' },
-    { id: 'medium', name: 'Стандартный', multiplier: 1, description: 'Типовой проект' },
-    { id: 'complex', name: 'Расширенный', multiplier: 1.8, description: 'Сложная интеграция' },
-  ];
-
-  const features: Feature[] = [
-    { id: 'auth', name: 'Авторизация', price: 2000, description: 'OAuth, 2FA, SSO' },
-    { id: 'payments', name: 'Платежи', price: 3000, description: 'Stripe, криптовалюты' },
-    { id: 'analytics', name: 'Аналитика', price: 2500, description: 'Дашборды, отчёты' },
-    { id: 'multilang', name: 'Мультиязычность', price: 1500, description: 'i18n, переводы' },
-    { id: 'admin', name: 'Админ-панель', price: 4000, description: 'CMS, управление' },
-    { id: 'notifications', name: 'Уведомления', price: 1500, description: 'Push, email, SMS' },
-    { id: 'integrations', name: 'API интеграции', price: 3000, description: 'Сторонние сервисы' },
-    { id: 'security', name: 'Безопасность+', price: 3500, description: 'Аудит, пентест' },
-  ];
+  const features: Feature[] = featuresConfig.map(f => ({
+    ...f,
+    price: featurePrices[f.id] || 0,
+  }));
 
   const toggleFeature = (featureId: string) => {
     setSelectedFeatures(prev =>
@@ -60,32 +89,29 @@ export default function PriceCalculator() {
   };
 
   const estimate = useMemo(() => {
-    const projectConfig = projectTypes.find(p => p.id === projectType);
-    const complexityConfig = complexityLevels.find(c => c.id === complexity);
+    const basePrice = basePrices[projectType] || 15000;
+    const multiplier = multipliers[complexity] || 1;
     
-    if (!projectConfig || !complexityConfig) return { min: 0, max: 0, time: '' };
-
-    const basePrice = projectConfig.basePrice * complexityConfig.multiplier;
+    const baseTotal = basePrice * multiplier;
     const featuresPrice = selectedFeatures.reduce((sum, featureId) => {
-      const feature = features.find(f => f.id === featureId);
-      return sum + (feature?.price || 0);
+      return sum + (featurePrices[featureId] || 0);
     }, 0);
 
-    const total = basePrice + featuresPrice;
+    const total = baseTotal + featuresPrice;
     
     // Time estimate based on price
     let time = '';
-    if (total < 15000) time = '2-4 недели';
-    else if (total < 30000) time = '1-2 месяца';
-    else if (total < 50000) time = '2-3 месяца';
-    else time = '3-6 месяцев';
+    if (total < 15000) time = t('time_2_4_weeks');
+    else if (total < 30000) time = t('time_1_2_months');
+    else if (total < 50000) time = t('time_2_3_months');
+    else time = t('time_3_6_months');
 
     return {
       min: Math.round(total * 0.9),
       max: Math.round(total * 1.1),
       time,
     };
-  }, [projectType, complexity, selectedFeatures]);
+  }, [projectType, complexity, selectedFeatures, t]);
 
   return (
     <section className="relative py-16 md:py-24 overflow-hidden bg-void-900/50">
@@ -103,13 +129,13 @@ export default function PriceCalculator() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-laser-purple/10 border border-laser-purple/30 text-laser-purple text-sm font-medium mb-4">
             <Calculator className="w-4 h-4" />
-            Оценка за 30 секунд
+            {t('badge')}
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4">
-            Калькулятор стоимости
+            {t('title')}
           </h2>
           <p className="text-mist-400 text-lg max-w-2xl mx-auto">
-            Получите предварительную оценку вашего проекта. Точную цену уточним после брифинга.
+            {t('description')}
           </p>
         </motion.div>
 
@@ -123,7 +149,7 @@ export default function PriceCalculator() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-white font-semibold mb-4">1. Тип проекта</h3>
+              <h3 className="text-white font-semibold mb-4">{t('step1')}</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                 {projectTypes.map((type) => (
                   <button
@@ -150,7 +176,7 @@ export default function PriceCalculator() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              <h3 className="text-white font-semibold mb-4">2. Сложность</h3>
+              <h3 className="text-white font-semibold mb-4">{t('step2')}</h3>
               <div className="grid grid-cols-3 gap-3">
                 {complexityLevels.map((level) => (
                   <button
@@ -180,12 +206,12 @@ export default function PriceCalculator() {
               transition={{ delay: 0.2 }}
             >
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-white font-semibold">3. Дополнительные функции</h3>
+                <h3 className="text-white font-semibold">{t('step3')}</h3>
                 <button
                   onClick={() => setIsExpanded(!isExpanded)}
                   className="text-laser-cyan text-sm flex items-center gap-1"
                 >
-                  {isExpanded ? 'Свернуть' : 'Показать все'}
+                  {isExpanded ? t('collapse') : t('show_all')}
                   <ChevronRight className={`w-4 h-4 transition-transform ${isExpanded ? 'rotate-90' : ''}`} />
                 </button>
               </div>
@@ -226,33 +252,33 @@ export default function PriceCalculator() {
             <div className="p-6 rounded-2xl bg-gradient-to-br from-void-900 to-void-950 border border-laser-cyan/30 shadow-lg shadow-laser-cyan/10">
               <h3 className="text-white font-semibold mb-4 flex items-center gap-2">
                 <Zap className="w-5 h-5 text-laser-cyan" />
-                Предварительная оценка
+                {t('estimate_title')}
               </h3>
               
               <div className="mb-6">
-                <div className="text-mist-400 text-sm mb-1">Стоимость</div>
+                <div className="text-mist-400 text-sm mb-1">{t('cost_label')}</div>
                 <div className="text-3xl md:text-4xl font-display font-bold text-white">
                   CHF {formatNumber(estimate.min)} - {formatNumber(estimate.max)}
                 </div>
               </div>
 
               <div className="mb-6 p-3 rounded-lg bg-void-800/50">
-                <div className="text-mist-400 text-sm mb-1">Срок разработки</div>
+                <div className="text-mist-400 text-sm mb-1">{t('time_label')}</div>
                 <div className="text-white font-medium">{estimate.time}</div>
               </div>
 
               <div className="space-y-2 mb-6 text-sm">
                 <div className="flex items-center gap-2 text-mist-400">
                   <Check className="w-4 h-4 text-laser-cyan" />
-                  <span>Фиксированная цена</span>
+                  <span>{t('fixed_price')}</span>
                 </div>
                 <div className="flex items-center gap-2 text-mist-400">
                   <Check className="w-4 h-4 text-laser-cyan" />
-                  <span>60 дней поддержки</span>
+                  <span>{t('support_60')}</span>
                 </div>
                 <div className="flex items-center gap-2 text-mist-400">
                   <Check className="w-4 h-4 text-laser-cyan" />
-                  <span>NDA включён</span>
+                  <span>{t('nda_included')}</span>
                 </div>
               </div>
 
@@ -260,13 +286,13 @@ export default function PriceCalculator() {
                 href="/contact"
                 className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-laser-cyan hover:bg-laser-cyan/90 text-void-950 font-semibold rounded-xl transition-colors"
               >
-                Получить точную оценку
+                {t('get_exact')}
                 <ChevronRight className="w-4 h-4" />
               </Link>
 
               <p className="text-mist-500 text-xs text-center mt-4 flex items-center justify-center gap-1">
                 <Info className="w-3 h-3" />
-                Это предварительная оценка
+                {t('preliminary_note')}
               </p>
             </div>
           </motion.div>

@@ -7,56 +7,8 @@ import { Star, Quote } from 'lucide-react';
 export default function Testimonials() {
   const t = useTranslations('testimonials');
 
-  const testimonials = [
-    {
-      quote: 'Swiss Made IT полностью изменили наш подход к технологиям. За 6 месяцев мы автоматизировали 80% рутины и увеличили выручку на 40%. Это лучшие инвестиции, которые мы сделали.',
-      author: 'Маркус Хофер',
-      role: 'CEO',
-      company: 'FinanceHub AG',
-      rating: 5,
-      image: null
-    },
-    {
-      quote: 'Профессионализм и внимание к деталям — вот что отличает эту команду. Наш Telegram-бот обрабатывает 5000+ запросов в день, и ни одного сбоя за 2 года. Рекомендую всем.',
-      author: 'Анна Мюллер',
-      role: 'Head of Digital',
-      company: 'TravelSmart GmbH',
-      rating: 5,
-      image: null
-    },
-    {
-      quote: 'Мы перепробовали 3 агентства, прежде чем нашли Swiss Made IT. Наконец-то получили не просто исполнителей, а партнёров, которые думают о нашем бизнесе как о своём.',
-      author: 'Дмитрий Козлов',
-      role: 'Founder',
-      company: 'MedTech Solutions',
-      rating: 5,
-      image: null
-    },
-    {
-      quote: 'Редизайн сайта и интеграция с нашей CRM заняли всего 2 месяца. Конверсия выросла с 1.2% до 4.5%. Теперь планируем с ними мобильное приложение.',
-      author: 'Лаура Шмидт',
-      role: 'Marketing Director',
-      company: 'Alpine Retail',
-      rating: 5,
-      image: null
-    },
-    {
-      quote: 'Особенно ценю их честность. Когда я хотел добавить ненужную функцию, они отговорили меня и предложили более простое решение. Сэкономили мне 30% бюджета.',
-      author: 'Томас Вебер',
-      role: 'Product Owner',
-      company: 'CloudServices AG',
-      rating: 5,
-      image: null
-    },
-    {
-      quote: 'Поддержка 24/7 — это не маркетинговый трюк. Когда в субботу ночью упал сервер, они починили всё за 20 минут. Такой сервис я встречал только в enterprise-компаниях.',
-      author: 'Сергей Иванов',
-      role: 'CTO',
-      company: 'LogiTrans',
-      rating: 5,
-      image: null
-    }
-  ];
+  const testimonials = t.raw('items') as Array<{ quote: string; author: string; role: string; company: string; rating: number }>;
+  const stats = t.raw('stats') as Array<{ value: string; label: string }>;
 
   return (
     <section className="relative py-20 md:py-32 overflow-hidden">
@@ -143,12 +95,7 @@ export default function Testimonials() {
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
         >
-          {[
-            { value: '98%', label: 'клиентов рекомендуют нас' },
-            { value: '4.9', label: 'средняя оценка проектов' },
-            { value: '80%', label: 'возвращаются с новыми проектами' },
-            { value: '0', label: 'проектов сдано с опозданием' }
-          ].map((stat, index) => (
+          {stats.map((stat, index) => (
             <div 
               key={index}
               className="text-center p-4 md:p-6 rounded-xl bg-void-900/30 border border-mist-800/20"

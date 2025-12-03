@@ -1,47 +1,15 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { XCircle, CheckCircle, AlertTriangle, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export default function NotForEveryone() {
-  const notFor = [
-    {
-      text: 'Ищете самый дешёвый вариант',
-      detail: 'Мы не конкурируем с фрилансерами из Индии или Украины по цене',
-    },
-    {
-      text: 'Нужно \"вчера\"',
-      detail: 'Качественная разработка требует времени. Минимум 2-4 недели для MVP',
-    },
-    {
-      text: 'Хотите контролировать каждую строку кода',
-      detail: 'Мы ценим доверие и автономию. Микроменеджмент — не наш стиль',
-    },
-    {
-      text: 'Проект без бюджета',
-      detail: 'Мы не работаем за equity или \"когда получим инвестиции\"',
-    },
-  ];
-
-  const perfectFor = [
-    {
-      text: 'Цените качество и надёжность',
-      detail: 'Готовы инвестировать в решение, которое прослужит годы',
-    },
-    {
-      text: 'Важна безопасность данных',
-      detail: 'GDPR, Swiss DPA, финансовые или медицинские данные',
-    },
-    {
-      text: 'Работаете на европейский рынок',
-      detail: 'Швейцарское качество и compliance имеют значение',
-    },
-    {
-      text: 'Нужен надёжный долгосрочный партнёр',
-      detail: 'Не разовый проект, а партнёрство на годы',
-    },
-  ];
+  const t = useTranslations('not_for_everyone');
+  
+  const notFor = t.raw('not_for') as Array<{ text: string; detail: string }>;
+  const perfectFor = t.raw('perfect_for') as Array<{ text: string; detail: string }>;
 
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
@@ -58,14 +26,13 @@ export default function NotForEveryone() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-500 text-sm font-medium mb-4">
             <AlertTriangle className="w-4 h-4" />
-            Честность прежде всего
+            {t('badge')}
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4">
-            Мы подходим не всем
+            {t('title')}
           </h2>
           <p className="text-mist-400 text-lg max-w-2xl mx-auto">
-            И это нормально. Мы предпочитаем быть честными с вами с самого начала, 
-            чтобы сэкономить время обеим сторонам.
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -80,7 +47,7 @@ export default function NotForEveryone() {
           >
             <h3 className="text-xl font-semibold text-red-400 mb-6 flex items-center gap-2">
               <XCircle className="w-5 h-5" />
-              Мы не подойдём, если вы...
+              {t('not_for_title')}
             </h3>
             <ul className="space-y-4">
               {notFor.map((item, index) => (
@@ -111,7 +78,7 @@ export default function NotForEveryone() {
           >
             <h3 className="text-xl font-semibold text-laser-cyan mb-6 flex items-center gap-2">
               <CheckCircle className="w-5 h-5" />
-              Мы идеально подойдём, если вы...
+              {t('perfect_for_title')}
             </h3>
             <ul className="space-y-4">
               {perfectFor.map((item, index) => (
@@ -143,13 +110,13 @@ export default function NotForEveryone() {
           transition={{ delay: 0.3 }}
         >
           <p className="text-mist-400 mb-4">
-            Узнали себя справа? Давайте поговорим.
+            {t('cta_text')}
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 px-6 py-3 bg-laser-cyan hover:bg-laser-cyan/90 text-void-950 font-semibold rounded-xl transition-colors"
           >
-            Обсудить проект
+            {t('cta_button')}
             <ArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>

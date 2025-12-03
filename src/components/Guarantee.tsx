@@ -1,81 +1,16 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Shield, Clock, RefreshCw, FileCheck, Lock, BadgeCheck } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { Shield, Clock, FileCheck, Lock, BadgeCheck, ArrowRight } from 'lucide-react';
 
-const guarantees = [
-  {
-    icon: Clock,
-    title: 'Гарантия сроков',
-    description: 'Опоздали с дедлайном? Скидка 10% за каждую неделю задержки. Мы уверены в своих оценках.',
-    highlight: '10% / неделя',
-  },
-  {
-    icon: RefreshCw,
-    title: 'Бесплатные правки',
-    description: '60 дней бесплатной поддержки после запуска. Любые баги — за наш счёт.',
-    highlight: '60 дней',
-  },
-  {
-    icon: FileCheck,
-    title: 'Фиксированная цена',
-    description: 'После утверждения ТЗ цена не изменится. Никаких скрытых платежей или допработ.',
-    highlight: 'Без сюрпризов',
-  },
-  {
-    icon: Lock,
-    title: 'NDA с первого дня',
-    description: 'Подписываем соглашение о конфиденциальности ещё до обсуждения деталей проекта.',
-    highlight: 'Ваши идеи защищены',
-  },
-  {
-    icon: BadgeCheck,
-    title: 'Код — ваш',
-    description: 'Полная передача прав на исходный код. Документация, доступы, обучение команды.',
-    highlight: '100% ownership',
-  },
-  {
-    icon: Shield,
-    title: 'Страхование €5M',
-    description: 'Профессиональная ответственность застрахована. Ваш бизнес под надёжной защитой.',
-    highlight: 'Swiss insurance',
-  },
-];
-
-// Выносим карточку в отдельный компонент без лишних анимаций
-function GuaranteeCard({ guarantee, index }: { guarantee: typeof guarantees[0], index: number }) {
-  const Icon = guarantee.icon;
-  
-  return (
-    <motion.div
-      className="group relative p-6 rounded-2xl bg-void-900/60 border border-mist-800/30 hover:border-laser-cyan/40 transition-colors duration-200"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ delay: index * 0.05, duration: 0.3 }}
-    >
-      {/* Highlight badge */}
-      <div className="absolute -top-3 right-4 px-3 py-1 rounded-full bg-laser-cyan/10 border border-laser-cyan/30 text-laser-cyan text-xs font-mono">
-        {guarantee.highlight}
-      </div>
-      
-      {/* Icon */}
-      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-laser-cyan/20 to-laser-purple/20 flex items-center justify-center mb-4 transition-transform duration-200 group-hover:scale-110">
-        <Icon className="w-6 h-6 text-laser-cyan" />
-      </div>
-      
-      {/* Content */}
-      <h3 className="text-white font-semibold text-lg mb-2">
-        {guarantee.title}
-      </h3>
-      <p className="text-mist-400 text-sm leading-relaxed">
-        {guarantee.description}
-      </p>
-    </motion.div>
-  );
-}
+const guaranteeIcons = [FileCheck, Clock, Shield, Lock, BadgeCheck];
 
 export default function Guarantee() {
+  const t = useTranslations('guarantee');
+  
+  const items = t.raw('items') as Array<{ title: string; description: string }>;
+
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
       {/* Background gradient - упрощённый */}
@@ -94,38 +29,70 @@ export default function Guarantee() {
           transition={{ duration: 0.4 }}
         >
           <span className="inline-block px-4 py-1.5 rounded-full bg-laser-cyan/10 border border-laser-cyan/30 text-laser-cyan text-sm font-medium mb-4">
-            Zero Risk
+            {t('badge')}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4">
-            Гарантии, которые работают
+            {t('title')}
           </h2>
           <p className="text-mist-400 text-lg max-w-2xl mx-auto">
-            Мы берём риски на себя, чтобы вы могли сфокусироваться на бизнесе. 
-            Каждое обещание закреплено в контракте.
+            {t('subtitle')}
           </p>
         </motion.div>
 
         {/* Guarantees Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {guarantees.map((guarantee, index) => (
-            <GuaranteeCard key={guarantee.title} guarantee={guarantee} index={index} />
-          ))}
+          {items.map((item, index) => {
+            const Icon = guaranteeIcons[index % guaranteeIcons.length];
+            return (
+              <motion.div
+                key={index}
+                className="group relative p-6 rounded-2xl bg-void-900/60 border border-mist-800/30 hover:border-laser-cyan/40 transition-colors duration-200"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ delay: index * 0.05, duration: 0.3 }}
+              >
+                {/* Icon */}
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-laser-cyan/20 to-laser-purple/20 flex items-center justify-center mb-4 transition-transform duration-200 group-hover:scale-110">
+                  <Icon className="w-6 h-6 text-laser-cyan" />
+                </div>
+                
+                {/* Content */}
+                <h3 className="text-white font-semibold text-lg mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-mist-400 text-sm leading-relaxed">
+                  {item.description}
+                </p>
+              </motion.div>
+            );
+          })}
         </div>
 
         {/* Bottom CTA */}
         <motion.div
-          className="mt-12 text-center"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          className="mt-12 md:mt-16 p-6 md:p-8 rounded-2xl bg-gradient-to-r from-void-900 via-void-900/80 to-void-900 border border-laser-cyan/20"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ delay: 0.3, duration: 0.4 }}
         >
-          <p className="text-mist-500 text-sm mb-4">
-            Все гарантии включены в стандартный договор. Без мелкого шрифта.
-          </p>
-          <div className="inline-flex items-center gap-2 text-laser-cyan hover:text-laser-cyan/80 transition-colors cursor-pointer">
-            <FileCheck className="w-4 h-4" />
-            <span className="text-sm font-medium">Скачать образец договора</span>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
+                {t('cta_title')}
+              </h3>
+              <p className="text-mist-400">
+                {t('cta_description')}
+              </p>
+            </div>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-laser-cyan to-laser-blue text-white font-medium hover:opacity-90 transition-opacity whitespace-nowrap"
+            >
+              {t('cta_button')}
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </motion.div>
       </div>
