@@ -139,6 +139,10 @@
     "maintenance": {
       "title": "Technische Support",
       "description": "Mir gwährleischted de stabil Betrieb vo Ihre System. Monitoring, Updates, Fehlerbehebig. Flexibli SLA-Bedingige nach Ihre Bedürfnis."
+    },
+    "modernization": {
+      "title": "Systemmodernisierig",
+      "description": "Mir aktualisiernd Legacy-System under Biibehaltig vo de Kernfunktionalität. Code-Refactoring, Architekturverbesserige, UX-Optimierig."
     }
   },
   "tech": {
@@ -174,6 +178,14 @@
     "title": "Parat für d'digitali Transformation?",
     "description": "Lönd üs bespräche, wie mir Ihres Unternähme i es nahtloses digitals Ökosystem verwandle chönd. Gratis Strategiesitzig inbegriffe.",
     "button": "Gspräch vereinbare"
+  },
+  "faq": {
+    "title": "Hüfig gstellti Frage",
+    "subtitle": "Antworte uf d'Frage, wo üs am hüfigste gstellt werded"
+  },
+  "testimonials": {
+    "title": "Was üsi Chunde säged",
+    "subtitle": "Echts Feedback vo Firmene, mit dene mir zäme gschaffet händ"
   },
   "footer": {
     "company": "Swiss Tech Solutions",

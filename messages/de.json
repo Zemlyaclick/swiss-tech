@@ -179,6 +179,14 @@
     "description": "Lassen Sie uns besprechen, wie wir Ihr Unternehmen in ein nahtloses digitales Ökosystem verwandeln können. Kostenlose Strategiesitzung inklusive.",
     "button": "Gespräch vereinbaren"
   },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Antworten auf die Fragen, die uns am häufigsten gestellt werden"
+  },
+  "testimonials": {
+    "title": "Was unsere Kunden sagen",
+    "subtitle": "Echtes Feedback von Unternehmen, mit denen wir zusammengearbeitet haben"
+  },
   "footer": {
     "company": "Swiss Tech Solutions",
     "tagline": "Digitale Ökosysteme, die Bestand haben",

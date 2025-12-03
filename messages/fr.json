@@ -179,6 +179,14 @@
     "description": "Discutons de comment nous pouvons transformer votre entreprise en un écosystème digital fluide. Session stratégique gratuite incluse.",
     "button": "Planifier votre appel"
   },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "subtitle": "Réponses aux questions qu'on nous pose le plus souvent"
+  },
+  "testimonials": {
+    "title": "Ce que disent nos clients",
+    "subtitle": "Retours authentiques d'entreprises avec lesquelles nous avons travaillé"
+  },
   "footer": {
     "company": "Swiss Tech Solutions",
     "tagline": "Des écosystèmes digitaux qui durent",
