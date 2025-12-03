@@ -3,6 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, Locale } from '@/i18n/request';
 import TargetCursor from '@/components/TargetCursor';
+import AIChatWidget from '@/components/AIChatWidget';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -35,6 +36,7 @@ export default async function LocaleLayout({
         hoverDuration={0.15}
       />
       {children}
+      <AIChatWidget />
     </NextIntlClientProvider>
   );
 }
