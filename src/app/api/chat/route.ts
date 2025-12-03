@@ -27,6 +27,11 @@ export async function POST(request: NextRequest) {
   try {
     const { messages } = await request.json();
 
+    // Фильтруем только user сообщения для истории
+    const userMessages = messages
+      .filter((m: { role: string }) => m.role === 'user')
+      .map((m: { content: string }) => ({ role: 'user', content: m.content }));
+
     const response = await fetch(TIMEWEB_API_URL, {
       method: 'POST',
       headers: {
@@ -34,33 +39,36 @@ export async function POST(request: NextRequest) {
         'Authorization': `Bearer ${TIMEWEB_API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'deepseek',
         messages: [
           { role: 'system', content: SYSTEM_PROMPT },
-          ...messages.map((m: { role: string; content: string }) => ({
-            role: m.role,
-            content: m.content
-          }))
-        ],
-        max_tokens: 500,
-        temperature: 0.7,
+          ...userMessages
+        ]
       }),
     });
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error('Timeweb API error:', errorText);
-      throw new Error(`API error: ${response.status}`);
+      console.error('Timeweb API error:', response.status, errorText);
+      return NextResponse.json(
+        { message: `Ошибка API: ${response.status}. Проверьте настройки агента в Timeweb.` },
+        { status: 500 }
+      );
     }
 
     const data = await response.json();
-    const assistantMessage = data.choices?.[0]?.message?.content || 'Извините, не удалось получить ответ.';
+    console.log('Timeweb response:', JSON.stringify(data));
+    
+    const assistantMessage = data.choices?.[0]?.message?.content 
+      || data.message 
+      || data.response 
+      || data.content
+      || 'Извините, не удалось получить ответ.';
 
     return NextResponse.json({ message: assistantMessage });
   } catch (error) {
     console.error('Chat API error:', error);
     return NextResponse.json(
-      { message: 'Произошла ошибка. Попробуйте позже.' },
+      { message: 'Произошла ошибка соединения. Попробуйте позже.' },
       { status: 500 }
     );
   }
