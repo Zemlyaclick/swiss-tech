@@ -203,6 +203,127 @@
     "online": "Online",
     "placeholder": "Scrivi un messaggio..."
   },
+  "compare": {
+    "meta_title": "In-house vs Freelance vs Offshore vs Swiss Agency | Swiss Made IT",
+    "meta_description": "Confronto onesto delle opzioni di sviluppo IT. Team interno, freelancer, agenzie offshore, Swiss dev agency.",
+    "badge": "Confronto onesto",
+    "hero_title_1": "In-house vs Freelance vs Offshore vs ",
+    "hero_title_2": "Swiss Agency",
+    "hero_description": "La scelta di un fornitore è una decisione strategica. Abbiamo compilato un confronto obiettivo di tutte le opzioni.",
+    "criteria": "Criterio",
+    "legend_yes": "Sì / Bene",
+    "legend_partial": "Parziale / Dipende",
+    "legend_no": "No / Problema",
+    "detailed_title": "Analisi dettagliata di ogni opzione",
+    "advantages": "Vantaggi",
+    "disadvantages": "Svantaggi",
+    "best_for": "Ideale per",
+    "when_title": "Quando Swiss Dev Agency è la scelta giusta?",
+    "discuss_project": "Discuti il tuo progetto",
+    "comparison": [
+      {"feature": "Costo", "inhouse": "€€€€€", "freelancer": "€", "offshore": "€€", "swissdev": "€€€"},
+      {"feature": "Qualità del codice", "inhouse": "yes", "freelancer": "partial", "offshore": "partial", "swissdev": "yes"},
+      {"feature": "Affidabilità / SLA", "inhouse": "yes", "freelancer": "no", "offshore": "partial", "swissdev": "yes"},
+      {"feature": "Avvio rapido", "inhouse": "no", "freelancer": "yes", "offshore": "yes", "swissdev": "yes"},
+      {"feature": "Scalabilità del team", "inhouse": "no", "freelancer": "no", "offshore": "yes", "swissdev": "yes"},
+      {"feature": "GDPR / Swiss DPA", "inhouse": "yes", "freelancer": "partial", "offshore": "no", "swissdev": "yes"},
+      {"feature": "Comunicazione", "inhouse": "yes", "freelancer": "partial", "offshore": "no", "swissdev": "yes"},
+      {"feature": "Fuso orario", "inhouse": "yes", "freelancer": "partial", "offshore": "no", "swissdev": "yes"},
+      {"feature": "Supporto a lungo termine", "inhouse": "yes", "freelancer": "no", "offshore": "partial", "swissdev": "yes"},
+      {"feature": "Niente HR/assunzioni", "inhouse": "no", "freelancer": "yes", "offshore": "yes", "swissdev": "yes"},
+      {"feature": "Prezzo fisso", "inhouse": "no", "freelancer": "partial", "offshore": "partial", "swissdev": "yes"},
+      {"feature": "Assicurazione responsabilità", "inhouse": "partial", "freelancer": "no", "offshore": "no", "swissdev": "yes"}
+    ],
+    "options": [
+      {
+        "title": "Team interno",
+        "pros": ["Controllo totale", "Profonda immersione nel prodotto", "Disponibilità 24/7"],
+        "cons": ["Costi elevati (stipendi, ufficio, tasse)", "Assunzione lunga (3-6 mesi)", "Rischi di turnover", "Necessità di gestione tecnica"],
+        "bestFor": "Grandi aziende con carico IT costante"
+      },
+      {
+        "title": "Freelancer",
+        "pros": ["Basso costo", "Avvio rapido", "Flessibilità"],
+        "cons": ["Qualità imprevedibile", "Rischio di sparizione", "Nessuna garanzia e SLA", "Difficile con NDA e conformità"],
+        "bestFor": "Piccoli compiti, prototipi, progetti personali"
+      },
+      {
+        "title": "Agenzie offshore",
+        "pros": ["Basso costo", "Grandi team", "Esperienza in vari progetti"],
+        "cons": ["Problemi di comunicazione", "Differenza di fuso orario", "Rischi GDPR", "Differenze culturali"],
+        "bestFor": "Startup con budget limitato"
+      },
+      {
+        "title": "Swiss Dev Agency",
+        "pros": ["Qualità svizzera e conformità", "Fuso orario europeo", "Prezzi fissi e garanzie", "Partnership a lungo termine"],
+        "cons": ["Costo più alto dell'offshore", "Capacità limitata"],
+        "bestFor": "Medie imprese che operano sul mercato europeo"
+      }
+    ],
+    "when_items": [
+      "Sicurezza e conformità sono importanti",
+      "Serve un partner affidabile, non un esecutore occasionale",
+      "Budget da €15.000 per progetto"
+    ]
+  },
+  "discovery": {
+    "meta_title": "Discovery Sprint | Swiss Made IT",
+    "meta_description": "5 giorni per la chiarezza. Piano progetto completo, specifiche tecniche, preventivo fisso. CHF 3.500.",
+    "badge": "Offerta entry-level",
+    "hero_title_1": "Discovery Sprint: ",
+    "hero_title_2": "5 giorni per la chiarezza",
+    "hero_description": "Non sicuro dei requisiti? Non conosci il costo esatto? In 5 giorni lavorativi prepariamo un piano completo per il tuo progetto.",
+    "days": "5 giorni lavorativi",
+    "fixed_price": "Prezzo fisso",
+    "order_sprint": "Ordina Discovery Sprint",
+    "price_label": "Costo",
+    "price": "CHF 3.500",
+    "price_note": "prezzo fisso",
+    "what_you_get": "Cosa otterrai",
+    "what_you_get_desc": "Pacchetto documentazione completo per iniziare lo sviluppo",
+    "process_title": "Come funziona Discovery Sprint",
+    "benefits_title": "Perché è vantaggioso",
+    "next_title": "Cosa succede dopo Discovery Sprint?",
+    "next_description": "Ricevi un pacchetto completo di documenti e puoi:",
+    "next_options": [
+      "Continuare con noi a prezzo fisso",
+      "Trasferire i documenti a un altro fornitore",
+      "Usare per la ricerca di investimenti"
+    ],
+    "next_note": "* Ordinando lo sviluppo da noi, il costo del Discovery Sprint viene detratto dal totale",
+    "book_sprint": "Prenota Discovery Sprint",
+    "deliverables": [
+      {"title": "Specifica tecnica", "description": "Descrizione dettagliata delle funzionalità, user stories, criteri di accettazione"},
+      {"title": "Architettura della soluzione", "description": "Diagramma componenti, database, integrazioni, stack tecnologico"},
+      {"title": "Prototipo / Wireframes", "description": "Prototipo cliccabile delle schermate chiave in Figma"},
+      {"title": "Piano di sviluppo", "description": "Fasi, tempistiche, milestone, percorso critico"},
+      {"title": "Valutazione dei rischi", "description": "Rischi tecnici, dipendenze, piano di mitigazione"},
+      {"title": "Preventivo fisso", "description": "Costo esatto di sviluppo che non cambierà"}
+    ],
+    "process": [
+      {
+        "day": "Giorno 1-2",
+        "title": "Briefing e analisi",
+        "activities": ["Interviste con stakeholder chiave", "Analisi dei processi attuali e dei problemi", "Definizione di obiettivi e KPI", "Ricerca sui concorrenti"]
+      },
+      {
+        "day": "Giorno 3-4",
+        "title": "Design",
+        "activities": ["Creazione di user flow e wireframes", "Progettazione dell'architettura", "Selezione dello stack tecnologico", "Pianificazione delle integrazioni"]
+      },
+      {
+        "day": "Giorno 5",
+        "title": "Documentazione e preventivo",
+        "activities": ["Finalizzazione delle specifiche tecniche", "Calcolo del preventivo dettagliato", "Creazione del piano di sviluppo", "Presentazione dei risultati"]
+      }
+    ],
+    "benefits": [
+      {"title": "Rischio minimo", "description": "Investi solo CHF 3.500, ottieni piena chiarezza sul progetto"},
+      {"title": "I documenti sono tuoi", "description": "Anche se non continui con noi, tutti i materiali restano con te"},
+      {"title": "Prezzo fisso", "description": "Il preventivo dopo Discovery Sprint non cambierà durante lo sviluppo"},
+      {"title": "Avvio rapido", "description": "Possiamo iniziare Discovery Sprint già la prossima settimana"}
+    ]
+  },
   "security": {
     "meta_title": "NDA & Sicurezza | Swiss Made IT",
     "meta_description": "Protezione dati livello svizzero. NDA firmato prima della discussione del progetto. ISO 27001, conformità GDPR.",

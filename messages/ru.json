@@ -188,6 +188,127 @@
     "online": "Онлайн",
     "placeholder": "Напишите сообщение..."
   },
+  "compare": {
+    "meta_title": "In-house vs Freelance vs Offshore vs Swiss Agency | Swiss Made IT",
+    "meta_description": "Честное сравнение вариантов IT-разработки. In-house команда, фрилансеры, offshore агентства, Swiss dev agency.",
+    "badge": "Честное сравнение",
+    "hero_title_1": "In-house vs Freelance vs Offshore vs ",
+    "hero_title_2": "Swiss Agency",
+    "hero_description": "Выбор подрядчика — стратегическое решение. Мы собрали объективное сравнение всех вариантов.",
+    "criteria": "Критерий",
+    "legend_yes": "Да / Хорошо",
+    "legend_partial": "Частично / Зависит",
+    "legend_no": "Нет / Проблема",
+    "detailed_title": "Подробный разбор каждого варианта",
+    "advantages": "Преимущества",
+    "disadvantages": "Недостатки",
+    "best_for": "Лучше всего для",
+    "when_title": "Когда Swiss Dev Agency — правильный выбор?",
+    "discuss_project": "Обсудить ваш проект",
+    "comparison": [
+      {"feature": "Стоимость", "inhouse": "€€€€€", "freelancer": "€", "offshore": "€€", "swissdev": "€€€"},
+      {"feature": "Качество кода", "inhouse": "yes", "freelancer": "partial", "offshore": "partial", "swissdev": "yes"},
+      {"feature": "Надёжность / SLA", "inhouse": "yes", "freelancer": "no", "offshore": "partial", "swissdev": "yes"},
+      {"feature": "Скорость старта", "inhouse": "no", "freelancer": "yes", "offshore": "yes", "swissdev": "yes"},
+      {"feature": "Масштабирование команды", "inhouse": "no", "freelancer": "no", "offshore": "yes", "swissdev": "yes"},
+      {"feature": "GDPR / Swiss DPA", "inhouse": "yes", "freelancer": "partial", "offshore": "no", "swissdev": "yes"},
+      {"feature": "Коммуникация", "inhouse": "yes", "freelancer": "partial", "offshore": "no", "swissdev": "yes"},
+      {"feature": "Часовой пояс", "inhouse": "yes", "freelancer": "partial", "offshore": "no", "swissdev": "yes"},
+      {"feature": "Долгосрочная поддержка", "inhouse": "yes", "freelancer": "no", "offshore": "partial", "swissdev": "yes"},
+      {"feature": "Без HR/найма", "inhouse": "no", "freelancer": "yes", "offshore": "yes", "swissdev": "yes"},
+      {"feature": "Фиксированная цена", "inhouse": "no", "freelancer": "partial", "offshore": "partial", "swissdev": "yes"},
+      {"feature": "Страхование ответственности", "inhouse": "partial", "freelancer": "no", "offshore": "no", "swissdev": "yes"}
+    ],
+    "options": [
+      {
+        "title": "In-house команда",
+        "pros": ["Полный контроль", "Глубокое погружение в продукт", "Доступность 24/7"],
+        "cons": ["Высокие затраты (зарплаты, офис, налоги)", "Долгий найм (3-6 месяцев)", "Риски текучки кадров", "Нужен технический менеджмент"],
+        "bestFor": "Крупные компании с постоянной IT-нагрузкой"
+      },
+      {
+        "title": "Фрилансеры",
+        "pros": ["Низкая стоимость", "Быстрый старт", "Гибкость"],
+        "cons": ["Непредсказуемое качество", "Риск пропадания", "Нет гарантий и SLA", "Сложно с NDA и compliance"],
+        "bestFor": "Мелкие задачи, прототипы, личные проекты"
+      },
+      {
+        "title": "Offshore агентства",
+        "pros": ["Низкая стоимость", "Большие команды", "Опыт в разных проектах"],
+        "cons": ["Проблемы с коммуникацией", "Разница часовых поясов", "GDPR риски", "Культурные различия"],
+        "bestFor": "Стартапы с ограниченным бюджетом"
+      },
+      {
+        "title": "Swiss Dev Agency",
+        "pros": ["Швейцарское качество и compliance", "Европейский часовой пояс", "Фиксированные цены и гарантии", "Долгосрочное партнёрство"],
+        "cons": ["Выше стоимость, чем offshore", "Ограниченная ёмкость"],
+        "bestFor": "Средний бизнес, работающий на европейском рынке"
+      }
+    ],
+    "when_items": [
+      "Важна безопасность и compliance",
+      "Нужен надёжный партнёр, а не разовый исполнитель",
+      "Бюджет от €15,000 на проект"
+    ]
+  },
+  "discovery": {
+    "meta_title": "Discovery Sprint | Swiss Made IT",
+    "meta_description": "5 дней до ясности. Полный план проекта, техническое задание, фиксированная смета. CHF 3,500.",
+    "badge": "Entry-level offer",
+    "hero_title_1": "Discovery Sprint: ",
+    "hero_title_2": "5 дней до ясности",
+    "hero_description": "Не уверены в требованиях? Не знаете точную стоимость? За 5 рабочих дней мы подготовим полный план вашего проекта.",
+    "days": "5 рабочих дней",
+    "fixed_price": "Фиксированная цена",
+    "order_sprint": "Заказать Discovery Sprint",
+    "price_label": "Стоимость",
+    "price": "CHF 3,500",
+    "price_note": "фиксированная цена",
+    "what_you_get": "Что вы получите",
+    "what_you_get_desc": "Полный пакет документации для старта разработки",
+    "process_title": "Как проходит Discovery Sprint",
+    "benefits_title": "Почему это выгодно",
+    "next_title": "Что дальше после Discovery Sprint?",
+    "next_description": "Вы получаете полный пакет документов и можете:",
+    "next_options": [
+      "Продолжить с нами по фиксированной цене",
+      "Передать документы другому подрядчику",
+      "Использовать для поиска инвестиций"
+    ],
+    "next_note": "* При заказе разработки у нас стоимость Discovery Sprint вычитается из общей суммы",
+    "book_sprint": "Забронировать Discovery Sprint",
+    "deliverables": [
+      {"title": "Техническое задание", "description": "Детальное описание функциональности, user stories, acceptance criteria"},
+      {"title": "Архитектура решения", "description": "Схема компонентов, база данных, интеграции, технологический стек"},
+      {"title": "Прототип / Wireframes", "description": "Кликабельный прототип ключевых экранов в Figma"},
+      {"title": "План разработки", "description": "Этапы, сроки, милестоуны, критический путь"},
+      {"title": "Оценка рисков", "description": "Технические риски, зависимости, план митигации"},
+      {"title": "Фиксированная смета", "description": "Точная стоимость разработки, которая не изменится"}
+    ],
+    "process": [
+      {
+        "day": "День 1-2",
+        "title": "Брифинг и анализ",
+        "activities": ["Интервью с ключевыми стейкхолдерами", "Анализ текущих процессов и болей", "Определение целей и KPI", "Изучение конкурентов"]
+      },
+      {
+        "day": "День 3-4",
+        "title": "Проектирование",
+        "activities": ["Создание user flow и wireframes", "Проектирование архитектуры", "Выбор технологического стека", "Планирование интеграций"]
+      },
+      {
+        "day": "День 5",
+        "title": "Документация и смета",
+        "activities": ["Финализация технического задания", "Расчёт детальной сметы", "Составление плана разработки", "Презентация результатов"]
+      }
+    ],
+    "benefits": [
+      {"title": "Минимальный риск", "description": "Инвестируете только CHF 3,500, получаете полную ясность по проекту"},
+      {"title": "Документы — ваши", "description": "Даже если не продолжите с нами, все материалы останутся у вас"},
+      {"title": "Фиксированная цена", "description": "Смета после Discovery Sprint не изменится в процессе разработки"},
+      {"title": "Быстрый старт", "description": "Можем начать Discovery Sprint уже на следующей неделе"}
+    ]
+  },
   "security": {
     "meta_title": "NDA и безопасность | Swiss Made IT",
     "meta_description": "Швейцарский уровень защиты данных. NDA подписывается до обсуждения проекта. ISO 27001, GDPR compliance.",
