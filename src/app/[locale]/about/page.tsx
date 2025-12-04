@@ -115,7 +115,7 @@ export default async function AboutPage({
         {/* Mission */}
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('mission_label')}</span>
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4 mb-6">
@@ -196,7 +196,7 @@ export default async function AboutPage({
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {team.map((member, index) => (
                 <div
                   key={index}
@@ -266,7 +266,7 @@ export default async function AboutPage({
         {/* Location */}
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('location_label')}</span>
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4 mb-6">

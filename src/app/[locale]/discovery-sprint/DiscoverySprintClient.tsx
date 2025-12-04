@@ -143,7 +143,7 @@ export default function DiscoverySprintClient({ locale }: DiscoverySprintClientP
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {deliverables.map((item, index) => {
               const Icon = deliverableIcons[index];
               return (
@@ -181,7 +181,7 @@ export default function DiscoverySprintClient({ locale }: DiscoverySprintClientP
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {process.map((phase, index) => (
               <motion.div
                 key={phase.title}
@@ -223,7 +223,7 @@ export default function DiscoverySprintClient({ locale }: DiscoverySprintClientP
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={benefit.title}
@@ -262,7 +262,7 @@ export default function DiscoverySprintClient({ locale }: DiscoverySprintClientP
             <p className="text-mist-400 mb-6 max-w-2xl mx-auto">
               {t('next_description')}
             </p>
-            <div className="grid md:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
               {nextOptions.map((option, index) => (
                 <div key={index} className="p-4 rounded-xl bg-void-800/50">
                   <span className="text-white text-sm">{option}</span>

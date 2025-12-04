@@ -40,7 +40,7 @@ export default function NotForEveryone() {
         </motion.div>
 
         {/* Two columns */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* NOT for */}
           <motion.div
             className="p-6 md:p-8 rounded-2xl bg-red-500/5 border border-red-500/20"

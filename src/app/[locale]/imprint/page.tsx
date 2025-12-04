@@ -50,7 +50,7 @@ export default async function ImprintPage({
                     <p className="text-mist-400">{t('company_type')}</p>
                   </div>
                   
-                  <div className="grid md:grid-cols-2 gap-6 pt-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
                     <div>
                       <p className="text-mist-500 text-sm mb-1">{t('legal_address')}</p>
                       <div className="flex items-start gap-2">
@@ -78,7 +78,7 @@ export default async function ImprintPage({
               {/* Contact */}
               <div className="p-8 bg-void-900/50 border border-mist-800/50 rounded-xl">
                 <h2 className="text-2xl font-semibold text-white mb-6">{t('contact_title')}</h2>
-                <div className="grid md:grid-cols-2 gap-6 text-mist-300">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-mist-300">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-lg bg-laser-cyan/10 flex items-center justify-center">
                       <Mail className="w-5 h-5 text-laser-cyan" />

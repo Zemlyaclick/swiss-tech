@@ -101,7 +101,7 @@ export default async function ContactPage({
         {/* Main Content */}
         <section className="py-12 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Form */}
               <div className="order-2 lg:order-1">
                 <div className="bg-void-900/50 border border-mist-800/50 rounded-2xl p-5 sm:p-8">

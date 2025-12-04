@@ -175,7 +175,7 @@ export default async function AccessibilityPage({
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {problems.map((problem, index) => (
                 <div
                   key={index}
@@ -205,7 +205,7 @@ export default async function AccessibilityPage({
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
@@ -237,7 +237,7 @@ export default async function AccessibilityPage({
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {wcagLevels.map((item, index) => (
                 <div
                   key={index}
@@ -279,7 +279,7 @@ export default async function AccessibilityPage({
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, index) => (
                 <div
                   key={index}
@@ -330,7 +330,7 @@ export default async function AccessibilityPage({
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {process.map((item, index) => (
                 <div key={index} className="relative">
                   <div className="text-6xl font-bold text-void-800 mb-4">{item.step}</div>
@@ -358,7 +358,7 @@ export default async function AccessibilityPage({
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {results.map((stat, index) => (
                 <div key={index} className="text-center p-6 bg-void-900/50 border border-mist-800/50 rounded-xl">
                   <div className="text-4xl font-bold bg-gradient-to-r from-laser-cyan to-laser-blue bg-clip-text text-transparent mb-2">

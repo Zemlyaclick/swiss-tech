@@ -103,7 +103,7 @@ export default async function PricingPage({
         {/* Packages */}
         <section className="py-16 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {packages.map((pkg, index) => (
                 <div
                   key={index}
@@ -228,7 +228,7 @@ export default async function PricingPage({
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {included.map((item, index) => {
                 const IconComponent = icons[index] || Shield;
                 return (

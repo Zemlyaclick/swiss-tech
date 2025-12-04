@@ -84,7 +84,7 @@ export default async function TrainingPage({ params }: { params: { locale: 'en' 
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
               {t('programs_title')}
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {programs.map((program, index) => (
                 <div 
                   key={index}
@@ -105,7 +105,7 @@ export default async function TrainingPage({ params }: { params: { locale: 'en' 
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
               {t('formats_title')}
             </h2>
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {formats.map((format, index) => (
                 <div key={index} className="p-6 bg-void-900 border border-void-800 rounded-xl text-center">
                   <h3 className="text-lg font-semibold text-mist-100 mb-2">{format.title}</h3>

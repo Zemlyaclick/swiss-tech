@@ -121,7 +121,7 @@ export default function EcommercePageClient({ locale }: EcommercePageClientProps
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {challenges.map((challenge, index) => (
               <motion.div
                 key={challenge.title}
@@ -156,7 +156,7 @@ export default function EcommercePageClient({ locale }: EcommercePageClientProps
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {solutions.map((solution, index) => (
               <motion.div
                 key={solution.title}
@@ -202,7 +202,7 @@ export default function EcommercePageClient({ locale }: EcommercePageClientProps
               {caseStudy.client}
             </h3>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div>
                 <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">{t('case_challenge')}</h4>
                 <p className="text-white">{caseStudy.challenge}</p>

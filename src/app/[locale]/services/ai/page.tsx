@@ -154,7 +154,7 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
               {t('problems_subtitle')}
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {problems.map((problem, index) => (
                 <div 
                   key={index}
@@ -178,7 +178,7 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
               {t('benefits_subtitle')}
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {benefits.map((benefit, index) => (
                 <div 
                   key={index}
@@ -202,7 +202,7 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
               {t('usecases_subtitle')}
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {useCases.map((useCase, index) => (
                 <div 
                   key={index}
@@ -295,7 +295,7 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
               {t('results_title')}
             </h2>
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {results.map((result, index) => (
                 <div key={index} className="text-center p-6">
                   <div className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-laser-purple to-laser-cyan mb-2">

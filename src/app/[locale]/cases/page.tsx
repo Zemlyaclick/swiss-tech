@@ -166,7 +166,7 @@ export default async function CasesPage({
                   className="relative"
                 >
                   {/* Case Card */}
-                  <div className={`grid lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                  <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                     {/* Image */}
                     <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                       <div className={`aspect-video rounded-2xl bg-gradient-to-br ${colorClass} p-1`}>

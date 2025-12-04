@@ -73,7 +73,7 @@ export default function TrustBadges() {
         </div>
 
         {/* Partners & Certifications */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Cloud Partners */}
           <motion.div
             className="p-6 rounded-xl bg-void-900/50 border border-mist-800/30"

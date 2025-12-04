@@ -129,7 +129,7 @@ export default function SecurityPageClient({ locale }: SecurityPageClientProps) 
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {ndaTypes.map((nda, index) => {
               const IconComponent = ndaIcons[index] || FileCheck;
               return (
@@ -185,7 +185,7 @@ export default function SecurityPageClient({ locale }: SecurityPageClientProps) 
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {measures.map((measure, index) => {
               const IconComponent = measureIcons[index] || Lock;
               return (
@@ -232,7 +232,7 @@ export default function SecurityPageClient({ locale }: SecurityPageClientProps) 
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {certifications.map((cert, index) => (
               <motion.div
                 key={cert.name}
@@ -267,7 +267,7 @@ export default function SecurityPageClient({ locale }: SecurityPageClientProps) 
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {practices.map((practice, index) => (
               <motion.div
                 key={index}

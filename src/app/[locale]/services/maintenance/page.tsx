@@ -85,7 +85,7 @@ export default async function MaintenancePage({ params }: { params: { locale: 'e
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
               {t('services_title')}
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, index) => (
                 <div 
                   key={index}
@@ -109,7 +109,7 @@ export default async function MaintenancePage({ params }: { params: { locale: 'e
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
               {t('sla_subtitle')}
             </p>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {slaOptions.map((option, index) => (
                 <div key={index} className="p-6 bg-void-900 border border-void-800 rounded-xl">
                   <h3 className="text-xl font-semibold text-mist-100 mb-2">{option.title}</h3>

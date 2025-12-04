@@ -158,7 +158,7 @@ export default function ComparePageClient({ locale }: ComparePageClientProps) {
             {t('detailed_title')}
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {optionsData.map((option, index) => {
               const Icon = optionIcons[index];
               const isSwissAgency = index === 3;
@@ -237,7 +237,7 @@ export default function ComparePageClient({ locale }: ComparePageClientProps) {
               {t('when_title')}
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-6 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
               {[Shield, Clock, Coins].map((Icon, index) => (
                 <motion.div
                   key={index}
