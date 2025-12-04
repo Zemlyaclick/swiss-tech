@@ -7,6 +7,7 @@ import {
   CheckCircle, ArrowRight, Globe, Users
 } from 'lucide-react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Locale } from '@/i18n/request';
@@ -15,69 +16,41 @@ interface IndustryPageClientProps {
   locale: Locale;
 }
 
+interface Challenge {
+  title: string;
+  description: string;
+}
+
+interface Solution {
+  title: string;
+  description: string;
+  features: string[];
+}
+
+interface CaseResult {
+  metric: string;
+  label: string;
+}
+
+interface CaseStudy {
+  client: string;
+  challenge: string;
+  solution: string;
+  results: CaseResult[];
+}
+
 export default function IndustryPageClient({ locale }: IndustryPageClientProps) {
-  const challenges = [
-    {
-      icon: Shield,
-      title: 'FINMA Compliance',
-      description: 'Соответствие регуляторным требованиям швейцарского финансового надзора и международным стандартам.',
-    },
-    {
-      icon: Lock,
-      title: 'Безопасность данных',
-      description: 'Банковский уровень защиты персональных и финансовых данных клиентов.',
-    },
-    {
-      icon: TrendingUp,
-      title: 'Высокие нагрузки',
-      description: 'Обработка тысяч транзакций в секунду с минимальной задержкой.',
-    },
-    {
-      icon: FileCheck,
-      title: 'KYC/AML интеграция',
-      description: 'Автоматизация проверок клиентов и мониторинга подозрительных операций.',
-    },
-  ];
+  const t = useTranslations('industry_fintech');
+  
+  const challengeIcons = [Shield, Lock, TrendingUp, FileCheck];
+  const challenges = (t.raw('challenges') as Challenge[]).map((challenge, index) => ({
+    ...challenge,
+    icon: challengeIcons[index],
+  }));
 
-  const solutions = [
-    {
-      title: 'Торговые платформы',
-      description: 'Real-time котировки, ордербук, исполнение сделок с минимальной латентностью.',
-      features: ['WebSocket', 'High-frequency trading', 'Risk management'],
-    },
-    {
-      title: 'Банковские приложения',
-      description: 'Мобильный и веб-банкинг с биометрией и мультивалютными операциями.',
-      features: ['PSD2/Open Banking', 'SEPA/SWIFT', 'Multi-currency'],
-    },
-    {
-      title: 'Crypto & DeFi',
-      description: 'Кастодиальные и некастодиальные решения для работы с цифровыми активами.',
-      features: ['Smart contracts', 'Cold storage', 'Multi-chain'],
-    },
-    {
-      title: 'RegTech системы',
-      description: 'Автоматизация compliance, отчётности и мониторинга рисков.',
-      features: ['Audit trails', 'Real-time monitoring', 'Automated reports'],
-    },
-  ];
-
-  const caseStudy = {
-    client: 'Swiss Crypto Exchange',
-    challenge: 'Запуск криптовалютной биржи с FINMA лицензией за 6 месяцев',
-    solution: 'Разработка торгового движка, кастодиального решения и KYC модуля',
-    results: [
-      { metric: '50K', label: 'пользователей за первый год' },
-      { metric: '<10ms', label: 'латентность ордеров' },
-      { metric: '99.99%', label: 'uptime системы' },
-      { metric: 'FINMA', label: 'лицензия получена' },
-    ],
-  };
-
-  const techStack = [
-    'Go', 'Rust', 'PostgreSQL', 'Redis', 'Kafka', 'Kubernetes', 
-    'HSM', 'Vault', 'Grafana', 'ELK Stack'
-  ];
+  const solutions = t.raw('solutions') as Solution[];
+  const caseStudy = t.raw('case_study') as CaseStudy;
+  const techStack = t.raw('tech_stack') as string[];
 
   return (
     <main className="relative min-h-screen bg-void-950">
@@ -98,19 +71,18 @@ export default function IndustryPageClient({ locale }: IndustryPageClientProps) 
               <div className="p-2 rounded-lg bg-laser-cyan/20">
                 <Building2 className="w-6 h-6 text-laser-cyan" />
               </div>
-              <span className="text-laser-cyan font-medium">FinTech & Banking</span>
+              <span className="text-laser-cyan font-medium">{t('badge')}</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-              IT-решения для{' '}
+              {t('hero_title_1')}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-laser-cyan to-laser-blue">
-                финансового сектора
+                {t('hero_title_2')}
               </span>
             </h1>
             
             <p className="text-xl text-mist-300 mb-8 max-w-2xl">
-              Разрабатываем защищённые, масштабируемые системы для банков, бирж, 
-              платёжных сервисов и криптокомпаний. FINMA compliance из коробки.
+              {t('hero_description')}
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -118,14 +90,14 @@ export default function IndustryPageClient({ locale }: IndustryPageClientProps) 
                 href={`/${locale}/contact`}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-laser-cyan hover:bg-laser-cyan/90 text-void-950 font-semibold rounded-xl transition-colors"
               >
-                Обсудить проект
+                {t('discuss_project')}
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
                 href="#case-study"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-mist-700 hover:border-laser-cyan text-white rounded-xl transition-colors"
               >
-                Смотреть кейс
+                {t('view_case')}
               </a>
             </div>
           </motion.div>
@@ -142,10 +114,10 @@ export default function IndustryPageClient({ locale }: IndustryPageClientProps) 
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Вызовы финансовой индустрии
+              {t('challenges_title')}
             </h2>
             <p className="text-mist-400 max-w-2xl mx-auto">
-              Мы понимаем специфику отрасли и знаем, как решать сложные задачи
+              {t('challenges_subtitle')}
             </p>
           </motion.div>
 
@@ -180,7 +152,7 @@ export default function IndustryPageClient({ locale }: IndustryPageClientProps) 
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Наши решения для FinTech
+              {t('solutions_title')}
             </h2>
           </motion.div>
 
@@ -223,7 +195,7 @@ export default function IndustryPageClient({ locale }: IndustryPageClientProps) 
           >
             <div className="flex items-center gap-2 mb-6">
               <Award className="w-5 h-5 text-laser-cyan" />
-              <span className="text-laser-cyan font-medium text-sm">Case Study</span>
+              <span className="text-laser-cyan font-medium text-sm">{t('case_study_label')}</span>
             </div>
             
             <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
@@ -232,11 +204,11 @@ export default function IndustryPageClient({ locale }: IndustryPageClientProps) 
             
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
-                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">Задача</h4>
+                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">{t('case_challenge')}</h4>
                 <p className="text-white">{caseStudy.challenge}</p>
               </div>
               <div>
-                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">Решение</h4>
+                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">{t('case_solution')}</h4>
                 <p className="text-white">{caseStudy.solution}</p>
               </div>
             </div>
@@ -265,7 +237,7 @@ export default function IndustryPageClient({ locale }: IndustryPageClientProps) 
             viewport={{ once: true }}
           >
             <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
-              Технологии для FinTech
+              {t('tech_title')}
             </h2>
           </motion.div>
 
@@ -295,17 +267,16 @@ export default function IndustryPageClient({ locale }: IndustryPageClientProps) 
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Готовы обсудить ваш проект?
+              {t('cta_title')}
             </h2>
             <p className="text-mist-400 mb-8 max-w-2xl mx-auto">
-              Бесплатная консультация с нашим экспертом по финансовым технологиям. 
-              Обсудим архитектуру, compliance и сроки.
+              {t('cta_description')}
             </p>
             <Link
               href={`/${locale}/contact`}
               className="inline-flex items-center gap-2 px-8 py-4 bg-laser-cyan hover:bg-laser-cyan/90 text-void-950 font-semibold rounded-xl transition-colors"
             >
-              Запланировать звонок
+              {t('cta_button')}
               <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>

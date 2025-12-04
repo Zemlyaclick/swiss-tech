@@ -7,6 +7,7 @@ import {
   Award, ArrowRight, Route, Settings
 } from 'lucide-react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Locale } from '@/i18n/request';
@@ -15,69 +16,41 @@ interface LogisticsPageClientProps {
   locale: Locale;
 }
 
+interface Challenge {
+  title: string;
+  description: string;
+}
+
+interface Solution {
+  title: string;
+  description: string;
+  features: string[];
+}
+
+interface CaseResult {
+  metric: string;
+  label: string;
+}
+
+interface CaseStudy {
+  client: string;
+  challenge: string;
+  solution: string;
+  results: CaseResult[];
+}
+
 export default function LogisticsPageClient({ locale }: LogisticsPageClientProps) {
-  const challenges = [
-    {
-      icon: Route,
-      title: 'Оптимизация маршрутов',
-      description: 'Снижение затрат на логистику через умное планирование доставки.',
-    },
-    {
-      icon: MapPin,
-      title: 'Real-time трекинг',
-      description: 'Отслеживание грузов и транспорта в реальном времени.',
-    },
-    {
-      icon: Warehouse,
-      title: 'Управление складом',
-      description: 'Автоматизация учёта, инвентаризации и комплектации заказов.',
-    },
-    {
-      icon: Settings,
-      title: 'Интеграции',
-      description: 'Связь с ERP, TMS, курьерскими службами и маркетплейсами.',
-    },
-  ];
+  const t = useTranslations('industry_logistics');
+  
+  const challengeIcons = [Route, MapPin, Warehouse, Settings];
+  const challenges = (t.raw('challenges') as Challenge[]).map((challenge, index) => ({
+    ...challenge,
+    icon: challengeIcons[index],
+  }));
 
-  const solutions = [
-    {
-      title: 'TMS системы',
-      description: 'Управление транспортом: планирование, диспетчеризация, аналитика.',
-      features: ['Route optimization', 'Fleet management', 'Driver app'],
-    },
-    {
-      title: 'WMS системы',
-      description: 'Автоматизация склада: приёмка, хранение, комплектация, отгрузка.',
-      features: ['Barcode/RFID', 'Pick & pack', 'Inventory'],
-    },
-    {
-      title: 'Last-mile delivery',
-      description: 'Решения для курьерской доставки: оптимизация, трекинг, нотификации.',
-      features: ['Route planning', 'POD', 'Customer app'],
-    },
-    {
-      title: 'Supply Chain',
-      description: 'Управление цепочкой поставок: прогнозирование, закупки, аналитика.',
-      features: ['Demand forecast', 'Supplier portal', 'Analytics'],
-    },
-  ];
-
-  const caseStudy = {
-    client: 'Swiss Logistics Provider',
-    challenge: 'Цифровизация логистических операций и переход от бумажного документооборота',
-    solution: 'Кастомная TMS с мобильным приложением для водителей и порталом для клиентов',
-    results: [
-      { metric: '-25%', label: 'затраты на топливо' },
-      { metric: '+40%', label: 'производительность' },
-      { metric: '100%', label: 'real-time visibility' },
-      { metric: '-80%', label: 'бумажных документов' },
-    ],
-  };
-
-  const techStack = [
-    'React Native', 'Node.js', 'PostgreSQL', 'Redis', 'GraphQL', 
-    'Google Maps', 'HERE', 'IoT sensors', 'Kafka', 'Kubernetes'
-  ];
+  const solutions = t.raw('solutions') as Solution[];
+  const caseStudy = t.raw('case_study') as CaseStudy;
+  const techStack = t.raw('tech_stack') as string[];
 
   return (
     <main className="relative min-h-screen bg-void-950">
@@ -98,19 +71,18 @@ export default function LogisticsPageClient({ locale }: LogisticsPageClientProps
               <div className="p-2 rounded-lg bg-orange-500/20">
                 <Truck className="w-6 h-6 text-orange-400" />
               </div>
-              <span className="text-orange-400 font-medium">Logistics & Supply Chain</span>
+              <span className="text-orange-400 font-medium">{t('badge')}</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-              IT-решения для{' '}
+              {t('hero_title_1')}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500">
-                логистики
+                {t('hero_title_2')}
               </span>
             </h1>
             
             <p className="text-xl text-mist-300 mb-8 max-w-2xl">
-              Автоматизируем транспорт, склад и цепочки поставок. 
-              Real-time трекинг, оптимизация маршрутов, аналитика.
+              {t('hero_description')}
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -118,14 +90,14 @@ export default function LogisticsPageClient({ locale }: LogisticsPageClientProps
                 href={`/${locale}/contact`}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-500/90 text-white font-semibold rounded-xl transition-colors"
               >
-                Обсудить проект
+                {t('discuss_project')}
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
                 href="#case-study"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-mist-700 hover:border-orange-500 text-white rounded-xl transition-colors"
               >
-                Смотреть кейс
+                {t('view_case')}
               </a>
             </div>
           </motion.div>
@@ -142,10 +114,10 @@ export default function LogisticsPageClient({ locale }: LogisticsPageClientProps
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Вызовы логистического бизнеса
+              {t('challenges_title')}
             </h2>
             <p className="text-mist-400 max-w-2xl mx-auto">
-              Мы помогаем оптимизировать операции и снижать затраты
+              {t('challenges_subtitle')}
             </p>
           </motion.div>
 
@@ -180,7 +152,7 @@ export default function LogisticsPageClient({ locale }: LogisticsPageClientProps
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Наши решения для логистики
+              {t('solutions_title')}
             </h2>
           </motion.div>
 
@@ -223,7 +195,7 @@ export default function LogisticsPageClient({ locale }: LogisticsPageClientProps
           >
             <div className="flex items-center gap-2 mb-6">
               <Award className="w-5 h-5 text-orange-400" />
-              <span className="text-orange-400 font-medium text-sm">Case Study</span>
+              <span className="text-orange-400 font-medium text-sm">{t('case_study_label')}</span>
             </div>
             
             <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
@@ -232,11 +204,11 @@ export default function LogisticsPageClient({ locale }: LogisticsPageClientProps
             
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
-                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">Задача</h4>
+                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">{t('case_challenge')}</h4>
                 <p className="text-white">{caseStudy.challenge}</p>
               </div>
               <div>
-                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">Решение</h4>
+                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">{t('case_solution')}</h4>
                 <p className="text-white">{caseStudy.solution}</p>
               </div>
             </div>
@@ -265,7 +237,7 @@ export default function LogisticsPageClient({ locale }: LogisticsPageClientProps
             viewport={{ once: true }}
           >
             <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
-              Технологии для логистики
+              {t('tech_title')}
             </h2>
           </motion.div>
 
@@ -295,17 +267,16 @@ export default function LogisticsPageClient({ locale }: LogisticsPageClientProps
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Готовы оптимизировать логистику?
+              {t('cta_title')}
             </h2>
             <p className="text-mist-400 mb-8 max-w-2xl mx-auto">
-              Бесплатная консультация по автоматизации ваших логистических процессов. 
-              Покажем потенциал экономии.
+              {t('cta_description')}
             </p>
             <Link
               href={`/${locale}/contact`}
               className="inline-flex items-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-500/90 text-white font-semibold rounded-xl transition-colors"
             >
-              Запланировать звонок
+              {t('cta_button')}
               <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>

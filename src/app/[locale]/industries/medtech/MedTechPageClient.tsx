@@ -7,6 +7,7 @@ import {
   Award, ArrowRight, Lock, Users
 } from 'lucide-react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Locale } from '@/i18n/request';
@@ -15,69 +16,41 @@ interface MedTechPageClientProps {
   locale: Locale;
 }
 
+interface Challenge {
+  title: string;
+  description: string;
+}
+
+interface Solution {
+  title: string;
+  description: string;
+  features: string[];
+}
+
+interface CaseResult {
+  metric: string;
+  label: string;
+}
+
+interface CaseStudy {
+  client: string;
+  challenge: string;
+  solution: string;
+  results: CaseResult[];
+}
+
 export default function MedTechPageClient({ locale }: MedTechPageClientProps) {
-  const challenges = [
-    {
-      icon: Shield,
-      title: 'HIPAA & GDPR',
-      description: 'Соответствие строгим требованиям по защите медицинских данных пациентов.',
-    },
-    {
-      icon: FileCheck,
-      title: 'MDR/IVDR сертификация',
-      description: 'Подготовка ПО как медицинского изделия к европейской сертификации.',
-    },
-    {
-      icon: Database,
-      title: 'Интероперабельность',
-      description: 'Интеграция с HL7 FHIR, DICOM и другими медицинскими стандартами.',
-    },
-    {
-      icon: Activity,
-      title: 'Надёжность 24/7',
-      description: 'Критически важные системы должны работать без сбоев круглосуточно.',
-    },
-  ];
+  const t = useTranslations('industry_medtech');
+  
+  const challengeIcons = [Shield, FileCheck, Database, Activity];
+  const challenges = (t.raw('challenges') as Challenge[]).map((challenge, index) => ({
+    ...challenge,
+    icon: challengeIcons[index],
+  }));
 
-  const solutions = [
-    {
-      title: 'Телемедицина',
-      description: 'Платформы для удалённых консультаций с видеосвязью и интеграцией EHR.',
-      features: ['Video calls', 'E-prescriptions', 'Patient portal'],
-    },
-    {
-      title: 'Медицинские IoT',
-      description: 'Сбор и анализ данных с носимых устройств и медицинского оборудования.',
-      features: ['Real-time monitoring', 'Alert systems', 'Data analytics'],
-    },
-    {
-      title: 'AI-диагностика',
-      description: 'Системы компьютерного зрения для анализа медицинских изображений.',
-      features: ['Image analysis', 'Radiology AI', 'Pathology'],
-    },
-    {
-      title: 'Клинические системы',
-      description: 'EHR/EMR системы, управление клиникой, расписание и биллинг.',
-      features: ['HL7 FHIR', 'Scheduling', 'Billing'],
-    },
-  ];
-
-  const caseStudy = {
-    client: 'Swiss Digital Health Startup',
-    challenge: 'Разработка платформы для мониторинга хронических заболеваний',
-    solution: 'Мобильное приложение + облачная платформа с AI-аналитикой и интеграцией с устройствами',
-    results: [
-      { metric: '15K', label: 'активных пациентов' },
-      { metric: '40%', label: 'снижение госпитализаций' },
-      { metric: 'CE Mark', label: 'сертификация получена' },
-      { metric: '98%', label: 'удовлетворённость врачей' },
-    ],
-  };
-
-  const techStack = [
-    'Python', 'TensorFlow', 'PyTorch', 'PostgreSQL', 'MongoDB', 
-    'HL7 FHIR', 'DICOM', 'AWS HealthLake', 'Docker', 'Kubernetes'
-  ];
+  const solutions = t.raw('solutions') as Solution[];
+  const caseStudy = t.raw('case_study') as CaseStudy;
+  const techStack = t.raw('tech_stack') as string[];
 
   return (
     <main className="relative min-h-screen bg-void-950">
@@ -98,19 +71,18 @@ export default function MedTechPageClient({ locale }: MedTechPageClientProps) {
               <div className="p-2 rounded-lg bg-laser-purple/20">
                 <Heart className="w-6 h-6 text-laser-purple" />
               </div>
-              <span className="text-laser-purple font-medium">MedTech & Healthcare</span>
+              <span className="text-laser-purple font-medium">{t('badge')}</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-              IT-решения для{' '}
+              {t('hero_title_1')}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-laser-purple to-laser-cyan">
-                здравоохранения
+                {t('hero_title_2')}
               </span>
             </h1>
             
             <p className="text-xl text-mist-300 mb-8 max-w-2xl">
-              Разрабатываем медицинское ПО с соблюдением всех регуляторных требований. 
-              От телемедицины до AI-диагностики.
+              {t('hero_description')}
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -118,14 +90,14 @@ export default function MedTechPageClient({ locale }: MedTechPageClientProps) {
                 href={`/${locale}/contact`}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-laser-purple hover:bg-laser-purple/90 text-white font-semibold rounded-xl transition-colors"
               >
-                Обсудить проект
+                {t('discuss_project')}
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
                 href="#case-study"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-mist-700 hover:border-laser-purple text-white rounded-xl transition-colors"
               >
-                Смотреть кейс
+                {t('view_case')}
               </a>
             </div>
           </motion.div>
@@ -142,10 +114,10 @@ export default function MedTechPageClient({ locale }: MedTechPageClientProps) {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Специфика медицинской IT-разработки
+              {t('challenges_title')}
             </h2>
             <p className="text-mist-400 max-w-2xl mx-auto">
-              Мы знаем все нюансы и требования отрасли здравоохранения
+              {t('challenges_subtitle')}
             </p>
           </motion.div>
 
@@ -180,7 +152,7 @@ export default function MedTechPageClient({ locale }: MedTechPageClientProps) {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Наши решения для MedTech
+              {t('solutions_title')}
             </h2>
           </motion.div>
 
@@ -223,7 +195,7 @@ export default function MedTechPageClient({ locale }: MedTechPageClientProps) {
           >
             <div className="flex items-center gap-2 mb-6">
               <Award className="w-5 h-5 text-laser-purple" />
-              <span className="text-laser-purple font-medium text-sm">Case Study</span>
+              <span className="text-laser-purple font-medium text-sm">{t('case_study_label')}</span>
             </div>
             
             <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
@@ -232,11 +204,11 @@ export default function MedTechPageClient({ locale }: MedTechPageClientProps) {
             
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
-                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">Задача</h4>
+                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">{t('case_challenge')}</h4>
                 <p className="text-white">{caseStudy.challenge}</p>
               </div>
               <div>
-                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">Решение</h4>
+                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">{t('case_solution')}</h4>
                 <p className="text-white">{caseStudy.solution}</p>
               </div>
             </div>
@@ -265,7 +237,7 @@ export default function MedTechPageClient({ locale }: MedTechPageClientProps) {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
-              Технологии для MedTech
+              {t('tech_title')}
             </h2>
           </motion.div>
 
@@ -295,17 +267,16 @@ export default function MedTechPageClient({ locale }: MedTechPageClientProps) {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Готовы обсудить ваш проект?
+              {t('cta_title')}
             </h2>
             <p className="text-mist-400 mb-8 max-w-2xl mx-auto">
-              Бесплатная консультация с экспертом по медицинским IT-системам. 
-              Обсудим регуляторику, архитектуру и сертификацию.
+              {t('cta_description')}
             </p>
             <Link
               href={`/${locale}/contact`}
               className="inline-flex items-center gap-2 px-8 py-4 bg-laser-purple hover:bg-laser-purple/90 text-white font-semibold rounded-xl transition-colors"
             >
-              Запланировать звонок
+              {t('cta_button')}
               <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>

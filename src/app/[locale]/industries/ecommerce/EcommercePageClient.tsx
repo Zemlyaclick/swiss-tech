@@ -7,6 +7,7 @@ import {
   Award, ArrowRight, Search, Heart
 } from 'lucide-react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Locale } from '@/i18n/request';
@@ -15,69 +16,41 @@ interface EcommercePageClientProps {
   locale: Locale;
 }
 
+interface Challenge {
+  title: string;
+  description: string;
+}
+
+interface Solution {
+  title: string;
+  description: string;
+  features: string[];
+}
+
+interface CaseResult {
+  metric: string;
+  label: string;
+}
+
+interface CaseStudy {
+  client: string;
+  challenge: string;
+  solution: string;
+  results: CaseResult[];
+}
+
 export default function EcommercePageClient({ locale }: EcommercePageClientProps) {
-  const challenges = [
-    {
-      icon: TrendingUp,
-      title: 'Конверсия',
-      description: 'Увеличение процента посетителей, которые совершают покупку.',
-    },
-    {
-      icon: Zap,
-      title: 'Скорость загрузки',
-      description: 'Каждая секунда задержки снижает конверсию на 7%.',
-    },
-    {
-      icon: Globe,
-      title: 'Масштабирование',
-      description: 'Обработка пиковых нагрузок в сезон распродаж без сбоев.',
-    },
-    {
-      icon: Package,
-      title: 'Омниканальность',
-      description: 'Единый опыт покупки онлайн, в приложении и в магазине.',
-    },
-  ];
+  const t = useTranslations('industry_ecommerce');
+  
+  const challengeIcons = [TrendingUp, Zap, Globe, Package];
+  const challenges = (t.raw('challenges') as Challenge[]).map((challenge, index) => ({
+    ...challenge,
+    icon: challengeIcons[index],
+  }));
 
-  const solutions = [
-    {
-      title: 'Headless Commerce',
-      description: 'Гибкая архитектура с разделением фронтенда и бэкенда для максимальной скорости.',
-      features: ['Next.js', 'Shopify Plus', 'Commercetools'],
-    },
-    {
-      title: 'Маркетплейсы',
-      description: 'Многопродавцовые платформы с модерацией, рейтингами и комиссиями.',
-      features: ['Multi-vendor', 'Reviews', 'Payouts'],
-    },
-    {
-      title: 'B2B порталы',
-      description: 'Оптовые платформы с персональными ценами, заказами и интеграцией с ERP.',
-      features: ['Tiered pricing', 'Quick order', 'ERP sync'],
-    },
-    {
-      title: 'Подписочные сервисы',
-      description: 'Recurring billing, управление подписками, retention маркетинг.',
-      features: ['Subscriptions', 'Churn prevention', 'Analytics'],
-    },
-  ];
-
-  const caseStudy = {
-    client: 'Swiss Luxury Brand',
-    challenge: 'Миграция с устаревшей платформы на headless архитектуру без потери продаж',
-    solution: 'Поэтапная миграция на Next.js + Shopify Plus с сохранением SEO и редиректами',
-    results: [
-      { metric: '+85%', label: 'скорость загрузки' },
-      { metric: '+34%', label: 'конверсия' },
-      { metric: '€2.5M', label: 'дополнительных продаж' },
-      { metric: '0', label: 'минут простоя' },
-    ],
-  };
-
-  const techStack = [
-    'Next.js', 'React', 'Shopify Plus', 'Commercetools', 'Stripe', 
-    'Algolia', 'Contentful', 'Vercel', 'CloudFlare', 'Redis'
-  ];
+  const solutions = t.raw('solutions') as Solution[];
+  const caseStudy = t.raw('case_study') as CaseStudy;
+  const techStack = t.raw('tech_stack') as string[];
 
   return (
     <main className="relative min-h-screen bg-void-950">
@@ -98,19 +71,18 @@ export default function EcommercePageClient({ locale }: EcommercePageClientProps
               <div className="p-2 rounded-lg bg-laser-blue/20">
                 <ShoppingCart className="w-6 h-6 text-laser-blue" />
               </div>
-              <span className="text-laser-blue font-medium">E-commerce & Retail</span>
+              <span className="text-laser-blue font-medium">{t('badge')}</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-              IT-решения для{' '}
+              {t('hero_title_1')}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-laser-blue to-laser-cyan">
-                электронной коммерции
+                {t('hero_title_2')}
               </span>
             </h1>
             
             <p className="text-xl text-mist-300 mb-8 max-w-2xl">
-              Создаём быстрые, конверсионные интернет-магазины и маркетплейсы. 
-              Headless архитектура, интеграции, аналитика.
+              {t('hero_description')}
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -118,14 +90,14 @@ export default function EcommercePageClient({ locale }: EcommercePageClientProps
                 href={`/${locale}/contact`}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-laser-blue hover:bg-laser-blue/90 text-white font-semibold rounded-xl transition-colors"
               >
-                Обсудить проект
+                {t('discuss_project')}
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
                 href="#case-study"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-mist-700 hover:border-laser-blue text-white rounded-xl transition-colors"
               >
-                Смотреть кейс
+                {t('view_case')}
               </a>
             </div>
           </motion.div>
@@ -142,10 +114,10 @@ export default function EcommercePageClient({ locale }: EcommercePageClientProps
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Вызовы e-commerce бизнеса
+              {t('challenges_title')}
             </h2>
             <p className="text-mist-400 max-w-2xl mx-auto">
-              Мы помогаем решать ключевые проблемы онлайн-ритейла
+              {t('challenges_subtitle')}
             </p>
           </motion.div>
 
@@ -180,7 +152,7 @@ export default function EcommercePageClient({ locale }: EcommercePageClientProps
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Наши решения для E-commerce
+              {t('solutions_title')}
             </h2>
           </motion.div>
 
@@ -223,7 +195,7 @@ export default function EcommercePageClient({ locale }: EcommercePageClientProps
           >
             <div className="flex items-center gap-2 mb-6">
               <Award className="w-5 h-5 text-laser-blue" />
-              <span className="text-laser-blue font-medium text-sm">Case Study</span>
+              <span className="text-laser-blue font-medium text-sm">{t('case_study_label')}</span>
             </div>
             
             <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
@@ -232,11 +204,11 @@ export default function EcommercePageClient({ locale }: EcommercePageClientProps
             
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
-                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">Задача</h4>
+                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">{t('case_challenge')}</h4>
                 <p className="text-white">{caseStudy.challenge}</p>
               </div>
               <div>
-                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">Решение</h4>
+                <h4 className="text-mist-400 text-sm uppercase tracking-wider mb-2">{t('case_solution')}</h4>
                 <p className="text-white">{caseStudy.solution}</p>
               </div>
             </div>
@@ -265,7 +237,7 @@ export default function EcommercePageClient({ locale }: EcommercePageClientProps
             viewport={{ once: true }}
           >
             <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
-              Технологии для E-commerce
+              {t('tech_title')}
             </h2>
           </motion.div>
 
@@ -295,17 +267,16 @@ export default function EcommercePageClient({ locale }: EcommercePageClientProps
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Готовы увеличить продажи?
+              {t('cta_title')}
             </h2>
             <p className="text-mist-400 mb-8 max-w-2xl mx-auto">
-              Бесплатный аудит вашего интернет-магазина. Покажем точки роста 
-              конверсии и скорости загрузки.
+              {t('cta_description')}
             </p>
             <Link
               href={`/${locale}/contact`}
               className="inline-flex items-center gap-2 px-8 py-4 bg-laser-blue hover:bg-laser-blue/90 text-white font-semibold rounded-xl transition-colors"
             >
-              Получить бесплатный аудит
+              {t('cta_button')}
               <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>

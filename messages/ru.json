@@ -419,6 +419,182 @@
       "Безопасная утилизация данных после завершения проекта"
     ]
   },
+  "industry_ecommerce": {
+    "meta_title": "IT-решения для e-commerce и ритейла | Swiss Made IT",
+    "meta_description": "Быстрые, конверсионные интернет-магазины и маркетплейсы. Headless архитектура, интеграции, аналитика.",
+    "badge": "E-commerce & Retail",
+    "hero_title_1": "IT-решения для ",
+    "hero_title_2": "электронной коммерции",
+    "hero_description": "Создаём быстрые, конверсионные интернет-магазины и маркетплейсы. Headless архитектура, интеграции, аналитика.",
+    "discuss_project": "Обсудить проект",
+    "view_case": "Смотреть кейс",
+    "challenges_title": "Вызовы e-commerce бизнеса",
+    "challenges_subtitle": "Мы помогаем решать ключевые проблемы онлайн-ритейла",
+    "solutions_title": "Наши решения для E-commerce",
+    "case_study_label": "Case Study",
+    "case_challenge": "Задача",
+    "case_solution": "Решение",
+    "tech_title": "Технологии для E-commerce",
+    "cta_title": "Готовы увеличить продажи?",
+    "cta_description": "Бесплатный аудит вашего интернет-магазина. Покажем точки роста конверсии и скорости загрузки.",
+    "cta_button": "Получить бесплатный аудит",
+    "challenges": [
+      {"title": "Конверсия", "description": "Увеличение процента посетителей, которые совершают покупку."},
+      {"title": "Скорость загрузки", "description": "Каждая секунда задержки снижает конверсию на 7%."},
+      {"title": "Масштабирование", "description": "Обработка пиковых нагрузок в сезон распродаж без сбоев."},
+      {"title": "Омниканальность", "description": "Единый опыт покупки онлайн, в приложении и в магазине."}
+    ],
+    "solutions": [
+      {"title": "Headless Commerce", "description": "Гибкая архитектура с разделением фронтенда и бэкенда для максимальной скорости.", "features": ["Next.js", "Shopify Plus", "Commercetools"]},
+      {"title": "Маркетплейсы", "description": "Многопродавцовые платформы с модерацией, рейтингами и комиссиями.", "features": ["Multi-vendor", "Reviews", "Payouts"]},
+      {"title": "B2B порталы", "description": "Оптовые платформы с персональными ценами, заказами и интеграцией с ERP.", "features": ["Tiered pricing", "Quick order", "ERP sync"]},
+      {"title": "Подписочные сервисы", "description": "Recurring billing, управление подписками, retention маркетинг.", "features": ["Subscriptions", "Churn prevention", "Analytics"]}
+    ],
+    "case_study": {
+      "client": "Swiss Luxury Brand",
+      "challenge": "Миграция с устаревшей платформы на headless архитектуру без потери продаж",
+      "solution": "Поэтапная миграция на Next.js + Shopify Plus с сохранением SEO и редиректами",
+      "results": [
+        {"metric": "+85%", "label": "скорость загрузки"},
+        {"metric": "+34%", "label": "конверсия"},
+        {"metric": "€2.5M", "label": "дополнительных продаж"},
+        {"metric": "0", "label": "минут простоя"}
+      ]
+    },
+    "tech_stack": ["Next.js", "React", "Shopify Plus", "Commercetools", "Stripe", "Algolia", "Contentful", "Vercel", "CloudFlare", "Redis"]
+  },
+  "industry_fintech": {
+    "meta_title": "IT-решения для FinTech и банковского сектора | Swiss Made IT",
+    "meta_description": "Защищённые, масштабируемые системы для банков, бирж, платёжных сервисов и криптокомпаний. FINMA compliance из коробки.",
+    "badge": "FinTech & Banking",
+    "hero_title_1": "IT-решения для ",
+    "hero_title_2": "финансового сектора",
+    "hero_description": "Разрабатываем защищённые, масштабируемые системы для банков, бирж, платёжных сервисов и криптокомпаний. FINMA compliance из коробки.",
+    "discuss_project": "Обсудить проект",
+    "view_case": "Смотреть кейс",
+    "challenges_title": "Вызовы финансовой индустрии",
+    "challenges_subtitle": "Мы понимаем специфику отрасли и знаем, как решать сложные задачи",
+    "solutions_title": "Наши решения для FinTech",
+    "case_study_label": "Case Study",
+    "case_challenge": "Задача",
+    "case_solution": "Решение",
+    "tech_title": "Технологии для FinTech",
+    "cta_title": "Готовы обсудить ваш проект?",
+    "cta_description": "Бесплатная консультация с нашим экспертом по финансовым технологиям. Обсудим архитектуру, compliance и сроки.",
+    "cta_button": "Запланировать звонок",
+    "challenges": [
+      {"title": "FINMA Compliance", "description": "Соответствие регуляторным требованиям швейцарского финансового надзора и международным стандартам."},
+      {"title": "Безопасность данных", "description": "Банковский уровень защиты персональных и финансовых данных клиентов."},
+      {"title": "Высокие нагрузки", "description": "Обработка тысяч транзакций в секунду с минимальной задержкой."},
+      {"title": "KYC/AML интеграция", "description": "Автоматизация проверок клиентов и мониторинга подозрительных операций."}
+    ],
+    "solutions": [
+      {"title": "Торговые платформы", "description": "Real-time котировки, ордербук, исполнение сделок с минимальной латентностью.", "features": ["WebSocket", "High-frequency trading", "Risk management"]},
+      {"title": "Банковские приложения", "description": "Мобильный и веб-банкинг с биометрией и мультивалютными операциями.", "features": ["PSD2/Open Banking", "SEPA/SWIFT", "Multi-currency"]},
+      {"title": "Crypto & DeFi", "description": "Кастодиальные и некастодиальные решения для работы с цифровыми активами.", "features": ["Smart contracts", "Cold storage", "Multi-chain"]},
+      {"title": "RegTech системы", "description": "Автоматизация compliance, отчётности и мониторинга рисков.", "features": ["Audit trails", "Real-time monitoring", "Automated reports"]}
+    ],
+    "case_study": {
+      "client": "Swiss Crypto Exchange",
+      "challenge": "Запуск криптовалютной биржи с FINMA лицензией за 6 месяцев",
+      "solution": "Разработка торгового движка, кастодиального решения и KYC модуля",
+      "results": [
+        {"metric": "50K", "label": "пользователей за первый год"},
+        {"metric": "<10ms", "label": "латентность ордеров"},
+        {"metric": "99.99%", "label": "uptime системы"},
+        {"metric": "FINMA", "label": "лицензия получена"}
+      ]
+    },
+    "tech_stack": ["Go", "Rust", "PostgreSQL", "Redis", "Kafka", "Kubernetes", "HSM", "Vault", "Grafana", "ELK Stack"]
+  },
+  "industry_logistics": {
+    "meta_title": "IT-решения для логистики и supply chain | Swiss Made IT",
+    "meta_description": "Автоматизируем транспорт, склад и цепочки поставок. Real-time трекинг, оптимизация маршрутов, аналитика.",
+    "badge": "Logistics & Supply Chain",
+    "hero_title_1": "IT-решения для ",
+    "hero_title_2": "логистики",
+    "hero_description": "Автоматизируем транспорт, склад и цепочки поставок. Real-time трекинг, оптимизация маршрутов, аналитика.",
+    "discuss_project": "Обсудить проект",
+    "view_case": "Смотреть кейс",
+    "challenges_title": "Вызовы логистического бизнеса",
+    "challenges_subtitle": "Мы помогаем оптимизировать операции и снижать затраты",
+    "solutions_title": "Наши решения для логистики",
+    "case_study_label": "Case Study",
+    "case_challenge": "Задача",
+    "case_solution": "Решение",
+    "tech_title": "Технологии для логистики",
+    "cta_title": "Готовы оптимизировать логистику?",
+    "cta_description": "Бесплатная консультация по автоматизации ваших логистических процессов. Покажем потенциал экономии.",
+    "cta_button": "Запланировать звонок",
+    "challenges": [
+      {"title": "Оптимизация маршрутов", "description": "Снижение затрат на логистику через умное планирование доставки."},
+      {"title": "Real-time трекинг", "description": "Отслеживание грузов и транспорта в реальном времени."},
+      {"title": "Управление складом", "description": "Автоматизация учёта, инвентаризации и комплектации заказов."},
+      {"title": "Интеграции", "description": "Связь с ERP, TMS, курьерскими службами и маркетплейсами."}
+    ],
+    "solutions": [
+      {"title": "TMS системы", "description": "Управление транспортом: планирование, диспетчеризация, аналитика.", "features": ["Route optimization", "Fleet management", "Driver app"]},
+      {"title": "WMS системы", "description": "Автоматизация склада: приёмка, хранение, комплектация, отгрузка.", "features": ["Barcode/RFID", "Pick & pack", "Inventory"]},
+      {"title": "Last-mile delivery", "description": "Решения для курьерской доставки: оптимизация, трекинг, нотификации.", "features": ["Route planning", "POD", "Customer app"]},
+      {"title": "Supply Chain", "description": "Управление цепочкой поставок: прогнозирование, закупки, аналитика.", "features": ["Demand forecast", "Supplier portal", "Analytics"]}
+    ],
+    "case_study": {
+      "client": "Swiss Logistics Provider",
+      "challenge": "Цифровизация логистических операций и переход от бумажного документооборота",
+      "solution": "Кастомная TMS с мобильным приложением для водителей и порталом для клиентов",
+      "results": [
+        {"metric": "-25%", "label": "затраты на топливо"},
+        {"metric": "+40%", "label": "производительность"},
+        {"metric": "100%", "label": "real-time visibility"},
+        {"metric": "-80%", "label": "бумажных документов"}
+      ]
+    },
+    "tech_stack": ["React Native", "Node.js", "PostgreSQL", "Redis", "GraphQL", "Google Maps", "HERE", "IoT sensors", "Kafka", "Kubernetes"]
+  },
+  "industry_medtech": {
+    "meta_title": "IT-решения для MedTech и здравоохранения | Swiss Made IT",
+    "meta_description": "Разрабатываем медицинское ПО с соблюдением всех регуляторных требований. От телемедицины до AI-диагностики.",
+    "badge": "MedTech & Healthcare",
+    "hero_title_1": "IT-решения для ",
+    "hero_title_2": "здравоохранения",
+    "hero_description": "Разрабатываем медицинское ПО с соблюдением всех регуляторных требований. От телемедицины до AI-диагностики.",
+    "discuss_project": "Обсудить проект",
+    "view_case": "Смотреть кейс",
+    "challenges_title": "Специфика медицинской IT-разработки",
+    "challenges_subtitle": "Мы знаем все нюансы и требования отрасли здравоохранения",
+    "solutions_title": "Наши решения для MedTech",
+    "case_study_label": "Case Study",
+    "case_challenge": "Задача",
+    "case_solution": "Решение",
+    "tech_title": "Технологии для MedTech",
+    "cta_title": "Готовы обсудить ваш проект?",
+    "cta_description": "Бесплатная консультация с экспертом по медицинским IT-системам. Обсудим регуляторику, архитектуру и сертификацию.",
+    "cta_button": "Запланировать звонок",
+    "challenges": [
+      {"title": "HIPAA & GDPR", "description": "Соответствие строгим требованиям по защите медицинских данных пациентов."},
+      {"title": "MDR/IVDR сертификация", "description": "Подготовка ПО как медицинского изделия к европейской сертификации."},
+      {"title": "Интероперабельность", "description": "Интеграция с HL7 FHIR, DICOM и другими медицинскими стандартами."},
+      {"title": "Надёжность 24/7", "description": "Критически важные системы должны работать без сбоев круглосуточно."}
+    ],
+    "solutions": [
+      {"title": "Телемедицина", "description": "Платформы для удалённых консультаций с видеосвязью и интеграцией EHR.", "features": ["Video calls", "E-prescriptions", "Patient portal"]},
+      {"title": "Медицинские IoT", "description": "Сбор и анализ данных с носимых устройств и медицинского оборудования.", "features": ["Real-time monitoring", "Alert systems", "Data analytics"]},
+      {"title": "AI-диагностика", "description": "Системы компьютерного зрения для анализа медицинских изображений.", "features": ["Image analysis", "Radiology AI", "Pathology"]},
+      {"title": "Клинические системы", "description": "EHR/EMR системы, управление клиникой, расписание и биллинг.", "features": ["HL7 FHIR", "Scheduling", "Billing"]}
+    ],
+    "case_study": {
+      "client": "Swiss Digital Health Startup",
+      "challenge": "Разработка платформы для мониторинга хронических заболеваний",
+      "solution": "Мобильное приложение + облачная платформа с AI-аналитикой и интеграцией с устройствами",
+      "results": [
+        {"metric": "15K", "label": "активных пациентов"},
+        {"metric": "40%", "label": "снижение госпитализаций"},
+        {"metric": "CE Mark", "label": "сертификация получена"},
+        {"metric": "98%", "label": "удовлетворённость врачей"}
+      ]
+    },
+    "tech_stack": ["Python", "TensorFlow", "PyTorch", "PostgreSQL", "MongoDB", "HL7 FHIR", "DICOM", "AWS HealthLake", "Docker", "Kubernetes"]
+  },
   "cases": {
     "meta_title": "Кейсы и портфолио | Swiss Made IT",
     "meta_description": "Реальные проекты наших клиентов. Telegram-боты, веб-платформы, мобильные приложения, автоматизация. Результаты в цифрах.",
