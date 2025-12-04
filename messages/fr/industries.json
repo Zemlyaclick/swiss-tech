@@ -1,0 +1,446 @@
+{
+  "industry_ecommerce": {
+    "meta_title": "Solutions IT E-commerce & Retail | Swiss Made IT",
+    "meta_description": "Boutiques en ligne et marketplaces rapides et à haute conversion. Architecture headless, intégrations, analytics.",
+    "badge": "E-commerce & Retail",
+    "hero_title_1": "Solutions IT pour ",
+    "hero_title_2": "E-Commerce",
+    "hero_description": "Nous développons des boutiques en ligne et marketplaces rapides et à haute conversion. Architecture headless, intégrations, analytics.",
+    "discuss_project": "Discuter du projet",
+    "view_case": "Voir l'étude de cas",
+    "challenges_title": "Défis du e-commerce",
+    "challenges_subtitle": "Nous aidons à résoudre les problèmes clés de la vente en ligne",
+    "solutions_title": "Nos solutions E-commerce",
+    "case_study_label": "Étude de cas",
+    "case_challenge": "Défi",
+    "case_solution": "Solution",
+    "tech_title": "Technologies pour E-commerce",
+    "cta_title": "Prêt à augmenter vos ventes ?",
+    "cta_description": "Audit gratuit de votre boutique en ligne. Nous montrerons le potentiel de croissance de conversion et de vitesse de chargement.",
+    "cta_button": "Obtenir un audit gratuit",
+    "challenges": [
+      {
+        "title": "Conversion",
+        "description": "Augmenter le pourcentage de visiteurs qui effectuent un achat."
+      },
+      {
+        "title": "Vitesse de chargement",
+        "description": "Chaque seconde de retard réduit la conversion de 7%."
+      },
+      {
+        "title": "Évolutivité",
+        "description": "Gérer les pics de charge pendant les soldes sans pannes."
+      },
+      {
+        "title": "Omnicanal",
+        "description": "Expérience d'achat unifiée en ligne, dans l'app et en magasin."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Headless Commerce",
+        "description": "Architecture flexible avec séparation frontend/backend pour une vitesse maximale.",
+        "features": [
+          "Next.js",
+          "Shopify Plus",
+          "Commercetools"
+        ]
+      },
+      {
+        "title": "Marketplaces",
+        "description": "Plateformes multi-vendeurs avec modération, avis et commissions.",
+        "features": [
+          "Multi-vendor",
+          "Reviews",
+          "Payouts"
+        ]
+      },
+      {
+        "title": "Portails B2B",
+        "description": "Plateformes de gros avec prix personnalisés, commandes et intégration ERP.",
+        "features": [
+          "Tiered pricing",
+          "Quick order",
+          "ERP sync"
+        ]
+      },
+      {
+        "title": "Services d'abonnement",
+        "description": "Facturation récurrente, gestion des abonnements, marketing de rétention.",
+        "features": [
+          "Subscriptions",
+          "Churn prevention",
+          "Analytics"
+        ]
+      }
+    ],
+    "case_study": {
+      "client": "Swiss Luxury Brand",
+      "challenge": "Migration de plateforme legacy vers architecture headless sans perte de chiffre d'affaires",
+      "solution": "Migration progressive vers Next.js + Shopify Plus avec préservation SEO et redirections",
+      "results": [
+        {
+          "metric": "+85%",
+          "label": "vitesse de chargement"
+        },
+        {
+          "metric": "+34%",
+          "label": "conversion"
+        },
+        {
+          "metric": "€2,5M",
+          "label": "chiffre d'affaires supplémentaire"
+        },
+        {
+          "metric": "0",
+          "label": "minutes d'indisponibilité"
+        }
+      ]
+    },
+    "tech_stack": [
+      "Next.js",
+      "React",
+      "Shopify Plus",
+      "Commercetools",
+      "Stripe",
+      "Algolia",
+      "Contentful",
+      "Vercel",
+      "CloudFlare",
+      "Redis"
+    ]
+  },
+  "industry_fintech": {
+    "meta_title": "Solutions IT FinTech & Banking | Swiss Made IT",
+    "meta_description": "Systèmes sécurisés et évolutifs pour banques, bourses, services de paiement et entreprises crypto. Conformité FINMA incluse.",
+    "badge": "FinTech & Banking",
+    "hero_title_1": "Solutions IT pour ",
+    "hero_title_2": "secteur financier",
+    "hero_description": "Nous développons des systèmes sécurisés et évolutifs pour banques, bourses, services de paiement et entreprises crypto. Conformité FINMA incluse.",
+    "discuss_project": "Discuter du projet",
+    "view_case": "Voir l'étude de cas",
+    "challenges_title": "Défis du secteur financier",
+    "challenges_subtitle": "Nous comprenons les spécificités du secteur et savons résoudre les problèmes complexes",
+    "solutions_title": "Nos solutions FinTech",
+    "case_study_label": "Étude de cas",
+    "case_challenge": "Défi",
+    "case_solution": "Solution",
+    "tech_title": "Technologies pour FinTech",
+    "cta_title": "Prêt à discuter de votre projet ?",
+    "cta_description": "Consultation gratuite avec notre expert en technologies financières. Nous discuterons architecture, conformité et calendrier.",
+    "cta_button": "Planifier un appel",
+    "challenges": [
+      {
+        "title": "Conformité FINMA",
+        "description": "Respect des exigences réglementaires du superviseur financier suisse et des standards internationaux."
+      },
+      {
+        "title": "Sécurité des données",
+        "description": "Protection niveau bancaire des données personnelles et financières des clients."
+      },
+      {
+        "title": "Charges élevées",
+        "description": "Traitement de milliers de transactions par seconde avec latence minimale."
+      },
+      {
+        "title": "Intégration KYC/AML",
+        "description": "Vérification automatisée des clients et surveillance des transactions suspectes."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Plateformes de trading",
+        "description": "Cotations en temps réel, carnet d'ordres, exécution avec latence minimale.",
+        "features": [
+          "WebSocket",
+          "High-frequency trading",
+          "Risk management"
+        ]
+      },
+      {
+        "title": "Applications bancaires",
+        "description": "Banque mobile et web avec biométrie et opérations multi-devises.",
+        "features": [
+          "PSD2/Open Banking",
+          "SEPA/SWIFT",
+          "Multi-currency"
+        ]
+      },
+      {
+        "title": "Crypto & DeFi",
+        "description": "Solutions custodial et non-custodial pour le travail avec les actifs numériques.",
+        "features": [
+          "Smart contracts",
+          "Cold storage",
+          "Multi-chain"
+        ]
+      },
+      {
+        "title": "Systèmes RegTech",
+        "description": "Automatisation de la conformité, reporting et surveillance des risques.",
+        "features": [
+          "Audit trails",
+          "Real-time monitoring",
+          "Automated reports"
+        ]
+      }
+    ],
+    "case_study": {
+      "client": "Swiss Crypto Exchange",
+      "challenge": "Lancement d'une bourse crypto avec licence FINMA en 6 mois",
+      "solution": "Développement du moteur de trading, solution custodial et module KYC",
+      "results": [
+        {
+          "metric": "50K",
+          "label": "utilisateurs la première année"
+        },
+        {
+          "metric": "<10ms",
+          "label": "latence des ordres"
+        },
+        {
+          "metric": "99,99%",
+          "label": "uptime système"
+        },
+        {
+          "metric": "FINMA",
+          "label": "licence obtenue"
+        }
+      ]
+    },
+    "tech_stack": [
+      "Go",
+      "Rust",
+      "PostgreSQL",
+      "Redis",
+      "Kafka",
+      "Kubernetes",
+      "HSM",
+      "Vault",
+      "Grafana",
+      "ELK Stack"
+    ]
+  },
+  "industry_logistics": {
+    "meta_title": "Solutions IT Logistique & Supply Chain | Swiss Made IT",
+    "meta_description": "Automatisez le transport, l'entrepôt et les chaînes d'approvisionnement. Tracking temps réel, optimisation des itinéraires, analytics.",
+    "badge": "Logistics & Supply Chain",
+    "hero_title_1": "Solutions IT pour ",
+    "hero_title_2": "Logistique",
+    "hero_description": "Nous automatisons le transport, l'entrepôt et les chaînes d'approvisionnement. Tracking temps réel, optimisation des itinéraires, analytics.",
+    "discuss_project": "Discuter du projet",
+    "view_case": "Voir l'étude de cas",
+    "challenges_title": "Défis du business logistique",
+    "challenges_subtitle": "Nous aidons à optimiser les processus et réduire les coûts",
+    "solutions_title": "Nos solutions logistiques",
+    "case_study_label": "Étude de cas",
+    "case_challenge": "Défi",
+    "case_solution": "Solution",
+    "tech_title": "Technologies pour la logistique",
+    "cta_title": "Prêt à optimiser la logistique ?",
+    "cta_description": "Consultation gratuite sur l'automatisation de vos processus logistiques. Nous montrerons le potentiel d'économies.",
+    "cta_button": "Planifier un appel",
+    "challenges": [
+      {
+        "title": "Optimisation des itinéraires",
+        "description": "Réduction des coûts logistiques grâce à une planification intelligente des livraisons."
+      },
+      {
+        "title": "Tracking temps réel",
+        "description": "Suivi du fret et des véhicules en temps réel."
+      },
+      {
+        "title": "Gestion d'entrepôt",
+        "description": "Automatisation des inventaires, comptages et préparation de commandes."
+      },
+      {
+        "title": "Intégrations",
+        "description": "Connexion avec ERP, TMS, services de messagerie et marketplaces."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Systèmes TMS",
+        "description": "Gestion du transport: planification, dispatch, analytics.",
+        "features": [
+          "Route optimization",
+          "Fleet management",
+          "Driver app"
+        ]
+      },
+      {
+        "title": "Systèmes WMS",
+        "description": "Automatisation d'entrepôt: réception, stockage, préparation, expédition.",
+        "features": [
+          "Barcode/RFID",
+          "Pick & pack",
+          "Inventory"
+        ]
+      },
+      {
+        "title": "Livraison dernier kilomètre",
+        "description": "Solutions de messagerie: optimisation, tracking, notifications.",
+        "features": [
+          "Route planning",
+          "POD",
+          "Customer app"
+        ]
+      },
+      {
+        "title": "Supply Chain",
+        "description": "Gestion de la chaîne d'approvisionnement: prévisions, approvisionnement, analytics.",
+        "features": [
+          "Demand forecast",
+          "Supplier portal",
+          "Analytics"
+        ]
+      }
+    ],
+    "case_study": {
+      "client": "Swiss Logistics Provider",
+      "challenge": "Numérisation des opérations logistiques et passage du workflow papier",
+      "solution": "TMS sur mesure avec application mobile chauffeur et portail client",
+      "results": [
+        {
+          "metric": "-25%",
+          "label": "coûts carburant"
+        },
+        {
+          "metric": "+40%",
+          "label": "productivité"
+        },
+        {
+          "metric": "100%",
+          "label": "visibilité temps réel"
+        },
+        {
+          "metric": "-80%",
+          "label": "documents papier"
+        }
+      ]
+    },
+    "tech_stack": [
+      "React Native",
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "GraphQL",
+      "Google Maps",
+      "HERE",
+      "IoT sensors",
+      "Kafka",
+      "Kubernetes"
+    ]
+  },
+  "industry_medtech": {
+    "meta_title": "Solutions IT MedTech & Healthcare | Swiss Made IT",
+    "meta_description": "Nous développons des logiciels médicaux conformes à toutes les exigences réglementaires. De la télémédecine au diagnostic IA.",
+    "badge": "MedTech & Healthcare",
+    "hero_title_1": "Solutions IT pour ",
+    "hero_title_2": "Santé",
+    "hero_description": "Nous développons des logiciels médicaux conformes à toutes les exigences réglementaires. De la télémédecine au diagnostic IA.",
+    "discuss_project": "Discuter du projet",
+    "view_case": "Voir l'étude de cas",
+    "challenges_title": "Spécificités du développement IT médical",
+    "challenges_subtitle": "Nous connaissons toutes les nuances et exigences du secteur de la santé",
+    "solutions_title": "Nos solutions MedTech",
+    "case_study_label": "Étude de cas",
+    "case_challenge": "Défi",
+    "case_solution": "Solution",
+    "tech_title": "Technologies pour MedTech",
+    "cta_title": "Prêt à discuter de votre projet ?",
+    "cta_description": "Consultation gratuite avec un expert en systèmes IT médicaux. Nous discuterons réglementation, architecture et certification.",
+    "cta_button": "Planifier un appel",
+    "challenges": [
+      {
+        "title": "HIPAA & GDPR",
+        "description": "Conformité aux exigences strictes de protection des données médicales des patients."
+      },
+      {
+        "title": "Certification MDR/IVDR",
+        "description": "Préparation du logiciel comme dispositif médical pour la certification européenne."
+      },
+      {
+        "title": "Interopérabilité",
+        "description": "Intégration avec HL7 FHIR, DICOM et autres standards médicaux."
+      },
+      {
+        "title": "Fiabilité 24/7",
+        "description": "Les systèmes critiques doivent fonctionner en continu sans pannes."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Télémédecine",
+        "description": "Plateformes de consultations à distance avec appels vidéo et intégration EHR.",
+        "features": [
+          "Video calls",
+          "E-prescriptions",
+          "Patient portal"
+        ]
+      },
+      {
+        "title": "IoT médical",
+        "description": "Collecte et analyse de données des appareils portables et équipements médicaux.",
+        "features": [
+          "Real-time monitoring",
+          "Alert systems",
+          "Data analytics"
+        ]
+      },
+      {
+        "title": "Diagnostic IA",
+        "description": "Systèmes de vision par ordinateur pour l'analyse d'images médicales.",
+        "features": [
+          "Image analysis",
+          "Radiology AI",
+          "Pathology"
+        ]
+      },
+      {
+        "title": "Systèmes cliniques",
+        "description": "Systèmes EHR/EMR, gestion de clinique, planning et facturation.",
+        "features": [
+          "HL7 FHIR",
+          "Scheduling",
+          "Billing"
+        ]
+      }
+    ],
+    "case_study": {
+      "client": "Swiss Digital Health Startup",
+      "challenge": "Développement d'une plateforme de surveillance des maladies chroniques",
+      "solution": "Application mobile + plateforme cloud avec analytics IA et intégration d'appareils",
+      "results": [
+        {
+          "metric": "15K",
+          "label": "patients actifs"
+        },
+        {
+          "metric": "40%",
+          "label": "moins d'hospitalisations"
+        },
+        {
+          "metric": "CE Mark",
+          "label": "certification obtenue"
+        },
+        {
+          "metric": "98%",
+          "label": "satisfaction médecins"
+        }
+      ]
+    },
+    "tech_stack": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "PostgreSQL",
+      "MongoDB",
+      "HL7 FHIR",
+      "DICOM",
+      "AWS HealthLake",
+      "Docker",
+      "Kubernetes"
+    ]
+  }
+}

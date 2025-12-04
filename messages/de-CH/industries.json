@@ -1,0 +1,446 @@
+{
+  "industry_ecommerce": {
+    "meta_title": "E-commerce & Retail IT-Lösige | Swiss Made IT",
+    "meta_description": "Schnelli, konversionsstarchii Online-Shops und Märtplätz. Headless-Architektur, Integratione, Analyse.",
+    "badge": "E-commerce & Retail",
+    "hero_title_1": "IT-Lösige für ",
+    "hero_title_2": "E-Commerce",
+    "hero_description": "Mir entwickled schnelli, konversionsstarchii Online-Shops und Märtplätz. Headless-Architektur, Integratione, Analyse.",
+    "discuss_project": "Projekt bespräche",
+    "view_case": "Fallstudie aaluege",
+    "challenges_title": "E-Commerce-Gschäftsherausforderige",
+    "challenges_subtitle": "Mir hälfed bi de Lösig vo wichtige Online-Retail-Problem",
+    "solutions_title": "Üseri E-Commerce-Lösige",
+    "case_study_label": "Fallstudie",
+    "case_challenge": "Herausforderig",
+    "case_solution": "Lösig",
+    "tech_title": "Technologie für E-Commerce",
+    "cta_title": "Parat, de Umsatz z'steigere?",
+    "cta_description": "Gratispröefig vo dim Online-Shop. Mir zeigend Wachstumspotenzial für Conversion und Ladegschwindi.",
+    "cta_button": "Gratis-Audit übercho",
+    "challenges": [
+      {
+        "title": "Conversion",
+        "description": "Erhöhig vom Prozentsatz vo de Bsuecher, wo en Chauf mached."
+      },
+      {
+        "title": "Ladegschwindi",
+        "description": "Jedi Sekunde Verzögerig reduziert d'Conversion um 7%."
+      },
+      {
+        "title": "Skalierig",
+        "description": "Bewältigung vo Spitzelascht während de Verkaufssaison ohni Usfäll."
+      },
+      {
+        "title": "Omnichannel",
+        "description": "Einheitlichs Ichaufserläbnis online, id App und im Lade."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Headless Commerce",
+        "description": "Flexibli Architektur mit Frontend/Backend-Trännig für maximali Gschwindi.",
+        "features": [
+          "Next.js",
+          "Shopify Plus",
+          "Commercetools"
+        ]
+      },
+      {
+        "title": "Märtplätz",
+        "description": "Multi-Vendor-Plattforme mit Moderation, Bewärtige und Provisione.",
+        "features": [
+          "Multi-vendor",
+          "Reviews",
+          "Payouts"
+        ]
+      },
+      {
+        "title": "B2B-Portal",
+        "description": "Grosshandelsplattforme mit personalisierte Priise, Bstellige und ERP-Integration.",
+        "features": [
+          "Tiered pricing",
+          "Quick order",
+          "ERP sync"
+        ]
+      },
+      {
+        "title": "Abo-Services",
+        "description": "Recurring Billing, Aboverwältig, Retention Marketing.",
+        "features": [
+          "Subscriptions",
+          "Churn prevention",
+          "Analytics"
+        ]
+      }
+    ],
+    "case_study": {
+      "client": "Swiss Luxury Brand",
+      "challenge": "Migration vo Legacy-Plattform uf Headless-Architektur ohni Umsatzverlust",
+      "solution": "Schrittwiisi Migration uf Next.js + Shopify Plus mit SEO-Erhaltig und Redirects",
+      "results": [
+        {
+          "metric": "+85%",
+          "label": "Ladegschwindi"
+        },
+        {
+          "metric": "+34%",
+          "label": "Conversion"
+        },
+        {
+          "metric": "CHF 2,5M",
+          "label": "zusätzliche Umsatz"
+        },
+        {
+          "metric": "0",
+          "label": "Minute Usfallziit"
+        }
+      ]
+    },
+    "tech_stack": [
+      "Next.js",
+      "React",
+      "Shopify Plus",
+      "Commercetools",
+      "Stripe",
+      "Algolia",
+      "Contentful",
+      "Vercel",
+      "CloudFlare",
+      "Redis"
+    ]
+  },
+  "industry_fintech": {
+    "meta_title": "FinTech & Banking IT-Lösige | Swiss Made IT",
+    "meta_description": "Sicheri, skalierbari System für Banke, Börse, Zahligs-Dienst und Krypto-Unternähme. FINMA-Compliance inklusive.",
+    "badge": "FinTech & Banking",
+    "hero_title_1": "IT-Lösige für ",
+    "hero_title_2": "Finanzsektor",
+    "hero_description": "Mir entwickled sicheri, skalierbari System für Banke, Börse, Zahligs-Dienst und Krypto-Unternähme. FINMA-Compliance inklusive.",
+    "discuss_project": "Projekt bespräche",
+    "view_case": "Fallstudie aaluege",
+    "challenges_title": "Herausforderige vo de Finanzbranche",
+    "challenges_subtitle": "Mir verstönd d'Branchespezifika und wüssed, wie komplizierti Problem z'löse sind",
+    "solutions_title": "Üseri FinTech-Lösige",
+    "case_study_label": "Fallstudie",
+    "case_challenge": "Herausforderig",
+    "case_solution": "Lösig",
+    "tech_title": "Technologie für FinTech",
+    "cta_title": "Parat, dis Projekt z'bespräche?",
+    "cta_description": "Gratis Beratig mit üsem Finanztechnologie-Expert. Mir bespräched Architektur, Compliance und Ziitplan.",
+    "cta_button": "Gschpröch vereinbare",
+    "challenges": [
+      {
+        "title": "FINMA Compliance",
+        "description": "Erfüllig vo de regulatorische Aforderige vo de Schwizer Finanzufsicht und internationale Standards."
+      },
+      {
+        "title": "Datesicherheit",
+        "description": "Bankenniveau-Schutz vo persönliche und finanzielle Kundedate."
+      },
+      {
+        "title": "Höchi Lascht",
+        "description": "Verarbitig vo tusige Transaktione pro Sekunde mit minimaler Latenz."
+      },
+      {
+        "title": "KYC/AML-Integration",
+        "description": "Automatisierti Kundeprüefig und Überwachiig vo verdächtige Transaktione."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Handelsplattforme",
+        "description": "Echtziit-Kurs, Orderbuch, Handelsusführig mit minimaler Latenz.",
+        "features": [
+          "WebSocket",
+          "High-frequency trading",
+          "Risk management"
+        ]
+      },
+      {
+        "title": "Banking-Apps",
+        "description": "Mobili und Web-Banking mit Biometrie und Multi-Währigs-Operatione.",
+        "features": [
+          "PSD2/Open Banking",
+          "SEPA/SWIFT",
+          "Multi-currency"
+        ]
+      },
+      {
+        "title": "Crypto & DeFi",
+        "description": "Custodial und Non-Custodial-Lösige für d'Arbet mit digitale Vermögenswärt.",
+        "features": [
+          "Smart contracts",
+          "Cold storage",
+          "Multi-chain"
+        ]
+      },
+      {
+        "title": "RegTech-System",
+        "description": "Compliance-Automatisierig, Reporting und Risikoüberwachiig.",
+        "features": [
+          "Audit trails",
+          "Real-time monitoring",
+          "Automated reports"
+        ]
+      }
+    ],
+    "case_study": {
+      "client": "Swiss Crypto Exchange",
+      "challenge": "Start vonere Kryptowährigsbörse mit FINMA-Lizenz in 6 Mönet",
+      "solution": "Entwicklig vo Trading-Engine, Custodial-Lösig und KYC-Modul",
+      "results": [
+        {
+          "metric": "50K",
+          "label": "Nutzer im erschte Jahr"
+        },
+        {
+          "metric": "<10ms",
+          "label": "Order-Latenz"
+        },
+        {
+          "metric": "99,99%",
+          "label": "System-Uptime"
+        },
+        {
+          "metric": "FINMA",
+          "label": "Lizenz erhalte"
+        }
+      ]
+    },
+    "tech_stack": [
+      "Go",
+      "Rust",
+      "PostgreSQL",
+      "Redis",
+      "Kafka",
+      "Kubernetes",
+      "HSM",
+      "Vault",
+      "Grafana",
+      "ELK Stack"
+    ]
+  },
+  "industry_logistics": {
+    "meta_title": "Logistik & Supply Chain IT-Lösige | Swiss Made IT",
+    "meta_description": "Automatisiered Transport, Lager und Lieferkette. Echtziit-Tracking, Routeoptimierig, Analyse.",
+    "badge": "Logistics & Supply Chain",
+    "hero_title_1": "IT-Lösige für ",
+    "hero_title_2": "Logistik",
+    "hero_description": "Mir automatisiered Transport, Lager und Lieferkette. Echtziit-Tracking, Routeoptimierig, Analyse.",
+    "discuss_project": "Projekt bespräche",
+    "view_case": "Fallstudie aaluege",
+    "challenges_title": "Herausforderige vom Logistik-Gschäft",
+    "challenges_subtitle": "Mir hälfed, Abläuf z'optimiere und Choschte z'sänke",
+    "solutions_title": "Üseri Logistik-Lösige",
+    "case_study_label": "Fallstudie",
+    "case_challenge": "Herausforderig",
+    "case_solution": "Lösig",
+    "tech_title": "Technologie für Logistik",
+    "cta_title": "Parat, d'Logistik z'optimiere?",
+    "cta_description": "Gratis Beratig zur Automatisierig vo dinä Logistikprozäss. Mir zeigend Sparpotenzial.",
+    "cta_button": "Gschpröch vereinbare",
+    "challenges": [
+      {
+        "title": "Routeoptimierig",
+        "description": "Sänkig vo de Logistikchöschte dur intelligänti Lieferplanig."
+      },
+      {
+        "title": "Echtziit-Tracking",
+        "description": "Verfolgig vo Fracht und Fahrzüüg in Echtziit."
+      },
+      {
+        "title": "Lagerverwältig",
+        "description": "Automatisierig vo Inventar, Bestandsufnahm und Kommissionierig."
+      },
+      {
+        "title": "Integratione",
+        "description": "Verbindig mit ERP, TMS, Kurierdienst und Märtplätz."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "TMS-System",
+        "description": "Transportmanagement: Planig, Disposition, Analyse.",
+        "features": [
+          "Route optimization",
+          "Fleet management",
+          "Driver app"
+        ]
+      },
+      {
+        "title": "WMS-System",
+        "description": "Lagerautomatisierig: Wareiigang, Lagerig, Kommissionierig, Versand.",
+        "features": [
+          "Barcode/RFID",
+          "Pick & pack",
+          "Inventory"
+        ]
+      },
+      {
+        "title": "Last-Mile-Delivery",
+        "description": "Kurierlösige: Optimierig, Tracking, Benachrichtige.",
+        "features": [
+          "Route planning",
+          "POD",
+          "Customer app"
+        ]
+      },
+      {
+        "title": "Supply Chain",
+        "description": "Liefer-Kette-Management: Prognose, Beschaffig, Analyse.",
+        "features": [
+          "Demand forecast",
+          "Supplier portal",
+          "Analytics"
+        ]
+      }
+    ],
+    "case_study": {
+      "client": "Swiss Logistics Provider",
+      "challenge": "Digitalisierg vo de Logistikabläuf und Umstellig vo Papier-Workflow",
+      "solution": "Massgnäits TMS mit mobiler Fahrer-App und Kundeportal",
+      "results": [
+        {
+          "metric": "-25%",
+          "label": "Treibstoffchöschte"
+        },
+        {
+          "metric": "+40%",
+          "label": "Produktivität"
+        },
+        {
+          "metric": "100%",
+          "label": "Echtziit-Sichtbarkeit"
+        },
+        {
+          "metric": "-80%",
+          "label": "Papierdokumänt"
+        }
+      ]
+    },
+    "tech_stack": [
+      "React Native",
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "GraphQL",
+      "Google Maps",
+      "HERE",
+      "IoT sensors",
+      "Kafka",
+      "Kubernetes"
+    ]
+  },
+  "industry_medtech": {
+    "meta_title": "MedTech & Healthcare IT-Lösige | Swiss Made IT",
+    "meta_description": "Mir entwickled medizinischi Software unter Ihaltig vo allne regulatorische Aforderige. Vo Telemedizin bis KI-Diagnostik.",
+    "badge": "MedTech & Healthcare",
+    "hero_title_1": "IT-Lösige für ",
+    "hero_title_2": "Gsundheitswäse",
+    "hero_description": "Mir entwickled medizinischi Software unter Ihaltig vo allne regulatorische Aforderige. Vo Telemedizin bis KI-Diagnostik.",
+    "discuss_project": "Projekt bespräche",
+    "view_case": "Fallstudie aaluege",
+    "challenges_title": "Besonderheite vo de medizinische IT-Entwicklig",
+    "challenges_subtitle": "Mir känned alli Nuance und Aforderige vo de Gsundheitsbranche",
+    "solutions_title": "Üseri MedTech-Lösige",
+    "case_study_label": "Fallstudie",
+    "case_challenge": "Herausforderig",
+    "case_solution": "Lösig",
+    "tech_title": "Technologie für MedTech",
+    "cta_title": "Parat, dis Projekt z'bespräche?",
+    "cta_description": "Gratis Beratig mit emne Expert für medizinischi IT-System. Mir bespräched Regulierig, Architektur und Zertifikatione.",
+    "cta_button": "Gschpröch vereinbare",
+    "challenges": [
+      {
+        "title": "HIPAA & GDPR",
+        "description": "Ihaltig vo strenge Aforderige zum Schutz vo medizinische Patientedate."
+      },
+      {
+        "title": "MDR/IVDR-Zertifizierig",
+        "description": "Vorbereitig vo Software als Medizinprodukt für europäischi Zertifizierig."
+      },
+      {
+        "title": "Interoperabilität",
+        "description": "Integration mit HL7 FHIR, DICOM und anderne medizinische Standards."
+      },
+      {
+        "title": "24/7-Zueverlässigkeit",
+        "description": "Kritischi System muebed rund um d'Uhr ohni Usfäll funktioniere."
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Telemedizin",
+        "description": "Plattforme für Fernkonsultatione mit Videoanrüef und EHR-Integration.",
+        "features": [
+          "Video calls",
+          "E-prescriptions",
+          "Patient portal"
+        ]
+      },
+      {
+        "title": "Medizinischs IoT",
+        "description": "Dateerfassig und -analyse vo tragbare Grät und medizinischer Usrüstig.",
+        "features": [
+          "Real-time monitoring",
+          "Alert systems",
+          "Data analytics"
+        ]
+      },
+      {
+        "title": "KI-Diagnostik",
+        "description": "Computer-Vision-System für d'Analyse vo medizinische Bilder.",
+        "features": [
+          "Image analysis",
+          "Radiology AI",
+          "Pathology"
+        ]
+      },
+      {
+        "title": "Klinischi System",
+        "description": "EHR/EMR-System, Klinikmanagement, Terminplanig und Abrächnig.",
+        "features": [
+          "HL7 FHIR",
+          "Scheduling",
+          "Billing"
+        ]
+      }
+    ],
+    "case_study": {
+      "client": "Swiss Digital Health Startup",
+      "challenge": "Entwicklig vonere Plattform zur Überwachiig vo chronische Chrankheite",
+      "solution": "Mobili App + Cloud-Plattform mit KI-Analytik und Grät-Integration",
+      "results": [
+        {
+          "metric": "15K",
+          "label": "aktivi Patiente"
+        },
+        {
+          "metric": "40%",
+          "label": "weniger Spitalufenthalte"
+        },
+        {
+          "metric": "CE Mark",
+          "label": "Zertifikat übercho"
+        },
+        {
+          "metric": "98%",
+          "label": "Ärzt-Zfriedeheit"
+        }
+      ]
+    },
+    "tech_stack": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "PostgreSQL",
+      "MongoDB",
+      "HL7 FHIR",
+      "DICOM",
+      "AWS HealthLake",
+      "Docker",
+      "Kubernetes"
+    ]
+  }
+}

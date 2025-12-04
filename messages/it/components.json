@@ -1,0 +1,214 @@
+{
+  "ai_chat": {
+    "greeting": "Ciao! 👋 Sono il consulente AI di Swiss Tech Solutions. Come posso aiutarti?",
+    "error": "Spiacente, si è verificato un errore. Riprova più tardi o contattaci tramite il modulo sul sito.",
+    "title": "Consulente AI",
+    "company": "Swiss Tech Solutions",
+    "online": "Online",
+    "placeholder": "Scrivi un messaggio..."
+  },
+  "contact_form": {
+    "success_title": "Richiesta inviata!",
+    "success_message": "Ti contatteremo entro 2 ore durante l'orario lavorativo.",
+    "send_another": "Invia un'altra richiesta",
+    "error_title": "Invio fallito",
+    "error_message": "Riprova o scrivici direttamente a hello@swissmade.it",
+    "name_label": "Nome",
+    "name_placeholder": "Il tuo nome",
+    "name_error": "Inserisci il tuo nome",
+    "email_label": "Email",
+    "email_error": "Inserisci la tua email",
+    "email_invalid": "Email non valida",
+    "company_label": "Azienda",
+    "company_placeholder": "Nome dell'azienda",
+    "phone_label": "Telefono",
+    "phone_placeholder": "+41 12 345 67 89",
+    "service_label": "Servizio desiderato",
+    "service_placeholder": "Seleziona un servizio",
+    "budget_label": "Budget approssimativo",
+    "budget_placeholder": "Seleziona un intervallo",
+    "message_label": "Descrivi il tuo compito",
+    "message_placeholder": "Raccontaci del tuo progetto, compiti, scadenze...",
+    "message_error": "Descrivi il tuo compito",
+    "submit": "Invia richiesta",
+    "submitting": "Invio in corso...",
+    "privacy_text": "Cliccando il pulsante, accetti la",
+    "privacy_link": "politica sulla privacy",
+    "services": [
+      {
+        "value": "digital-reboot",
+        "label": "Riavvio Digitale"
+      },
+      {
+        "value": "turnkey",
+        "label": "Partner IT chiavi in mano"
+      },
+      {
+        "value": "websites",
+        "label": "Sviluppo Web"
+      },
+      {
+        "value": "mobile",
+        "label": "App Mobile"
+      },
+      {
+        "value": "telegram",
+        "label": "Bot/Mini App Telegram"
+      },
+      {
+        "value": "automation",
+        "label": "Automazione"
+      },
+      {
+        "value": "ai",
+        "label": "Integrazione AI"
+      },
+      {
+        "value": "cloud",
+        "label": "Migrazione Cloud"
+      },
+      {
+        "value": "security",
+        "label": "Cybersicurezza"
+      },
+      {
+        "value": "other",
+        "label": "Altro"
+      }
+    ],
+    "budgets": [
+      {
+        "value": "under-5k",
+        "label": "Meno di 5.000 CHF"
+      },
+      {
+        "value": "5k-15k",
+        "label": "5.000 — 15.000 CHF"
+      },
+      {
+        "value": "15k-50k",
+        "label": "15.000 — 50.000 CHF"
+      },
+      {
+        "value": "50k-100k",
+        "label": "50.000 — 100.000 CHF"
+      },
+      {
+        "value": "over-100k",
+        "label": "Oltre 100.000 CHF"
+      },
+      {
+        "value": "not-sure",
+        "label": "Consultazione necessaria"
+      }
+    ]
+  },
+  "price_calculator": {
+    "badge": "Stima in 30 secondi",
+    "title": "Calcolatore dei costi",
+    "description": "Ottieni una stima preliminare del tuo progetto. Preciseremo il prezzo esatto dopo il briefing.",
+    "step1": "1. Tipo di progetto",
+    "step2": "2. Complessità",
+    "step3": "3. Funzionalità aggiuntive",
+    "collapse": "Comprimi",
+    "show_all": "Mostra tutto",
+    "estimate_title": "Stima preliminare",
+    "cost_label": "Costo",
+    "time_label": "Tempo di sviluppo",
+    "fixed_price": "Prezzo fisso",
+    "support_60": "60 giorni di supporto",
+    "nda_included": "NDA incluso",
+    "get_exact": "Ottieni preventivo esatto",
+    "preliminary_note": "Questa è una stima preliminare",
+    "time_2_4_weeks": "2-4 settimane",
+    "time_1_2_months": "1-2 mesi",
+    "time_2_3_months": "2-3 mesi",
+    "time_3_6_months": "3-6 mesi",
+    "project_types": [
+      {
+        "id": "webapp",
+        "name": "App Web",
+        "icon": "🌐"
+      },
+      {
+        "id": "mobile",
+        "name": "App Mobile",
+        "icon": "📱"
+      },
+      {
+        "id": "telegram",
+        "name": "Telegram Mini App",
+        "icon": "✈️"
+      },
+      {
+        "id": "ai",
+        "name": "Integrazione AI",
+        "icon": "🤖"
+      },
+      {
+        "id": "automation",
+        "name": "Automazione",
+        "icon": "⚡"
+      }
+    ],
+    "complexity_levels": [
+      {
+        "id": "simple",
+        "name": "Base",
+        "description": "MVP o prototipo"
+      },
+      {
+        "id": "medium",
+        "name": "Standard",
+        "description": "Progetto tipico"
+      },
+      {
+        "id": "complex",
+        "name": "Avanzato",
+        "description": "Integrazione complessa"
+      }
+    ],
+    "features": [
+      {
+        "id": "auth",
+        "name": "Autenticazione",
+        "description": "OAuth, 2FA, SSO"
+      },
+      {
+        "id": "payments",
+        "name": "Pagamenti",
+        "description": "Stripe, crypto"
+      },
+      {
+        "id": "analytics",
+        "name": "Analitica",
+        "description": "Dashboard, report"
+      },
+      {
+        "id": "multilang",
+        "name": "Multilingua",
+        "description": "i18n, traduzioni"
+      },
+      {
+        "id": "admin",
+        "name": "Pannello Admin",
+        "description": "CMS, gestione"
+      },
+      {
+        "id": "notifications",
+        "name": "Notifiche",
+        "description": "Push, email, SMS"
+      },
+      {
+        "id": "integrations",
+        "name": "Integrazioni API",
+        "description": "Servizi terzi"
+      },
+      {
+        "id": "security",
+        "name": "Sicurezza+",
+        "description": "Audit, pentest"
+      }
+    ]
+  }
+}

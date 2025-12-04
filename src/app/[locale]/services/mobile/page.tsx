@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { 
@@ -22,133 +23,57 @@ import {
   Cpu
 } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Мобильные приложения | Swiss IT',
-  description: 'Разработка нативных и кроссплатформенных мобильных приложений для iOS и Android. React Native, Flutter, Swift, Kotlin.',
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: 'services_mobile' });
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+  };
+}
 
 export default async function MobilePage({ params }: { params: { locale: 'en' | 'de' | 'fr' | 'it' | 'de-CH' | 'ru' } }) {
   const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: 'services_mobile' });
 
-  const problems = [
-    {
-      icon: Clock,
-      title: 'Долгая разработка',
-      description: 'Отдельные команды для iOS и Android — двойные сроки и бюджет'
-    },
-    {
-      icon: Users,
-      title: 'Потеря пользователей',
-      description: '77% пользователей удаляют приложение после первого использования'
-    },
-    {
-      icon: Zap,
-      title: 'Низкая производительность',
-      description: 'Приложение тормозит, разряжает батарею, занимает много памяти'
-    },
-    {
-      icon: Shield,
-      title: 'Проблемы с безопасностью',
-      description: 'Утечки данных, взломы, отклонение в App Store'
-    },
-    {
-      icon: TrendingUp,
-      title: 'Сложное масштабирование',
-      description: 'Архитектура не позволяет добавлять новые функции'
-    },
-    {
-      icon: Globe,
-      title: 'Нет офлайн-режима',
-      description: 'Без интернета приложение бесполезно'
-    }
-  ];
+  const problemIcons = [Clock, Users, Zap, Shield, TrendingUp, Globe];
+  const benefitIcons = [Smartphone, Zap, Shield, Bell, Wifi, TrendingUp];
+  const appTypeIcons = [Users, Layers, MapPin, Camera, Bell, TrendingUp];
 
-  const benefits = [
-    {
-      icon: Smartphone,
-      title: 'Один код — две платформы',
-      description: 'React Native и Flutter позволяют выпустить приложение для iOS и Android одновременно, сократив бюджет на 40%'
-    },
-    {
-      icon: Zap,
-      title: 'Нативная производительность',
-      description: 'Используем нативные модули там, где нужна скорость. 60 FPS анимации, быстрый запуск, экономия батареи'
-    },
-    {
-      icon: Shield,
-      title: 'Безопасность по умолчанию',
-      description: 'Шифрование данных, безопасное хранение токенов, защита от реверс-инжиниринга, соответствие GDPR'
-    },
-    {
-      icon: Bell,
-      title: 'Push-уведомления',
-      description: 'Персонализированные пуши увеличивают retention на 3-10x. Сегментация, A/B тесты, deep links'
-    },
-    {
-      icon: Wifi,
-      title: 'Офлайн-режим',
-      description: 'Приложение работает без интернета. Синхронизация данных при восстановлении связи'
-    },
-    {
-      icon: TrendingUp,
-      title: 'Аналитика и A/B тесты',
-      description: 'Firebase Analytics, Mixpanel, Amplitude. Понимайте пользователей и оптимизируйте конверсию'
-    }
-  ];
+  const problems = problemIcons.map((icon, index) => ({
+    icon,
+    title: t(`problems.${index}.title`),
+    description: t(`problems.${index}.description`)
+  }));
 
-  const comparison = [
-    { feature: 'Время разработки', web: '2-3 месяца', native: '4-6 месяцев на платформу', cross: '3-4 месяца на обе' },
-    { feature: 'Производительность', web: '70%', native: '100%', cross: '95%' },
-    { feature: 'Доступ к API устройства', web: 'Ограничен', native: 'Полный', cross: 'Почти полный' },
-    { feature: 'Стоимость поддержки', web: 'Низкая', native: 'Высокая (2 кодовые базы)', cross: 'Средняя' },
-    { feature: 'Push-уведомления', web: 'Ограничены', native: 'Полные', cross: 'Полные' },
-    { feature: 'Офлайн-режим', web: 'Ограничен', native: 'Полный', cross: 'Полный' },
-    { feature: 'Публикация в сторах', web: 'Не нужна', native: 'Обязательна', cross: 'Обязательна' }
-  ];
+  const benefits = benefitIcons.map((icon, index) => ({
+    icon,
+    title: t(`benefits.${index}.title`),
+    description: t(`benefits.${index}.description`)
+  }));
 
-  const appTypes = [
-    {
-      icon: Users,
-      title: 'B2C приложения',
-      description: 'Приложения для конечных пользователей: маркетплейсы, доставка, фитнес, финансы',
-      features: ['Красивый UI/UX', 'Онбординг', 'Платежи', 'Социальные функции']
-    },
-    {
-      icon: Layers,
-      title: 'B2B приложения',
-      description: 'Корпоративные приложения: CRM, ERP, складской учёт, логистика',
-      features: ['Интеграция с бэкендом', 'Ролевой доступ', 'Отчётность', 'Офлайн-режим']
-    },
-    {
-      icon: MapPin,
-      title: 'Геолокационные',
-      description: 'Приложения с картами: такси, доставка, трекинг, навигация',
-      features: ['Карты и маршруты', 'Геозоны', 'Отслеживание', 'Фоновая геолокация']
-    },
-    {
-      icon: Camera,
-      title: 'Мультимедийные',
-      description: 'Работа с камерой, видео, AR: сканеры, фильтры, обучающие приложения',
-      features: ['Камера и галерея', 'AR-эффекты', 'Обработка видео', 'ML-модели']
-    },
-    {
-      icon: Bell,
-      title: 'IoT и умный дом',
-      description: 'Управление устройствами: умный дом, носимые устройства, датчики',
-      features: ['Bluetooth/BLE', 'MQTT/WebSocket', 'Виджеты', 'Уведомления']
-    },
-    {
-      icon: TrendingUp,
-      title: 'Финтех',
-      description: 'Банкинг, инвестиции, криптовалюты, страхование',
-      features: ['Биометрия', 'PCI DSS', 'KYC/AML', 'Платёжные системы']
-    }
-  ];
+  const comparison = [0, 1, 2, 3, 4, 5, 6].map(index => ({
+    feature: t(`comparison.${index}.feature`),
+    web: t(`comparison.${index}.web`),
+    native: t(`comparison.${index}.native`),
+    cross: t(`comparison.${index}.cross`)
+  }));
+
+  const appTypes = appTypeIcons.map((icon, index) => ({
+    icon,
+    title: t(`app_types.${index}.title`),
+    description: t(`app_types.${index}.description`),
+    features: [
+      t(`app_types.${index}.features.0`),
+      t(`app_types.${index}.features.1`),
+      t(`app_types.${index}.features.2`),
+      t(`app_types.${index}.features.3`)
+    ]
+  }));
 
   const techStack = [
-    { name: 'React Native', category: 'Кроссплатформа' },
-    { name: 'Flutter', category: 'Кроссплатформа' },
-    { name: 'Expo', category: 'Кроссплатформа' },
+    { name: 'React Native', category: 'Cross-platform' },
+    { name: 'Flutter', category: 'Cross-platform' },
+    { name: 'Expo', category: 'Cross-platform' },
     { name: 'Swift', category: 'iOS Native' },
     { name: 'SwiftUI', category: 'iOS Native' },
     { name: 'Kotlin', category: 'Android Native' },
@@ -160,62 +85,28 @@ export default async function MobilePage({ params }: { params: { locale: 'en' | 
     { name: 'Fastlane', category: 'CI/CD' }
   ];
 
-  const process = [
-    {
-      step: '01',
-      title: 'Дизайн и прототип',
-      duration: '2-3 недели',
-      description: 'UX-исследование, wireframes, UI-дизайн в Figma. Интерактивный прототип для тестирования с пользователями.',
-      deliverables: ['User Flow', 'UI Kit', 'Прототип', 'Дизайн-система']
-    },
-    {
-      step: '02',
-      title: 'Разработка MVP',
-      duration: '6-10 недель',
-      description: 'Разработка ключевого функционала. Еженедельные билды для тестирования. Интеграция с бэкендом.',
-      deliverables: ['TestFlight/Firebase', 'API интеграция', 'Push-уведомления', 'Аналитика']
-    },
-    {
-      step: '03',
-      title: 'Тестирование и запуск',
-      duration: '2-3 недели',
-      description: 'QA на реальных устройствах, бета-тестирование, подготовка к публикации, ревью в сторах.',
-      deliverables: ['Тест-кейсы', 'App Store Connect', 'Google Play Console', 'ASO']
-    },
-    {
-      step: '04',
-      title: 'Рост и развитие',
-      duration: 'Постоянно',
-      description: 'Анализ метрик, A/B тесты, новые фичи по обратной связи. Обновления под новые версии iOS/Android.',
-      deliverables: ['Roadmap', 'Метрики роста', 'Обновления', 'Поддержка']
-    }
-  ];
+  const process = [0, 1, 2, 3].map(index => ({
+    step: t(`process.${index}.step`),
+    title: t(`process.${index}.title`),
+    duration: t(`process.${index}.duration`),
+    description: t(`process.${index}.description`),
+    deliverables: [
+      t(`process.${index}.deliverables.0`),
+      t(`process.${index}.deliverables.1`),
+      t(`process.${index}.deliverables.2`),
+      t(`process.${index}.deliverables.3`)
+    ]
+  }));
 
-  const results = [
-    { metric: '4.8+', label: 'Средний рейтинг в сторах' },
-    { metric: '500K+', label: 'Загрузок приложений' },
-    { metric: '40%', label: 'Экономия на кроссплатформе' },
-    { metric: '< 2 сек', label: 'Время холодного старта' }
-  ];
+  const results = [0, 1, 2, 3].map(index => ({
+    metric: t(`results.${index}.metric`),
+    label: t(`results.${index}.label`)
+  }));
 
-  const faq = [
-    {
-      question: 'React Native или Flutter?',
-      answer: 'Если у вас уже есть веб на React — выбирайте React Native, команда сможет переиспользовать знания. Flutter даёт лучшую производительность и полный контроль над UI. Для большинства бизнес-приложений разница минимальна.'
-    },
-    {
-      question: 'Когда нужна нативная разработка?',
-      answer: 'Для максимальной производительности (игры, AR/VR), специфичных API устройства (HealthKit, ARKit), или когда Apple/Google требуют нативный код. В остальных 90% случаев кроссплатформа — оптимальный выбор.'
-    },
-    {
-      question: 'Сколько времени занимает публикация?',
-      answer: 'Google Play — 1-3 дня на первый релиз. App Store — 1-7 дней, первый релиз может занять до 2 недель. Мы готовим все материалы заранее и знаем требования сторов.'
-    },
-    {
-      question: 'Как обновлять приложение без релиза?',
-      answer: 'Используем CodePush для React Native и Shorebird для Flutter. Можно обновить JS-код и UI без публикации в сторы. Нативный код всё равно требует релиза.'
-    }
-  ];
+  const faq = [0, 1, 2, 3].map(index => ({
+    question: t(`faq.${index}.question`),
+    answer: t(`faq.${index}.answer`)
+  }));
 
   return (
     <>
@@ -228,35 +119,34 @@ export default async function MobilePage({ params }: { params: { locale: 'en' | 
           <div className="max-w-6xl mx-auto relative">
             <div className="flex items-center gap-2 mb-6">
               <span className="px-3 py-1 bg-laser-purple/10 border border-laser-purple/30 rounded-full text-laser-purple text-sm">
-                iOS & Android
+                {t('badge_1')}
               </span>
               <span className="px-3 py-1 bg-void-800 border border-void-700 rounded-full text-mist-400 text-sm">
-                Кроссплатформа
+                {t('badge_2')}
               </span>
             </div>
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              Мобильное приложение —{' '}
+              {t('hero_title_1')}{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-laser-purple via-laser-cyan to-laser-blue">
-                ваш бизнес в кармане клиента
+                {t('hero_title_2')}
               </span>
             </h1>
             <p className="text-xl text-mist-300 max-w-3xl mb-8">
-              Разрабатываем нативные и кроссплатформенные приложения, которые пользователи 
-              любят и рекомендуют. React Native, Flutter, Swift, Kotlin.
+              {t('hero_description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={`/${locale}/contact`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-purple to-laser-cyan text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
               >
-                Обсудить приложение
+                {t('cta_primary')}
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a
                 href="#process"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-void-700 text-mist-200 rounded-lg hover:bg-void-800 transition-colors"
               >
-                Как мы работаем
+                {t('cta_secondary')}
               </a>
             </div>
           </div>
@@ -266,10 +156,10 @@ export default async function MobilePage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Знакомые проблемы?
+              {t('problems_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              С этим сталкивается большинство компаний при разработке мобильных приложений
+              {t('problems_subtitle')}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {problems.map((problem, index) => (
@@ -290,10 +180,10 @@ export default async function MobilePage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Наш подход к мобильной разработке
+              {t('benefits_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Создаём приложения, которые пользователи оценивают на 4.8+ звёзд
+              {t('benefits_subtitle')}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {benefits.map((benefit, index) => (
@@ -314,19 +204,19 @@ export default async function MobilePage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Какой подход выбрать?
+              {t('comparison_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Сравнение PWA, нативной и кроссплатформенной разработки
+              {t('comparison_subtitle')}
             </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="border-b border-void-700">
-                    <th className="text-left p-4 text-mist-300 font-medium">Характеристика</th>
-                    <th className="text-center p-4 text-mist-300 font-medium">PWA</th>
-                    <th className="text-center p-4 text-mist-300 font-medium">Нативное</th>
-                    <th className="text-center p-4 text-laser-purple font-medium">Кроссплатформа ⭐</th>
+                    <th className="text-left p-4 text-mist-300 font-medium">{t('comparison_header_feature')}</th>
+                    <th className="text-center p-4 text-mist-300 font-medium">{t('comparison_header_pwa')}</th>
+                    <th className="text-center p-4 text-mist-300 font-medium">{t('comparison_header_native')}</th>
+                    <th className="text-center p-4 text-laser-purple font-medium">{t('comparison_header_cross')}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -348,10 +238,10 @@ export default async function MobilePage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Какие приложения мы создаём
+              {t('app_types_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Опыт в различных индустриях и типах приложений
+              {t('app_types_subtitle')}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {appTypes.map((type, index) => (
@@ -380,10 +270,10 @@ export default async function MobilePage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Технологии
+              {t('tech_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Используем проверенные инструменты для надёжных решений
+              {t('tech_subtitle')}
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {techStack.map((tech, index) => (
@@ -403,10 +293,10 @@ export default async function MobilePage({ params }: { params: { locale: 'en' | 
         <section id="process" className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Процесс разработки
+              {t('process_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              От идеи до публикации в App Store и Google Play
+              {t('process_subtitle')}
             </p>
             <div className="space-y-6">
               {process.map((step, index) => (
@@ -444,7 +334,7 @@ export default async function MobilePage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Результаты наших проектов
+              {t('results_title')}
             </h2>
             <div className="grid md:grid-cols-4 gap-6">
               {results.map((result, index) => (
@@ -463,18 +353,17 @@ export default async function MobilePage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Стоимость разработки
+              {t('pricing_title')}
             </h2>
             <p className="text-mist-400 mb-8">
-              MVP кроссплатформенного приложения — от 25 000 CHF. Включает дизайн, разработку, 
-              тестирование и публикацию в сторы. Нативная разработка под одну платформу — от 20 000 CHF.
+              {t('pricing_description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={`/${locale}/contact`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-purple to-laser-cyan text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
               >
-                Получить оценку
+                {t('pricing_cta')}
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
@@ -485,7 +374,7 @@ export default async function MobilePage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Частые вопросы
+              {t('faq_title')}
             </h2>
             <div className="space-y-6">
               {faq.map((item, index) => (
@@ -505,17 +394,17 @@ export default async function MobilePage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Готовы к мобильному приложению?
+              {t('cta_title')}
             </h2>
             <p className="text-xl text-mist-400 mb-8">
-              Расскажите о своей идее — мы подберём оптимальный подход и технологии
+              {t('cta_description')}
             </p>
             <a
               href={`/${locale}/contact`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-purple to-laser-cyan text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
             >
               <Smartphone className="w-5 h-5" />
-              Обсудить проект
+              {t('cta_button')}
             </a>
           </div>
         </section>

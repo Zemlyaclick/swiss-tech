@@ -1,0 +1,3162 @@
+{
+  "services_mobile": {
+    "meta_title": "Mobile Apps | Swiss IT",
+    "meta_description": "Native und plattformübergreifende Mobile-App-Entwicklung für iOS und Android. React Native, Flutter, Swift, Kotlin.",
+    "hero_title_1": "Mobile App —",
+    "hero_title_2": "Ihr Business in der Tasche des Kunden",
+    "hero_description": "Wir entwickeln native und plattformübergreifende Apps, die Benutzer lieben und empfehlen. React Native, Flutter, Swift, Kotlin.",
+    "problems_title": "Kommt Ihnen bekannt vor?",
+    "problems_subtitle": "Die meisten Unternehmen stehen vor diesen Herausforderungen bei der Mobile-App-Entwicklung",
+    "problems": [
+      {
+        "title": "Lange Entwicklung",
+        "description": "Separate Teams für iOS und Android — doppelte Zeit und Budget"
+      },
+      {
+        "title": "Nutzerverlust",
+        "description": "77% der Nutzer löschen eine App nach der ersten Nutzung"
+      },
+      {
+        "title": "Niedrige Performance",
+        "description": "App ruckelt, entlädt den Akku, belegt zu viel Speicher"
+      },
+      {
+        "title": "Sicherheitsprobleme",
+        "description": "Datenlecks, Hacks, App Store Ablehnung"
+      },
+      {
+        "title": "Schwierige Skalierung",
+        "description": "Architektur erlaubt keine neuen Funktionen"
+      },
+      {
+        "title": "Kein Offline-Modus",
+        "description": "Ohne Internet ist die App nutzlos"
+      }
+    ],
+    "benefits_title": "Unser Ansatz zur mobilen Entwicklung",
+    "benefits_subtitle": "Wir erstellen Apps, die Nutzer mit 4,8+ Sternen bewerten",
+    "benefits": [
+      {
+        "title": "Ein Code — zwei Plattformen",
+        "description": "React Native und Flutter ermöglichen gleichzeitigen Release für iOS und Android, Budget um 40% reduziert"
+      },
+      {
+        "title": "Native Performance",
+        "description": "Wir nutzen native Module wo Geschwindigkeit nötig ist. 60 FPS Animationen, schneller Start, Akkuersparnis"
+      },
+      {
+        "title": "Sicherheit als Standard",
+        "description": "Datenverschlüsselung, sichere Token-Speicherung, Reverse-Engineering-Schutz, GDPR-konform"
+      },
+      {
+        "title": "Push-Benachrichtigungen",
+        "description": "Personalisierte Pushes erhöhen Retention um 3-10x. Segmentierung, A/B-Tests, Deep Links"
+      },
+      {
+        "title": "Offline-Modus",
+        "description": "App funktioniert ohne Internet. Datensynchronisation bei Verbindungswiederherstellung"
+      },
+      {
+        "title": "Analytics und A/B-Tests",
+        "description": "Firebase Analytics, Mixpanel, Amplitude. Verstehen Sie Nutzer und optimieren Sie Konversion"
+      }
+    ],
+    "comparison_title": "Welchen Ansatz wählen?",
+    "comparison_subtitle": "Vergleich von PWA, nativer und plattformübergreifender Entwicklung",
+    "comparison_feature": "Eigenschaft",
+    "comparison_pwa": "PWA",
+    "comparison_native": "Nativ",
+    "comparison_cross": "Cross-Platform ⭐",
+    "comparison": [
+      {
+        "feature": "Entwicklungszeit",
+        "web": "2-3 Monate",
+        "native": "4-6 Monate pro Plattform",
+        "cross": "3-4 Monate für beide"
+      },
+      {
+        "feature": "Performance",
+        "web": "70%",
+        "native": "100%",
+        "cross": "95%"
+      },
+      {
+        "feature": "Geräte-API-Zugriff",
+        "web": "Eingeschränkt",
+        "native": "Voll",
+        "cross": "Fast voll"
+      },
+      {
+        "feature": "Wartungskosten",
+        "web": "Niedrig",
+        "native": "Hoch (2 Codebasen)",
+        "cross": "Mittel"
+      },
+      {
+        "feature": "Push-Benachrichtigungen",
+        "web": "Eingeschränkt",
+        "native": "Voll",
+        "cross": "Voll"
+      },
+      {
+        "feature": "Offline-Modus",
+        "web": "Eingeschränkt",
+        "native": "Voll",
+        "cross": "Voll"
+      },
+      {
+        "feature": "Store-Veröffentlichung",
+        "web": "Nicht nötig",
+        "native": "Erforderlich",
+        "cross": "Erforderlich"
+      }
+    ],
+    "app_types_title": "Welche Apps wir erstellen",
+    "app_types_subtitle": "Erfahrung in verschiedenen Branchen und App-Typen",
+    "app_types": [
+      {
+        "title": "B2C-Apps",
+        "description": "Verbraucher-Apps: Marktplätze, Lieferung, Fitness, Finanzen",
+        "features": [
+          "Schönes UI/UX",
+          "Onboarding",
+          "Zahlungen",
+          "Soziale Funktionen"
+        ]
+      },
+      {
+        "title": "B2B-Apps",
+        "description": "Unternehmens-Apps: CRM, ERP, Bestandsverwaltung, Logistik",
+        "features": [
+          "Backend-Integration",
+          "Rollenbasierter Zugriff",
+          "Berichtswesen",
+          "Offline-Modus"
+        ]
+      },
+      {
+        "title": "Standortbasiert",
+        "description": "Karten-Apps: Taxi, Lieferung, Tracking, Navigation",
+        "features": [
+          "Karten & Routen",
+          "Geofencing",
+          "Tracking",
+          "Hintergrund-Standort"
+        ]
+      },
+      {
+        "title": "Multimedia",
+        "description": "Kamera, Video, AR: Scanner, Filter, Lern-Apps",
+        "features": [
+          "Kamera & Galerie",
+          "AR-Effekte",
+          "Videobearbeitung",
+          "ML-Modelle"
+        ]
+      },
+      {
+        "title": "IoT & Smart Home",
+        "description": "Gerätesteuerung: Smart Home, Wearables, Sensoren",
+        "features": [
+          "Bluetooth/BLE",
+          "MQTT/WebSocket",
+          "Widgets",
+          "Benachrichtigungen"
+        ]
+      },
+      {
+        "title": "Fintech",
+        "description": "Banking, Investments, Krypto, Versicherung",
+        "features": [
+          "Biometrie",
+          "PCI DSS",
+          "KYC/AML",
+          "Zahlungssysteme"
+        ]
+      }
+    ],
+    "tech_title": "Technologien",
+    "tech_subtitle": "Wir nutzen bewährte Tools für zuverlässige Lösungen",
+    "process_title": "Entwicklungsprozess",
+    "process_subtitle": "Von der Idee zur App Store und Google Play Veröffentlichung",
+    "process": [
+      {
+        "step": "01",
+        "title": "Design und Prototyp",
+        "duration": "2-3 Wochen",
+        "description": "UX-Forschung, Wireframes, UI-Design in Figma. Interaktiver Prototyp für Nutzertests.",
+        "deliverables": [
+          "User Flow",
+          "UI Kit",
+          "Prototyp",
+          "Design-System"
+        ]
+      },
+      {
+        "step": "02",
+        "title": "MVP-Entwicklung",
+        "duration": "6-10 Wochen",
+        "description": "Kernfunktionalitäts-Entwicklung. Wöchentliche Builds zum Testen. Backend-Integration.",
+        "deliverables": [
+          "TestFlight/Firebase",
+          "API-Integration",
+          "Push-Benachrichtigungen",
+          "Analytics"
+        ]
+      },
+      {
+        "step": "03",
+        "title": "Testing und Launch",
+        "duration": "2-3 Wochen",
+        "description": "QA auf echten Geräten, Beta-Testing, Store-Einreichungsvorbereitung, Review-Prozess.",
+        "deliverables": [
+          "Test-Cases",
+          "App Store Connect",
+          "Google Play Console",
+          "ASO"
+        ]
+      },
+      {
+        "step": "04",
+        "title": "Wachstum und Entwicklung",
+        "duration": "Laufend",
+        "description": "Metrik-Analyse, A/B-Tests, neue Features basierend auf Feedback. Updates für neue iOS/Android-Versionen.",
+        "deliverables": [
+          "Roadmap",
+          "Wachstumsmetriken",
+          "Updates",
+          "Support"
+        ]
+      }
+    ],
+    "results_title": "Unsere Projektergebnisse",
+    "results": [
+      {
+        "metric": "4,8+",
+        "label": "Durchschnittliche Store-Bewertung"
+      },
+      {
+        "metric": "500K+",
+        "label": "App-Downloads"
+      },
+      {
+        "metric": "40%",
+        "label": "Cross-Platform-Ersparnis"
+      },
+      {
+        "metric": "< 2 Sek",
+        "label": "Kaltstart-Zeit"
+      }
+    ],
+    "pricing_title": "Entwicklungskosten",
+    "pricing_description": "Cross-Platform MVP-App — ab 25'000 CHF. Inklusive Design, Entwicklung, Testing und Store-Veröffentlichung. Native Entwicklung für eine Plattform — ab 20'000 CHF.",
+    "pricing_cta": "Schätzung erhalten",
+    "faq_title": "Häufig gestellte Fragen",
+    "faq": [
+      {
+        "question": "React Native oder Flutter?",
+        "answer": "Wenn Sie bereits eine React-Web-App haben — wählen Sie React Native, Ihr Team kann Wissen wiederverwenden. Flutter bietet bessere Performance und volle UI-Kontrolle. Für die meisten Business-Apps ist der Unterschied minimal."
+      },
+      {
+        "question": "Wann ist native Entwicklung nötig?",
+        "answer": "Für maximale Performance (Spiele, AR/VR), spezifische Geräte-APIs (HealthKit, ARKit), oder wenn Apple/Google nativen Code verlangen. In den übrigen 90% der Fälle ist Cross-Platform die optimale Wahl."
+      },
+      {
+        "question": "Wie lange dauert die Veröffentlichung?",
+        "answer": "Google Play — 1-3 Tage für das erste Release. App Store — 1-7 Tage, das erste Release kann bis zu 2 Wochen dauern. Wir bereiten alle Materialien im Voraus vor und kennen die Store-Anforderungen."
+      },
+      {
+        "question": "Wie App ohne Release aktualisieren?",
+        "answer": "Wir nutzen CodePush für React Native und Shorebird für Flutter. Sie können JS-Code und UI ohne Store-Veröffentlichung aktualisieren. Nativer Code erfordert weiterhin ein Release."
+      }
+    ],
+    "cta_title": "Bereit für eine Mobile App?",
+    "cta_description": "Erzählen Sie uns von Ihrer Idee — wir finden den optimalen Ansatz und die Technologien",
+    "cta_button": "Projekt besprechen",
+    "badge_1": "iOS & Android",
+    "badge_2": "Cross-Platform",
+    "cta_primary": "App besprechen",
+    "cta_secondary": "Wie wir arbeiten",
+    "comparison_header_feature": "Parameter",
+    "comparison_header_pwa": "PWA",
+    "comparison_header_native": "Nativ",
+    "comparison_header_cross": "Cross-Platform"
+  },
+  "services_automation": {
+    "meta_title": "Prozessautomatisierung | Swiss IT",
+    "meta_description": "Automatisierung von Geschäftsprozessen, Systemintegration, RPA. 80% Routinereduktion, Fehlerbeseitigung, Prozessbeschleunigung.",
+    "badge1": "RPA & Integrationen",
+    "badge2": "No-code & Custom",
+    "hero_title_1": "Automatisieren Sie die Routine —",
+    "hero_title_2": "befreien Sie Ihre Mitarbeiter für Wichtiges",
+    "hero_description": "Wir integrieren Systeme, automatisieren Prozesse, eliminieren manuelle Arbeit. Ihre Mitarbeiter konzentrieren sich aufs Geschäft, nicht aufs Kopieren von Daten.",
+    "cta_audit": "Prozess-Audit",
+    "cta_cases": "Automatisierungsbeispiele",
+    "problems_title": "Kommt Ihnen bekannt vor?",
+    "problems_subtitle": "Typische Anzeichen, dass es Zeit ist zu automatisieren",
+    "problems": [
+      {
+        "title": "Stunden für Routine",
+        "description": "Mitarbeiter verbringen 40% der Zeit mit sich wiederholenden Aufgaben statt mit Arbeit, die Köpfchen erfordert"
+      },
+      {
+        "title": "Menschliche Fehler",
+        "description": "Manuelle Dateneingabe = Fehler. Tippfehler, vergessene E-Mails, verlorene Anfragen"
+      },
+      {
+        "title": "Isolierte Systeme",
+        "description": "Daten in Excel, CRM, ERP, E-Mail — und nirgends das vollständige Bild"
+      },
+      {
+        "title": "Langsame Prozesse",
+        "description": "Genehmigungen dauern Tage, Kunden warten auf Antworten, Geschäfte platzen"
+      },
+      {
+        "title": "Manuelle Berichte",
+        "description": "Jeden Monat — mühsame Datensammlung aus verschiedenen Quellen in Excel"
+      },
+      {
+        "title": "Nicht skalierbar",
+        "description": "Geschäftswachstum = Personalwachstum. Jeder neue Kunde erfordert mehr Hände"
+      }
+    ],
+    "benefits_title": "Was Automatisierung bringt",
+    "benefits_subtitle": "Ergebnisse, die Sie im ersten Monat sehen werden",
+    "benefits": [
+      {
+        "title": "80% Zeitersparnis",
+        "description": "Aufgaben, die Stunden dauerten, werden in Sekunden erledigt. Mitarbeiter fokussieren auf Wichtiges"
+      },
+      {
+        "title": "Null Fehler",
+        "description": "Automatisierung eliminiert den menschlichen Faktor. Daten sind immer korrekt und aktuell"
+      },
+      {
+        "title": "Einheitliches Ökosystem",
+        "description": "Integration aller Systeme: CRM, ERP, E-Mail, Messenger, Banken, Marktplätze"
+      },
+      {
+        "title": "Sofortige Reaktion",
+        "description": "Anfrage → Kundenantwort in Sekunden. Benachrichtigungen, Status, Dokumente — automatisch"
+      },
+      {
+        "title": "Echtzeit-Analytik",
+        "description": "Dashboards aktualisieren sich automatisch. Entscheidungen auf Datenbasis, nicht Intuition"
+      },
+      {
+        "title": "Skalieren ohne Einstellungen",
+        "description": "Verarbeiten Sie 10x mehr Aufträge mit demselben Team. Wachstum ohne Kostenwachstum"
+      }
+    ],
+    "automation_title": "Was wir automatisieren",
+    "automation_subtitle": "Standardszenarien, die maximale Wirkung erzielen",
+    "automation_types": [
+      {
+        "title": "Anfragenbearbeitung",
+        "description": "Automatische Bearbeitung eingehender Anfragen aus allen Kanälen",
+        "examples": [
+          "E-Mail- & Formular-Parsing",
+          "Deal-Erstellung im CRM",
+          "Managerverteilung",
+          "Kundenbenachrichtigungen"
+        ]
+      },
+      {
+        "title": "Dokumenten-Workflow",
+        "description": "Generierung, Genehmigung und Versand von Dokumenten",
+        "examples": [
+          "Rechnungen & Verträge",
+          "Lieferscheine",
+          "Digitale Signatur",
+          "Archivierung"
+        ]
+      },
+      {
+        "title": "Datensynchronisation",
+        "description": "Echtzeit-Datenaustausch zwischen Systemen",
+        "examples": [
+          "CRM ↔ ERP",
+          "Website ↔ Lager",
+          "Marktplätze",
+          "Bankauszüge"
+        ]
+      },
+      {
+        "title": "Berichtswesen",
+        "description": "Automatische Berichts- und Dashboard-Generierung",
+        "examples": [
+          "Tägliche Zusammenfassungen",
+          "Manager-KPIs",
+          "Finanzberichte",
+          "Prognosen"
+        ]
+      },
+      {
+        "title": "Chatbots & Assistenten",
+        "description": "Automatische Bearbeitung von Standardanfragen",
+        "examples": [
+          "FAQ-Antworten",
+          "Bestellannahme",
+          "Terminbuchung",
+          "Lieferstatus"
+        ]
+      },
+      {
+        "title": "Geschäftsprozesse",
+        "description": "Orchestrierung komplexer mehrstufiger Prozesse",
+        "examples": [
+          "Kunden-Onboarding",
+          "Genehmigungen",
+          "Ausschreibungsverfahren",
+          "HR-Prozesse"
+        ]
+      }
+    ],
+    "cases_title": "Implementierungsbeispiele",
+    "cases_subtitle": "Echte Automatisierungsfälle",
+    "cases": [
+      {
+        "title": "Online-Shop",
+        "before": "Manager übertrugen Bestellungen manuell von der Website ins ERP, sendeten Statusupdates an Kunden",
+        "after": "Vollständige Automatisierung: Bestellung → ERP → Lager → Lieferung → Kundenbenachrichtigung",
+        "result": "Verarbeitung von 500 Bestellungen/Tag statt 50, ohne Personalaufstockung"
+      },
+      {
+        "title": "Logistikunternehmen",
+        "before": "Tägliche Berichte wurden manuell aus 5 Systemen für 3 Stunden gesammelt",
+        "after": "Automatische Datensammlung, Dashboard aktualisiert alle 15 Minuten",
+        "result": "Einsparung von 60 Stunden/Monat, Entscheidungen auf Basis aktueller Daten"
+      },
+      {
+        "title": "Anwaltskanzlei",
+        "before": "Verträge wurden manuell erstellt, E-Mail-Genehmigung dauerte Tage",
+        "after": "Dokumentgenerierung aus Vorlagen, Genehmigungsrouting, digitale Signatur",
+        "result": "Vertragsvorbereitung in 5 Minuten statt 2 Stunden"
+      }
+    ],
+    "before_label": "Vorher",
+    "after_label": "Nachher",
+    "result_label": "Ergebnis",
+    "tech_title": "Werkzeuge",
+    "tech_subtitle": "Wir wählen den optimalen Stack für Ihre Aufgaben",
+    "process_title": "Wie wir Automatisierung implementieren",
+    "process_subtitle": "Phasenweiser Ansatz mit schnellen Erfolgen",
+    "process": [
+      {
+        "step": "01",
+        "title": "Prozess-Audit",
+        "duration": "1-2 Wochen",
+        "description": "Wir analysieren aktuelle Prozesse, finden Engpässe und Automatisierungspunkte. Berechnen ROI für jede Integration.",
+        "deliverables": [
+          "Prozesskarte",
+          "Engpassliste",
+          "ROI-Berechnung",
+          "Prioritäten"
+        ]
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "duration": "1-2 Wochen",
+        "description": "Wir entwerfen die Integrationsarchitektur, wählen Tools, beschreiben Automatisierungsszenarien.",
+        "deliverables": [
+          "Architektur",
+          "Szenarien",
+          "Technische Anforderungen",
+          "Implementierungsplan"
+        ]
+      },
+      {
+        "step": "03",
+        "title": "Entwicklung",
+        "duration": "2-6 Wochen",
+        "description": "Wir erstellen Integrationen, konfigurieren Automatisierungen, testen mit echten Daten. Start im Pilotmodus.",
+        "deliverables": [
+          "Fertige Integrationen",
+          "Dokumentation",
+          "Monitoring",
+          "Pilot"
+        ]
+      },
+      {
+        "step": "04",
+        "title": "Skalierung",
+        "duration": "Laufend",
+        "description": "Wir erweitern die Automatisierung auf neue Prozesse, optimieren bestehende, fügen neue Integrationen hinzu.",
+        "deliverables": [
+          "Neue Szenarien",
+          "Optimierung",
+          "Schulung",
+          "Support"
+        ]
+      }
+    ],
+    "results_title": "Typische Ergebnisse",
+    "results": [
+      {
+        "metric": "80%",
+        "label": "Routinereduktion"
+      },
+      {
+        "metric": "95%",
+        "label": "Fehlerreduktion"
+      },
+      {
+        "metric": "10x",
+        "label": "Produktivitätssteigerung"
+      },
+      {
+        "metric": "< 6 Mon",
+        "label": "Amortisation"
+      }
+    ],
+    "pricing_title": "Automatisierungskosten",
+    "pricing_description": "Einfache Zwei-System-Integration — ab 2'000 CHF. Umfassende Abteilungsautomatisierung — ab 10'000 CHF. Kostenloses Prozess-Audit bei Implementierungsauftrag.",
+    "pricing_cta": "Kostenloses Audit",
+    "faq_title": "Häufig gestellte Fragen",
+    "faq": [
+      {
+        "question": "Mit welchen Systemen integrieren Sie?",
+        "answer": "Praktisch mit allen: Salesforce, SAP, Microsoft Dynamics, HubSpot, Bank-APIs, Marktplätze (Amazon, Shopify), Lieferdienste, Messenger, Google/Microsoft-Dienste. Wenn das System eine API hat — integrieren wir."
+      },
+      {
+        "question": "Was wenn wir ein altes System ohne API haben?",
+        "answer": "Wir nutzen RPA (Robotisierung) — Software-Roboter arbeiten mit der Oberfläche wie ein Mensch. Oder wir erstellen eine Schicht über Datenbank, Dateiaustausch, Screen-Parsing."
+      },
+      {
+        "question": "Wie lange dauert die Implementierung?",
+        "answer": "Einfache Zwei-System-Integration — 1-2 Wochen. Umfassende Abteilungsautomatisierung — 1-2 Monate. Unternehmensweite Transformation — 3-6 Monate schrittweise."
+      },
+      {
+        "question": "Was wenn die Automatisierung ausfällt?",
+        "answer": "Wir richten Monitoring und Alerts ein — wir wissen von Problemen bevor Sie es tun. Kritische Integrationen sind redundant. Wir bieten SLA für Support und schnelle Wiederherstellung."
+      }
+    ],
+    "cta_title": "Bereit, die Routine zu eliminieren?",
+    "cta_description": "Zeigen Sie uns Ihre Prozesse — wir zeigen, wo sich 80% Einsparungen verstecken",
+    "cta_button": "Audit anfordern"
+  },
+  "services_ai": {
+    "meta_title": "KI-Integration | Swiss IT",
+    "meta_description": "Integration von künstlicher Intelligenz in Geschäftsprozesse. ChatGPT, Claude, individuelle Modelle. Chatbots, Datenanalyse, Automatisierung.",
+    "badge1": "GPT-4 & Claude",
+    "badge2": "LLM & ML",
+    "hero_title_1": "Künstliche Intelligenz —",
+    "hero_title_2": "Ihr Wettbewerbsvorteil",
+    "hero_description": "Wir integrieren KI in Ihre Geschäftsprozesse. Intelligente Assistenten, Dokumentenanalyse, Predictive Analytics — OpenAI- und Claude-Technologien für Ihr Unternehmen.",
+    "cta_discuss": "KI-Implementierung besprechen",
+    "cta_usecases": "Anwendungsfälle",
+    "problems_title": "Kommt Ihnen bekannt vor?",
+    "problems_subtitle": "KI löst diese Aufgaben besser und günstiger als Menschen",
+    "problems": [
+      {
+        "title": "Routineaufgaben",
+        "description": "Mitarbeiter verbringen Stunden mit Beantwortung von Standardfragen, Dokumentenverarbeitung, Berichterstellung"
+      },
+      {
+        "title": "Expertenmangel",
+        "description": "Teure Spezialisten sind mit Routine beschäftigt statt mit strategischen Aufgaben"
+      },
+      {
+        "title": "Informationsverlust",
+        "description": "Wissen ist verstreut in Dokumenten, Chats, Köpfen der Mitarbeiter — das Nötige zu finden ist unmöglich"
+      },
+      {
+        "title": "Verpasste Chancen",
+        "description": "Daten sind vorhanden, aber keine Zeit und Werkzeuge für Analyse und Erkenntnisgewinnung"
+      },
+      {
+        "title": "Langsamer Support",
+        "description": "Kunden warten stundenlang auf Antworten, nachts und am Wochenende ist der Support nicht verfügbar"
+      },
+      {
+        "title": "Keine Personalisierung",
+        "description": "Alle Kunden haben dieselbe Erfahrung, obwohl Daten für Personalisierung vorhanden sind"
+      }
+    ],
+    "benefits_title": "Was KI Ihrem Business bringt",
+    "benefits_subtitle": "Konkrete Lösungen, die wir implementieren",
+    "benefits": [
+      {
+        "title": "KI-Assistenten 24/7",
+        "description": "Intelligente Bots beantworten Fragen, helfen bei der Auswahl, verarbeiten Anfragen. Sofort, ohne Feiertage, in allen Sprachen"
+      },
+      {
+        "title": "Intelligente Dokumentenverarbeitung",
+        "description": "KI extrahiert Daten aus Verträgen, Rechnungen, Lebensläufen. Klassifiziert, fasst zusammen, findet Anomalien"
+      },
+      {
+        "title": "Semantische Suche",
+        "description": "Suche nach Bedeutung, nicht nach Wörtern. Findet Relevantes in Wissensdatenbank, Dokumenten, Korrespondenz"
+      },
+      {
+        "title": "Predictive Analytics",
+        "description": "Nachfrageprognose, Kundenabwanderung, Risiken. Treffen Sie Entscheidungen auf Datenbasis, nicht nach Intuition"
+      },
+      {
+        "title": "Content-Generierung",
+        "description": "Automatische Erstellung von Produktbeschreibungen, Antworten auf Bewertungen, Marketingtexten in Ihrem Stil"
+      },
+      {
+        "title": "Computer Vision",
+        "description": "Erkennung von Produkten, Defekten, Gesichtern, Dokumenten. Automatisierung der visuellen Kontrolle"
+      }
+    ],
+    "usecases_title": "Anwendungsfälle",
+    "usecases_subtitle": "Standardlösungen mit nachgewiesenem ROI",
+    "usecases": [
+      {
+        "title": "Intelligenter Support",
+        "description": "Chatbot, der Kontext versteht, Historie erinnert, 80% der Fragen ohne Menschen löst",
+        "results": [
+          "80% Fragen ohne Operator",
+          "Antwort in 2 Sekunden",
+          "Betrieb 24/7/365",
+          "Alle Sprachen"
+        ]
+      },
+      {
+        "title": "Dokumentenverarbeitung",
+        "description": "Datenextraktion aus PDF, Scans, Fotos. Formularausfüllung, Konformitätsprüfung",
+        "results": [
+          "95% OCR-Genauigkeit",
+          "-90% manuelle Arbeit",
+          "Prüfung in Sekunden",
+          "CRM-Integration"
+        ]
+      },
+      {
+        "title": "Enterprise-Suche",
+        "description": "Suche in allen Quellen: Dokumente, E-Mail, Slack, Confluence. Antworten aus der Wissensdatenbank",
+        "results": [
+          "Semantische Suche",
+          "Fragebeantwortung",
+          "Relevanz-Ranking",
+          "Zugriffsrechte-Support"
+        ]
+      },
+      {
+        "title": "Business Analytics",
+        "description": "Verkaufsprognosen, Trendanalyse, Anomalieerkennung, Preisempfehlungen",
+        "results": [
+          "Nachfrageprognose",
+          "Abwanderungsanalyse",
+          "Kundensegmentierung",
+          "Dynamische Preise"
+        ]
+      },
+      {
+        "title": "Content & Marketing",
+        "description": "Beschreibungsgenerierung, Newsletter-Personalisierung, A/B-Tests für Texte, Bewertungsanalyse",
+        "results": [
+          "Produktbeschreibungen",
+          "E-Mail-Personalisierung",
+          "Sentiment-Analyse",
+          "SEO-Optimierung"
+        ]
+      },
+      {
+        "title": "Visuelle Kontrolle",
+        "description": "Produktqualitätsprüfung, Defekterkennung, Sicherheitskontrolle",
+        "results": [
+          "99% Genauigkeit",
+          "Echtzeit",
+          "Linienintegration",
+          "Reports & Alerts"
+        ]
+      }
+    ],
+    "tech_title": "Technologien",
+    "tech_subtitle": "Wir nutzen die besten Modelle und Frameworks",
+    "process_title": "Wie wir KI implementieren",
+    "process_subtitle": "Von der Idee zur Produktion in 2-3 Monaten",
+    "process": [
+      {
+        "step": "01",
+        "title": "Audit & Strategie",
+        "duration": "1-2 Wochen",
+        "description": "Wir analysieren Prozesse, finden KI-Anwendungspunkte mit maximalem ROI. Erstellen die Implementierungs-Roadmap.",
+        "deliverables": [
+          "Prozesskarte",
+          "ROI-Bewertung",
+          "Modellauswahl",
+          "Roadmap"
+        ]
+      },
+      {
+        "step": "02",
+        "title": "Proof of Concept",
+        "duration": "2-4 Wochen",
+        "description": "Wir erstellen einen funktionierenden Prototyp mit echten Daten. Beweisen den Wert vor vollständiger Implementierung.",
+        "deliverables": [
+          "Funktionierender Prototyp",
+          "Qualitätsmetriken",
+          "Kostenschätzung",
+          "Go/No-Go-Entscheidung"
+        ]
+      },
+      {
+        "step": "03",
+        "title": "Entwicklung & Integration",
+        "duration": "4-8 Wochen",
+        "description": "Wir entwickeln die Produktionslösung. Integrieren mit Ihren Systemen. Richten Monitoring ein.",
+        "deliverables": [
+          "Produktions-API",
+          "Integrationen",
+          "Monitoring",
+          "Dokumentation"
+        ]
+      },
+      {
+        "step": "04",
+        "title": "Optimierung",
+        "duration": "Laufend",
+        "description": "Fine-Tuning der Modelle auf Ihren Daten, Qualitätsverbesserung, Erweiterung der Anwendungsfälle.",
+        "deliverables": [
+          "Fine-tuned Modelle",
+          "Verbesserte Metriken",
+          "Neue Szenarien",
+          "Team-Training"
+        ]
+      }
+    ],
+    "results_title": "Typische Ergebnisse",
+    "results": [
+      {
+        "metric": "80%",
+        "label": "Support-Automatisierung"
+      },
+      {
+        "metric": "10x",
+        "label": "Verarbeitungsbeschleunigung"
+      },
+      {
+        "metric": "95%",
+        "label": "Erkennungsgenauigkeit"
+      },
+      {
+        "metric": "< 2 Sek",
+        "label": "KI-Antwortzeit"
+      }
+    ],
+    "pricing_title": "KI-Implementierungskosten",
+    "pricing_description": "Proof of Concept — ab 5'000 CHF. Produktionslösung — ab 15'000 CHF. Die Kosten hängen von der Integrationskomplexität und dem Datenvolumen ab. Plus Modell-API-Kosten (typisch $100-500/Monat).",
+    "pricing_cta": "Schätzung erhalten",
+    "faq_title": "Häufig gestellte Fragen",
+    "faq": [
+      {
+        "question": "Welches Modell wählen: GPT-4, Claude oder Open-Source?",
+        "answer": "GPT-4 — beste Wahl für komplexe Aufgaben und mehrsprachige Kommunikation. Claude — hervorragend für Analyse langer Dokumente. Open-Source (LLaMA, Mistral) — wenn Datenschutz wichtig ist oder Fine-Tuning nötig. Oft nutzen wir Kombinationen: Open-Source für einfache Aufgaben, GPT-4 für komplexe."
+      },
+      {
+        "question": "Wie gewährleisten wir Datensicherheit mit KI?",
+        "answer": "Mehrere Schutzebenen: Nutzung von APIs mit Datenschutzgarantien (Daten werden nicht fürs Training verwendet), Deployment von Open-Source-Modellen auf Ihrer Infrastruktur, Datenanonymisierung vor dem Senden, Verschlüsselung bei Übertragung und Speicherung."
+      },
+      {
+        "question": "Wie viele Daten braucht man fürs KI-Training?",
+        "answer": "Für RAG (Dokumentensuche) — Ihre vorhandenen Dokumente reichen. Fürs Fine-Tuning braucht man 100-1000 qualitativ gelabelte Beispiele. Fürs Training from Scratch — Millionen Beispiele. In 90% der Fälle reichen RAG + Prompt Engineering."
+      },
+      {
+        "question": "Wird die KI halluzinieren und falsche Antworten geben?",
+        "answer": "Das Risiko besteht, aber wir minimieren es: RAG bindet Antworten an Ihre Dokumente, wir passen die Modelltemperatur an, fügen Faktenprüfungen hinzu, zeigen Quellen. Für kritische Szenarien fügen wir einen Menschen in den Loop ein."
+      }
+    ],
+    "cta_title": "Bereit, KI zu implementieren?",
+    "cta_description": "Erzählen Sie uns von Ihren Prozessen — wir finden die KI-Anwendungspunkte mit maximalem ROI",
+    "cta_button": "Projekt besprechen"
+  },
+  "services_websites": {
+    "meta_title": "Webentwicklig | SwissTech",
+    "meta_description": "Mir bäued Websites, wo verchaufed. Ladeziit <2 Sek., überdurchschnittlichi Conversion, SEO inklusive. Vo Landingpages bis zu komplexe Plattforme.",
+    "badge": "Webentwicklig",
+    "hero_title_1": "Websites, wo",
+    "hero_title_2": "verchaufed, ned eifach existiered",
+    "hero_description": "Mir erstellled Webprodukt, wo für eues Business schaffed: schnäll, schön, konvertierend. Vonere Landingpage in ere Wuche bis zur komplexe Plattform. Jedes Projekt isch uf euri Ziel usgrichtet, ned uf e Vorlag usem Baukaschte.",
+    "cta_benefits": "Warum mir",
+    "cta_types": "Website-Type",
+    "problems_title": "Bekannti Problem?",
+    "problems_solution": "Professionelli Entwicklig löst die Problem systematisc.",
+    "problems": [
+      "Eui Website gseht us wie tuusigi anderi",
+      "Langsams Lade — Chunde gönd",
+      "Kei Afrage trotz Traffic",
+      "Website erschint ned uf Google",
+      "Content-Bearbeitig isch umständlich",
+      "Mobili Version gseht kaputt us"
+    ],
+    "benefits_title": "Warum eusi Websites funktioniere",
+    "benefits_subtitle": "Ned eifach es schöns Bild — es Business-Tool",
+    "benefits": [
+      {
+        "title": "Gschwindikeit <2 Sekunde",
+        "description": "Core Web Vitals Optimierig, Lazy Loading, CDN. Schnälli Website = meh Conversions und höheri Google-Rankings."
+      },
+      {
+        "title": "SEO inklusive",
+        "description": "Semantischs Markup, Meta-Tags, Sitemap, schema.org. Eui Website wird vom erschte Tag a gfunde."
+      },
+      {
+        "title": "Überdurchschnittlichi Conversion",
+        "description": "Datebasiertes UX-Design, klari CTAs, A/B-Testing. Mir verwandled Bsuecher in Chunde."
+      },
+      {
+        "title": "Mobile-first",
+        "description": "60%+ Traffic vo Mobilgerät. Mir designed zersch für Telefon, de passe mir's für Desktop a."
+      },
+      {
+        "title": "Sicherheit",
+        "description": "HTTPS, XSS/CSRF-Schutz, regelmässigi Updates. DSGVO-Konformität für de europäisch Markt."
+      },
+      {
+        "title": "Suubere Code",
+        "description": "Moderne Stack, Dokumentation, eifachi Wartig. Eues Team cha d'Website selbständig witerentwickle."
+      }
+    ],
+    "comparison_title": "Baukaschte vs Entwicklig",
+    "comparison_subtitle": "Wenn ihr e professionelli Website bruuched",
+    "comparison_template_label": "Baukaschte / Vorlag",
+    "comparison_custom_label": "Professionelli Entwicklig",
+    "comparison_template": [
+      "Template-Design wie tuusigi Websites",
+      "Langsams Lade wege überflüssigem Code",
+      "Igschränkti Apassig",
+      "SEO- und Barrierefreiheitsproblem",
+      "Schwer z'skaliere",
+      "Abhängikeit vom Baukaschte"
+    ],
+    "comparison_custom": [
+      "Einzigartigs Design für eui Marke",
+      "Optimierig bis uf Millisekunde",
+      "Beliebigi Funktionalität",
+      "SEO und Barrierefreiheit vo Grund uf",
+      "Architektur für Wachstum",
+      "Volli Kontrolle über de Code"
+    ],
+    "types_title": "Was mir erstellled",
+    "types_subtitle": "Vo eifacher Landingpage bis zur komplexe Plattform",
+    "types": [
+      {
+        "title": "Landingpages",
+        "description": "Einzelsite für Produktlaunches, Aktione, Lead-Generierig"
+      },
+      {
+        "title": "Unternehmenswebsites",
+        "description": "Firmepräsentation mit Servicekatalog und Portfolio"
+      },
+      {
+        "title": "E-Commerce",
+        "description": "Online-Shops mit Warächorb, Zahlig und ERP-Integration"
+      },
+      {
+        "title": "Content-Plattforme",
+        "description": "Blogs, Medie, Wüssensdatebanke mit praktischem CMS"
+      },
+      {
+        "title": "SaaS und Web-Apps",
+        "description": "Komplexe Produkt mit Benutzerkonti und API"
+      },
+      {
+        "title": "Redesign",
+        "description": "Aktualisierig vo veraltetе Websites unter Biibehaltig vo de SEO"
+      }
+    ],
+    "stack_title": "Technologie",
+    "stack_subtitle": "Moderne Stack für maximali Leistig",
+    "stack": [
+      {
+        "category": "Frontend",
+        "items": [
+          "React",
+          "Next.js",
+          "Vue",
+          "TypeScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "category": "Backend",
+        "items": [
+          "Node.js",
+          "Python",
+          "PostgreSQL",
+          "Redis"
+        ]
+      },
+      {
+        "category": "CMS",
+        "items": [
+          "Strapi",
+          "Sanity",
+          "WordPress",
+          "Contentful"
+        ]
+      },
+      {
+        "category": "Infrastruktur",
+        "items": [
+          "Vercel",
+          "AWS",
+          "Cloudflare",
+          "Docker"
+        ]
+      }
+    ],
+    "process_title": "Wie mir schaffed",
+    "process": [
+      {
+        "step": "01",
+        "title": "Analyse",
+        "description": "Business, Zielpublikum, Wettbewerber studiere. Aforderige erstelle."
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "description": "Prototype, UI-Kit, responsive Layouts. Abschtimmig."
+      },
+      {
+        "step": "03",
+        "title": "Entwicklig",
+        "description": "Markup, Programmierig, Integratione, Tests."
+      },
+      {
+        "step": "04",
+        "title": "Launch",
+        "description": "Deploy, Analytics-Setup, Schüelig, Support."
+      }
+    ],
+    "results_title": "Ergebnis vo eusne Projekt",
+    "results": [
+      {
+        "value": "<2 Sek.",
+        "label": "Siteladezit"
+      },
+      {
+        "value": "90+",
+        "label": "PageSpeed Score"
+      },
+      {
+        "value": "+150%",
+        "label": "Conversion-Wachstum"
+      },
+      {
+        "value": "Top 10",
+        "label": "Google in 3 Mönet"
+      }
+    ],
+    "pricing_title": "Priis",
+    "pricing_description": "Landingpage — ab 3000 CHF, Unternehmenswebsite — ab 8000 CHF, E-Commerce — ab 15000 CHF, komplexe Plattform — individuell.",
+    "pricing_hint": "De genau Priis säged mir nach Besprechig vo de Ufgab — Erschtberatig isch gratis.",
+    "faq_title": "Hüfigi Frage",
+    "faq": [
+      {
+        "question": "Wie lang duurt d'Entwicklig?",
+        "answer": "Landingpage — 1-2 Wuche, Unternehmenswebsite — 3-6 Wuche, E-Commerce — 6-10 Wuche, komplexe Plattform — 2-4 Mönet. Mir zeige wöchentlich Fortschritt."
+      },
+      {
+        "question": "Cha ich de Content selber bearbeite?",
+        "answer": "Ja, mir verbinded es praktischs CMS (Strapi, Sanity, WordPress). Mir schüeled eues Team und stellend Video-Aleitige bereit. Bearbeite isch wie in Word."
+      },
+      {
+        "question": "Was isch mit Hosting und Domain?",
+        "answer": "Mir helfed bi Uswahl und Irichtig. Normalerwiis bruuched mir Vercel oder AWS — schnäll, zueverlässig, skalierbar. Chönd au uf euche Server hoste."
+      },
+      {
+        "question": "Gits Support noch em Launch?",
+        "answer": "Ja, mir bieted Support-Paket: Updates, Backups, Monitoring, chliini Verbesserige. Mir chönd s'Projekt au mit Dokumentation a eues Team übergä."
+      }
+    ]
+  },
+  "services_telegram_apps": {
+    "meta_title": "Telegram Mini Apps | SwissTech",
+    "meta_description": "Telegram Mini Apps Entwicklig: Online-Shops, Buechigs-Services, persönlichi Konti. 900+ Millione Nutzer ohni App Store Installation.",
+    "badge": "Telegram Mini Apps",
+    "hero_title_1": "App ohni App Store",
+    "hero_title_2": "in dr Täsche vo 900 Millione Mönsche",
+    "hero_description": "Telegram Mini Apps — vollwertigi Applikatione im Messenger. Online-Shops, Buechigs-Services, Spili, Finanz-Tools. Ohni Download, ohni Moderation, mit sofortige Zahlige. Eu Business dört, wo d'Kunde scho sind.",
+    "cta_benefits": "Mini Apps Vorteil",
+    "cta_comparison": "Mit Native vergliche",
+    "problems_title": "Warum en nativi App entwickle?",
+    "problems_solution": "Mini App löst all die Problem — und startet viel schnäller.",
+    "problems": [
+      "Mönet Entwicklig und Zähntuusigi $",
+      "Nutzer wend nüt abelade",
+      "App Store Moderation duurt ewig",
+      "80% vo de Apps werded nach em erschte Gebruuch glöscht",
+      "Separati iOS und Android Teams nötig",
+      "Schwer mit Gigante in App Stores z'konkuriere"
+    ],
+    "benefits_title": "Warum Mini Apps",
+    "benefits_subtitle": "Alli Vorteil vonere mobile App ohni ihri Nachteil",
+    "benefits": [
+      {
+        "title": "Ohni Installation",
+        "description": "App öffnet sich diräkt in Telegram — kei Download us App Store oder Google Play nötig."
+      },
+      {
+        "title": "900+ Millione Publikum",
+        "description": "Zuegriff uf d'riesigi Telegram-Nutzerbase. Eui App dört, wo d'Kunde scho sind."
+      },
+      {
+        "title": "Integrierti Zahlige",
+        "description": "Telegram Payments, Kryptowährige, Stars — Nutzer zahled mit wenige Klicks ohni Charteiigab."
+      },
+      {
+        "title": "Sofortiger Start",
+        "description": "Entwicklig schnäller und günstiger als nativi App. MVP in 2-4 Wuche."
+      },
+      {
+        "title": "Plattformübergreifend",
+        "description": "Funktioniert uf iOS, Android, Desktop und Web — ein Code für alli Plattforme."
+      },
+      {
+        "title": "Nativi Funktione",
+        "description": "Zuegriff uf Kamera, Geolokalisierig, Kontäkt, Biometrie — wie bi re normale App."
+      }
+    ],
+    "comparison_title": "Native vs Mini App",
+    "comparison_subtitle": "Vergliiched und wähled de optimal Wäg",
+    "comparison_native_label": "Nativi Applikation",
+    "comparison_miniapp_label": "Telegram Mini App",
+    "comparison_native": [
+      "3-6 Mönet Entwicklig",
+      "Separati iOS + Android Teams",
+      "App Store/Google Play Moderation",
+      "Schwierigi Updates",
+      "Nutzer müend zum Download überzügt werde",
+      "Hohi Koste: $50K+"
+    ],
+    "comparison_miniapp": [
+      "2-8 Wuche Entwicklig",
+      "Eis Team, ein Code",
+      "Ohni Store-Moderation",
+      "Sofortigi Updates",
+      "Scho bi de Kunde installiert",
+      "Koste ab 5K CHF"
+    ],
+    "usecases_title": "Was ihr erstelle chönd",
+    "usecases_subtitle": "Biispil vo erfolgriiche Mini Apps",
+    "usecases": [
+      {
+        "title": "E-Commerce",
+        "description": "Vollwertigi Online-Shops mit Katalog, Warächorb und Zahlig"
+      },
+      {
+        "title": "Buechig",
+        "description": "Terminbuechig, Tischreservierig, Tickets, Beratige"
+      },
+      {
+        "title": "Finanze",
+        "description": "Wallets, P2P-Überwiisige, Investment-Plattforme"
+      },
+      {
+        "title": "Loyalität",
+        "description": "Treueprogramm, Bonuscharte, Rabattcoupons"
+      },
+      {
+        "title": "Spili",
+        "description": "Casual Games, Quizze, Gwinnspili"
+      },
+      {
+        "title": "Persönlichi Konti",
+        "description": "Abonnementverwaltung, Bestellhistorie, Profileistellige"
+      }
+    ],
+    "features_title": "Plattform-Funktione",
+    "features": [
+      "Vollbildmodus und nativi Geste",
+      "Telegram-Authentifizierig (ohni Registrierig)",
+      "Push-Benachrichtige und Erinnerige",
+      "Telegram Payments und TON/Kryptowährige",
+      "Integration mit Bots und Kanäl",
+      "Geolokalisierig und Charte",
+      "Offline-Modus und Caching",
+      "Dark Theme und responsives Design"
+    ],
+    "process_title": "Wie mir Mini Apps erstelled",
+    "process": [
+      {
+        "step": "01",
+        "title": "Konzept",
+        "description": "Funktione, UX-Flow und Monetarisierig definiere"
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "description": "Interface nach Telegram-Richtlinie erstelle"
+      },
+      {
+        "step": "03",
+        "title": "Entwicklig",
+        "description": "React/Vue + Telegram SDK, Integratione und Zahlige"
+      },
+      {
+        "step": "04",
+        "title": "Launch",
+        "description": "Testing, Deployment und Promotion in Telegram"
+      }
+    ],
+    "results_title": "Mini Apps Ergebnis",
+    "results": [
+      {
+        "value": "10×",
+        "label": "günstiger als native"
+      },
+      {
+        "value": "2-8",
+        "label": "Wuche bis zum Start"
+      },
+      {
+        "value": "70%",
+        "label": "höheri Retention"
+      },
+      {
+        "value": "0",
+        "label": "App Store Provision"
+      }
+    ],
+    "pricing_title": "Entwickligskoste",
+    "pricing_description": "MVP Mini App — ab 5000 CHF, mittleri Komplexität mit Zahlige — ab 10000 CHF, umfassendi Lösig mit Integratione — ab 20000 CHF.",
+    "pricing_hint": "5-10 mal günstiger als nativi App bi vergliichbarer Funktionalität.",
+    "faq_title": "Hüfigi Frage",
+    "faq": [
+      {
+        "question": "Wie unterscheidet sich Mini App vomene Bot?",
+        "answer": "En Bot isch e Textschnittstelle mit Schaltfläche. Mini App isch e vollwertigi grafischi Applikation mit beliebigem UI. Ihr chönd kombiniere: Bot für eifachi Aktione, Mini App für komplexeri."
+      },
+      {
+        "question": "Bruuch ich en separate Server?",
+        "answer": "Ja, Mini App isch e Webapplikation, wo es Backend bruucht. Mir deployed uf Cloud-Server mit automatischer Skalierig."
+      },
+      {
+        "question": "Wie promotet mer Mini App?",
+        "answer": "Über Telegram-Kanäl, Bots, Telegram Ads Werbig. Viralität funktioniert au — Nutzer teiled Apps mit Fründ."
+      },
+      {
+        "question": "Cha ich Zahlige in lokaler Währig akzeptiere?",
+        "answer": "Ja, über Telegram Payments mit lokale Abieter. Kryptowährige und TON sind au verfüegbar — universelli Methode für jedi Region."
+      }
+    ]
+  },
+  "services_telegram_bots": {
+    "meta_title": "Telegram-Bots | Swiss Made IT",
+    "meta_description": "Telegram-Bot-Entwicklig für Firmene: Verchaufsautomatisierig, 24/7 Chunde-Support, CRM- und Zahligs-Integration.",
+    "badge": "Telegram-Bots",
+    "hero_title_1": "Dis Gschäft i de Täsche",
+    "hero_title_2": "vo jedem Chund",
+    "hero_description": "Telegram-Bots, wo verchaufed, unterstützed und automatisiered. Sofortigi Antworte 24/7, Zahligsabwicklig, Integration mit dinä System. Chunde überchömed de Service det, wo's bequem isch — im Lieblingsmessenger.",
+    "cta_benefits": "Warum du en Bot bruuchsch",
+    "cta_usecases": "Awendigsfäll",
+    "problems_title": "Chunnts dir bekannt vor?",
+    "problems_solution": "En Telegram-Bot löst die Problem automatisch und schafft rund um d'Uhr.",
+    "problems": [
+      "Chunde schribed z'Nacht — kei Antwort bis am Morge",
+      "Manager verschwänded Ziit mit gliiche Frage",
+      "Leads gönd zwüsche de Kanäl verlore",
+      "Chunde gönd zu Konkurränte mit schnällere Antworte",
+      "Schwierig, alli Afrage z'verfolge",
+      "Kei Verchauf am Wuchenänd und Fiirtig"
+    ],
+    "benefits_title": "Warum dis Unternähme en Telegram-Bot bruucht",
+    "benefits_subtitle": "Automatisierig, wo sich scho im erschte Monet lohnt",
+    "benefits": [
+      {
+        "title": "24/7 Support ohni Personal",
+        "description": "De Bot antwortet Chunde sofort, zu jedere Ziit. Wuchenänd, Fiirtig, Nacht — immer erreichbar."
+      },
+      {
+        "title": "Routine-Automatisierig",
+        "description": "Afrage anäh, FAQs beantworte, Benachrichtigunge, Erinnerige — de Bot macht's ohni Manager."
+      },
+      {
+        "title": "Zahligsabwicklig",
+        "description": "Integration mit Zahligssystäm: Chunde chaufed diräkt in Telegram, ohni d'App z'verlah."
+      },
+      {
+        "title": "900+ Millione Nutzer",
+        "description": "Telegram isch eine vo de beliebtischte Messenger. Dini Chunde sind scho det."
+      },
+      {
+        "title": "Analytik und Metrike",
+        "description": "Verfolgsch Conversions, beliebti Afrage, Antwortziit — triffsch datebasieti Entscheidige."
+      },
+      {
+        "title": "KI und NLP",
+        "description": "Intelligänti Bots mit GPT-Integration verstönd natürlichi Sprach und führed sinnvolli Gspröch."
+      }
+    ],
+    "usecases_title": "Was üsi Bots chönd",
+    "usecases_subtitle": "Typischi Awendigsfäll",
+    "usecases": [
+      {
+        "title": "Chunde-Support",
+        "description": "FAQ-Antworte, Afrage-Routing, Eskalation zu Live-Agent"
+      },
+      {
+        "title": "Verchauf und Bestellige",
+        "description": "Produktkatalog, Warächorb, Checkout und Zahlig ohni Telegram z'verlah"
+      },
+      {
+        "title": "Benachrichtigunge",
+        "description": "Bestellstatus, Erinnerige, Team-Alerts"
+      },
+      {
+        "title": "HR und Recruiting",
+        "description": "Bewerbigsiigang, Kandidate-Screening, Mitarbeiter-Onboarding"
+      },
+      {
+        "title": "Integratione",
+        "description": "Verbindig mit CRM, ERP, Google Sheets, Zahlige und jedere API"
+      },
+      {
+        "title": "Umfrage und Datesammlig",
+        "description": "Feedback-Formular, NPS, Chundebefragige"
+      }
+    ],
+    "features_title": "Bot-Funktione",
+    "features": [
+      "Mehrstufigi Menüs und Inline-Buttons",
+      "Personalisierig basierend uf Nutzerdate",
+      "Mehrsprachigi Unterstützig",
+      "ChatGPT / Claude Integration",
+      "Webhook- und API-Integratione",
+      "Zahligsabwicklig (Stripe, Krypto)",
+      "Admin-Panel zur Verwaltig",
+      "Analytik und Bericht"
+    ],
+    "process_title": "Wie mir Bots entwickled",
+    "process": [
+      {
+        "step": "01",
+        "title": "Analyse",
+        "description": "Mir untersuched dini Prozäss und bstimmed, was automatisiert wärde soll"
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "description": "Mir erstellend Dialogabläuf, Menüs und Integratione"
+      },
+      {
+        "step": "03",
+        "title": "Entwicklig",
+        "description": "Mir programmiered de Bot, verbinded APIs und Zahlige"
+      },
+      {
+        "step": "04",
+        "title": "Launch",
+        "description": "Testing, Team-Schulig, Support"
+      }
+    ],
+    "results_title": "Resultat vo üsne Bots",
+    "results": [
+      {
+        "value": "-60%",
+        "label": "Support-Ufwand"
+      },
+      {
+        "value": "24/7",
+        "label": "Verfüegbarkeit"
+      },
+      {
+        "value": "<3 Sek",
+        "label": "Antwortziit"
+      },
+      {
+        "value": "+40%",
+        "label": "Verchaufskonversion"
+      }
+    ],
+    "pricing_title": "Priise",
+    "pricing_description": "Priis hängt vo de Komplexität ab: eifache FAQ-Bot — ab 1'500 CHF, Bot mit Zahlige und Integratione — ab 4'000 CHF, Enterprise-KI-Lösig — individuells Agebot.",
+    "pricing_hint": "Gratis Beratig — mir säged dir, was du würkli bruuchsch",
+    "faq_title": "Hüfig gstellti Frage",
+    "faq": [
+      {
+        "question": "Wie lang duured d'Entwicklig?",
+        "answer": "Eifache Bot — 1-2 Wuche, mittleri Komplexität mit Integratione — 3-4 Wuche, komplexs Enterprise — 1-2 Mönet. Erschti funktionierendi Version innert ere Wuche."
+      },
+      {
+        "question": "Chönd ihr euch mit üsem CRM verbinde?",
+        "answer": "Ja, mir integriere mit jedem System über API: amoCRM, Bitrix24, Salesforce, HubSpot, 1C, Google Sheets und kundenspezifischi Lösige."
+      },
+      {
+        "question": "Wie versteit de Bot verschiedeni Formulierige?",
+        "answer": "Mir nutze NLP und ChatGPT/Claude-Integration für natürlichi Sprochverstehig. De Bot erkennt Absichte au bi Tippfähler."
+      },
+      {
+        "question": "Was wenn de Bot d'Antwort nid weiss?",
+        "answer": "Mir richte Eskalation zu emene Live-Agent ii. De Bot übergit de Gsprächskontext, damit de Chund sich nid wiederhöle mues."
+      }
+    ]
+  },
+  "services_cloud": {
+    "meta_title": "Cloud-Migration | SwissTech",
+    "meta_description": "Sicheri Cloud-Migration: AWS, Azure, GCP. Kostereduktion bis zu 40%, Skalierbarkeit, GDPR- und Swiss DPA-Konformität.",
+    "badge": "Cloud-Migration",
+    "hero_title_1": "Wächsled id Cloud",
+    "hero_title_2": "ohni Schmerze und Risike",
+    "hero_description": "Müed vo Serverchöste und komplizierter Skalierig? Mir migriere euri Systeme id Cloud: AWS, Azure, GCP oder Schwiizer Abieter. Kostereduktion bis zu 40%, 99.99% Uptime, GDPR- und Swiss DPA-Konformität.",
+    "cta_benefits": "Cloud-Vorteil",
+    "cta_compare": "Mit On-Premise vergliiche",
+    "problems_title": "Bekannti Probleem?",
+    "problems": [
+      "Server stönd still, aber Rächnige chömed",
+      "Skalierig bruucht Wuche zum Plane",
+      "Jedes Update isch es Usfallrisiko",
+      "IT-Team verbringt Ziit mit Rutineufgabe",
+      "Kei Sicherheit bi Usfalltoleranz",
+      "Schwierig, GDPR-Aforderige z'erfülle"
+    ],
+    "problems_conclusion": "Cloud löst die Probleem — und mir helfed euch bim schmerzlose Umzug.",
+    "benefits_title": "Warum Cloud",
+    "benefits_subtitle": "Nöd nur en Trend — echti Gschäftsvorteil",
+    "benefits": [
+      {
+        "title": "Kostereduktion bis zu 40%",
+        "description": "Zahled nur für gnutzti Ressource. Kei Usgabe für Server, Chüelig und Strom."
+      },
+      {
+        "title": "Skalierig in Minute",
+        "description": "Automatisches Ressourcewachstum unter Last. Black Friday oder virale Traffic — s'System packt's."
+      },
+      {
+        "title": "Enterprise-Sicherheit",
+        "description": "Dateverschlüsselig, Netzwerkisolierig, GDPR- und Swiss DPA-Konformität vo Afang a."
+      },
+      {
+        "title": "99.99% Uptime",
+        "description": "Multi-regionali Infrastruktur, automatischi Wiederherstellig, stündlichi Backups."
+      },
+      {
+        "title": "DevOps vo Afang a",
+        "description": "CI/CD-Pipelines, automatischi Deployments, Versions-Rollback in Sekunde. Schnäller und sicherer release."
+      },
+      {
+        "title": "Volli Transparänz",
+        "description": "Monitoring, Logs, Alerts — kenned de Systemstatus in Echtziit, reagiered bevor Chunde's merked."
+      }
+    ],
+    "comparison_title": "On-Premise vs Cloud",
+    "comparison_subtitle": "Vergliichet und überzüüged euch",
+    "comparison_onprem_label": "On-Premise",
+    "comparison_cloud_label": "Cloud",
+    "comparison_onprem": [
+      "Kapitalufwand für Server",
+      "Komplizierti Skalierig — Wuche",
+      "Usfallziit bi Hardware-Updates",
+      "Begränzti geografischi Verfüegbarkeit",
+      "Afälligkeit für lokali Usfäll",
+      "IT-Team bschäftigt mit Rutine",
+      "Hardware-Obsoleszänz in 3-5 Jahr"
+    ],
+    "comparison_cloud": [
+      "Betriibschöste per Abonnement",
+      "Auto-Skalierig in Minute",
+      "Zero-Downtime-Deployments",
+      "Globales CDN und Edge-Standort",
+      "Multi-regionali Usfalltoleranz",
+      "IT konzentriert sich uf s'Produkt",
+      "Immer aktuelli Infrastruktur"
+    ],
+    "services_title": "Was mir mached",
+    "services_subtitle": "Komplette Zyklus vo Cloud-Migration und Unterstützig",
+    "services": [
+      {
+        "title": "Cloud-Migration",
+        "description": "Lift-and-Shift oder Refactoring — mir wähled d'Strategie für euri Bedürfnis"
+      },
+      {
+        "title": "Kubernetes & Docker",
+        "description": "Containerisierig, Orchestrierig, Microservices-Auto-Skalierig"
+      },
+      {
+        "title": "CI/CD-Pipelines",
+        "description": "Build-, Test- und Deployment-Automatisierig"
+      },
+      {
+        "title": "Managed Datebanke",
+        "description": "PostgreSQL, MySQL, MongoDB — kei Ufwand mit Backups und Replikation"
+      },
+      {
+        "title": "Sicherheit",
+        "description": "IAM, Verschlüsselig, VPN, WAF, Audit und Compliance"
+      },
+      {
+        "title": "Monitoring",
+        "description": "Prometheus, Grafana, Alerts und On-Call-Rotation"
+      }
+    ],
+    "providers_title": "Abietersuswahl",
+    "providers_subtitle": "Mir schaffed mit allne grosse Cloud-Abieter",
+    "providers": [
+      {
+        "name": "AWS",
+        "description": "Grössts Ökosystem, ideal für komplexe Projekt"
+      },
+      {
+        "name": "Azure",
+        "description": "Besti Integration mit Microsoft-Stack"
+      },
+      {
+        "name": "GCP",
+        "description": "Starch in ML/AI und Dateanalyse"
+      },
+      {
+        "name": "Swiss Cloud",
+        "description": "Für Date, wo id Schwiiz müend bliibe"
+      }
+    ],
+    "process_title": "Wie mir migriere",
+    "process": [
+      {
+        "step": "01",
+        "title": "Audit",
+        "description": "Analyse vo de aktuelle Infrastruktur, Abhängigkeite und Aforderige"
+      },
+      {
+        "step": "02",
+        "title": "Planig",
+        "description": "Wahl vo de Migrationsstrategie, em Abieter und de Architektur"
+      },
+      {
+        "step": "03",
+        "title": "Migration",
+        "description": "Phasewisi Migration mit minimaler Usfallziit"
+      },
+      {
+        "step": "04",
+        "title": "Optimierig",
+        "description": "Performance- und Chöste-Tuning, Team-Schulig"
+      }
+    ],
+    "results_title": "Migrationsergäbnis",
+    "results": [
+      {
+        "value": "-40%",
+        "label": "Infrastrukturchöste"
+      },
+      {
+        "value": "99.99%",
+        "label": "Uptime"
+      },
+      {
+        "value": "10×",
+        "label": "Deployment-Gschwindigkeit"
+      },
+      {
+        "value": "0",
+        "label": "Usfallziit bi Migration"
+      }
+    ],
+    "tech_title": "Technologie",
+    "faq_title": "Hüüfigi Frage",
+    "faq": [
+      {
+        "question": "Wie lang duurt d'Migration?",
+        "answer": "Abhängig vo de Komplexität: eifachi Dienst — 2-4 Wuche, grossi Infrastruktur mit Refactoring — 2-4 Mönet. Mir mached's phasewis mit minimaler Gschäftsuswirkig."
+      },
+      {
+        "question": "Wird's Usfallziit während de Migration gäh?",
+        "answer": "Mir nützed Blue-Green-Deployment und schrittwiisi Migration. In de meischte Fäll — kei Usfallziit. Für kritischi System planed mir Wartungsfänschter z'Nacht."
+      },
+      {
+        "question": "Welle Cloud-Abieter isch besser?",
+        "answer": "Abhängig vo de Ufgabe: AWS — universell und serviceriich, Azure — für Microsoft-Stack, GCP — starch in Analytik und ML. Für Date id Schwiiz git's lokali Abieter."
+      },
+      {
+        "question": "Was isch mit Sicherheit und GDPR?",
+        "answer": "Alli Lösige werded mit GDPR und Swiss DPA im Hinterkopf entworfe: Verschlüsselig, IAM, Logging, Wahl vo de Datespeicherregion. Mir führed vor em Start e Sicherheitsprüefig dure."
+      }
+    ]
+  },
+  "services_accessibility": {
+    "meta_title": "Barrierefreiheit und inklusives Design | Swiss Made IT",
+    "meta_description": "Barrierefreiheits-Audit, WCAG 2.1 AA/AAA-Konformität, inklusives Design. Mached Sie Ihres Produkt für alli Nutzer zugänglich und gsetzeskonform.",
+    "badge_1": "WCAG 2.1",
+    "badge_2": "Inklusives Design",
+    "badge_3": "Screen Reader fründlich",
+    "hero_title_1": "E Website für ",
+    "hero_title_2": "jede",
+    "hero_title_3": " Nutzer",
+    "hero_description": "15% vo de Mensche händ gsundheitlichi Iischränkige. Gsetz werded strenger, Klage nähmed zue. Mir mached Ihres Produkt für alli zugänglich und WCAG 2.1 AA/AAA konform.",
+    "cta_audit": "Audit bstelle",
+    "cta_wcag": "WCAG-Stufe",
+    "problems_label": "Probleem",
+    "problems_title": "Warum Barrierefreiheit kei Option isch",
+    "problems_subtitle": "E nöd barrierefreii Website bedüüted verlornigi Chunde, Reputationsrisike und rächtlichi Probleem",
+    "problems": [
+      {
+        "title": "Rächtlichi Risike",
+        "description": "Id EU und id Schwiiz werded Barrierefreiheitsgsetz strenger. Klage wäge nöd barrierefreie Websites werded Realität"
+      },
+      {
+        "title": "Verlust vo 15% vo de Zielgruppe",
+        "description": "15% vo de Bevölkerig händ gsundheitlichi Iischränkige. E nöd barrierefreii Website verlüürt eifach die Chunde"
+      },
+      {
+        "title": "Sehprobleem",
+        "description": "Schlechte Kontrast, chliini Schrift, nöd funktionierenede Zoom — älteri Nutzer chönd nöd mit de Website schaffe"
+      },
+      {
+        "title": "Muus isch nöd für alli",
+        "description": "Nur-Muus-Navigation schlüsst Nutzer mit motorische Iischränkige us"
+      },
+      {
+        "title": "Inhalt ohni Alternative",
+        "description": "Video ohni Untertitel, Bilder ohni Beschriibige, Audio ohni Transkript"
+      },
+      {
+        "title": "Kaputti Semantik",
+        "description": "Screen Reader chönd d'Site nöd läse: div statt button, kei Überschrifte, falschi ARIA-Rolle"
+      }
+    ],
+    "benefits_label": "Vorteil",
+    "benefits_title": "Barrierefreiheit isch en Gschäftsvorteil",
+    "benefits_subtitle": "Investitione i Barrierefreiheit zahled sich dur Zielgruppenerwiiterig, verbessertes SEO und Risikoschutz us",
+    "benefits": [
+      {
+        "title": "Meh Chunde",
+        "description": "E barrierefreii Website funktioniert für alli — erwiiteret euri Zielgruppe und steigeret d'Conversion"
+      },
+      {
+        "title": "Gsetzeskonformität",
+        "description": "WCAG 2.1 AA/AAA, ADA, Section 508, EN 301 549 — Schutz vor Klage und Buesse"
+      },
+      {
+        "title": "Bessers SEO",
+        "description": "Semantisches HTML, Alt-Tekscht, strukturierte Inhalt — das, was Suechchmaschine liebid"
+      },
+      {
+        "title": "Markereputation",
+        "description": "Inklusion isch en Wert. Chunde wähled Unternähme, wo sich um alli kümmered"
+      },
+      {
+        "title": "Besseri UX für alli",
+        "description": "Grossi Buttons, klari Navigation, läsbari Tekscht verbessered s'Erlebnis für jede Nutzer"
+      },
+      {
+        "title": "Mobilität und Kontekscht",
+        "description": "E barrierefreii Site funktioniert dusse bi heller Sunne, id lute Metro, mit einere Hand"
+      }
+    ],
+    "wcag_label": "WCAG 2.1",
+    "wcag_title": "Konformitätsstufe",
+    "wcag_subtitle": "Web Content Accessibility Guidelines — internationale Standard für Webinhalt-Barrierefreiheit",
+    "wcag_recommended": "Empfohle",
+    "wcag_levels": [
+      {
+        "level": "A",
+        "title": "Minimales Niveau",
+        "description": "Grundlegendi Aforderige: Alt-Tekscht, Tastaturstüürig, kei blinkende Inhalt",
+        "criteria": "25 Kriterie"
+      },
+      {
+        "level": "AA",
+        "title": "Empfohlens Niveau",
+        "description": "Gschäftsstandard: Kontrast 4,5:1, Vergrösserig bis 200%, Videountertitel",
+        "criteria": "13 Kriterie"
+      },
+      {
+        "level": "AAA",
+        "title": "Fortgschrittens Niveau",
+        "description": "Maximali Barrierefreiheit: Kontrast 7:1, Gebärdespräch, erwiiterti Audiobeschriibig",
+        "criteria": "23 Kriterie"
+      }
+    ],
+    "services_label": "Dienstleistige",
+    "services_title": "Vollständige Barrierefreiheits-Workflow",
+    "services_subtitle": "Vom Audit bis zur Behebig und Zertifizierig — mir übernahmed die ganz Arbet",
+    "services": [
+      {
+        "title": "Barrierefreiheits-Audit",
+        "description": "Umfassendi WCAG 2.1 Website-Prüefig: automatisierti Test + manuelli Analyse + Test mit echte Nutzer"
+      },
+      {
+        "title": "Konformitätsbricht",
+        "description": "Detaillierte Bricht mit jedem gfundene Problem, sinere Uuswirkig, Priorität und spezifischer Lösig"
+      },
+      {
+        "title": "Problembehebig",
+        "description": "Nöd nur en Bricht — mir bhebed de Code sälber: Semantik, ARIA, Fokus, Kontrast, alternativi Tekscht"
+      },
+      {
+        "title": "Screen Reader Test",
+        "description": "Test mit NVDA, JAWS, VoiceOver, TalkBack — wie euri Site tatsächlich für blindi Nutzer funktioniert"
+      },
+      {
+        "title": "Nur-Tastatur-Navigation",
+        "description": "Vollständigi Sitebedienigohni Muus: Fokus, Tab-Reihefolg, Skip-Links, Tastatur-Falle"
+      },
+      {
+        "title": "Dokumentation und Schulig",
+        "description": "Richtlinie für Designer und Entwickler: wie me Barrierefreiheit bi de Produktentwicklig ufrechterhaltet"
+      }
+    ],
+    "tools_label": "Wärchzüüg",
+    "tools_title": "Professionells Toolkit",
+    "process_label": "Prozess",
+    "process_title": "Vom Audit zum Zertifikat",
+    "process": [
+      {
+        "step": "01",
+        "title": "Audit",
+        "description": "Automatisiertes axe/WAVE-Scanning + manuelli Test + Prüefig mit assistive Technologie",
+        "duration": "3-5 Täg"
+      },
+      {
+        "step": "02",
+        "title": "Bricht",
+        "description": "Strukturierte Bricht: Problem → Uuswirkig → Priorität → Lösig → WCAG-Kriterium",
+        "duration": "2-3 Täg"
+      },
+      {
+        "step": "03",
+        "title": "Behebig",
+        "description": "Probleem nach Priorität bhebe. Kritischi zerscht, kosmetischi zletscht",
+        "duration": "1-4 Wuche"
+      },
+      {
+        "step": "04",
+        "title": "Validierig",
+        "description": "Erneuti Test, Fix-Verifizierig, WCAG-Konformitätszertifikat",
+        "duration": "2-3 Täg"
+      }
+    ],
+    "results_label": "Ergäbnis",
+    "results_title": "Was Sie überchömed",
+    "results": [
+      {
+        "value": "100%",
+        "label": "WCAG-Konformität",
+        "sublabel": "vo de gwählte Stufe"
+      },
+      {
+        "value": "+15%",
+        "label": "Neui Zielgruppe",
+        "sublabel": "potenzielli Chunde"
+      },
+      {
+        "value": "0",
+        "label": "Rächtlichi Risike",
+        "sublabel": "Klageschutz"
+      },
+      {
+        "value": "↑SEO",
+        "label": "Suechchmaschinerankings",
+        "sublabel": "semantischs HTML"
+      }
+    ],
+    "pricing_title": "Zertifizierti Barrierefreiheit",
+    "pricing_description": "D'Chöste hänged vo de Grössi vo de Website und em aktuelle Zuestand ab. Express-Audit ab 1'500 CHF, vollständigs Audit + Behebig ab 5'000 CHF.",
+    "pricing_cta": "Agebot erhalte",
+    "faq_label": "FAQ",
+    "faq_title": "Hüüfigi Frage",
+    "faq": [
+      {
+        "question": "Welli WCAG-Stufe bruuched mir?",
+        "answer": "Für di meischte kommerziell Websites — WCAG 2.1 AA. Das isch e Aforderig vo de EU- und Schwiizer Gsetzgäbig, es optimals Gliichgwicht zwüsched Barrierefreiheit und Chöste. AAA isch für Regierigsdienst und medizinischi Applikatione nötig."
+      },
+      {
+        "question": "Wie lang duurt en Audit?",
+        "answer": "Express-Audit vo de Hauptsite — 3-5 Täg. Vollständigs Audit vonere mittlere Website (50-100 Site) — 2-3 Wuche. Für grossi Portal erstelled mir en individuelle Plan."
+      },
+      {
+        "question": "Cha e Website zu 100% barrierefrei gmacht werde?",
+        "answer": "Perfekti Barrierefreiheit isch en Prozess, kei Ergäbnis. Mir erreiched d'Konformität mit de gwählte WCAG-Stufe und stelled Wärchzüüg zur Verfüegig zum Barrierefreiheit bi de Produktentwicklig ufrechtzhalte."
+      },
+      {
+        "question": "Wie wird sich das ufs Website-Design uswirke?",
+        "answer": "Barrierefreiheit ≠ langwiiligs Design. Moderni Technike erlaubed's, Kreativität und Marke z'erhalte. Oft verbessered barrierefreii Lösige sogar d'gsamti UX für alli Nutzer."
+      }
+    ],
+    "cta_title": "Mached Sie Ihres Produkt für alli zugänglich",
+    "cta_description": "Fanged a mit ere gratis Express-Prüefig vo eurer Startsite. Erfahred jetzt, wie barrierefrei euri Website isch.",
+    "cta_button": "Barrierefreiheits-Audit bstelle"
+  },
+  "services_devops": {
+    "meta_title": "DevOps & SRE | Swiss IT",
+    "meta_description": "CI/CD-Pipelines, Containerisierig, Monitoring und Infrastructure as Code. Zueverläässigi Bereitstellig und Betrieb vo eune Systeme.",
+    "badge_devops": "DevOps",
+    "badge_sre": "SRE",
+    "hero_title": "DevOps & SRE —",
+    "hero_title_gradient": "zueverläässigi Bereitstellig",
+    "hero_description": "Mir richte Prozäss für kontinuierlichi Integration und Bereitstellig ii. Containerisierig, Monitoring, Infrastructure as Code — euri Releases wärde vorhersehbar und sicher.",
+    "hero_cta": "Infrastruktur bspräche",
+    "services_title": "Was mir mached",
+    "services": [
+      {
+        "title": "CI/CD-Pipelines",
+        "description": "Automatisierig vo Build, Tests und Deployment. GitHub Actions, GitLab CI, Jenkins — mir wähled basierend uf euem Stack."
+      },
+      {
+        "title": "Containerisierig",
+        "description": "Docker, Kubernetes, Orchestrierig. Isolierti Umgebige, Skalierig, vorhersehbars Deployment."
+      },
+      {
+        "title": "Monitoring & Alerting",
+        "description": "Prometheus, Grafana, ELK Stack. Metrike, Logs, Tracing — gseht alles, was i euem System passiert."
+      },
+      {
+        "title": "Infrastructure as Code",
+        "description": "Terraform, Ansible, CloudFormation. Reproduzierbar Infrastruktur, Versionierig, Automatisierig."
+      },
+      {
+        "title": "DevSecOps",
+        "description": "Sicherheit i d Pipeline integriert. Scanning vo Abhängigkeite, Secrets, Schwachstelle."
+      },
+      {
+        "title": "SRE-Praktike",
+        "description": "SLI/SLO/SLA, Error Budgets, Incident Management. Zueverläässigkeit als Ingenieursdisziplin."
+      }
+    ],
+    "benefits_title": "Implementierigsergebnis",
+    "benefits": [
+      {
+        "metric": "↑",
+        "label": "Deployment-Frequänz"
+      },
+      {
+        "metric": "↓",
+        "label": "Wiederherstelligsziit"
+      },
+      {
+        "metric": "↑",
+        "label": "Systemstabilität"
+      },
+      {
+        "metric": "↓",
+        "label": "Manuelli Operatione"
+      }
+    ],
+    "benefits_note": "Konkreti Kennzahle hänged vom Usgangszuestand vo de Infrastruktur ab",
+    "tech_title": "Technologie",
+    "cta_title": "Parat, d Infrastruktur z optimiere?",
+    "cta_description": "Verzelled eus vom aktuelle Stand — mir schlönd en Verbessigsplan vor",
+    "cta_button": "Projekt bspräche"
+  },
+  "services_digital_reboot": {
+    "meta_title": "Digitale Business-Reboot | SwissTech",
+    "meta_description": "Kompletti Transformazion vo eim veraltete Unternähme i es modärns digitals Ökosystem. Redesign, Automatisierig, Integratione — Ergebnis vom erste Tag a.",
+    "badge": "Digitale Reboot",
+    "hero_title": "Verwandled eures veraltetets Unternähme",
+    "hero_title_gradient": "i e digitali Wachstumsmaschine",
+    "hero_description": "Komplette Neustart: vo ere uralte Website und Chaos i Prozäss — zu eim modärne Ökosystem, wo verkauft, automatisiert und skaliert. Kunde gsehnd de Unterschied bim erste Klick.",
+    "hero_cta": "Meh erfahre",
+    "hero_cta_secondary": "Vorher / Nachher aluege",
+    "problem_title": "Chunnt euch das bekannt vor?",
+    "problems": [
+      "Website gseht us wie vo 2010",
+      "Wettbewerber nähmed euch Kunde weg",
+      "Manager ertrinked i de Routine",
+      "Keis Verständnis, was funktioniert und was nöd",
+      "Jedi Änderig chostet Ziit und Gäld",
+      "Kunde gönd, ohni uf e Antwort z warte"
+    ],
+    "problem_conclusion": "Das isch keis Urteil. Das isch de Usgangspunkt für d Transformazion.",
+    "benefits_title": "Was ihr überchömed",
+    "benefits_subtitle": "Nöd nur e neui Website — es vollwärtigs digitals Ökosystem, wo für eures Unternähme schaffet",
+    "benefits": [
+      {
+        "title": "Konversionswachstum bis zu 3×",
+        "description": "Modärns UX, schnälls Lade und klari CTAs verwandled Bsuecher i Chunde."
+      },
+      {
+        "title": "Spart 20+ Stunde pro Wuche",
+        "description": "Routine-Automatisierig: Bricht, Benachrichtigunge, Datesynchronisation — alles funktioniert ohni euch."
+      },
+      {
+        "title": "Team schaffet effizienter",
+        "description": "Eis System statt emene Dutzed verschiedeni Tools. Weniger Chaos, meh Ergebnis."
+      },
+      {
+        "title": "Start in 4-8 Wuche",
+        "description": "Nöd Jahr vo Entwicklig, sondern schnälli Ergebnis. Iterative Ansatz: erschti Verbesserige sofort sichtbar."
+      },
+      {
+        "title": "Sicherheit und DSGVO",
+        "description": "Iihaltung vo europäische Dateschutzstandards. Verschlüsselig, Audit, Zuegriffskontrolle."
+      },
+      {
+        "title": "Skalierbarkeit",
+        "description": "Architektur, wo mit euem Unternähme wachst. Funktione hinzuefüege, ohni d Basis umzbaue."
+      }
+    ],
+    "before_after_title": "Vorher und Nachher",
+    "before_after_subtitle": "De echti Unterschied, wo eusi Chunde gsehnd",
+    "before_label": "Vorher",
+    "after_label": "Nachher",
+    "before": [
+      "Veralteti Website mit niidriger Konversion",
+      "Manuelli Lead-Bearbeitig i Excel",
+      "Chunde wartet stundelong uf Antwort",
+      "Date über verschiedeni System verstreut",
+      "Mitarbeiter verbringed Ziit mit Routine",
+      "Kei Analytik — Entscheidige us em Buuch",
+      "Jedi Änderig isch schmerzhaft und tüür"
+    ],
+    "after": [
+      "Modärni Website mit überdurchschnittlicher Konversion",
+      "CRM verarbeitet Leads automatisch",
+      "Bot antwortet Chunde sofort 24/7",
+      "Eiheitlichs Ökosystem mit Synchronisation",
+      "Automatisierig schafft 20+ Std/Wuche frei",
+      "Echtziit-Dashboards mit Metrike",
+      "Flexibles System — Änderige i Stunde"
+    ],
+    "included_title": "Was im Reboot enthalte isch",
+    "included": [
+      {
+        "title": "Website-Redesign",
+        "desc": "Modärns UI/UX, schnälls Lade, mobili Version, SEO"
+      },
+      {
+        "title": "CRM-System",
+        "desc": "Verkaufsautomatisierig, Trichter, Ufgabe, Integratione"
+      },
+      {
+        "title": "Telegram-Bot",
+        "desc": "24/7 Chundesupport, Benachrichtigunge, Lead-Erfassig"
+      },
+      {
+        "title": "Analytik",
+        "desc": "Dashboards, Metrike, Echtziit-Bricht"
+      },
+      {
+        "title": "Automatisierig",
+        "desc": "E-Mail-Sequenze, Erinnerige, Datesynchronisation"
+      },
+      {
+        "title": "Integratione",
+        "desc": "Zahligssystem, Lieferig, externi Dienst"
+      },
+      {
+        "title": "Schulig",
+        "desc": "Video-Guides und Dokumentation für eures Team"
+      },
+      {
+        "title": "Support",
+        "desc": "Technische Support und Updates noch em Start"
+      }
+    ],
+    "process_title": "Wie es funktioniert",
+    "process": [
+      {
+        "step": "01",
+        "title": "Audit",
+        "desc": "Mir analysiere de aktuell Stand: Website, Prozäss, Tools, Schmerzpünkt"
+      },
+      {
+        "step": "02",
+        "title": "Strategie",
+        "desc": "Mir erstelled en Transformationsplan mit Prioritäte und Ziitplan"
+      },
+      {
+        "step": "03",
+        "title": "Umsetzig",
+        "desc": "Phasewisi Implementierig: zerscht Kritischs, dänn Verbesserige"
+      },
+      {
+        "step": "04",
+        "title": "Start",
+        "desc": "Tests, Team-Schulig, Monitoring und Optimierig"
+      }
+    ],
+    "results_title": "Chundenergebnis",
+    "results": [
+      {
+        "value": "3×",
+        "label": "Konversionswachstum"
+      },
+      {
+        "value": "-60%",
+        "label": "Ziit für Routine"
+      },
+      {
+        "value": "24/7",
+        "label": "Chundesupport"
+      },
+      {
+        "value": "4-8",
+        "label": "Wuche bis zum Start"
+      }
+    ],
+    "faq_title": "Hüfigi Frage",
+    "faq": [
+      {
+        "q": "Wie viel chostet das?",
+        "a": "Hangt vom Umfang ab: vo eifachem Redesign bis zum vollständige Ökosystem. Mir schätzed noch em Audit und bieted Optione für eures Budget. Erschtberatig isch gratis."
+      },
+      {
+        "q": "Wie lang duurt d Transformazion?",
+        "a": "Basis-Reboot — 4-8 Wuche. Umfassends Ökosystem — 2-4 Mönet. Mir schaffed iterativ: erschti Ergebnis gsehnd ihr i 2-3 Wuche."
+      },
+      {
+        "q": "Was, wenn mir keis technischs Team händ?",
+        "a": "Das isch keis Problem. Mir übernähmed alli technische Aspekte und schuled eures Team im Umgang mit neue Tools. Noch em Start — Support und Beratig."
+      },
+      {
+        "q": "Chönd mir chlii afange?",
+        "a": "Ja, mir empfehled, mit em schmerzhafteste Bereich z starte. Zum Bispiel zerscht d Website, dänn CRM, dänn Automatisierig. De phasewisi Ansatz reduziert Risike und verteilt s Budget."
+      }
+    ]
+  },
+  "services_discovery": {
+    "meta_title": "Product Discovery | Swiss IT",
+    "meta_description": "Forschig und Validierig vo Produktidee. User Research, Prototyping, Hypothesetests vor Entwickligsbeginn.",
+    "badge_discovery": "Discovery",
+    "badge_research": "Research",
+    "hero_title": "Product Discovery —",
+    "hero_title_gradient": "bevor ihr bauet",
+    "hero_description": "Mir helfed, euri Idee z formuliere und z teste, bevor d Entwicklig beginnt. User Research, Prototyping, Hypothesevalidierig — Ziit und Budget spare.",
+    "hero_cta": "Idee bspräche",
+    "services_title": "Was Discovery beinhaltet",
+    "services": [
+      {
+        "title": "User Research",
+        "description": "Interviews, Umfrage, Verhaltensanalys. Mir verstönd d echte Bedürfnis vo eune Nutzer."
+      },
+      {
+        "title": "Ideevalidierig",
+        "description": "Mir tested Hypothese vor de Entwicklig. Minimiere s Risiko, es unnötigs Produkt z baue."
+      },
+      {
+        "title": "Prototyping",
+        "description": "Interaktivi Prototype für Nutzertests. Schnälli Iteratione."
+      },
+      {
+        "title": "Marktanalys",
+        "description": "Wettbewerber, Trends, Chance. Date für Entscheidige."
+      },
+      {
+        "title": "Technischi Expertise",
+        "description": "Machbarkeitsbewärtig, Technologiewahl, Architekturentscheidige."
+      },
+      {
+        "title": "MVP-Spezifikation",
+        "description": "Mir definiere d Mindestfunktionalität für Launch und Produktvalidierig."
+      }
+    ],
+    "process_title": "Prozäss",
+    "process": [
+      {
+        "step": "01",
+        "title": "Iitauche",
+        "description": "Mir studiere eures Gschäft, Zielgruppe, bestehendi Lösige"
+      },
+      {
+        "step": "02",
+        "title": "Forschig",
+        "description": "Interviews füehre, Date analysiere, Hypothese formuliere"
+      },
+      {
+        "step": "03",
+        "title": "Prototyp",
+        "description": "Prototype erstelle, mit Nutzer teste, iteriere"
+      },
+      {
+        "step": "04",
+        "title": "Spezifikation",
+        "description": "Detaillierti Spezifikation und MVP-Entwickligsplan vorbereite"
+      }
+    ],
+    "cta_title": "Händ ihr e Produktidee?",
+    "cta_description": "Mir helfed euch, si vor Entwickligsbeginn z teste",
+    "cta_button": "Projekt bspräche"
+  },
+  "services_documentation": {
+    "meta_title": "Technischi Dokumentation | Swiss IT",
+    "meta_description": "Technischi Dokumentation, API-Referenze, Benutzerhandbiächer. Dokumentation, wo gläse, nöd ignoriert wird.",
+    "problems_title": "Chunnt euch das bekannt vor?",
+    "problems_subtitle": "D Choschte vo fehlender Dokumentation sind höcher als denkt",
+    "problems": [
+      {
+        "title": "Kei Dokumentation",
+        "description": "Nur de Entwickler weiss, wie s System funktioniert. Er geit — s Wüsse geit au"
+      },
+      {
+        "title": "Langs Onboarding",
+        "description": "Neui Mitarbeiter bruched Wuche, um s System z verstah, und lenked Kolleg mit Frage ab"
+      },
+      {
+        "title": "Nöd auffindbar",
+        "description": "Dokumentation existiert, isch aber über Confluence, Google Docs, Notion und Chöpf verstreut"
+      },
+      {
+        "title": "Veralteti Informatione",
+        "description": "Dokumentation vor eim Jahr gschribe, System het sich siither stark verändert"
+      },
+      {
+        "title": "Unklari API",
+        "description": "Integratoren chönd sich nöd ohni Aaruf bi eune Entwickler verbinde"
+      },
+      {
+        "title": "Sicherheitsrisike",
+        "description": "Ohni Dokumentation sind Audit, Zertifizieerig und Compliance unmöglich"
+      }
+    ],
+    "benefits_title": "Was gueti Dokumentation bringt",
+    "benefits_subtitle": "E Investition, wo sich vielfach uuszahlt",
+    "benefits": [
+      {
+        "title": "Autarks Team",
+        "description": "Entwickler finded Antworte sälber, ohni Aarüef und Warte. Entwickligsgsschwindigkeit stigt"
+      },
+      {
+        "title": "Schnälls Onboarding",
+        "description": "Neui Mitarbeiter werded i Täg produktiv, nöd Mönet. Iisparige bi de Schulig"
+      },
+      {
+        "title": "Schnälleri Integratione",
+        "description": "Partner verbinded sich über Dokumentation ohni euri Beteiliging. Meh Integratione — meh Wachstum"
+      },
+      {
+        "title": "Risikominderig",
+        "description": "Wüsse geit bi Teamwächsle nöd verlore. Gschäftskritischi System sind gschützt"
+      },
+      {
+        "title": "Single Source of Truth",
+        "description": "Alli Dokumentation a eim Ort mit Versionierig und Suechi"
+      },
+      {
+        "title": "Skalierig",
+        "description": "Einmal gschribe — vo Hunderte gnutzt. Dokumentation skaliert gratis"
+      }
+    ],
+    "doc_types": [
+      {
+        "title": "API-Dokumentation",
+        "description": "Interaktivi Referenze für Entwickler",
+        "features": [
+          "OpenAPI/Swagger",
+          "Code-Bispil",
+          "Try it out",
+          "Auto-Generierig"
+        ]
+      },
+      {
+        "title": "Technischi Beschribig",
+        "description": "Architektur, Deployment, Administration",
+        "features": [
+          "Architekturdiagramm",
+          "Runbooks",
+          "Troubleshooting",
+          "Konfiguration"
+        ]
+      },
+      {
+        "title": "Benutzerhandbiächer",
+        "description": "Aleitige für Ändbenutzer",
+        "features": [
+          "Schritt-für-Schritt-Aleitige",
+          "Screenshots/GIF",
+          "FAQ",
+          "Videoaleitige"
+        ]
+      },
+      {
+        "title": "Onboarding",
+        "description": "Schnällstart für neui Teammitglieder",
+        "features": [
+          "Getting Started",
+          "Tutorials",
+          "Best Practices",
+          "Code Examples"
+        ]
+      },
+      {
+        "title": "Produktdokumentation",
+        "description": "Beschribig vo de Produktfunktionalität",
+        "features": [
+          "Release Notes",
+          "Feature Specs",
+          "Roadmap",
+          "Changelog"
+        ]
+      },
+      {
+        "title": "Prozässdokumentation",
+        "description": "Beschribig vo de Team-Workflows",
+        "features": [
+          "Definition of Done",
+          "Code Review",
+          "CI/CD",
+          "Branching Strategy"
+        ]
+      }
+    ],
+    "tools_title": "Wärkzüg",
+    "tools_subtitle": "Mir wähled de optimal Stack für euri Ufgabe",
+    "process_title": "Wie mir Dokumentation erstellet",
+    "process_subtitle": "Systematische Ansatz zur Wüsserhaltig",
+    "process": [
+      {
+        "step": "01",
+        "title": "Wüsse-Audit",
+        "duration": "1 Wuche",
+        "description": "Bestehendi Dokumentation analysiere, Lücke identifiziere, Schlüsselpersone interviewe.",
+        "deliverables": [
+          "Wüsseskarte",
+          "Gap-Analys",
+          "Prioritäte",
+          "Struktur"
+        ]
+      },
+      {
+        "step": "02",
+        "title": "Dokumentationsarchitektur",
+        "duration": "1 Wuche",
+        "description": "Struktur entwerfe, Tools uswähle, Plattform und Prozäss iirrichte.",
+        "deliverables": [
+          "Informationsarchitektur",
+          "Plattform",
+          "Vorlage",
+          "Style Guide"
+        ]
+      },
+      {
+        "step": "03",
+        "title": "Inhaltserstellig",
+        "duration": "2-6 Wuche",
+        "description": "Dokumentation schribe, Diagramm erstelle, Videos ufnäh. Iterativ mit Review.",
+        "deliverables": [
+          "API Reference",
+          "Guides",
+          "Tutorials",
+          "Diagramm"
+        ]
+      },
+      {
+        "step": "04",
+        "title": "Support und Updates",
+        "duration": "Fortlaufend",
+        "description": "Dokumentation i CI/CD integriere, Update-Prozäss iirrichte, Team schule.",
+        "deliverables": [
+          "Docs-as-Code",
+          "Review Process",
+          "Metrike",
+          "Schulig"
+        ]
+      }
+    ],
+    "results_title": "Typischi Ergebnis",
+    "results": [
+      {
+        "metric": "70%",
+        "label": "Weniger Frage i Slack"
+      },
+      {
+        "metric": "3x",
+        "label": "Schnällers Onboarding"
+      },
+      {
+        "metric": "50%",
+        "label": "Schnälleri Integratione"
+      },
+      {
+        "metric": "0",
+        "label": "Verlornigs Wüsse"
+      }
+    ],
+    "pricing_title": "Dokumentationspriise",
+    "pricing_description": "API-Dokumentation — ab 3'000 CHF. Umfassendi Projektdokumentation — ab 8'000 CHF. Priis hangt vo Systemgrössi und erforderlicher Tüüfi ab. Audit vo bestehender Dokumentation — gratis.",
+    "pricing_cta": "Gratis Audit",
+    "faq_title": "Hüfigi Frage",
+    "faq": [
+      {
+        "question": "Dokumentation isch i eim Monet veraltet. Warum schribe?",
+        "answer": "Docs-as-Code: Dokumentation läbt näbe em Code, wird demit aktualisiert, durgeit Review. Auto-Generierig vo API-Docs us Code. Prozäss, wo Updates Teil vo de Entwicklig mached, kei separati Ufgab."
+      },
+      {
+        "question": "Mir händ kei Ziit für Dokumentation",
+        "answer": "Ziit für Dokumentation zahlt sich vielfach us: weniger Aarüef, schnällers Onboarding, weniger Bugs dur Missverständnis. Mir schribed d Dokumentation sälber — ihr müend nur reviewe und Frage beantworte."
+      },
+      {
+        "question": "Weles Dokumentationsformat isch am beste?",
+        "answer": "Hangt vo de Zielgruppe ab. Für Entwickler — Markdown im Repository oder Docusaurus. Für Benutzer — interaktivi Guides mit Video. Für Enterprise — Confluence oder GitBook. Mir helfed bi de Uswahl."
+      },
+      {
+        "question": "Chönd ihr frömde Code dokumentiere?",
+        "answer": "Ja, das isch eusi Spezialität. Mir mached Code Review, red mit Entwickler, verstönd d Logik. Mir dokumentiered Legacy-System, wo vor 10 Jahr vo Lüüt gschribe worde sind, wo nümme da sind."
+      }
+    ],
+    "cta_title": "Parat, Wüsse z bewahre?",
+    "cta_description": "Verliered nöd d Expertise vo euem Team. Dokumentation isch e Investition i d Zuekunft vom Projekt.",
+    "cta_button": "Dokumentation bspräche",
+    "badge1": "Docs-as-Code",
+    "badge2": "API & User Guides",
+    "title": "Dokumentation —",
+    "title_gradient": "Wüsse, wo nöd verlore geit",
+    "description": "Mir erstellet technischi Dokumentation, wo gläse wird. API-Referenze, Guides, Onboarding — alles, damit eures Team und Partner effektiv schaffed chönd.",
+    "cta_primary": "Dokumentation bstelle",
+    "cta_secondary": "Arte vo Dokumentation",
+    "doc_types_title": "Arte vo Dokumentation",
+    "doc_types_subtitle": "Mir erstellet Dokumentation für jedi Zielgruppe"
+  },
+  "services_integration": {
+    "meta_title": "Integratione und API | Swiss IT",
+    "meta_description": "API-Entwicklig und Integration. Mir verbindet System mitenand: CRM, ERP, Zahligssystem, externi Dienst.",
+    "badge1": "API",
+    "badge2": "Integratione",
+    "title": "Integratione und API —",
+    "title_gradient": "es verbundenes Ökosystem",
+    "description": "Mir entwickled APIs und integrierend System. CRM, ERP, Zahligs-Gateways, externi Dienst — eui Date sind synchronisiert und det verfüegbar, wo sie bruucht werded.",
+    "cta_primary": "Integration bspräche",
+    "services_title": "Was mir mached",
+    "services": [
+      {
+        "title": "API-Entwicklig",
+        "description": "REST, GraphQL, gRPC — mir wähled de Aasatz für d Ufgab. Dokumentation, Versionierig, Testing."
+      },
+      {
+        "title": "Systemintegration",
+        "description": "Mir verbindet eui System mitenand. Datesynchronisation, Single Source of Truth."
+      },
+      {
+        "title": "CRM und ERP",
+        "description": "Salesforce, HubSpot, 1C, SAP — mir integrierend mit eune Gschäftssystem."
+      },
+      {
+        "title": "Zahligssystem",
+        "description": "Stripe, PayPal, Twint — Zahligsaanahm und Finanzintegration."
+      },
+      {
+        "title": "Externi Dienst",
+        "description": "Marktplätz, Logistik, Banke, Behördesystem — alli externe APIs."
+      },
+      {
+        "title": "ETL und Synchronisation",
+        "description": "Automatische Dateaustausch zwüsched System. Transformation, Validierig, Monitoring."
+      }
+    ],
+    "tech_title": "Technologie und Protokoll",
+    "cta_title": "Integration bruucht?",
+    "cta_description": "Säged eus, weli System verbunde werde müend — mir schlönd e Lösig vor",
+    "cta_button": "Projekt bspräche"
+  },
+  "services_maintenance": {
+    "meta_title": "Technische Support | Swiss IT",
+    "meta_description": "Technische Support und Systemwartig. Monitoring, Updates, Bugfixes. Flexibli SLA-Bedingige.",
+    "badge1": "Support",
+    "badge2": "Wartig",
+    "title": "Technische Support —",
+    "title_gradient": "stabile Betriib",
+    "description": "Mir gwährleisted de stabile Betriib vo eune System. Monitoring, Updates, Bugfixes — flexibli SLA-Bedingige für eui Aaforderige.",
+    "cta_primary": "Support bspräche",
+    "services_title": "Was enthalte isch",
+    "services": [
+      {
+        "title": "24/7 Monitoring",
+        "description": "Mir überwached Systemstatus, Leistigskennzahle, Service-Verfüegbarkeit."
+      },
+      {
+        "title": "Incident Response",
+        "description": "Schnälli Reaktion uf Problem. Reaktionsziit wird im SLA vereinbart."
+      },
+      {
+        "title": "Updates und Patches",
+        "description": "Regelmässigi Sicherheitsupdates, Abhängigkeite, Betriebssystem."
+      },
+      {
+        "title": "Backup",
+        "description": "Automatischi Backups, Wiederherstelligsprüefig, Speicherig nach Vorschrifte."
+      },
+      {
+        "title": "Optimierig",
+        "description": "Leistigsanalys, Engpassbesiitig, Skalierig."
+      },
+      {
+        "title": "Reporting",
+        "description": "Regelmässigi Bricht über Systemstatus, durchgfüehrti Arbeite, Empfehlige."
+      }
+    ],
+    "sla_title": "SLA-Optione",
+    "sla_subtitle": "Bedingige werded individuell uf eui Aaforderige abgstimmt",
+    "sla": [
+      {
+        "title": "Basic",
+        "response": "bis zu 24 Stund",
+        "description": "Werktäg, Standardufgabe",
+        "features": [
+          "Email-Support",
+          "Sicherheitsupdates",
+          "Monatlechi Bricht"
+        ]
+      },
+      {
+        "title": "Business",
+        "response": "bis zu 4 Stund",
+        "description": "Erwiiterete Support",
+        "features": [
+          "Email + Chat",
+          "24/7 Monitoring",
+          "Wöchentlechi Bricht",
+          "Prioritätsufgabe"
+        ]
+      },
+      {
+        "title": "Enterprise",
+        "response": "bis zu 1 Stund",
+        "description": "Gschäftskritischi System",
+        "features": [
+          "Dedizierte Manager",
+          "Aarüef jederzit",
+          "Echtziit-Monitoring",
+          "SLA mit Garantie"
+        ]
+      }
+    ],
+    "cta_title": "Support bruucht?",
+    "cta_description": "Verzelled eus vo euem System — mir finded s richtig Format",
+    "cta_button": "Bedingige bspräche"
+  },
+  "services_modernization": {
+    "meta_title": "Systemmodernisierig | SwissTech",
+    "meta_description": "Verwandled veraltete Legacy-Code in es moderns skalierbars System. Refactoring, Plattform-Upgrade, Leistigsverbessrig.",
+    "badge": "Systemmodernisierig",
+    "title": "Verwandled Legacy",
+    "title_gradient": "in Wettbewerbsvorteil",
+    "description": "Veraltete Code bremst eues Gschäft? Mir modernisiered System ohni Betriibsunterbruch: Refactoring, Plattform-Upgrade, Architekturverbessrig. Ergebnis — schnälls, sichers und skalierbars System.",
+    "cta_primary": "Warum modernisiere",
+    "cta_secondary": "Migrationsbiispil",
+    "problems_title": "Bekannti Symptom?",
+    "problems": [
+      "'Nöd aalange, es funktioniert' — Team-Motto",
+      "Eifachs Feature duurt Wuche",
+      "Entwickler chündiged wäge Legacy",
+      "Bugs chömed immer wieder zrugg",
+      "Angscht vor jedem Deploy",
+      "Abhängigkeite chönd nöd aktualisiert werde"
+    ],
+    "problems_footer": "Technischi Schulde sammled sich über Jahr aa, aber ihr zahled jede Tag dafür.",
+    "benefits_title": "Warum modernisiere",
+    "benefits_subtitle": "Investition i Modernisierig zahlt sich schnäller us als dänkt",
+    "benefits": [
+      {
+        "title": "3× Entwickligsgschwindigkeit",
+        "description": "Suubere Code, modulari Architektur und Autotests — neui Features schnäller ohni Angscht, Alts z breche."
+      },
+      {
+        "title": "Tieferi Supportchöste",
+        "description": "Weniger Bugs, eifachers Onboarding neuer Entwickler, Dokumentation und klari Struktur."
+      },
+      {
+        "title": "Leistigswachstum",
+        "description": "Abfragoptimierig, Caching, moderni Frameworks — s System lauft schnäller."
+      },
+      {
+        "title": "Sicherheit und Compliance",
+        "description": "Abhängigkeits-Updates, Schwachstellebehebig, Iihaltrig moderner Standards."
+      },
+      {
+        "title": "Attraktivität für Talenti",
+        "description": "Entwickler wänd mit modernem Stack schaffe. Liichter z rekrutiere und z halte."
+      },
+      {
+        "title": "Skalierigsparat",
+        "description": "Architektur wo mit em Gschäft wachst. Microservices, Container, Cloud."
+      }
+    ],
+    "comparison_title": "Legacy vs Modern",
+    "comparison_subtitle": "Wie sich Entwicklig nach Modernisierig änderet",
+    "comparison_legacy_label": "Legacy",
+    "comparison_modern_label": "Nach Modernisierig",
+    "comparison_legacy": [
+      "Jedi Änderig riskiert alles z breche",
+      "Neui Features duuret Mönet",
+      "Entwickler händ Angscht, Code aazfasse",
+      "Dokumentation veraltet oder fählt",
+      "Schwachstelle i alte Abhängigkeite",
+      "Cha nöd skaliere",
+      "Schwär, Spezialisate z finde"
+    ],
+    "comparison_modern": [
+      "Sichers Deploy mit Autotests",
+      "Releases jedi Wuche",
+      "Code isch klar und vorhersehbar",
+      "Aktuelli Dokumentation und Typisierig",
+      "Moderni sicheri Abhängigkeite",
+      "Horizontali Skalierig",
+      "Attraktive Stack für Recruiting"
+    ],
+    "services_title": "Was mir mached",
+    "services_subtitle": "Umfassende Modernisierigaasatz",
+    "services": [
+      {
+        "title": "Code-Refactoring",
+        "description": "Strukturverbessrig ohni Funktionsänderig"
+      },
+      {
+        "title": "Architekturmodernisierig",
+        "description": "Vom Monolith zu Microservices oder modularem Monolith"
+      },
+      {
+        "title": "Plattform-Upgrade",
+        "description": "Aktualisierig vo Spraach, Framework, Datebank"
+      },
+      {
+        "title": "Testabdeckig",
+        "description": "Unit-, Integrations-, E2E-Tests für sicheri Änderige"
+      },
+      {
+        "title": "CI/CD-Pipelines",
+        "description": "Automatisierig vo Build, Testing und Deployment"
+      },
+      {
+        "title": "Security Hardening",
+        "description": "Sicherheitsaudit und Schwachstellebesiitig"
+      }
+    ],
+    "scenarios_title": "Migrationsbiispil",
+    "scenarios_subtitle": "Typischi Modernisierigsszenarie",
+    "scenarios": [
+      {
+        "title": "PHP 5 → PHP 8 / Laravel",
+        "description": "Upgrade vo Legacy WordPress oder Custom PHP zum moderne Stack"
+      },
+      {
+        "title": "jQuery → React / Vue",
+        "description": "Frontend-Migration zur Komponentearchitektur"
+      },
+      {
+        "title": "Monolith → Microservices",
+        "description": "Zerleig grosser System in verwaltbari Services"
+      },
+      {
+        "title": "On-premise → Cloud",
+        "description": "Cloud-Migration mit Containerisierig"
+      },
+      {
+        "title": "Python 2 → Python 3",
+        "description": "Migration vo veraltetere Spraachversion"
+      },
+      {
+        "title": ".NET Framework → .NET 8",
+        "description": "Modernisierig vo Windows-Aawändig"
+      }
+    ],
+    "process_title": "Wie mir modernisiered",
+    "process": [
+      {
+        "step": "01",
+        "title": "Audit",
+        "description": "Analys vo Code, Architektur, Abhängigkeite und technische Schulde"
+      },
+      {
+        "step": "02",
+        "title": "Strategie",
+        "description": "Aasatzwahl: Strangler Fig, Big Bang oder schrittwiisi Migration"
+      },
+      {
+        "step": "03",
+        "title": "Umsätzig",
+        "description": "Iterativi Modernisierig bi Ufrächterhalt vo de Funktionsfähigkeit"
+      },
+      {
+        "step": "04",
+        "title": "Übergab",
+        "description": "Dokumentation, Teamschuellig, Support noch em Start"
+      }
+    ],
+    "results_title": "Modernisierigsergebnis",
+    "results": [
+      {
+        "value": "3×",
+        "label": "Entwickligsgschwindigkeit"
+      },
+      {
+        "value": "-60%",
+        "label": "Produktionsfähler"
+      },
+      {
+        "value": "80%",
+        "label": "Testabdeckig"
+      },
+      {
+        "value": "0",
+        "label": "Usfallziit bi Migration"
+      }
+    ],
+    "faq_title": "Hüfigi Frage",
+    "faq": [
+      {
+        "question": "Cha mer ohni Gschäftsunterbruch modernisiere?",
+        "answer": "Ja, mir nutzed s Strangler-Fig-Muster — neui Systemteil started parallel zu alte, Traffic wird schrittwiis umgschalte. Gschäft lauft ohni Unterbrüch."
+      },
+      {
+        "question": "Wie lang duurt d Modernisierig?",
+        "answer": "Hangt vo Grössi und Komplexität vom System ab. Chliini Projekt — 1-2 Mönet, grossi Enterprise-System — 6-12 Mönet. Mir schaffed i Iteratione, erschti Verbessrige i 2-4 Wuche sichtbar."
+      },
+      {
+        "question": "Was wenn s Team de neu Stack nöd kännt?",
+        "answer": "Mir schueled eues Team während de Modernisierig: Pair Programming, Code Review, Workshops. Nach de Übergab schafft s Team sicher mit em neue Code."
+      },
+      {
+        "question": "Isch es nöd eifacher, vo Grund uf neu z schriibe?",
+        "answer": "Vo Grund uf neu schriibe bedüütet Jahr vo Entwicklig, verloreni Gschäftslogik und hohi Risike. Modernisierig bewahrt agsammletes Wüsse und lieferet schnäller Ergebnis."
+      }
+    ]
+  },
+  "services_research": {
+    "meta_title": "Analytik und Strategie | SwissTech",
+    "meta_description": "Träffed datenbasierti Entscheide. Marktanalys, Wettbewerbsforschig, Systemaudit — Aktionsplan mit prognostizierte Ergebnis.",
+    "badge": "Analytik und Strategie",
+    "title": "Entscheide uf Datebasis,",
+    "title_gradient": "nöd Vermutige",
+    "description": "Höred uf z rate. Mir füehred Forschig dure, wo Antworte lieferet: was uf em Markt passiert, was Wettbewerber mached, wohi eues Unternehme go söll. Ihr bekommed nöd nur en Bricht — sondern en Aktionsplan mit prognostizierte Ergebnis.",
+    "cta_primary": "Forschigsorte",
+    "cta_secondary": "Was ihr bekommed",
+    "problems_title": "Bekannti Situatione?",
+    "problems": [
+      "Produktstart ohni Marktkenntnis",
+      "Wettbewerber wachsed und ihr verstönd nöd warum",
+      "Investore fördered Date, wo ihr nöd händ",
+      "System veraltet, aber unklar wo aafange",
+      "Vill Idee aber kei Uswahlkriterie",
+      "Budget für ineffektivi Kanäl usgäh"
+    ],
+    "problems_footer": "Analytik verwandlet Unsicherheit in en klare Aktionsplan.",
+    "services_title": "Forschigsorte",
+    "services_subtitle": "Wähled, was eues Unternehme jetzt bruucht",
+    "services": [
+      {
+        "title": "Wettbewerbsanalys",
+        "description": "Detaillierti Studi vo de Stärke und Schwäche vo Wettbewerber, ihre Strategie, Priis und Positionierig."
+      },
+      {
+        "title": "Marktforschig",
+        "description": "Marktgrössebewärtig, Trends, Zielgrupp und Potenzial für eues Produkt oder Service."
+      },
+      {
+        "title": "Technologieaudit",
+        "description": "Analys aktueller System: Architektur, Sicherheit, Leistig, technischi Schulde."
+      },
+      {
+        "title": "Go-to-Market-Strategie",
+        "description": "Produktstartplan: Kanäl, Positionierig, Priisgstaltig, erschti 100 Chunde."
+      },
+      {
+        "title": "Entwickligs-Roadmap",
+        "description": "Schrittwiise Plan für digitali Transformation mit Prioritäte, Ziitraame und Budget."
+      },
+      {
+        "title": "Risikobewärtig",
+        "description": "Identifikation technischer, Markt- und regulatorischer Risike mit Mitigationsplan."
+      }
+    ],
+    "comparison_title": "Intuition vs Date",
+    "comparison_subtitle": "Wie sich Gschäft mit Analytik veränderet",
+    "comparison_intuition_label": "Ohni Analytik",
+    "comparison_data_label": "Mit Analytik",
+    "comparison_intuition": [
+      "Entscheide basierend uf 'Marktgfüehl'",
+      "Wettbewerber kopiere ohni Verständnis",
+      "Usgabe für nöd funktionierndi Hypothese",
+      "Verpassti Wachstumschance",
+      "Überraschige vo Regulierer und Markt",
+      "Schwär Investore z überzüüge"
+    ],
+    "comparison_data": [
+      "Entscheide dur Zahle gstützt",
+      "Verständnis vo eurer einzigartige Position",
+      "Investition i bewährti Richtige",
+      "Systemateschi Suechi nach Wachstumspünkt",
+      "Bereitschaft für Marktveränderige",
+      "Überzügendi Argumänt für Stakeholder"
+    ],
+    "deliverables_title": "Was ihr bekommed",
+    "deliverables_subtitle": "Forschigsergebnis isch kei Dateisammlig, sondern Entscheidigswerkzüüg",
+    "deliverables": [
+      {
+        "title": "Datebricht",
+        "description": "Strukturierti Analys mit Diagramm, Tabelle und Quelle"
+      },
+      {
+        "title": "Schlussfolgrige und Erkenntniss",
+        "description": "Wichtigi Erkenntniss, wo euri Entscheide beeinflussed"
+      },
+      {
+        "title": "Empfehlige",
+        "description": "Konkreti Schritt: was tue, i welere Reiefolg, mit welene Ressource"
+      },
+      {
+        "title": "Aktionsplan",
+        "description": "Fertigi Roadmap mit Phase, Ziitraame und KPIs"
+      },
+      {
+        "title": "Präsentation",
+        "description": "Materialie zur Präsentation für Investore oder Team"
+      },
+      {
+        "title": "Beratig",
+        "description": "2 Stund Ergebnisbsprechig mit Experte"
+      }
+    ],
+    "process_title": "Wie Forschig funktioniert",
+    "process": [
+      {
+        "step": "01",
+        "title": "Brief",
+        "description": "Forschigsziel definiere, z beantwortendi Frage"
+      },
+      {
+        "step": "02",
+        "title": "Datesammlig",
+        "description": "Open-Source-Analys, Interviews, Umfrage, technischs Audit"
+      },
+      {
+        "step": "03",
+        "title": "Analys",
+        "description": "Date strukturiere, Muster und Erkenntniss finde"
+      },
+      {
+        "step": "04",
+        "title": "Bricht",
+        "description": "Dokumänt mit Schlussfolgrige, Empfehlige und Aktionsplan erstelle"
+      }
+    ],
+    "use_cases_title": "Wenn Analytik bruucht wird",
+    "use_cases": [
+      {
+        "title": "Neus Produkt starte",
+        "description": "Markt, Wettbewerber und Zielgrupp vor Entwickligstart verstah"
+      },
+      {
+        "title": "Neue Markt betrete",
+        "description": "Potenzial, Regulierig und lokali Bsonderheite bewärte"
+      },
+      {
+        "title": "Investitione aazüüche",
+        "description": "Data Room mit Marktanalytik für Investore vorbereite"
+      },
+      {
+        "title": "Digitali Transformation",
+        "description": "Aktuelli System auditiere und Modernisierigplan erstelle"
+      },
+      {
+        "title": "Marketing optimiere",
+        "description": "Effektivi Kanäl finde und Budget umverteile"
+      },
+      {
+        "title": "Strategeschi Planig",
+        "description": "Entwickligsprioritäte uf Datebasis definiere"
+      }
+    ],
+    "results_title": "Eusi Forschigsergebnis",
+    "results": [
+      {
+        "value": "50+",
+        "label": "abgschlosseni Studie"
+      },
+      {
+        "value": "2-4",
+        "label": "Wuche pro Projekt"
+      },
+      {
+        "value": "85%",
+        "label": "Empfehlige umgsetzt"
+      },
+      {
+        "value": "3×",
+        "label": "durchschnittleche ROI"
+      }
+    ],
+    "faq_title": "Hüfigi Frage",
+    "faq": [
+      {
+        "question": "Was chostet Forschig?",
+        "answer": "Hangt vo Tüüfi und Umfang ab: Express-Wettbewerbsanalys ab 2000 CHF, umfassendi Marktforschig ab 8000 CHF. Gnaui Chöste nach Ufgabebsprechig."
+      },
+      {
+        "question": "Weli Datequelle nutzed ihr?",
+        "answer": "Offeni Date (Statista, Branchebricht), Wettbewerber-Scraping, Experteinterviews, Zielgruppeumfrage, technischs Systemaudit."
+      },
+      {
+        "question": "Schaffed ihr mit vertrouliche Informatione?",
+        "answer": "Ja, mir underschribed NDA. Alli Informatione sicher gspiicheret, Zugang nur für Projektteilnehmer. Löschig uf Aafrag nach Abschluss."
+      },
+      {
+        "question": "Cha ich nur en Teil vo de Forschig becho?",
+        "answer": "Ja, mir mached modulari Forschig. Zum Biispil nur Wettbewerbsanalys oder nur technischs Audit. Paket isch meistens chostegünstiger aber nöd erforderlech."
+      }
+    ]
+  },
+  "services_security": {
+    "meta_title": "Cybersicherheit | Swiss IT",
+    "meta_description": "Sicherheitsaudits, Pentests, Dateschutz. GDPR, Swiss DPA, OWASP. Mir schützed eues Gschäft vor Cyberbedrohige.",
+    "badge_owasp": "OWASP & ISO 27001",
+    "badge_gdpr": "GDPR Konform",
+    "title": "Cybersicherheit —",
+    "title_gradient": "Schutz vo dem, was ihr ufbaut händ",
+    "description": "Sicherheitsaudits, Pentests, Dateschutz. Mir finded Schwachstelle, bevor Hacker es tüend. GDPR-, Swiss DPA- und internationali Standards-Konformität.",
+    "cta_primary": "Audit bestelle",
+    "cta_secondary": "Eusi Leistige",
+    "threats_title": "Typischi Bedrohige",
+    "threats_subtitle": "Schwachstelle, wo mir i 80% vo de Projekt finded",
+    "threats": [
+      {
+        "title": "Code-Schwachstelle",
+        "description": "SQL-Injektione, XSS, CSRF — typischi Schwachstelle, wo Hacker zerscht usnützed"
+      },
+      {
+        "title": "Schwachi Authentifizierig",
+        "description": "Eifachi Passwörter, kei 2FA, Token-Lecks — offeni Tür für Aagrifer"
+      },
+      {
+        "title": "Datelecks",
+        "description": "Ungschützti Datebanke, offeni Backups, Logs mit personebezogene Date"
+      },
+      {
+        "title": "Unsicheri APIs",
+        "description": "Fehlends Rate Limiting, brocheni Zugriffskontrolle, z vill Date i Antworte"
+      },
+      {
+        "title": "Verwundbari Infrastruktur",
+        "description": "Veralteti Softwareversione, offeni Ports, falsch konfigurierti Server"
+      },
+      {
+        "title": "Mänschlicher Faktor",
+        "description": "Phishing, Social Engineering, Insider-Bedrohige — 90% vo de Aagriff fanged bi Mensche aa"
+      }
+    ],
+    "services_title": "Sicherheitsleistige",
+    "services_subtitle": "Umfassende Schutz vo eurer IT-Infrastruktur",
+    "services": [
+      {
+        "title": "Sicherheitsaudit",
+        "description": "Umfassendi Prüefig vo eurer IT-Infrastruktur, Code und Prozäss",
+        "features": [
+          "Architekturanalys",
+          "Code Review",
+          "Konfigurationsprüefig",
+          "Gap-Analys"
+        ]
+      },
+      {
+        "title": "Penetration Testing",
+        "description": "Simulation vo echte Aagriff, zum Schwachstelle z finde, bevor Hacker es tüend",
+        "features": [
+          "Black/White/Grey Box",
+          "Webaawändige",
+          "API & Mobile Apps",
+          "Social Engineering"
+        ]
+      },
+      {
+        "title": "Web-App-Schutz",
+        "description": "Implementierig vo Sicherheits-Best-Practices i euri Aawändige",
+        "features": [
+          "OWASP Top 10",
+          "WAF-Iirichtig",
+          "Sicheri Header",
+          "Input-Validierig"
+        ]
+      },
+      {
+        "title": "Verschlüsselig & Schlüsselverwaltung",
+        "description": "Schutz vo Date bi Speicherig und Übertraagig",
+        "features": [
+          "TLS/SSL-Konfiguration",
+          "Datebankeverschlüsselig",
+          "Secrets Management",
+          "HSM-Integration"
+        ]
+      },
+      {
+        "title": "Authentifizierig & Autorisierig",
+        "description": "Robustes Zugangsverwaltungssystem",
+        "features": [
+          "SSO/SAML/OAuth",
+          "2FA/MFA",
+          "RBAC/ABAC",
+          "Zero Trust"
+        ]
+      },
+      {
+        "title": "Monitoring & Reaktion",
+        "description": "Echtziit-Erkennig vo Bedrohige und Vorfall",
+        "features": [
+          "SIEM-Iirichtig",
+          "Alerts",
+          "Incident Response",
+          "Forensics"
+        ]
+      }
+    ],
+    "compliance_title": "Standards und Compliance",
+    "compliance_subtitle": "Mir helfed bi de Erfüllig vo regulatorische Aaforderige",
+    "compliance": [
+      {
+        "name": "GDPR",
+        "description": "Schutz personebezogener Date vo EU-Bürger"
+      },
+      {
+        "name": "Swiss DPA",
+        "description": "Schwiizer Dateschutzgsetz"
+      },
+      {
+        "name": "OWASP",
+        "description": "Webaawändig-Sicherheitsstandards"
+      },
+      {
+        "name": "ISO 27001",
+        "description": "Informationssicherheits-Managementsystem"
+      },
+      {
+        "name": "PCI DSS",
+        "description": "Zaahligscharte-Sicherheitsstandard"
+      },
+      {
+        "name": "SOC 2",
+        "description": "Sicherheitskontrole für SaaS"
+      }
+    ],
+    "process_title": "Sicherheitsprüefigsprozäss",
+    "process_subtitle": "Vo de Analys zum gsicherte System",
+    "process": [
+      {
+        "step": "01",
+        "title": "Ufklärig & Analys",
+        "duration": "1-2 Wuche",
+        "description": "Informatione über euri Infrastruktur sammle, Aagriffsflächi definiere, Bedrohigsmodell erstelle.",
+        "deliverables": [
+          "Asset-Inventar",
+          "Bedrohigsmodell",
+          "Testumfang",
+          "Arbeitsplan"
+        ]
+      },
+      {
+        "step": "02",
+        "title": "Teste",
+        "duration": "2-4 Wuche",
+        "description": "Pentest dureführe, Code analysiere, Konfiguratione prüefe. Alli Fund dokumentiere.",
+        "deliverables": [
+          "Identifizierti Schwachstelle",
+          "Exploit-PoCs",
+          "Screenshots & Logs",
+          "CVSS-Bewertige"
+        ]
+      },
+      {
+        "step": "03",
+        "title": "Bricht & Empfehlige",
+        "duration": "1 Wuche",
+        "description": "Detaillierte Bricht mit priorisierte Behebigsempfehlige erstelle.",
+        "deliverables": [
+          "Executive Summary",
+          "Technische Bricht",
+          "Behebigsplan",
+          "Präsentation"
+        ]
+      },
+      {
+        "step": "04",
+        "title": "Behebig & Retest",
+        "duration": "2-4 Wuche",
+        "description": "Bi de Behebig vo Schwachstelle helfe. Retest zur Bestätigig dureführe.",
+        "deliverables": [
+          "Beratige",
+          "Fix Code Review",
+          "Retest",
+          "Abschlussbricht"
+        ]
+      }
+    ],
+    "results_title": "Eusi Arbeitsergebnis",
+    "results": [
+      {
+        "metric": "100%",
+        "label": "Kritischi Schwachstelle gschlosse"
+      },
+      {
+        "metric": "0",
+        "label": "Erfolgrichi Aagriff nach Audit"
+      },
+      {
+        "metric": "< 24h",
+        "label": "Reaktionsziit"
+      },
+      {
+        "metric": "GDPR",
+        "label": "Volli Konformität"
+      }
+    ],
+    "pricing_title": "Servicepriis",
+    "pricing_description": "Express-Web-App-Audit — ab 3'000 CHF. Vollständigs Sicherheitsaudit — ab 8'000 CHF. Pentest — ab 5'000 CHF. Chöste hänged vo Infrastrukturgrössi und Prüeftüüfi ab.",
+    "pricing_cta": "Agebot erhalte",
+    "faq_title": "Hüfigi Frage",
+    "faq": [
+      {
+        "question": "Was isch de Unterschied zwüsche Audit und Pentest?",
+        "answer": "Audit isch e umfassendi Prüefig vo allne Sicherheitsaspekt: Prozäss, Richtlinie, Konfiguratione, Code. Pentest simuliert en echte Aagriff, zum Schwachstelle z finde und usnütze. Mir empfehled meistens, mit emene Audit aazfange, denn regelmässigi Pentests durezfüehre."
+      },
+      {
+        "question": "Wie oft söll me Sicherheitsprüefige mache?",
+        "answer": "Vollständigs Audit — eimol jährli oder nach grössere Änderige. Pentest — mindestens jährli, besser halbjährli. Automatischs Scanning — wöchetli. Für kritischi System empfehled mir es Bug-Bounty-Programm."
+      },
+      {
+        "question": "Macht de Pentest eusi Produktion kaputt?",
+        "answer": "Mir stimmed Umfang und Testmethode im Voruu ab. Destruktivi Tests werded nur im Staging duregfüehrt. Für Produktion nutzed mir sicheri Methode. Mir händ immer en Rollback-Plan und schaffed i vereinbarte Ziitfänster."
+      },
+      {
+        "question": "Was, wenn ihr e kritischi Schwachstell finded?",
+        "answer": "Kritischi Schwachstelle werded sofort gmeldet (innerhalb vonere Stund), ohni uf de Abschlussbricht z warte. Mir gäbed temporäri Mitigationsempfehlige. Bi Bedarf helfed mir bi Notfallbehebige."
+      }
+    ],
+    "cta_title": "Warted nöd uf en Ibruch",
+    "cta_description": "Erfahred vo Schwachstelle, bevor Hacker es tüend. Erstberatig gratis.",
+    "cta_button": "Sicherheitsaudit bestelle"
+  },
+  "services_training": {
+    "meta_title": "Team-Schuellig | Swiss IT",
+    "meta_description": "Workshops und Trainings für Entwickler. Moderni Technologie, Methode, Tools.",
+    "badge_training": "Training",
+    "badge_workshops": "Workshops",
+    "title": "Team-Schuellig —",
+    "title_gradient": "Investition i Wachstum",
+    "description": "Mir füehred Workshops und Trainings für euri Entwickler dure. Moderni Technologie, Methode, Tools — praktischi Fähigkeite, nöd Theorie.",
+    "cta_primary": "Programm bspräche",
+    "programs_title": "Schuelligsbreich",
+    "programs": [
+      {
+        "title": "Moderne Stack",
+        "description": "React, Next.js, TypeScript, Node.js — aktuelli Technologie für Webentwicklig."
+      },
+      {
+        "title": "DevOps-Praktike",
+        "description": "Docker, CI/CD, Monitoring — Fähigkeite für zuverlässigi Bereitstellig und Betriib."
+      },
+      {
+        "title": "Agile und Scrum",
+        "description": "Entwickligsmethode, Sprint-Planig, Backlog-Management."
+      },
+      {
+        "title": "Code Review",
+        "description": "Qualitäts-Code-Review-Praktike, Code-Standards, Automatisierig."
+      },
+      {
+        "title": "Architektur",
+        "description": "Entwurfsmuster, Microservices, Systemskalierig."
+      },
+      {
+        "title": "Teamarbet",
+        "description": "Team-Kommunikation, Aaforderigsverwaltlig, Dokumentation."
+      }
+    ],
+    "formats_title": "Format",
+    "formats": [
+      {
+        "title": "Workshops",
+        "description": "Praktischi Sitzige mit echte Ufgabe",
+        "duration": "1-2 Täg"
+      },
+      {
+        "title": "Kürs",
+        "description": "Tüüfs Iitauche is Thema",
+        "duration": "4-8 Wuche"
+      },
+      {
+        "title": "Mentoring",
+        "description": "Individuelli Arbet mit Entwickler",
+        "duration": "Uf Aafrag"
+      },
+      {
+        "title": "Beratige",
+        "description": "Analys vo spezifische Team-Frage",
+        "duration": "2-4 Stund"
+      }
+    ],
+    "cta_title": "Wänd ihr eues Team entwickle?",
+    "cta_description": "Verzelled eus vo eure Bedürfniss — mir erstellid es Programm",
+    "cta_button": "Schuellig bspräche"
+  },
+  "services_turnkey": {
+    "meta_title": "IT-Partner Rundum-Service | SwissTech",
+    "meta_description": "Euri externi IT-Abteilig ohni Festaastellig. Entwicklig, Support, Beratig — ein Partner für alli technische Ufgabe. Zahled nur für Ergebniss.",
+    "badge": "IT-Partner Rundum-Service",
+    "title": "Euri IT-Abteilig",
+    "title_gradient": "ohni Festaastellig",
+    "description": "Vergässed d Suechi nach Entwickler und s Management vo Freelancer. Mir werded eure dauerhaft technisch Partner: vo eifache Ufgabe bis zu komplexe Projekt. Ein Vertrag — alli IT-Kompetenzeä.",
+    "cta_primary": "Meh erfahre",
+    "cta_secondary": "Mit Aastellig vergliche",
+    "problems_title": "Bekannti Problem?",
+    "problems": [
+      "Bruuched en Entwickler, aber Aastellig isch z tüür",
+      "Freelancer verschwinded im ungünstigste Moment",
+      "Kei Expertise zur Bewertig vo technische Lösige",
+      "IT-Ufgabe hüüfed sich, niemert kümmeret sich drum",
+      "Ein Programmierer deckt nöd alli Ufgabe ab",
+      "Schwer z verstah, wofür ihr Agentüüre zahled"
+    ],
+    "problems_footer": "Es git e Lösig: en zuverlässige IT-Partner, wo wie eues eigete Team schaffet.",
+    "benefits_title": "Warum es funktioniert",
+    "benefits_subtitle": "Ihr überchömed alli Vorteil vonere eigete IT-Abteilig ohni ihri Nachteil",
+    "benefits": [
+      {
+        "title": "Bis zu 70% IT-Ersparnis",
+        "description": "Kei Chöste für Aastellig, Büro, Stüüre, Ferie und Chrankheit. Zahled nur für erledigti Arbet."
+      },
+      {
+        "title": "Es ganzes Team, nöd eini Person",
+        "description": "Designer, Entwickler, DevOps, Analystä — alli Kompetenzeä in eim Vertrag. Ohni Freelancer-Suechi."
+      },
+      {
+        "title": "Sofortige Start",
+        "description": "Kei monatelangi Suechi und Iarbet. Mir fanged innerhalb vo 48 Stund aa."
+      },
+      {
+        "title": "Flexibli Skalierig",
+        "description": "Meh Ufgabe — meh Ressource. Weniger Ufgabe — weniger Chöste. Mir passed eus euerne Bedürfniss aa."
+      },
+      {
+        "title": "Verantwortig und Garantie",
+        "description": "Vertrag, SLA, festi Friste. Mir träged finanzielli Verantwortig fürs Ergebnis."
+      },
+      {
+        "title": "Langfristigi Partnerschaft",
+        "description": "Mir tauched i eues Gschäft ii und werded Teil vom Team. Mir verstönd de Kontext, kenned d Entscheidigsgschicht."
+      }
+    ],
+    "comparison_title": "Aastellig vs IT-Partner",
+    "comparison_subtitle": "Vergliiched und träffed e fundierti Entscheidiig",
+    "comparison_inhouse_label": "Festaastellig",
+    "comparison_partner_label": "IT-Partner",
+    "comparison_inhouse": [
+      "Suechi und Aastellig: 2-6 Mönet",
+      "Lohn + Stüüre + Büro + Ussttattig",
+      "Ferie, Chrankheit, Fluktuation",
+      "Ein Spezialist ≠ alli Kompetenzeä",
+      "Chündigigsrisiko im ungünstigste Moment",
+      "Mues gmanaged und motiviert werde",
+      "Schwer schnäll z skaliere"
+    ],
+    "comparison_partner": [
+      "Arbetsaaafang: 48 Stund",
+      "Festi Chöste pro Ufgab",
+      "Kontinuität — immer öpper erreichbar",
+      "Ganzes Team: Dev, Design, DevOps, QA",
+      "Vertragslichi Verpflichtige und SLA",
+      "Mir managed d Prozäss sälber",
+      "Skaliered nach eure Ufgabe"
+    ],
+    "services_title": "Was mir abdecked",
+    "services_subtitle": "Alli technische Ufgabe — vo eifach bis komplex",
+    "services": [
+      {
+        "title": "Entwicklig",
+        "description": "Websites, Apps, Bots, Integratione — alli technische Ufgabe"
+      },
+      {
+        "title": "Support",
+        "description": "Monitoring, Updates, Fehlerbehebig, Optimierig"
+      },
+      {
+        "title": "Beratig",
+        "description": "Technologiewahl, Systemaudit, Entwickligsstrategie"
+      },
+      {
+        "title": "Sicherheit",
+        "description": "Audit, Dateschutz, DSGVO-Konformität"
+      },
+      {
+        "title": "Automatisierig",
+        "description": "Prozessoptimierig, Systemintegratio"
+      },
+      {
+        "title": "Teamverstärkig",
+        "description": "Temporäri Spezialistä für euri Projekt"
+      }
+    ],
+    "models_title": "Zämearbet-Modell",
+    "models_subtitle": "Wähled s Format, wo zu eurem Unternehme passt",
+    "models": [
+      {
+        "title": "Stundepaket",
+        "description": "Festi Aazahl Stund pro Monet. Ideal für laufende Support und chliini Verbesserige.",
+        "features": [
+          "10-40 Stund/Monet",
+          "Prioritäts-Support",
+          "Ungnutzti Stund werded übertrage"
+        ]
+      },
+      {
+        "title": "Projektarbet",
+        "description": "Festpriis fürs konkret Projekt. Klari Spezifikation, Ziitrahme und Budget.",
+        "features": [
+          "Festpriis",
+          "Meilestei-Zahlige",
+          "Ergebnisgarantie"
+        ]
+      },
+      {
+        "title": "Dediziertes Team",
+        "description": "Spezialisteteam, wo nur für ech schaffet. Für grossi Langziitprojekt.",
+        "features": [
+          "Vollziit-Spezialistä",
+          "Volli Projektiibindig",
+          "Maximali Effizienz"
+        ]
+      }
+    ],
+    "process_title": "Wie mer aafangt",
+    "process": [
+      {
+        "step": "01",
+        "title": "Kännelerne",
+        "description": "Gratissgspräch: Mir bspräched euri Ufgabe und Bedürfniss"
+      },
+      {
+        "step": "02",
+        "title": "Audit",
+        "description": "Mir analysiere d aktuell Situation und schlönd en Plan vor"
+      },
+      {
+        "step": "03",
+        "title": "Vertrag",
+        "description": "Mir wähled es Zämearbet-Modell und leged d Bedingige fest"
+      },
+      {
+        "step": "04",
+        "title": "Arbet",
+        "description": "Mir fanged aa, Ufgabe z löse. Ersti Ergebniss — innerhalb vonere Wuche"
+      }
+    ],
+    "results_title": "Partnerschaftsergebniss",
+    "results": [
+      {
+        "value": "-70%",
+        "label": "Ersparnis vs Aastellig"
+      },
+      {
+        "value": "48h",
+        "label": "Arbetsaafang"
+      },
+      {
+        "value": "5+",
+        "label": "Spezialistä im Team"
+      },
+      {
+        "value": "24/7",
+        "label": "Systemüberwachiig"
+      }
+    ],
+    "faq_title": "Hüfigi Frage",
+    "faq": [
+      {
+        "question": "Wie unterscheidet ihr euch vonere normale Agentür?",
+        "answer": "Mir baued langfristigi Beziehige uf und tauched i eues Gschäft ii. Kenned de Kontext, d Entscheidigsgschicht, d Bsunderheite. Das sind kei eimoligi Projekt, sondern dauerhafti Partnerschaft."
+      },
+      {
+        "question": "Was, wenn ich nur eini Ufgab bruuch?",
+        "answer": "Kei Problem. Mir schaffed au mit Einzelprojekt. Aber vili Kunde wächsled nach de erste Ufgab zu dauerhafter Zämearbet — es isch bequemer und günstiger."
+      },
+      {
+        "question": "Wie schnäll chönd ihr aafange?",
+        "answer": "Normalerwis innerhalb vo 48 Stund nach Vereinbarig. Für dringendi Ufgabe — no schnäller. Mir händ immer freii Ressource für neui Partner."
+      },
+      {
+        "question": "Was, wenn ich mitem Ergebnis nöd zfriede bi?",
+        "answer": "Mir händ SLA und Garantie im Vertrag. Wenn d Arbet nöd de Aaforderige entspricht — überarbeiteted mir uf eusi Chöste. Reputation isch eus wichtiger als churzfristige Gwünn."
+      }
+    ]
+  }
+}

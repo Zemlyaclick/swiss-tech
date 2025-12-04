@@ -1,100 +1,86 @@
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { Handshake, Wallet, Clock, Users, Zap, ShieldCheck, ArrowRight, X, Check, HeartHandshake, Code2, Headphones, Lightbulb } from 'lucide-react';
 import CTASection from '@/components/CTASection';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Locale } from '@/i18n/request';
 
-export const metadata: Metadata = {
-  title: 'IT-партнёр под ключ | SwissTech',
-  description: 'Ваш внешний IT-отдел без найма в штат. Разработка, поддержка, консультации — один партнёр для всех технических задач. Платите только за результат.'
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'services_turnkey' });
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+  };
+}
 
-export default function TurnkeyPage({
-  params: { locale },
+export default async function TurnkeyPage({
+  params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
-  const benefits = [
-    {
-      icon: <Wallet size={24} className="text-laser-cyan" />,
-      title: 'Экономия до 70% на IT',
-      description: 'Никаких затрат на найм, офис, налоги, отпуска и больничные. Платите только за выполненную работу.'
-    },
-    {
-      icon: <Users size={24} className="text-laser-cyan" />,
-      title: 'Целая команда, а не один человек',
-      description: 'Дизайнеры, разработчики, DevOps, аналитики — все компетенции в одном контракте. Без поиска фрилансеров.'
-    },
-    {
-      icon: <Clock size={24} className="text-laser-cyan" />,
-      title: 'Мгновенный старт',
-      description: 'Не нужно месяцами искать и онбордить сотрудников. Начинаем работу в течение 48 часов.'
-    },
-    {
-      icon: <Zap size={24} className="text-laser-cyan" />,
-      title: 'Гибкость масштабирования',
-      description: 'Больше задач — больше ресурсов. Меньше задач — меньше затрат. Адаптируемся к вашим потребностям.'
-    },
-    {
-      icon: <ShieldCheck size={24} className="text-laser-cyan" />,
-      title: 'Ответственность и гарантии',
-      description: 'Договор, SLA, фиксированные сроки. Мы несём финансовую ответственность за результат.'
-    },
-    {
-      icon: <HeartHandshake size={24} className="text-laser-cyan" />,
-      title: 'Долгосрочное партнёрство',
-      description: 'Мы погружаемся в ваш бизнес и становимся частью команды. Понимаем контекст, знаем историю решений.'
-    }
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'services_turnkey' });
+
+  const benefitIcons = [
+    <Wallet key="wallet" size={24} className="text-laser-cyan" />,
+    <Users key="users" size={24} className="text-laser-cyan" />,
+    <Clock key="clock" size={24} className="text-laser-cyan" />,
+    <Zap key="zap" size={24} className="text-laser-cyan" />,
+    <ShieldCheck key="shield" size={24} className="text-laser-cyan" />,
+    <HeartHandshake key="heart" size={24} className="text-laser-cyan" />
   ];
+
+  const benefits = [0, 1, 2, 3, 4, 5].map((i) => ({
+    icon: benefitIcons[i],
+    title: t(`benefits.${i}.title`),
+    description: t(`benefits.${i}.description`)
+  }));
 
   const comparison = {
-    inhouse: [
-      'Поиск и найм: 2-6 месяцев',
-      'Зарплата + налоги + офис + оборудование',
-      'Отпуска, больничные, текучка',
-      'Один специалист ≠ все компетенции',
-      'Риск увольнения в неподходящий момент',
-      'Нужно управлять и мотивировать',
-      'Сложно масштабировать быстро'
-    ],
-    partner: [
-      'Старт работы: 48 часов',
-      'Фиксированная стоимость за задачи',
-      'Непрерывность — всегда кто-то на связи',
-      'Целая команда: dev, design, DevOps, QA',
-      'Договорные обязательства и SLA',
-      'Мы сами управляем процессами',
-      'Масштабируемся под ваши задачи'
-    ]
+    inhouse: [0, 1, 2, 3, 4, 5, 6].map((i) => t(`comparison_inhouse.${i}`)),
+    partner: [0, 1, 2, 3, 4, 5, 6].map((i) => t(`comparison_partner.${i}`))
   };
 
-  const services = [
-    { icon: <Code2 size={20} className="text-laser-cyan" />, title: 'Разработка', desc: 'Сайты, приложения, боты, интеграции — любые технические задачи' },
-    { icon: <Headphones size={20} className="text-laser-cyan" />, title: 'Поддержка', desc: 'Мониторинг, обновления, исправление багов, оптимизация' },
-    { icon: <Lightbulb size={20} className="text-laser-cyan" />, title: 'Консалтинг', desc: 'Выбор технологий, аудит систем, стратегия развития' },
-    { icon: <ShieldCheck size={20} className="text-laser-cyan" />, title: 'Безопасность', desc: 'Аудит, защита данных, соответствие GDPR' },
-    { icon: <Zap size={20} className="text-laser-cyan" />, title: 'Автоматизация', desc: 'Оптимизация процессов, интеграция систем' },
-    { icon: <Users size={20} className="text-laser-cyan" />, title: 'Усиление команды', desc: 'Временные специалисты для ваших проектов' }
+  const serviceIcons = [
+    <Code2 key="code" size={20} className="text-laser-cyan" />,
+    <Headphones key="headphones" size={20} className="text-laser-cyan" />,
+    <Lightbulb key="lightbulb" size={20} className="text-laser-cyan" />,
+    <ShieldCheck key="shield" size={20} className="text-laser-cyan" />,
+    <Zap key="zap" size={20} className="text-laser-cyan" />,
+    <Users key="users" size={20} className="text-laser-cyan" />
   ];
 
-  const models = [
-    {
-      title: 'Пакет часов',
-      description: 'Фиксированное количество часов в месяц. Идеально для постоянной поддержки и небольших доработок.',
-      features: ['10-40 часов/месяц', 'Приоритетная поддержка', 'Неиспользованные часы переносятся']
-    },
-    {
-      title: 'Проектная работа',
-      description: 'Фиксированная стоимость за конкретный проект. Чёткое ТЗ, сроки и бюджет.',
-      features: ['Фиксированная цена', 'Этапные платежи', 'Гарантия результата']
-    },
-    {
-      title: 'Выделенная команда',
-      description: 'Команда специалистов, работающая только на вас. Для масштабных долгосрочных проектов.',
-      features: ['Full-time специалисты', 'Полное погружение в проект', 'Максимальная эффективность']
-    }
-  ];
+  const services = [0, 1, 2, 3, 4, 5].map((i) => ({
+    icon: serviceIcons[i],
+    title: t(`services.${i}.title`),
+    desc: t(`services.${i}.description`)
+  }));
+
+  const models = [0, 1, 2].map((i) => ({
+    title: t(`models.${i}.title`),
+    description: t(`models.${i}.description`),
+    features: [0, 1, 2].map((j) => t(`models.${i}.features.${j}`))
+  }));
+
+  const process = [0, 1, 2, 3].map((i) => ({
+    step: t(`process.${i}.step`),
+    title: t(`process.${i}.title`),
+    desc: t(`process.${i}.description`)
+  }));
+
+  const results = [0, 1, 2, 3].map((i) => ({
+    value: t(`results.${i}.value`),
+    label: t(`results.${i}.label`)
+  }));
+
+  const faqs = [0, 1, 2, 3].map((i) => ({
+    q: t(`faq.${i}.question`),
+    a: t(`faq.${i}.answer`)
+  }));
+
+  const problems = [0, 1, 2, 3, 4, 5].map((i) => t(`problems.${i}`));
 
   return (
     <main className="relative min-h-screen bg-void-950">
@@ -108,26 +94,25 @@ export default function TurnkeyPage({
         <div className="relative z-10 max-w-5xl mx-auto px-4 md:px-6 text-center">
           <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-laser-cyan/30 bg-laser-cyan/5 mb-6">
             <Handshake size={28} className="text-laser-cyan" />
-            <span className="font-display font-bold text-lg text-mist-100">IT-партнёр под ключ</span>
+            <span className="font-display font-bold text-lg text-mist-100">{t('badge')}</span>
           </div>
           
           <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-mist-100 mb-6 leading-tight">
-            Ваш IT-отдел<br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-laser-cyan via-laser-blue to-laser-purple">без найма в штат</span>
+            {t('title')}<br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-laser-cyan via-laser-blue to-laser-purple">{t('title_gradient')}</span>
           </h1>
           
           <p className="text-mist-400 text-lg md:text-xl max-w-3xl mx-auto mb-8">
-            Забудьте о поиске разработчиков и управлении фрилансерами. Мы становимся вашим постоянным 
-            техническим партнёром: от простых задач до сложных проектов. Один контракт — все IT-компетенции.
+            {t('description')}
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="#benefits" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-laser-cyan to-laser-blue text-void-900 font-semibold hover:opacity-90 transition-opacity">
-              Узнать подробнее
+              {t('cta_primary')}
               <ArrowRight size={18} />
             </a>
             <a href="#comparison" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/10 text-mist-300 hover:text-mist-100 hover:border-white/20 transition-colors">
-              Сравнить с наймом
+              {t('cta_secondary')}
             </a>
           </div>
         </div>
@@ -137,17 +122,10 @@ export default function TurnkeyPage({
       <section className="relative py-16 md:py-24 bg-void-900/30">
         <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 text-center">
           <h2 className="font-display text-2xl md:text-3xl font-bold text-mist-100 mb-6">
-            Знакомые проблемы?
+            {t('problems_title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-3xl mx-auto">
-            {[
-              'Нужен разработчик, но найм слишком дорог',
-              'Фрилансеры исчезают в неподходящий момент',
-              'Нет экспертизы для оценки технических решений',
-              'IT-задачи копятся, а заниматься некому',
-              'Штатный программист не покрывает все задачи',
-              'Сложно понять, за что платите агентствам'
-            ].map((problem, i) => (
+            {problems.map((problem, i) => (
               <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-red-500/5 border border-red-500/10">
                 <X size={20} className="text-red-400 mt-0.5 flex-shrink-0" />
                 <span className="text-mist-300">{problem}</span>
@@ -155,7 +133,7 @@ export default function TurnkeyPage({
             ))}
           </div>
           <p className="mt-8 text-mist-400 text-lg">
-            Есть решение: надёжный IT-партнёр, который работает как ваша собственная команда.
+            {t('problems_footer')}
           </p>
         </div>
       </section>
@@ -165,10 +143,10 @@ export default function TurnkeyPage({
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="font-display text-2xl md:text-4xl font-bold text-mist-100 mb-4">
-              Почему это работает
+              {t('benefits_title')}
             </h2>
             <p className="text-mist-400 text-lg max-w-2xl mx-auto">
-              Вы получаете все преимущества собственного IT-отдела без его недостатков
+              {t('benefits_subtitle')}
             </p>
           </div>
           
@@ -191,10 +169,10 @@ export default function TurnkeyPage({
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="font-display text-2xl md:text-4xl font-bold text-mist-100 mb-4">
-              Найм vs IT-партнёр
+              {t('comparison_title')}
             </h2>
             <p className="text-mist-400 text-lg">
-              Сравните и примите взвешенное решение
+              {t('comparison_subtitle')}
             </p>
           </div>
           
@@ -202,7 +180,7 @@ export default function TurnkeyPage({
             {/* In-house */}
             <div className="relative">
               <div className="absolute -top-4 left-6 px-4 py-1 rounded-full bg-red-500/20 border border-red-500/30 text-red-400 text-sm font-medium">
-                Найм в штат
+                {t('comparison_inhouse_label')}
               </div>
               <div className="p-6 pt-8 rounded-2xl bg-void-950 border border-red-500/20">
                 <ul className="space-y-4">
@@ -219,7 +197,7 @@ export default function TurnkeyPage({
             {/* Partner */}
             <div className="relative">
               <div className="absolute -top-4 left-6 px-4 py-1 rounded-full bg-laser-cyan/20 border border-laser-cyan/30 text-laser-cyan text-sm font-medium">
-                IT-партнёр
+                {t('comparison_partner_label')}
               </div>
               <div className="p-6 pt-8 rounded-2xl bg-void-950 border border-laser-cyan/20">
                 <ul className="space-y-4">
@@ -241,10 +219,10 @@ export default function TurnkeyPage({
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="font-display text-2xl md:text-4xl font-bold text-mist-100 mb-4">
-              Что мы закрываем
+              {t('services_title')}
             </h2>
             <p className="text-mist-400 text-lg">
-              Все технические задачи — от простых до сложных
+              {t('services_subtitle')}
             </p>
           </div>
           
@@ -267,10 +245,10 @@ export default function TurnkeyPage({
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="font-display text-2xl md:text-4xl font-bold text-mist-100 mb-4">
-              Модели сотрудничества
+              {t('models_title')}
             </h2>
             <p className="text-mist-400 text-lg">
-              Выберите формат, который подходит вашему бизнесу
+              {t('models_subtitle')}
             </p>
           </div>
           
@@ -298,17 +276,12 @@ export default function TurnkeyPage({
         <div className="relative z-10 max-w-5xl mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="font-display text-2xl md:text-4xl font-bold text-mist-100 mb-4">
-              Как начать
+              {t('process_title')}
             </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {[
-              { step: '01', title: 'Знакомство', desc: 'Бесплатный звонок: обсуждаем ваши задачи и потребности' },
-              { step: '02', title: 'Аудит', desc: 'Анализируем текущую ситуацию и предлагаем план' },
-              { step: '03', title: 'Договор', desc: 'Выбираем модель сотрудничества, фиксируем условия' },
-              { step: '04', title: 'Работа', desc: 'Начинаем решать задачи. Первые результаты — в течение недели' }
-            ].map((item, i) => (
+            {process.map((item, i) => (
               <div key={i} className="relative p-6 rounded-2xl bg-void-900/60 border border-white/5">
                 <span className="font-mono text-4xl font-bold text-laser-cyan/20">{item.step}</span>
                 <h3 className="font-display text-lg font-semibold text-mist-100 mt-2 mb-2">{item.title}</h3>
@@ -324,17 +297,12 @@ export default function TurnkeyPage({
         <div className="relative z-10 max-w-5xl mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="font-display text-2xl md:text-4xl font-bold text-mist-100 mb-4">
-              Результаты партнёрства
+              {t('results_title')}
             </h2>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { value: '-70%', label: 'экономия vs найм' },
-              { value: '48ч', label: 'старт работы' },
-              { value: '5+', label: 'специалистов в команде' },
-              { value: '24/7', label: 'мониторинг систем' }
-            ].map((stat, i) => (
+            {results.map((stat, i) => (
               <div key={i} className="text-center p-6 rounded-2xl bg-void-950 border border-laser-cyan/10">
                 <div className="font-display text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-laser-cyan to-laser-blue">
                   {stat.value}
@@ -351,17 +319,12 @@ export default function TurnkeyPage({
         <div className="relative z-10 max-w-3xl mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="font-display text-2xl md:text-3xl font-bold text-mist-100 mb-4">
-              Частые вопросы
+              {t('faq_title')}
             </h2>
           </div>
           
           <div className="space-y-4">
-            {[
-              { q: 'Чем вы отличаетесь от обычного агентства?', a: 'Мы строим долгосрочные отношения и погружаемся в ваш бизнес. Знаем контекст, историю решений, специфику. Это не разовые проекты, а постоянное партнёрство.' },
-              { q: 'Что если мне нужна только одна задача?', a: 'Без проблем. Мы работаем и с разовыми проектами. Но многие клиенты после первой задачи переходят на постоянное сотрудничество — так удобнее и выгоднее.' },
-              { q: 'Как быстро вы можете начать?', a: 'Обычно в течение 48 часов после согласования. Для срочных задач — ещё быстрее. У нас всегда есть свободные ресурсы для новых партнёров.' },
-              { q: 'Что если я недоволен результатом?', a: 'У нас есть SLA и гарантии в договоре. Если работа не соответствует требованиям — переделываем за свой счёт. Репутация для нас важнее краткосрочной выгоды.' }
-            ].map((faq, i) => (
+            {faqs.map((faq, i) => (
               <details key={i} className="group p-5 rounded-2xl bg-void-900/60 border border-white/5 hover:border-laser-cyan/20 transition-colors">
                 <summary className="font-medium text-mist-100 cursor-pointer flex items-center justify-between">
                   {faq.q}

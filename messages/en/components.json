@@ -1,0 +1,214 @@
+{
+  "ai_chat": {
+    "greeting": "Hi! 👋 I'm the AI consultant of Swiss Tech Solutions. How can I help?",
+    "error": "Sorry, an error occurred. Please try again later or contact us via the form on the website.",
+    "title": "AI Consultant",
+    "company": "Swiss Tech Solutions",
+    "online": "Online",
+    "placeholder": "Type a message..."
+  },
+  "contact_form": {
+    "success_title": "Request sent!",
+    "success_message": "We will contact you within 2 hours during business hours.",
+    "send_another": "Send another request",
+    "error_title": "Sending failed",
+    "error_message": "Please try again or email us directly at hello@swissmade.it",
+    "name_label": "Name",
+    "name_placeholder": "Your name",
+    "name_error": "Please enter your name",
+    "email_label": "Email",
+    "email_error": "Please enter your email",
+    "email_invalid": "Invalid email",
+    "company_label": "Company",
+    "company_placeholder": "Company name",
+    "phone_label": "Phone",
+    "phone_placeholder": "+41 12 345 67 89",
+    "service_label": "Service of interest",
+    "service_placeholder": "Select a service",
+    "budget_label": "Approximate budget",
+    "budget_placeholder": "Select a range",
+    "message_label": "Describe your task",
+    "message_placeholder": "Tell us about your project, tasks, deadlines...",
+    "message_error": "Please describe your task",
+    "submit": "Submit request",
+    "submitting": "Sending...",
+    "privacy_text": "By clicking the button, you agree to the",
+    "privacy_link": "privacy policy",
+    "services": [
+      {
+        "value": "digital-reboot",
+        "label": "Digital Reboot"
+      },
+      {
+        "value": "turnkey",
+        "label": "Turnkey IT Partner"
+      },
+      {
+        "value": "websites",
+        "label": "Web Development"
+      },
+      {
+        "value": "mobile",
+        "label": "Mobile Apps"
+      },
+      {
+        "value": "telegram",
+        "label": "Telegram Bots/Mini Apps"
+      },
+      {
+        "value": "automation",
+        "label": "Automation"
+      },
+      {
+        "value": "ai",
+        "label": "AI Integration"
+      },
+      {
+        "value": "cloud",
+        "label": "Cloud Migration"
+      },
+      {
+        "value": "security",
+        "label": "Cybersecurity"
+      },
+      {
+        "value": "other",
+        "label": "Other"
+      }
+    ],
+    "budgets": [
+      {
+        "value": "under-5k",
+        "label": "Under 5,000 CHF"
+      },
+      {
+        "value": "5k-15k",
+        "label": "5,000 — 15,000 CHF"
+      },
+      {
+        "value": "15k-50k",
+        "label": "15,000 — 50,000 CHF"
+      },
+      {
+        "value": "50k-100k",
+        "label": "50,000 — 100,000 CHF"
+      },
+      {
+        "value": "over-100k",
+        "label": "Over 100,000 CHF"
+      },
+      {
+        "value": "not-sure",
+        "label": "Need consultation"
+      }
+    ]
+  },
+  "price_calculator": {
+    "badge": "Estimate in 30 seconds",
+    "title": "Cost Calculator",
+    "description": "Get a preliminary estimate for your project. We'll refine the price after a briefing.",
+    "step1": "1. Project Type",
+    "step2": "2. Complexity",
+    "step3": "3. Additional Features",
+    "collapse": "Collapse",
+    "show_all": "Show all",
+    "estimate_title": "Preliminary Estimate",
+    "cost_label": "Cost",
+    "time_label": "Development Time",
+    "fixed_price": "Fixed price",
+    "support_60": "60 days of support",
+    "nda_included": "NDA included",
+    "get_exact": "Get Exact Quote",
+    "preliminary_note": "This is a preliminary estimate",
+    "time_2_4_weeks": "2-4 weeks",
+    "time_1_2_months": "1-2 months",
+    "time_2_3_months": "2-3 months",
+    "time_3_6_months": "3-6 months",
+    "project_types": [
+      {
+        "id": "webapp",
+        "name": "Web App",
+        "icon": "🌐"
+      },
+      {
+        "id": "mobile",
+        "name": "Mobile App",
+        "icon": "📱"
+      },
+      {
+        "id": "telegram",
+        "name": "Telegram Mini App",
+        "icon": "✈️"
+      },
+      {
+        "id": "ai",
+        "name": "AI Integration",
+        "icon": "🤖"
+      },
+      {
+        "id": "automation",
+        "name": "Automation",
+        "icon": "⚡"
+      }
+    ],
+    "complexity_levels": [
+      {
+        "id": "simple",
+        "name": "Basic",
+        "description": "MVP or prototype"
+      },
+      {
+        "id": "medium",
+        "name": "Standard",
+        "description": "Typical project"
+      },
+      {
+        "id": "complex",
+        "name": "Advanced",
+        "description": "Complex integration"
+      }
+    ],
+    "features": [
+      {
+        "id": "auth",
+        "name": "Authentication",
+        "description": "OAuth, 2FA, SSO"
+      },
+      {
+        "id": "payments",
+        "name": "Payments",
+        "description": "Stripe, crypto"
+      },
+      {
+        "id": "analytics",
+        "name": "Analytics",
+        "description": "Dashboards, reports"
+      },
+      {
+        "id": "multilang",
+        "name": "Multilingual",
+        "description": "i18n, translations"
+      },
+      {
+        "id": "admin",
+        "name": "Admin Panel",
+        "description": "CMS, management"
+      },
+      {
+        "id": "notifications",
+        "name": "Notifications",
+        "description": "Push, email, SMS"
+      },
+      {
+        "id": "integrations",
+        "name": "API Integrations",
+        "description": "Third-party services"
+      },
+      {
+        "id": "security",
+        "name": "Security+",
+        "description": "Audit, pentest"
+      }
+    ]
+  }
+}

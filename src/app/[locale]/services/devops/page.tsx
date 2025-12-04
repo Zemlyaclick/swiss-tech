@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { 
@@ -6,63 +7,35 @@ import {
   Container, 
   Monitor,
   Gauge,
-  Server,
   Shield,
-  CheckCircle,
-  ArrowRight,
   Cloud,
-  RefreshCcw,
-  AlertTriangle,
-  Zap
+  ArrowRight
 } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'DevOps & SRE | Swiss IT',
-  description: 'CI/CD пайплайны, контейнеризация, мониторинг и инфраструктура как код. Надёжная доставка и эксплуатация ваших систем.',
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: 'services_devops' });
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+  };
+}
 
 export default async function DevOpsPage({ params }: { params: { locale: 'en' | 'de' | 'fr' | 'it' | 'de-CH' | 'ru' } }) {
   const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: 'services_devops' });
 
-  const services = [
-    {
-      icon: GitBranch,
-      title: 'CI/CD пайплайны',
-      description: 'Автоматизация сборки, тестирования и деплоя. GitHub Actions, GitLab CI, Jenkins — выбираем под ваш стек.'
-    },
-    {
-      icon: Container,
-      title: 'Контейнеризация',
-      description: 'Docker, Kubernetes, оркестрация. Изолированные среды, масштабирование, предсказуемый деплой.'
-    },
-    {
-      icon: Monitor,
-      title: 'Мониторинг и алертинг',
-      description: 'Prometheus, Grafana, ELK Stack. Метрики, логи, трейсинг — видите всё, что происходит в системе.'
-    },
-    {
-      icon: Cloud,
-      title: 'Инфраструктура как код',
-      description: 'Terraform, Ansible, CloudFormation. Воспроизводимая инфраструктура, версионирование, автоматизация.'
-    },
-    {
-      icon: Shield,
-      title: 'DevSecOps',
-      description: 'Безопасность встроена в пайплайн. Сканирование зависимостей, секретов, уязвимостей.'
-    },
-    {
-      icon: Gauge,
-      title: 'SRE практики',
-      description: 'SLI/SLO/SLA, error budgets, incident management. Надёжность как инженерная дисциплина.'
-    }
-  ];
+  const icons = [GitBranch, Container, Monitor, Cloud, Shield, Gauge];
+  
+  const services = icons.map((icon, index) => ({
+    icon,
+    title: t(`services.${index}.title`),
+    description: t(`services.${index}.description`)
+  }));
 
-  const benefits = [
-    { metric: '↑', label: 'Частота деплоев' },
-    { metric: '↓', label: 'Время восстановления' },
-    { metric: '↑', label: 'Стабильность системы' },
-    { metric: '↓', label: 'Ручные операции' }
-  ];
+  const benefits = [0, 1, 2, 3].map(index => ({
+    metric: t(`benefits.${index}.metric`),
+    label: t(`benefits.${index}.label`)
+  }));
 
   const techStack = [
     'Docker', 'Kubernetes', 'Helm', 'Terraform', 'Ansible',
@@ -82,28 +55,27 @@ export default async function DevOpsPage({ params }: { params: { locale: 'en' | 
           <div className="max-w-6xl mx-auto relative">
             <div className="flex items-center gap-2 mb-6">
               <span className="px-3 py-1 bg-laser-cyan/10 border border-laser-cyan/30 rounded-full text-laser-cyan text-sm">
-                DevOps
+                {t('badge_devops')}
               </span>
               <span className="px-3 py-1 bg-void-800 border border-void-700 rounded-full text-mist-400 text-sm">
-                SRE
+                {t('badge_sre')}
               </span>
             </div>
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              DevOps & SRE —{' '}
+              {t('hero_title')}{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-laser-cyan via-laser-blue to-laser-purple">
-                надёжная доставка
+                {t('hero_title_gradient')}
               </span>
             </h1>
             <p className="text-xl text-mist-300 max-w-3xl mb-8">
-              Настраиваем процессы непрерывной интеграции и доставки. Контейнеризация, мониторинг, 
-              инфраструктура как код — ваши релизы становятся предсказуемыми и безопасными.
+              {t('hero_description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={`/${locale}/contact`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-cyan to-laser-blue text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
               >
-                Обсудить инфраструктуру
+                {t('hero_cta')}
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
@@ -114,7 +86,7 @@ export default async function DevOpsPage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Что мы делаем
+              {t('services_title')}
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, index) => (
@@ -135,7 +107,7 @@ export default async function DevOpsPage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Результаты внедрения
+              {t('benefits_title')}
             </h2>
             <div className="grid md:grid-cols-4 gap-6">
               {benefits.map((benefit, index) => (
@@ -148,7 +120,7 @@ export default async function DevOpsPage({ params }: { params: { locale: 'en' | 
               ))}
             </div>
             <p className="text-center text-mist-500 text-sm mt-8">
-              Конкретные показатели зависят от исходного состояния инфраструктуры
+              {t('benefits_note')}
             </p>
           </div>
         </section>
@@ -157,7 +129,7 @@ export default async function DevOpsPage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Технологии
+              {t('tech_title')}
             </h2>
             <div className="flex flex-wrap justify-center gap-3">
               {techStack.map((tech, index) => (
@@ -176,17 +148,17 @@ export default async function DevOpsPage({ params }: { params: { locale: 'en' | 
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Готовы оптимизировать инфраструктуру?
+              {t('cta_title')}
             </h2>
             <p className="text-xl text-mist-400 mb-8">
-              Расскажите о текущем состоянии — предложим план улучшений
+              {t('cta_description')}
             </p>
             <a
               href={`/${locale}/contact`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-cyan to-laser-blue text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
             >
               <GitBranch className="w-5 h-5" />
-              Обсудить проект
+              {t('cta_button')}
             </a>
           </div>
         </section>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { 
@@ -22,211 +23,90 @@ import {
   Settings
 } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Автоматизация процессов | Swiss IT',
-  description: 'Автоматизация бизнес-процессов, интеграция систем, RPA. Сокращение рутины на 80%, уменьшение ошибок, ускорение процессов.',
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: 'services_automation' });
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+  };
+}
 
 export default async function AutomationPage({ params }: { params: { locale: 'en' | 'de' | 'fr' | 'it' | 'de-CH' | 'ru' } }) {
   const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: 'services_automation' });
 
-  const problems = [
-    {
-      icon: Clock,
-      title: 'Часы на рутину',
-      description: 'Сотрудники тратят 40% времени на повторяющиеся задачи вместо работы, требующей мозгов'
-    },
-    {
-      icon: Users,
-      title: 'Человеческие ошибки',
-      description: 'Ручной ввод данных = ошибки. Опечатки, забытые письма, потерянные заявки'
-    },
-    {
-      icon: Database,
-      title: 'Разрозненные системы',
-      description: 'Данные в Excel, CRM, 1C, почте — и нигде нет полной картины'
-    },
-    {
-      icon: RefreshCw,
-      title: 'Медленные процессы',
-      description: 'Согласование занимает дни, клиенты ждут ответа, сделки срываются'
-    },
-    {
-      icon: Calculator,
-      title: 'Ручные отчёты',
-      description: 'Каждый месяц — мучительный сбор данных из разных источников в Excel'
-    },
-    {
-      icon: TrendingUp,
-      title: 'Невозможно масштабировать',
-      description: 'Рост бизнеса = рост штата. Каждый новый клиент требует больше рук'
-    }
-  ];
+  const problemIcons = [Clock, Users, Database, RefreshCw, Calculator, TrendingUp];
+  const benefitIcons = [Zap, Shield, Plug, Clock, BarChart3, TrendingUp];
+  const automationIcons = [Mail, FileText, Database, BarChart3, Bot, Workflow];
 
-  const benefits = [
-    {
-      icon: Zap,
-      title: 'Экономия 80% времени',
-      description: 'Задачи, занимавшие часы, выполняются за секунды. Сотрудники фокусируются на важном'
-    },
-    {
-      icon: Shield,
-      title: 'Ноль ошибок',
-      description: 'Автоматизация исключает человеческий фактор. Данные всегда корректны и актуальны'
-    },
-    {
-      icon: Plug,
-      title: 'Единая экосистема',
-      description: 'Интеграция всех систем: CRM, ERP, почта, мессенджеры, банки, маркетплейсы'
-    },
-    {
-      icon: Clock,
-      title: 'Мгновенная реакция',
-      description: 'Заявка → ответ клиенту за секунды. Уведомления, статусы, документы — автоматически'
-    },
-    {
-      icon: BarChart3,
-      title: 'Аналитика в реальном времени',
-      description: 'Дашборды обновляются автоматически. Решения на основе данных, а не интуиции'
-    },
-    {
-      icon: TrendingUp,
-      title: 'Масштабирование без найма',
-      description: 'Обрабатывайте в 10 раз больше заказов тем же составом. Рост без роста затрат'
-    }
-  ];
+  const problems = problemIcons.map((icon, index) => ({
+    icon,
+    title: t(`problems.${index}.title`),
+    description: t(`problems.${index}.description`)
+  }));
 
-  const automationTypes = [
-    {
-      icon: Mail,
-      title: 'Обработка заявок',
-      description: 'Автоматическая обработка входящих заявок из всех каналов',
-      examples: ['Парсинг email и форм', 'Создание сделок в CRM', 'Распределение по менеджерам', 'Уведомления клиентам']
-    },
-    {
-      icon: FileText,
-      title: 'Документооборот',
-      description: 'Генерация, согласование и отправка документов',
-      examples: ['Счета и договоры', 'Акты и накладные', 'Электронная подпись', 'Архивирование']
-    },
-    {
-      icon: Database,
-      title: 'Синхронизация данных',
-      description: 'Обмен данными между системами в реальном времени',
-      examples: ['CRM ↔ 1C', 'Сайт ↔ Склад', 'Маркетплейсы', 'Банковские выписки']
-    },
-    {
-      icon: BarChart3,
-      title: 'Отчётность',
-      description: 'Автоматическое формирование отчётов и дашбордов',
-      examples: ['Ежедневные сводки', 'KPI менеджеров', 'Финансовые отчёты', 'Прогнозы']
-    },
-    {
-      icon: Bot,
-      title: 'Чат-боты и ассистенты',
-      description: 'Автоматическая обработка типовых запросов',
-      examples: ['Ответы на FAQ', 'Приём заказов', 'Запись на услуги', 'Статус доставки']
-    },
-    {
-      icon: Workflow,
-      title: 'Бизнес-процессы',
-      description: 'Оркестрация сложных многошаговых процессов',
-      examples: ['Онбординг клиентов', 'Согласования', 'Тендерные процедуры', 'HR-процессы']
-    }
-  ];
+  const benefits = benefitIcons.map((icon, index) => ({
+    icon,
+    title: t(`benefits.${index}.title`),
+    description: t(`benefits.${index}.description`)
+  }));
+
+  const automationTypes = automationIcons.map((icon, index) => ({
+    icon,
+    title: t(`automation_types.${index}.title`),
+    description: t(`automation_types.${index}.description`),
+    examples: [
+      t(`automation_types.${index}.examples.0`),
+      t(`automation_types.${index}.examples.1`),
+      t(`automation_types.${index}.examples.2`),
+      t(`automation_types.${index}.examples.3`)
+    ]
+  }));
 
   const techStack = [
     { name: 'n8n', category: 'Workflow' },
-    { name: 'Zapier', category: 'Интеграции' },
-    { name: 'Make (Integromat)', category: 'Интеграции' },
+    { name: 'Zapier', category: 'Integrations' },
+    { name: 'Make (Integromat)', category: 'Integrations' },
     { name: 'Power Automate', category: 'Microsoft' },
-    { name: 'Python', category: 'Скрипты' },
+    { name: 'Python', category: 'Scripts' },
     { name: 'Node.js', category: 'Backend' },
     { name: 'Apache Airflow', category: 'ETL' },
-    { name: 'RabbitMQ', category: 'Очереди' },
-    { name: 'Redis', category: 'Кэш' },
-    { name: 'PostgreSQL', category: 'База данных' },
-    { name: 'REST API', category: 'Интеграции' },
-    { name: 'Webhooks', category: 'События' }
+    { name: 'RabbitMQ', category: 'Queues' },
+    { name: 'Redis', category: 'Cache' },
+    { name: 'PostgreSQL', category: 'Database' },
+    { name: 'REST API', category: 'Integrations' },
+    { name: 'Webhooks', category: 'Events' }
   ];
 
-  const process = [
-    {
-      step: '01',
-      title: 'Аудит процессов',
-      duration: '1-2 недели',
-      description: 'Анализируем текущие процессы, находим узкие места и точки автоматизации. Считаем ROI каждой интеграции.',
-      deliverables: ['Карта процессов', 'Список узких мест', 'ROI-калькуляция', 'Приоритеты']
-    },
-    {
-      step: '02',
-      title: 'Проектирование',
-      duration: '1-2 недели',
-      description: 'Проектируем архитектуру интеграций, выбираем инструменты, описываем сценарии автоматизации.',
-      deliverables: ['Архитектура', 'Сценарии', 'Технические требования', 'План внедрения']
-    },
-    {
-      step: '03',
-      title: 'Разработка',
-      duration: '2-6 недель',
-      description: 'Создаём интеграции, настраиваем автоматизации, тестируем на реальных данных. Запуск в пилотном режиме.',
-      deliverables: ['Готовые интеграции', 'Документация', 'Мониторинг', 'Пилот']
-    },
-    {
-      step: '04',
-      title: 'Масштабирование',
-      duration: 'Постоянно',
-      description: 'Расширяем автоматизацию на новые процессы, оптимизируем существующие, добавляем новые интеграции.',
-      deliverables: ['Новые сценарии', 'Оптимизация', 'Обучение', 'Поддержка']
-    }
-  ];
+  const process = [0, 1, 2, 3].map(index => ({
+    step: t(`process.${index}.step`),
+    title: t(`process.${index}.title`),
+    duration: t(`process.${index}.duration`),
+    description: t(`process.${index}.description`),
+    deliverables: [
+      t(`process.${index}.deliverables.0`),
+      t(`process.${index}.deliverables.1`),
+      t(`process.${index}.deliverables.2`),
+      t(`process.${index}.deliverables.3`)
+    ]
+  }));
 
-  const cases = [
-    {
-      title: 'Интернет-магазин',
-      before: 'Менеджеры вручную переносили заказы с сайта в 1C, отправляли статусы клиентам',
-      after: 'Полная автоматизация: заказ → 1C → склад → доставка → уведомление клиента',
-      result: 'Обработка 500 заказов/день вместо 50, без увеличения штата'
-    },
-    {
-      title: 'Логистическая компания',
-      before: 'Ежедневные отчёты собирались вручную из 5 систем по 3 часа',
-      after: 'Автоматический сбор данных, дашборд обновляется каждые 15 минут',
-      result: 'Экономия 60 часов/месяц, решения на основе актуальных данных'
-    },
-    {
-      title: 'Юридическая фирма',
-      before: 'Договоры готовились вручную, согласование через email занимало дни',
-      after: 'Генерация документов из шаблонов, маршрутизация согласований, ЭЦП',
-      result: 'Подготовка договора за 5 минут вместо 2 часов'
-    }
-  ];
+  const cases = [0, 1, 2].map(index => ({
+    title: t(`cases.${index}.title`),
+    before: t(`cases.${index}.before`),
+    after: t(`cases.${index}.after`),
+    result: t(`cases.${index}.result`)
+  }));
 
-  const results = [
-    { metric: '80%', label: 'Сокращение рутины' },
-    { metric: '95%', label: 'Уменьшение ошибок' },
-    { metric: '10x', label: 'Рост производительности' },
-    { metric: '< 6 мес', label: 'Окупаемость' }
-  ];
+  const results = [0, 1, 2, 3].map(index => ({
+    metric: t(`results.${index}.metric`),
+    label: t(`results.${index}.label`)
+  }));
 
-  const faq = [
-    {
-      question: 'С какими системами вы интегрируетесь?',
-      answer: 'Практически с любыми: 1C, Bitrix24, amoCRM, Salesforce, SAP, банковские API, маркетплейсы (Ozon, Wildberries), службы доставки, мессенджеры, Google/Microsoft сервисы. Если у системы есть API — мы интегрируемся.'
-    },
-    {
-      question: 'Что если у нас старая система без API?',
-      answer: 'Используем RPA (роботизация) — программные роботы работают с интерфейсом как человек. Или создаём прослойку через базу данных, файловый обмен, парсинг экранов.'
-    },
-    {
-      question: 'Сколько времени займёт внедрение?',
-      answer: 'Простая интеграция двух систем — 1-2 недели. Комплексная автоматизация отдела — 1-2 месяца. Трансформация всей компании — 3-6 месяцев поэтапно.'
-    },
-    {
-      question: 'Что если автоматизация сломается?',
-      answer: 'Настраиваем мониторинг и алерты — узнаем о проблеме раньше вас. Критичные интеграции дублируем. Обеспечиваем SLA на поддержку и быстрое восстановление.'
-    }
-  ];
+  const faq = [0, 1, 2, 3].map(index => ({
+    question: t(`faq.${index}.question`),
+    answer: t(`faq.${index}.answer`)
+  }));
 
   return (
     <>
@@ -239,35 +119,34 @@ export default async function AutomationPage({ params }: { params: { locale: 'en
           <div className="max-w-6xl mx-auto relative">
             <div className="flex items-center gap-2 mb-6">
               <span className="px-3 py-1 bg-laser-cyan/10 border border-laser-cyan/30 rounded-full text-laser-cyan text-sm">
-                RPA & Интеграции
+                {t('badge1')}
               </span>
               <span className="px-3 py-1 bg-void-800 border border-void-700 rounded-full text-mist-400 text-sm">
-                No-code & Custom
+                {t('badge2')}
               </span>
             </div>
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              Автоматизируйте рутину —{' '}
+              {t('hero_title_1')}{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-laser-cyan via-laser-blue to-laser-purple">
-                освободите людей для важного
+                {t('hero_title_2')}
               </span>
             </h1>
             <p className="text-xl text-mist-300 max-w-3xl mb-8">
-              Интегрируем системы, автоматизируем процессы, избавляем от ручного труда. 
-              Ваши сотрудники занимаются бизнесом, а не копированием данных.
+              {t('hero_description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={`/${locale}/contact`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-cyan to-laser-blue text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
               >
-                Аудит процессов
+                {t('cta_audit')}
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a
                 href="#cases"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-void-700 text-mist-200 rounded-lg hover:bg-void-800 transition-colors"
               >
-                Примеры автоматизаций
+                {t('cta_cases')}
               </a>
             </div>
           </div>
@@ -277,10 +156,10 @@ export default async function AutomationPage({ params }: { params: { locale: 'en
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Знакомые проблемы?
+              {t('problems_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Типичные признаки того, что пора автоматизировать
+              {t('problems_subtitle')}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {problems.map((problem, index) => (
@@ -301,10 +180,10 @@ export default async function AutomationPage({ params }: { params: { locale: 'en
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Что даёт автоматизация
+              {t('benefits_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Результаты, которые вы увидите в первый месяц
+              {t('benefits_subtitle')}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {benefits.map((benefit, index) => (
@@ -325,10 +204,10 @@ export default async function AutomationPage({ params }: { params: { locale: 'en
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Что мы автоматизируем
+              {t('automation_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Типовые сценарии, которые приносят максимальный эффект
+              {t('automation_subtitle')}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {automationTypes.map((type, index) => (
@@ -357,10 +236,10 @@ export default async function AutomationPage({ params }: { params: { locale: 'en
         <section id="cases" className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Примеры внедрений
+              {t('cases_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Реальные кейсы автоматизации
+              {t('cases_subtitle')}
             </p>
             <div className="space-y-6">
               {cases.map((caseItem, index) => (
@@ -371,15 +250,15 @@ export default async function AutomationPage({ params }: { params: { locale: 'en
                   <h3 className="text-lg sm:text-xl font-semibold text-mist-100 mb-4">{caseItem.title}</h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4">
                     <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
-                      <div className="text-sm text-red-400 mb-1">Было</div>
+                      <div className="text-sm text-red-400 mb-1">{t('before_label')}</div>
                       <p className="text-mist-300">{caseItem.before}</p>
                     </div>
                     <div className="p-4 bg-laser-cyan/10 border border-laser-cyan/20 rounded-lg">
-                      <div className="text-sm text-laser-cyan mb-1">Стало</div>
+                      <div className="text-sm text-laser-cyan mb-1">{t('after_label')}</div>
                       <p className="text-mist-300">{caseItem.after}</p>
                     </div>
                     <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
-                      <div className="text-sm text-green-400 mb-1">Результат</div>
+                      <div className="text-sm text-green-400 mb-1">{t('result_label')}</div>
                       <p className="text-mist-300">{caseItem.result}</p>
                     </div>
                   </div>
@@ -393,10 +272,10 @@ export default async function AutomationPage({ params }: { params: { locale: 'en
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Инструменты
+              {t('tech_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Выбираем оптимальный стек под ваши задачи
+              {t('tech_subtitle')}
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {techStack.map((tech, index) => (
@@ -416,10 +295,10 @@ export default async function AutomationPage({ params }: { params: { locale: 'en
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Как мы внедряем автоматизацию
+              {t('process_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Поэтапный подход с быстрыми победами
+              {t('process_subtitle')}
             </p>
             <div className="space-y-6">
               {process.map((step, index) => (
@@ -457,7 +336,7 @@ export default async function AutomationPage({ params }: { params: { locale: 'en
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Типичные результаты
+              {t('results_title')}
             </h2>
             <div className="grid md:grid-cols-4 gap-6">
               {results.map((result, index) => (
@@ -476,18 +355,17 @@ export default async function AutomationPage({ params }: { params: { locale: 'en
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Стоимость автоматизации
+              {t('pricing_title')}
             </h2>
             <p className="text-mist-400 mb-8">
-              Простая интеграция двух систем — от 2 000 CHF. Комплексная автоматизация отдела — 
-              от 10 000 CHF. Аудит процессов бесплатно при заказе внедрения.
+              {t('pricing_description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={`/${locale}/contact`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-cyan to-laser-blue text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
               >
-                Бесплатный аудит
+                {t('pricing_cta')}
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
@@ -498,7 +376,7 @@ export default async function AutomationPage({ params }: { params: { locale: 'en
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Частые вопросы
+              {t('faq_title')}
             </h2>
             <div className="space-y-6">
               {faq.map((item, index) => (
@@ -518,17 +396,17 @@ export default async function AutomationPage({ params }: { params: { locale: 'en
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Готовы избавиться от рутины?
+              {t('cta_title')}
             </h2>
             <p className="text-xl text-mist-400 mb-8">
-              Покажите нам свои процессы — мы покажем, где прячется 80% экономии
+              {t('cta_description')}
             </p>
             <a
               href={`/${locale}/contact`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-cyan to-laser-blue text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
             >
               <Cog className="w-5 h-5" />
-              Запросить аудит
+              {t('cta_button')}
             </a>
           </div>
         </section>

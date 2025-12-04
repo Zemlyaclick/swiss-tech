@@ -1,0 +1,1252 @@
+{
+  "about": {
+    "meta_title": "Über üs | Swiss Made IT",
+    "meta_description": "Swiss Made IT — es Schwiizer IT-Unternehme. Mir entwickle digitali Produkt für Firme sit 2019. Experte-Team, Schwiizer Qualität, transparänti Prozäss.",
+    "badge_since": "Sit 2019",
+    "badge_location": "Züri, Schwiiz",
+    "hero_title_1": "Mir entwickle",
+    "hero_title_2": "digitali Produkt",
+    "hero_title_3": "wo funktioniere",
+    "hero_description": "Swiss Made IT isch es Experte-Team, wo Firme hilft, dure Technologie z wachse. Mir mache kei 'Websites in 3 Täg'. Mir schaffe Lösige, wo zum Fundamänt vo Ihrem Gschäft wärde.",
+    "cta_discuss": "Projekt bespräche",
+    "cta_cases": "Cases aluege",
+    "stats": [
+      {
+        "value": "100+",
+        "label": "Projekt",
+        "sublabel": "erfolgriich umgsetzt"
+      },
+      {
+        "value": "6",
+        "label": "Jahr",
+        "sublabel": "am Markt"
+      },
+      {
+        "value": "12",
+        "label": "Länder",
+        "sublabel": "Chunde-Geografie"
+      },
+      {
+        "value": "98%",
+        "label": "Chunde",
+        "sublabel": "empfähle üs"
+      }
+    ],
+    "mission_label": "Üsi Mission",
+    "mission_title": "Technologie verständlich und nützlich für Firme mache",
+    "mission_p1": "Mir glaube, dass Technologie Probleem löse söll, nöd neui schaffe. Üsi Ufgab isch es, komplexxi technischi Lösige in Gschäftssprach z übersetze und Chunde z hälfe, konkret, messbar Ergäbnis z erreiche.",
+    "mission_p2": "Mir verkaufe kei Entwickligsstunde — mir verkaufe Ergäbnis. Mir verschwinde nöd nach em Launch — mir bliibe währed de ganze Produktentwicklig a Ihrer Siite.",
+    "values": [
+      {
+        "title": "Schwiizer Qualität",
+        "description": "Mir jage nöd de Projektmängi noche. Jedes Produkt durchlauft mehrstufigi Qualitätsprüefige vor em Release."
+      },
+      {
+        "title": "Langfristigi Beziehige",
+        "description": "80% vo üsne Chunde chöme mit neue Projekt zrugg. Mir baue Partnerschäfte uf, nöd nur Ufträg."
+      },
+      {
+        "title": "Ehrlichkeit & Transparänz",
+        "description": "Wenn mir e eifacheri Lösig gsehne — säge mirs. Mir verkaufe nöd, was Chunde nöd bruuche."
+      },
+      {
+        "title": "Ergäbnis vor Prozäss",
+        "description": "Metrike, KPIs, messbar Ergäbnis — mir konzentriere üs uf das, was s Gschäft vom Chund würklich beiiflusst."
+      }
+    ],
+    "history_label": "Gschicht",
+    "history_title": "Üse Wäg",
+    "milestones": [
+      {
+        "year": "2019",
+        "title": "Gründig",
+        "description": "Start in Züri mit Fokus uf Webentwicklig"
+      },
+      {
+        "year": "2020",
+        "title": "Erschti Grosschunde",
+        "description": "Verträg mit Fintech- und Medtech-Firme"
+      },
+      {
+        "year": "2021",
+        "title": "Teamexpansion",
+        "description": "Wachstum uf 15 Persone, Eröffnig vo de AI-Abteilig"
+      },
+      {
+        "year": "2022",
+        "title": "ISO-Zertifizierig",
+        "description": "Erhalt vo ISO 27001 für Enterprise-Arbet"
+      },
+      {
+        "year": "2023",
+        "title": "100+ Projekt",
+        "description": "100 erfolgrichi Projekt erreicht"
+      },
+      {
+        "year": "2024",
+        "title": "Internationals Wachstum",
+        "description": "Chunde in 12 Länder in Europa und GUS"
+      }
+    ],
+    "team_label": "Team",
+    "team_title": "Mensche, wo Produkt baue",
+    "team_subtitle": "Es chlises Experte-Team, wo jede e Profi uf sim Gebiet isch",
+    "team_members": [
+      {
+        "name": "Alexander Novak",
+        "role": "CEO & Founder",
+        "description": "15+ Jahr in IT, ex-Google, ex-UBS. Spezialisierig: Architektur, Strategie.",
+        "initials": "AN"
+      },
+      {
+        "name": "Maria Schmidt",
+        "role": "CTO",
+        "description": "12 Jahr in Entwicklig. Cloud-Lösige und Sicherheitsexpertin.",
+        "initials": "MS"
+      },
+      {
+        "name": "Dmitry Kuznetsov",
+        "role": "Lead Developer",
+        "description": "Full-Stack-Entwickler. React, Node.js, Python, AI/ML-Integratione.",
+        "initials": "DK"
+      },
+      {
+        "name": "Anna Weber",
+        "role": "Head of Design",
+        "description": "UX/UI-Designerin. Erstellt Interfaces, wo mer gärn bruucht.",
+        "initials": "AW"
+      }
+    ],
+    "join_title": "Wärde Sie Teil vom Team",
+    "join_description": "Mir sueche immer talentierti Entwickler und Designer",
+    "join_link": "Stelleaagebot aluege",
+    "certs_label": "Zertifikat",
+    "certs_title": "Nachwiseni Expertis",
+    "certifications": [
+      {
+        "name": "ISO 27001",
+        "description": "Informatonssicherheit"
+      },
+      {
+        "name": "OWASP",
+        "description": "Web-Aawändigssicherheit"
+      },
+      {
+        "name": "AWS Partner",
+        "description": "Amazon Web Services Partner"
+      },
+      {
+        "name": "Google Cloud",
+        "description": "Google Cloud Platform Partner"
+      }
+    ],
+    "location_label": "Standort",
+    "location_title": "Sitz in Züri",
+    "location_description": "D Schwiiz isch nöd nur Uhre und Schoggi. Es isch Stabilität, Zuverlässigkeit und höchschti Qualitätsstandards. Die Prinzipie lege mir in jedes Projekt.",
+    "location_address": "Züri, Schwiiz",
+    "location_global": "Schaffe mit Chunde in ganz Europa und GUS",
+    "location_timezone": "Ziitzone CET (UTC+1)",
+    "cta_title": "Lerne mer üs kenne",
+    "cta_description": "Verzelle Sie üs vo Ihrem Projekt — mir schlage e Lösig vor und gäbe e ehrlicher Schätzig vo Ziit und Budget. Unverbindlich.",
+    "cta_button": "Kontaktiere Sie üs"
+  },
+  "contact": {
+    "meta_title": "Kontakt | Swiss Made IT",
+    "meta_description": "Kontaktiere Sie üs für e gratis Beratig. Züri, Schwiiz. Mir antworte innert 2 Stund während de Gschäftsziite.",
+    "badge": "Kontaktiere Sie üs",
+    "hero_title_1": "Lönd üs",
+    "hero_title_2": "Ihres Projekt bespräche",
+    "hero_description": "Verzelled üs vo Ihre Herausforderige — mir schlönd e Lösig vor und gäbed e vorläufigi Schätzig vo Ziitrahme und Budget. Gratis und unverbindlich.",
+    "form_title": "Afrag schicke",
+    "form_subtitle": "Füllend s Formular us und mir mälded üs bi Ihne",
+    "contact_email_label": "E-Mail",
+    "contact_email_description": "Mir antworte innert 2 Stund",
+    "contact_phone_label": "Telefon",
+    "contact_phone_description": "Mo-Fr, 9:00-18:00 MEZ",
+    "contact_office_label": "Büro",
+    "contact_office_description": "Termine nach Vereinbarig",
+    "contact_telegram_label": "Telegram",
+    "contact_telegram_description": "Schnälli Antworte 24/7",
+    "benefits_title": "Was Sie überchömed",
+    "benefits": [
+      {
+        "title": "Schnälli Antwort",
+        "description": "Mir antworte innert 2 Stund während de Gschäftsziite"
+      },
+      {
+        "title": "Gratis Beratig",
+        "description": "30-minütigs Gspröch zum Bespräche vo Ihrem Projekt"
+      },
+      {
+        "title": "NDA uf Afrag",
+        "description": "Mir unterschriibe Vertraulichkeitsvereinbarige"
+      },
+      {
+        "title": "Kei Verpflichtige",
+        "description": "D Beratig verpflichtet Sie zu nüt"
+      }
+    ],
+    "hours_title": "Gschäftsziite",
+    "hours_weekdays": "Mäntig — Friitig",
+    "hours_weekdays_time": "9:00 — 18:00 MEZ",
+    "hours_weekend": "Samschtig — Sunntig",
+    "hours_weekend_time": "Gschlosse",
+    "hours_support": "24/7 Notfall-Support für Chunde",
+    "faq_label": "FAQ",
+    "faq_title": "Hüfig gstellti Frage zur Zämenarbet",
+    "faqs": [
+      {
+        "question": "Wie schnäll antwortet ihr uf Afrage?",
+        "answer": "Während de Gschäftsziite (Mo-Fr, 9:00-18:00 MEZ) — innert 2 Stund. Am Wuchenänd — am erschte Werktag."
+      },
+      {
+        "question": "Chömed mir üs persönlich träffe?",
+        "answer": "Ja, üses Büro isch z Züri. Termine nach Vereinbarig. Videoanrüef über Zoom/Google Meet sind au möglich."
+      },
+      {
+        "question": "Schaffed ihr mit Chunde us andere Länder?",
+        "answer": "Ja, mir schaffed mit Chunde in ganz Europa und GUS. Hauptsprache: Russisch, Änglisch, Dütsch."
+      },
+      {
+        "question": "Was beinhaltet d gratis Beratig?",
+        "answer": "Mir bespräched Ihri Herausforderige, schlönd Lösige vor und gäbed vorläufigi Schätzige zu Ziitrahme und Budget. Es isch es 30-minütigs Gspröch ohni Verpflichtige."
+      }
+    ],
+    "map_title": "Üses Büro z Züri",
+    "map_subtitle": "Termine nach Vereinbarig",
+    "map_button": "In Google Maps öffne",
+    "messenger_title": "Bevorzuged Sie Messenger?",
+    "messenger_description": "Schriibend üs uf Telegram — mir antworte schnäller als per E-Mail. WhatsApp und Signal au verfüegbar."
+  },
+  "pricing": {
+    "meta_title": "Priise und Tarif | Swiss Made IT",
+    "meta_description": "Transparenti IT-Priise. Fäschtpriis, kei versteckti Gebühre. Ab 3'000 CHF pro Projekt.",
+    "badge": "Transparenti Priisgschtaltig",
+    "hero_title_1": "Fäschtpriis.",
+    "hero_title_2": "Kei Überraschige.",
+    "hero_description": "Mir nänne d genau Choste vor em Arbäitsstart. Kei versteckti Gebühre, kei Stündli-Abrechnig, kei 's chostet extra'.",
+    "popular": "Beliebt",
+    "discuss_project": "Projekt bespräche",
+    "price_list_label": "Priislischt",
+    "price_list_title": "Choste für einzelni Dienschtleistige",
+    "service": "Dienschtleistig",
+    "cost": "Choste",
+    "timeline": "Ziitrahme",
+    "price_note": "* Priise sind Richtwert. De genau Priis wird nach Besprächig vo de Aforderige fäschtgleit.",
+    "included_title": "Was in jedem Projekt enthalte isch",
+    "included": [
+      {
+        "title": "Lebeslange Support",
+        "description": "Fehlerbehebig und Beratig für immer"
+      },
+      {
+        "title": "Dedizierte Manager",
+        "description": "Ei Asprechpartner für alli Projektfrage"
+      },
+      {
+        "title": "Dokumentation",
+        "description": "Technischi Dokumentation und Aleitige"
+      },
+      {
+        "title": "Quellcode",
+        "description": "Volli Eigetumsrächt am Code ohni Iischränkige"
+      }
+    ],
+    "faq_label": "FAQ",
+    "faq_title": "Frage zu Priise",
+    "faqs": [
+      {
+        "question": "Warum 'ab' bi de Priise?",
+        "answer": "Jedes Projekt isch einzigartig. De Endpriis hängt vo Komplexität, Umfang und Integrations-Aforderige ab. Nach Besprächig vo Ihrem Projekt gäbe mir e genaui Fäschtpriis-Schätzig — ohni Überraschige."
+      },
+      {
+        "question": "Gits versteckti Gebühre?",
+        "answer": "Nei. Mir nänne d Gesamtchoste vor em Start. Hosting, Domain und externi Dienscht (Stripe, SMS usw.) wärde separat zu dere Tarif zahlt, aber mir wiise immer im Vorfeld druf abe."
+      },
+      {
+        "question": "Wie funktioniert d Zahlig?",
+        "answer": "Standardschema: 30% Azahlig, 40% nach Design-/MVP-Freigab, 30% bi Projektabnahm. Für grossi Projekt isch monatlechi Milestone-basierti Zahlig möglich."
+      },
+      {
+        "question": "Was isch im Support enthalte?",
+        "answer": "Basis-Support umfasst: Fehlerbehebig, chliini Apassige, Beratig, Sicherheits-Updates. Grösseri Änderige und neui Funktione wärde separat bsprooche."
+      },
+      {
+        "question": "Chönd mir mit eme MVP starte?",
+        "answer": "Ja, das isch üsere empfohlene Asatz. Mir starte e Basisversion in 4-8 Wuche, sammle Feedback, iteriere. Das reduziert Risike und ermöglicht s, Hypothese vor grössere Investitione z teste."
+      }
+    ],
+    "cta_title": "Genaui Schätzig benötiget?",
+    "cta_description": "Beschriibe Sie Ihres Projekt — mir erstelle es detailliertes Agebot mit Fäschtpriis und Ziitrahme. Gratis und unverbindlich.",
+    "cta_button": "Projektschätzig erhalte",
+    "packages": [
+      {
+        "name": "Starter",
+        "description": "Für chliini Projekt und MVPs",
+        "price": "ab 5'000",
+        "period": "CHF",
+        "timeline": "2-3 Wuche",
+        "support": "3 Mönat",
+        "features": [
+          {
+            "text": "Landing Page oder eifachi Website",
+            "included": true
+          },
+          {
+            "text": "Bis zu 5 Siite",
+            "included": true
+          },
+          {
+            "text": "Responsives Design",
+            "included": true
+          },
+          {
+            "text": "Basis-SEO",
+            "included": true
+          },
+          {
+            "text": "Kontaktformular",
+            "included": true
+          },
+          {
+            "text": "SSL-Zertifikat",
+            "included": true
+          },
+          {
+            "text": "CMS-System",
+            "included": false
+          },
+          {
+            "text": "Externi Dienscht-Integratione",
+            "included": false
+          },
+          {
+            "text": "Individuells Design",
+            "included": false
+          }
+        ]
+      },
+      {
+        "name": "Business",
+        "description": "Für wachsendi Unternehme",
+        "price": "ab 15'000",
+        "period": "CHF",
+        "popular": true,
+        "timeline": "4-8 Wuche",
+        "support": "6 Mönat",
+        "features": [
+          {
+            "text": "Unternehmenswebsite oder Webawendig",
+            "included": true
+          },
+          {
+            "text": "Bis zu 20 Siite/Screens",
+            "included": true
+          },
+          {
+            "text": "Individuells Design",
+            "included": true
+          },
+          {
+            "text": "CMS-System",
+            "included": true
+          },
+          {
+            "text": "Integratione (CRM, Zahlige)",
+            "included": true
+          },
+          {
+            "text": "Erwiiterets SEO",
+            "included": true
+          },
+          {
+            "text": "Analytik und Bericht",
+            "included": true
+          },
+          {
+            "text": "Telegram-Bot",
+            "included": true
+          },
+          {
+            "text": "Prioritäts-Support",
+            "included": false
+          }
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "description": "Komplexi Lösige",
+        "price": "ab 50'000",
+        "period": "CHF",
+        "timeline": "3-12 Mönat",
+        "support": "Unbegränzt",
+        "features": [
+          {
+            "text": "Komplexi Plattforme und System",
+            "included": true
+          },
+          {
+            "text": "Unbegränzte Funktionsumfang",
+            "included": true
+          },
+          {
+            "text": "Microservices-Architektur",
+            "included": true
+          },
+          {
+            "text": "Enterprise-System-Integration",
+            "included": true
+          },
+          {
+            "text": "AI/ML-Integratione",
+            "included": true
+          },
+          {
+            "text": "Hochi Last und Skalierig",
+            "included": true
+          },
+          {
+            "text": "Dediziertes Team",
+            "included": true
+          },
+          {
+            "text": "SLA-Garantie",
+            "included": true
+          },
+          {
+            "text": "Prioritäts-Support 24/7",
+            "included": true
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "name": "Telegram-Bot (Basis)",
+        "price": "ab 3'000 CHF",
+        "time": "1-2 Wo."
+      },
+      {
+        "name": "Telegram-Bot (mit AI)",
+        "price": "ab 8'000 CHF",
+        "time": "2-4 Wo."
+      },
+      {
+        "name": "Telegram Mini App",
+        "price": "ab 10'000 CHF",
+        "time": "3-6 Wo."
+      },
+      {
+        "name": "Landing Page",
+        "price": "ab 3'000 CHF",
+        "time": "1-2 Wo."
+      },
+      {
+        "name": "Unternehmenswebsite",
+        "price": "ab 10'000 CHF",
+        "time": "3-6 Wo."
+      },
+      {
+        "name": "E-Commerce-Shop",
+        "price": "ab 20'000 CHF",
+        "time": "6-10 Wo."
+      },
+      {
+        "name": "Mobili Awendig",
+        "price": "ab 30'000 CHF",
+        "time": "8-16 Wo."
+      },
+      {
+        "name": "Webawendig (SaaS)",
+        "price": "ab 40'000 CHF",
+        "time": "10-20 Wo."
+      },
+      {
+        "name": "Sicherheitsaudit",
+        "price": "ab 5'000 CHF",
+        "time": "1-2 Wo."
+      },
+      {
+        "name": "Beratig (Stündli)",
+        "price": "200 CHF",
+        "time": "—"
+      }
+    ]
+  },
+  "imprint": {
+    "meta_title": "Impressum | Swiss Made IT",
+    "meta_description": "Rächtlichi Informatione über Swiss Tech Solutions GmbH. Impressum gmäss Schwiizer Rächt.",
+    "badge": "Impressum / Rächtlichi Informatione",
+    "title": "Impressum",
+    "company_title": "Unternehmensinfos",
+    "company_type": "Gesellschaft mit beschränkter Haftung (GmbH)",
+    "legal_address": "Sitz vo de Gsellschaft",
+    "registration_data": "Registrierigsdaten",
+    "trade_register": "Handelsregister",
+    "entry_number": "Iiträgigsnummere",
+    "contact_title": "Kontaktinformatione",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "website": "Websiite",
+    "management_title": "Gschäftsfüehrig",
+    "managing_director": "Gschäftsfüehrer",
+    "director_name": "Alexander Novak",
+    "tax_title": "Stüürinformatione",
+    "vat_number": "UID/MwSt-Nummere",
+    "tax_authority": "Stüürbehörde",
+    "disclaimer_title": "Haftigsusschluss",
+    "disclaimer_content": "Inhalt vo de Website",
+    "disclaimer_content_text": "De Inhalt vo dere Website isch mit grösster Sorgfalt erstellt worde. Mir chönd aber kei Gwähr für d Richtigkeit, Vollständigkeit und Aktualität vo de bereitgstellte Informatione übernäh. Als Diensteanbieter sind mir für eigni Inhält nach de allgemeine Gsetz verantwortlich.",
+    "disclaimer_links": "Externi Links",
+    "disclaimer_links_text": "Üsi Website enthält Links zu externe Websites vo Dritte, uf deren Inhalt mir kei Iifluss händ. Drum chönd mir für die fremde Inhält kei Gwähr übernäh. Für d Inhält vo de verlinkte Siite isch de jeweilig Abieter oder Betrieber verantwortlich.",
+    "disclaimer_copyright": "Urheberrächt",
+    "disclaimer_copyright_text": "D Inhält und Wärk uf dere Website underliege em Schwiizer Urheberrächt. Vervielfältigung, Bearbeitig, Verbreitig und jedi Art vo Verwärtig usserhalb vo de Grenze vom Urheberrächt bedürfed de schriftliche Zuestimmig vom jeweilige Autor oder Ersteller.",
+    "data_protection_title": "Dateschutz",
+    "data_protection_text": "Informatione zur Verarbeitig vo personebezogene Date finded Sie in üsere",
+    "data_protection_link": "Dateschutzerklärig",
+    "data_protection_officer": "Dateschutzbeuftragte",
+    "dispute_title": "Striitbiilägig",
+    "dispute_text_1": "D Europäischi Kommission stellt e Plattform zur Online-Striitbiilägig (OS) bereit:",
+    "dispute_text_2": "Mir sind weder bereit no verpflichtet, a Striitbiilägigsverfaare vor ere Verbrucherschlichtigsstell teilznäh."
+  },
+  "privacy": {
+    "meta_title": "Dateschutzerklärig | Swiss Made IT",
+    "meta_description": "Dateschutzrichtlinie vo Swiss Made IT. DSGVO- und Schwiizer DSG-konform.",
+    "last_update": "Letscht Aktualisierig: 1. Dezember 2024",
+    "title": "Dateschutzerklärig",
+    "contact_title": "Frage zum Dateschutz?",
+    "contact_text": "Kontaktiere Sie üse Dateschutzbeuftragte",
+    "sections": [
+      {
+        "title": "1. Allgemeini Bestimmige",
+        "content": "Die Dateschutzerklärig beschriibt, wie Swiss Tech Solutions GmbH (\"mir\", \"euses\" oder \"Unternehme\") personebezogeni Date vo de Nutzer vo üsere Website swissmade.it (\"Website\") erhebt, verwendet und schützt.\n\nMir halte d Aforderige vo de Dateschutz-Grundverordnig (DSGVO) vo de Europäische Union und em Schwiizer Bundesgsetz über de Dateschutz (DSG) ii."
+      },
+      {
+        "title": "2. Verantwortliche",
+        "content": "Swiss Tech Solutions GmbH\nBahnhofstrasse 1\n8001 Züri, Schwiiz\nE-Mail: privacy@swissmade.it"
+      },
+      {
+        "title": "3. Weli Date mir erhebe",
+        "content": "Mir chönd folgendi Kategorie vo personebezogene Date erhebe:\n• Kontaktdate: Name, E-Mail, Telefonnummere, Firmename\n• Afragdate: Informatione, wo Sie über Kontaktformular bereitstelle\n• Technischi Date: IP-Adresse, Browsertyp, Betriebssystem, Website-Bsuechsdate\n• Cookies: Dur Cookie-Dateie erhobeni Date (lueg Abschnitt Cookies)"
+      },
+      {
+        "title": "4. Zwäck vo de Dateverarbeitig",
+        "content": "Mir verarbeite Ihri personebezogene Date für folgendi Zwäck:\n• Beantwortig vo Ihre Afrage und Bereitstellig vo Informatione über Dienstleistige\n• Erfüllig vo vertragliche Verpflichtige\n• Verbesserig vo üsere Website und Dienstleistige\n• Versand vo Marketing-Kommunikation (nur mit Ihrer Iiwilligung)\n• Iihaltung vo gsetzliche Verpflichtige"
+      },
+      {
+        "title": "5. Rächtsgrundlage vo de Verarbeitig",
+        "content": "Mir verarbeite Ihri Date uf folgende Rächtsgrundlage:\n• Iiwilligung: wenn Sie usdrücklich de Verarbeitig zuestimme (z.B. Newsletter-Ameldig)\n• Vertragserfüllig: wenn d Verarbeitig zur Erfüllig vomene Vertrag mit Ihne erforderlech isch\n• Berechtigts Interesse: zur Verbesserig vo üsere Dienstleistige und Gwährleistig vo de Sicherheit\n• Gsetzlichi Verpflichtige: wenn mir gsetzlich zur Datespiicherig verpflichtet sind"
+      },
+      {
+        "title": "6. Dateübermittlig a Dritti",
+        "content": "Mir verchöufe oder übermittle Ihri personebezogene Date nid zu Marketingzwäck a Dritti. Mir chönd Date übermittle a:\n• Dienstleister, wo üs bi de Gschäftstätigkeit unterstütze (Hosting, Analytik)\n• Behörde uf gsetzlichi Aforderig\n• Im Rahme vo Unternehmenstransaktione (Fusion, Übernahm)\n\nAlli üseri Dienstleister sind zur Iihaltung vo de DSGVO verpflichtet und unterschriibe Uftragsverarbeitigsverträg (AVV)."
+      },
+      {
+        "title": "7. Internationali Dateübermittlig",
+        "content": "Date wärde uf Server in de Schwiiz und de Europäische Union gspiicheret. Wenn Date usserhalb vo de EU/Schwiiz übermittlet wärde, gwährleiste mir es agemessens Schutzniveau dur Standardvertragsklausle (SCC) oder Agemesseheitsbeschlüss."
+      },
+      {
+        "title": "8. Datespiicherig",
+        "content": "Mir spiichere Ihri personebezogene Date nur so lang, wie für d in dere Richtlinie beschriibene Zwäck erforderlech oder gsetzlich vorgschriibe:\n• Chundedate: für d Vertragsduur + 10 Jahr\n• Kontaktformulardate: 2 Jahr\n• Analytikdate: 26 Mönat"
+      },
+      {
+        "title": "9. Ihri Rächt",
+        "content": "Sie händ folgendi Rächt bezüglich Ihre personebezogene Date:\n• Uskumftsrächt: e Kopie vo Ihre Date erhalte\n• Berichtigungsrächt: unrichtigi Date korrigiere\n• Löschigsrächt: Ihri Date lösche (\"Rächt uf Vergessewerden\")\n• Iischränkigsrächt: d Verarbeitig vo Ihre Date iischränke\n• Dateübertragbarkeit: Date in maschineleslichem Format erhalte\n• Widerspruchsrächt: de Verarbeitig uf Grundlag berechtigter Interesse widerspräche\n• Widerrufsrächt: erteili Iiwilligung jederzit widerruefe\n\nZur Usüebig vo Ihre Rächt kontaktiere Sie üs: privacy@swissmade.it"
+      },
+      {
+        "title": "10. Cookies",
+        "content": "Üsi Website verwendet Cookies zur Verbesserig vo de Nutzererfahrig. Mir verwende folgendi Arte vo Cookies:\n• Notwendägi: für de Betrieb vo de Website (Sitzig, Sprach)\n• Analytischi: zum Verstah vo de Website-Nutzig\n\nSie chönd Cookie-Istellige in Ihrem Browser oder über üses Iiwilligungsbanner verwalte."
+      },
+      {
+        "title": "11. Datesicherheit",
+        "content": "Mir wände technischi und organisatorischi Massnahme zum Schutz vo Ihre Date a:\n• Dateverschlüsseelig bi de Übertraagig (TLS/SSL)\n• Dateverschlüsseelig bi de Spiicherig\n• Zuegriffskontrolle und Authäntifizierig\n• Regelmässigi Datesicherig\n• Sicherheitsüberwachig"
+      },
+      {
+        "title": "12. Änderige vo de Richtlinie",
+        "content": "Mir chönd die Dateschutzerklärig aktualisiere. Wesentlichi Änderige wärde über d Website oder per E-Mail mitteilt. Mir empfähle, die Siite regelmässig z überprüefe."
+      },
+      {
+        "title": "13. Kontakt und Beschwärde",
+        "content": "Bi Frage zu üsere Dateschutzerklärig oder wenn Sie e Beschwärde iriiche möchte, kontaktiere Sie üs:\n\nE-Mail: privacy@swissmade.it\nAdresse: Swiss Tech Solutions GmbH, Bahnhofstrasse 1, 8001 Züri\n\nSie händ au s Rächt, e Beschwärde bi ere Dateschutzufsichtsbehörde iizriiche:\n• Schwiiz: EDOB (Eidgenössische Dateschutz- und Öffentlichkeitsbeuftragte)\n• EU: Ufsichtsbehörde vo Ihrem Wohnsitzland"
+      }
+    ]
+  },
+  "terms": {
+    "meta_title": "Nutzigsbedingie | Swiss Made IT",
+    "meta_description": "Nutzigsbedingie vo de Website und Dienstleistige vo Swiss Made IT.",
+    "last_update": "Letscht Aktualisierig: 1. Dezember 2024",
+    "title": "Nutzigsbedingie",
+    "contact_title": "Rächtlichi Frage?",
+    "contact_text": "Kontaktiere Sie üsi Rächtsabteilig",
+    "privacy_link": "Dateschutzerklärig",
+    "sections": [
+      {
+        "title": "1. Allgemeini Bestimmige",
+        "content": "Die Nutzigsbedingie (\"Bedingie\") regle d Nutzig vo de Website swissmade.it (\"Website\"), wo Swiss Tech Solutions GmbH (\"Unternehme\", \"mir\", \"euses\") gehört.\n\nDur d Nutzig vo üsere Website stimme Sie diese Bedingie zue. Wenn Sie mit irgendwelche Bestimmige nid ivershtande sind, nutze Sie d Website bitte nid."
+      },
+      {
+        "title": "2. Beschriibig vo de Dienstleistige",
+        "content": "Swiss Made IT bietet Softwareentwickligsdienscht a, inklusive, aber nid beschränkt uf:\n• Website- und Webawendigsentwicklig\n• Mobile App-Entwicklig\n• Erstellig vo Telegram-Bots und Mini Apps\n• Integration vo künstlicher Intelligenz\n• Cloud-Migration und DevOps\n• IT-Systemberatig und -Audit\n\nSpezifischi Dienstleistigsbedingie wärde dur individuelli Verträg mit Chunde festgleit."
+      },
+      {
+        "title": "3. Website-Nutzig",
+        "content": "Sie verpflichte sich:\n• D Website nur für rächtmässigi Zwäck z nutze\n• De Betrieb vo de Website nid dur technischi Mittel z störe\n• Kei unbefugte Zuegriff uf Systeme z versuäche\n• Kei schädlichi Software z verbreite\n• In Kontaktformular korrekti Informatione azgee"
+      },
+      {
+        "title": "4. Geistigs Eigetum",
+        "content": "Alli Materialie uf de Website, inklusive Textwärk, Grafik, Logos, Bilder und Softwarecode, sind Eigetum vo Swiss Tech Solutions GmbH oder wärde unter Lizenz verwendet.\n\nEs isch Ihne unterseit:\n• Website-Materialie z kopiere, z reproduziere oder z verbreite\n• Marke ohni schriftlichi Genehmigig z verwende\n• Abgleiteti Wärk z modifiziere oder z erstelle"
+      },
+      {
+        "title": "5. Dateschutz",
+        "content": "D Verarbeitig vo personebezogene Date wird dur üsi Dateschutzerklärig greglet, wo en integrale Bestandteil vo dene Bedingie isch."
+      },
+      {
+        "title": "6. Haftigsbeschränkig",
+        "content": "D Website und ihre Inhalt wärde \"wie bsehe\" ohni jeglihi usdrücklichi oder stillschwigendi Gwährleistig bereitgstellt.\n\nS Unternehme haftet nid für:\n• Schäde, wo us de Nutzig oder Unmöglichkeit vo de Nutzig vo de Website entstah\n• Inhalt vo externe verlinkte Websites\n• Vorübergehendi Nid-Erreichbarkeit vo de Website us technische Gründ\n• Handlige vo Dritte"
+      },
+      {
+        "title": "7. Vertraglichi Beziehige",
+        "content": "Informatione uf de Website diene Informationszwäck und stelle keis öffentlichs Agebot dar. Vertraglichi Beziehige entstah erscht nach Underzeichnig vomene individuelle Vertrag.\n\nUf de Website gnenni Priise sind ungefähri Agabe und chönd je nach spezifischem Projekt variiere."
+      },
+      {
+        "title": "8. Externi Links",
+        "content": "D Website cha Links zu externe Ressource enthalte. Mir kontrolliere de Inhalt vo dene Websites nid und sind nid dafür verantwortlich. S Folge vo externe Links erfolgt uf eigni Gfahr."
+      },
+      {
+        "title": "9. Änderige vo de Bedingie",
+        "content": "Mir behalte üs s Rächt vor, die Bedingie jederzit z ändere. Änderige trete mit de Veröffentlichig uf de Website in Chraft. Mir empfähle, die Siite regelmässig z überprüefe."
+      },
+      {
+        "title": "10. Awändbars Rächt",
+        "content": "Die Bedingie underliege em Rächt vo de Schwiiz und wärde in Überiiestimmig damit usgeleigt. Alli Stritigkeite underliege de Zuständigkeit vo de Gricht z Züri, Schwiiz."
+      },
+      {
+        "title": "11. Salvatorischi Klausel",
+        "content": "Setti e Bestimmig vo dene Bedingie für ungültig befunde wärde, bliibe d übrige Bestimmige in vollem Umfang wirksam."
+      },
+      {
+        "title": "12. Kontaktinformatione",
+        "content": "Bi Frage zu dene Bedingie kontaktiere Sie bitte:\n\nSwiss Tech Solutions GmbH\nBahnhofstrasse 1\n8001 Züri, Schwiiz\nE-Mail: legal@swissmade.it"
+      }
+    ]
+  },
+  "cases": {
+    "meta_title": "Fallstudie & Portfolio | Swiss Made IT",
+    "meta_description": "Echti Kundeprojekt. Telegram-Bots, Web-Plattforme, mobili Apps, Automatisierig. Resultat i Zahle.",
+    "badge": "100+ erfolgrichi Projekt",
+    "hero_title_1": "Projekt, wo ",
+    "hero_title_2": "für eus räde",
+    "hero_description": "Echti Fallstudie vo üsenä Kundä mit messbare Resultat. Vo Startups bis Enterprise — jedes Projekt isch einzigartig.",
+    "project_details": "Projektdetails",
+    "challenge": "Uusforderig",
+    "solution": "Lösig",
+    "stats_title": "Resultat i Zahle",
+    "cta_title": "Wänd Sie ähnlichi Resultat?",
+    "cta_description": "Verzählä Sie ües vo Ihrem Projekt — mir bereite e massgschniiderti Lösig vor und zeige, weli Resultat Sie erreiche chönd.",
+    "cta_button": "Projekt bespräche",
+    "industries": [
+      {
+        "name": "Finanze",
+        "count": 12
+      },
+      {
+        "name": "Gsundheit",
+        "count": 8
+      },
+      {
+        "name": "E-Commerce",
+        "count": 25
+      },
+      {
+        "name": "Reise",
+        "count": 6
+      },
+      {
+        "name": "Fertigig",
+        "count": 10
+      }
+    ],
+    "stats": [
+      {
+        "value": "100+",
+        "label": "Projekt",
+        "sublabel": "erfolgriich gstartet"
+      },
+      {
+        "value": "50+",
+        "label": "Chundä",
+        "sublabel": "vertrauä ües"
+      },
+      {
+        "value": "12",
+        "label": "Länder",
+        "sublabel": "Projektgeografi"
+      },
+      {
+        "value": "98%",
+        "label": "Chundä",
+        "sublabel": "empfählä ües"
+      }
+    ],
+    "projects": [
+      {
+        "id": "fintech-platform",
+        "title": "Investment-Plattform",
+        "client": "Schwiizer Fintech-Startup",
+        "industry": "Finanze",
+        "description": "Voll uusgstatteti Retail-Investment-Plattform mit Banking-API-Integration, KYC-Verifizierig und Echtziit-Kurs.",
+        "challenge": "Chund wott en eifache Wäg zum Investiere für Lüt ohni Finanzbildig schaffe. Het e zuverlässigi Plattform bruucht gemäss Schwiizer Regulierigsaforderige.",
+        "solution": "Händ Web-Plattform mit mobiler App entwicklet. Händ Banking-APIs, KYC-System, Trading-Engine integriert. Händ FINMA-Konformität sichergstellt.",
+        "results": [
+          {
+            "value": "10'000+",
+            "label": "aktivi Nutzer"
+          },
+          {
+            "value": "50M CHF",
+            "label": "under Verwaltig"
+          },
+          {
+            "value": "99,99%",
+            "label": "Plattform-Uptime"
+          },
+          {
+            "value": "4.8",
+            "label": "App Store Bewertig"
+          }
+        ],
+        "technologies": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "AWS",
+          "Kubernetes"
+        ],
+        "duration": "8 Mönat"
+      },
+      {
+        "id": "medical-saas",
+        "title": "SaaS für Klinike",
+        "client": "Medizinischs Zentrum-Netzwärk",
+        "industry": "Gsundheit",
+        "description": "Klinik-Management-System: Arzttermin, elektronischi Patienteakte, Telemedizin, Labor-Integration.",
+        "challenge": "Klinik het mit 5 verschiedene System gschaffet, Date sind dupliziert worde, Ärzt händ Ziit mit Routineufgabe verbracht. Het alles in einere Plattform vereinige müesse.",
+        "solution": "Händ einheitlichi SaaS-Plattform erstellt mit Module für alli Klinikprozess. Händ Videokonsultatione, elektronischi Rezept, automatischi Erinnerä integriert.",
+        "results": [
+          {
+            "value": "-40%",
+            "label": "Admin-Ufwand"
+          },
+          {
+            "value": "+25%",
+            "label": "Durchsatzkapazität"
+          },
+          {
+            "value": "15 Min",
+            "label": "pro Patient gspart"
+          },
+          {
+            "value": "12",
+            "label": "Klinike verbunde"
+          }
+        ],
+        "technologies": [
+          "Next.js",
+          "Python",
+          "PostgreSQL",
+          "WebRTC",
+          "HL7 FHIR"
+        ],
+        "duration": "12 Mönat"
+      },
+      {
+        "id": "telegram-ecommerce",
+        "title": "Telegram Mini App für E-Commerce",
+        "client": "Elektronik-Einzelhandelskettä",
+        "industry": "Einzelhandel",
+        "description": "Voll uusgstattete Online-Shop innerhalb vo Telegram mit Katalog, Warächorb, Zahlig und Bestellverfolgig.",
+        "challenge": "Chund wott Telegram-Publikum erreiche ohni Choste für separati App-Entwicklig. Het schnelle Start mit minimalem Budget bruucht.",
+        "solution": "Händ Telegram Mini App entwicklet mit voller E-Commerce-Funktionalität. Integration mit 1C, Online-Zahlig, Push-Benachrichtige über Bestellstatus.",
+        "results": [
+          {
+            "value": "+35%",
+            "label": "Umsatzwachstum"
+          },
+          {
+            "value": "50'000+",
+            "label": "Nutzer"
+          },
+          {
+            "value": "3 Min",
+            "label": "Durchschn. Bestellziit"
+          },
+          {
+            "value": "2 Wuche",
+            "label": "bis MVP-Start"
+          }
+        ],
+        "technologies": [
+          "React",
+          "Telegram API",
+          "Node.js",
+          "1C Integration",
+          "Stripe"
+        ],
+        "duration": "6 Wuche"
+      },
+      {
+        "id": "travel-automation",
+        "title": "Reisebüro-Automatisierig",
+        "client": "Reiseagentur",
+        "industry": "Reise",
+        "description": "Umfassendi Automatisierig: CRM, Buechige, Dokumentemanagement, GDS-System-Integration, Chunde-Chatbot.",
+        "challenge": "Manager händ 70% vo de Ziit mit Routine verbracht: manuelli Toursuächi, Papierkram, Beantwortig typischer Frage. Gschäft het ned skaliert.",
+        "solution": "Händ CRM implementiert mit Verkaufstrichter-Automatisierig. Händ Telegram-Bot erstellt für Erschtberatig. Händ Dokumentefluss und Lieferante-Integration automatisiert.",
+        "results": [
+          {
+            "value": "-70%",
+            "label": "Routinearbäit"
+          },
+          {
+            "value": "+200%",
+            "label": "Afrageverarbeitig"
+          },
+          {
+            "value": "24/7",
+            "label": "Bot bedient Chundä"
+          },
+          {
+            "value": "3 Mönat",
+            "label": "Amortisationsziit"
+          }
+        ],
+        "technologies": [
+          "Python",
+          "Telegram Bot API",
+          "Amadeus API",
+          "PostgreSQL",
+          "n8n"
+        ],
+        "duration": "3 Mönat"
+      },
+      {
+        "id": "corporate-portal",
+        "title": "Unternehmensportal",
+        "client": "Internationals Fertigungsunternehme",
+        "industry": "Fertigig",
+        "description": "Internas Portal für 500+ Mitarbeiter: Dokumentemanagement, Ufgabe, Wissedatenbank, HR-Prozess, SAP-Integration.",
+        "challenge": "Informatione sind über 10+ System verstreut gsi. Mitarbeiter händ ned gwusst, wo sie Dokument finde. HR-Prozess händ Wuche statt Tag duuret.",
+        "solution": "Händ einheitlichs Portal erstellt mit SSO-Autorisierig. Händ Dokument zentralisiert, HR-Afrage automatisiert, Ufgabemanagement-System implementiert.",
+        "results": [
+          {
+            "value": "500+",
+            "label": "Mitarbeiter"
+          },
+          {
+            "value": "-60%",
+            "label": "HR-Afrageziit"
+          },
+          {
+            "value": "1 Tag",
+            "label": "statt einere Wuche"
+          },
+          {
+            "value": "95%",
+            "label": "Adoption Rate"
+          }
+        ],
+        "technologies": [
+          "React",
+          "Node.js",
+          "SAP Integration",
+          "Elasticsearch",
+          "Keycloak"
+        ],
+        "duration": "6 Mönat"
+      }
+    ]
+  },
+  "compare": {
+    "meta_title": "In-house vs Freelance vs Offshore vs Swiss Agency | Swiss Made IT",
+    "meta_description": "Ehrliche Vergliichig vo IT-Entwickligsoptione. In-house-Team, Freelancer, Offshore-Agenturen, Swiss Dev Agency.",
+    "badge": "Ehrliche Vergliichig",
+    "hero_title_1": "In-house vs Freelance vs Offshore vs ",
+    "hero_title_2": "Swiss Agency",
+    "hero_description": "D'Wahl vom ene Uftragnähmer isch e strategischi Entscheidig. Mir händ e objektivi Vergliichig vo allne Optione zämegstellt.",
+    "criteria": "Kriterium",
+    "legend_yes": "Ja / Guet",
+    "legend_partial": "Teilwiis / Abhängig",
+    "legend_no": "Nei / Problem",
+    "detailed_title": "Detaillierti Analyse vo jedere Option",
+    "advantages": "Vorteil",
+    "disadvantages": "Nachteil",
+    "best_for": "Am beste für",
+    "when_title": "Wenn isch Swiss Dev Agency d'richtig Wahl?",
+    "discuss_project": "Bespräche Sie Ihres Projekt",
+    "comparison": [
+      {
+        "feature": "Choschte",
+        "inhouse": "€€€€€",
+        "freelancer": "€",
+        "offshore": "€€",
+        "swissdev": "€€€"
+      },
+      {
+        "feature": "Codequalität",
+        "inhouse": "yes",
+        "freelancer": "partial",
+        "offshore": "partial",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Zuverlässigkeit / SLA",
+        "inhouse": "yes",
+        "freelancer": "no",
+        "offshore": "partial",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Schnälle Start",
+        "inhouse": "no",
+        "freelancer": "yes",
+        "offshore": "yes",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Team-Skalierig",
+        "inhouse": "no",
+        "freelancer": "no",
+        "offshore": "yes",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "GDPR / Swiss DPA",
+        "inhouse": "yes",
+        "freelancer": "partial",
+        "offshore": "no",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Kommunikation",
+        "inhouse": "yes",
+        "freelancer": "partial",
+        "offshore": "no",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Zitzone",
+        "inhouse": "yes",
+        "freelancer": "partial",
+        "offshore": "no",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Langfristige Support",
+        "inhouse": "yes",
+        "freelancer": "no",
+        "offshore": "partial",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Kei HR/Recruiting",
+        "inhouse": "no",
+        "freelancer": "yes",
+        "offshore": "yes",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Feschtpriis",
+        "inhouse": "no",
+        "freelancer": "partial",
+        "offshore": "partial",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Haftpflichtversicherig",
+        "inhouse": "partial",
+        "freelancer": "no",
+        "offshore": "no",
+        "swissdev": "yes"
+      }
+    ],
+    "options": [
+      {
+        "title": "In-house-Team",
+        "pros": [
+          "Volli Kontrolle",
+          "Tüüfi Produktverstehig",
+          "24/7 Verfüegbarkeit"
+        ],
+        "cons": [
+          "Höchi Choschte (Löhn, Büro, Stüüre)",
+          "Langi Astellig (3-6 Mönet)",
+          "Fluktuationsrisike",
+          "Technischs Management erforderlich"
+        ],
+        "bestFor": "Grossi Unternähme mit konstanter IT-Uuslastig"
+      },
+      {
+        "title": "Freelancer",
+        "pros": [
+          "Nidrige Choschte",
+          "Schnälle Start",
+          "Flexibilität"
+        ],
+        "cons": [
+          "Unvorhersehbari Qualität",
+          "Risiko vom Verschwinde",
+          "Kei Garantie und SLA",
+          "Schwierig mit NDA und Compliance"
+        ],
+        "bestFor": "Chliini Ufgabe, Prototyp, persönlichi Projekt"
+      },
+      {
+        "title": "Offshore-Agenturen",
+        "pros": [
+          "Nidrige Choschte",
+          "Grossi Teams",
+          "Erfahrig i verschiedene Projekt"
+        ],
+        "cons": [
+          "Kommunikationsproblem",
+          "Zitzonedifferänz",
+          "GDPR-Risike",
+          "Kulturelli Unterschied"
+        ],
+        "bestFor": "Startups mit begränztem Budget"
+      },
+      {
+        "title": "Swiss Dev Agency",
+        "pros": [
+          "Schwiizer Qualität und Compliance",
+          "Europäischi Zitzone",
+          "Feschtpriis und Garantie",
+          "Langfristigi Partnerschäft"
+        ],
+        "cons": [
+          "Höcheri Choschte als Offshore",
+          "Begränzti Kapazität"
+        ],
+        "bestFor": "Mittelständischi Unternähme uf em europäische Markt"
+      }
+    ],
+    "when_items": [
+      "Sicherheit und Compliance sind wichtig",
+      "Zuverlässige Partner, kei einmaliger Uusfüehrer",
+      "Budget ab CHF 15'000 pro Projekt"
+    ]
+  },
+  "discovery": {
+    "meta_title": "Discovery Sprint | Swiss Made IT",
+    "meta_description": "5 Täg bis zur Klarheit. Vollständige Projektplan, technischi Spezifikation, feschts Agebot. CHF 3'500.",
+    "badge": "Iistigsagebot",
+    "hero_title_1": "Discovery Sprint: ",
+    "hero_title_2": "5 Täg bis zur Klarheit",
+    "hero_description": "Unsicher bi de Aforderige? Wüssed Sie d'genau Choschte nid? I 5 Arbeitstäg erstelle mir en vollständige Plan für Ihres Projekt.",
+    "days": "5 Arbeitstäg",
+    "fixed_price": "Feschtpriis",
+    "order_sprint": "Discovery Sprint bestelle",
+    "price_label": "Choschte",
+    "price": "CHF 3'500",
+    "price_note": "Feschtpriis",
+    "what_you_get": "Was Sie erhalte",
+    "what_you_get_desc": "Kompletts Dokumentationspaket für de Entwickligsstart",
+    "process_title": "Wie Discovery Sprint funktioniert",
+    "benefits_title": "Warum sich's lohnt",
+    "next_title": "Was passiert nach em Discovery Sprint?",
+    "next_description": "Sie erhalte es vollständigs Dokumentepaket und chönd:",
+    "next_options": [
+      "Mit üs zum Feschtpriis wiitermache",
+      "Dokumänt a ne andere Uftragnähmer übergäh",
+      "Für d'Investoresuech bruuche"
+    ],
+    "next_note": "* Bi Beauftragig vo de Entwicklig bi üs werded d'Discovery Sprint-Choschte vom Gsamtbetrag abzoge",
+    "book_sprint": "Discovery Sprint buche",
+    "deliverables": [
+      {
+        "title": "Technischi Spezifikation",
+        "description": "Detaillierti Funktionsbeschrybig, User Stories, Akzeptanzkriterien"
+      },
+      {
+        "title": "Lösigsarchitektur",
+        "description": "Komponentediagramm, Datebank, Integratione, Technologie-Stack"
+      },
+      {
+        "title": "Prototyp / Wireframes",
+        "description": "Klickbare Prototyp vo de wichtigste Bildschirm i Figma"
+      },
+      {
+        "title": "Entwickligsplan",
+        "description": "Phase, Ziitrahme, Meilenstei, kritische Pfad"
+      },
+      {
+        "title": "Risikobewärtig",
+        "description": "Technischi Risike, Abhängigkeite, Mitigatiosplan"
+      },
+      {
+        "title": "Feschts Agebot",
+        "description": "Exakti Entwickligschoschte, wo sich nid ändere"
+      }
+    ],
+    "process": [
+      {
+        "day": "Tag 1-2",
+        "title": "Briefing und Analyse",
+        "activities": [
+          "Interviews mit wichtige Stakeholder",
+          "Analyse vo aktuellne Prozäss und Problem",
+          "Definitio vo Ziel und KPIs",
+          "Konkurränzanalyse"
+        ]
+      },
+      {
+        "day": "Tag 3-4",
+        "title": "Design",
+        "activities": [
+          "Erstellig vo User Flow und Wireframes",
+          "Architekturdesign",
+          "Uuswahl vom Technologie-Stack",
+          "Integratioosplanig"
+        ]
+      },
+      {
+        "day": "Tag 5",
+        "title": "Dokumentation und Agebot",
+        "activities": [
+          "Finalisierig vo de technische Spezifikation",
+          "Berechnig vom detaillierte Agebot",
+          "Erstellig vom Entwickligsplan",
+          "Ergebnisspräsentation"
+        ]
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Minimales Risiko",
+        "description": "Investiere Sie nur CHF 3'500, erhalte Sie volli Projektklarheit"
+      },
+      {
+        "title": "Dokumänt ghöred Ihne",
+        "description": "Au wenn Sie nid mit üs wiitermached, bliibe alli Materialie bi Ihne"
+      },
+      {
+        "title": "Feschtpriis",
+        "description": "S'Agebot nach em Discovery Sprint änderet sich während de Entwicklig nid"
+      },
+      {
+        "title": "Schnälle Start",
+        "description": "Mir chönd de Discovery Sprint scho nöchschti Wuche starte"
+      }
+    ]
+  },
+  "security": {
+    "meta_title": "NDA & Sicherheit | Swiss Made IT",
+    "meta_description": "Schwiizer Dateschutzstandard. NDA wird vor Projektbesprächig unterschriibe. ISO 27001, GDPR-Konformität.",
+    "badge": "Security & Compliance",
+    "hero_title_1": "NDA und Sicherheit: ",
+    "hero_title_2": "Schwiizer Standard",
+    "hero_description": "Mir schütze Ihri Ideie und Date vom erschte Tag a. NDA wird vor de Besprächig vo Projektdetails unterschriibe.",
+    "request_nda": "NDA afrage",
+    "about_security": "Über Sicherheit",
+    "nda_title": "NDA-Type",
+    "nda_description": "Mir unterschriibe NDA vor em erschte Aruf. Ihri Ideie sind vo Afang a gschützt.",
+    "download_nda": "NDA-Muschter abelade",
+    "application": "Awendig",
+    "security_title": "Sicherheitsmassnahme",
+    "security_description": "Umfassende Asatz zum Dateschutz uf allne Ebene",
+    "certs_title": "Zertifikat & Compliance",
+    "practices_title": "Üsi Sicherheitspraktike",
+    "insurance_title": "Beruefshaftpflichtversicherig",
+    "insurance_description": "Üsi Tätigkeit isch bis zu €5'000'000 versicheret. Das isch e zusätzlichi Garantie zum Schutz vo Ihre Interesse.",
+    "cta_title": "Bereit, Ihres Projekt z bespräche?",
+    "cta_description": "Mir schicke s NDA innerhalb vonere Stünd nach Ihrer Afrag. Ihri Ideie sind vor em erschte Gspräch gschützt.",
+    "confirmed": "Bestätiget",
+    "in_progress": "Im Zertifizierigsprozess",
+    "planned": "Gplant Q4 2024",
+    "nda_types": [
+      {
+        "title": "Mutual NDA",
+        "description": "Bilaterali Vertraulichkeitsvereinbarig",
+        "useCase": "Für Projektbesprächig und Ideie-Uustuusch"
+      },
+      {
+        "title": "Project NDA",
+        "description": "Erwiiterets NDA mit technische Details",
+        "useCase": "Für Übertraig vo technischer Dokumentation"
+      },
+      {
+        "title": "Employee NDA",
+        "description": "NDA für alli am Projekt schaffende Mitarbeiter",
+        "useCase": "Schutz uf Entwicklerebeni"
+      }
+    ],
+    "measures": [
+      {
+        "title": "Datevershlüssligs",
+        "items": [
+          "AES-256 für Date im Ruehestand",
+          "TLS 1.3 für Date im Transit",
+          "End-to-End-Verschlüssligs für sensitivi Date",
+          "HSM für kryptografischi Schlüssel"
+        ]
+      },
+      {
+        "title": "Infrastruktur",
+        "items": [
+          "Schwiizer Rechezentere (Tier III+)",
+          "AWS / Azure / GCP i europäische Regione",
+          "Isolierti VPC für jedes Projekt",
+          "Regelmässigi Backups"
+        ]
+      },
+      {
+        "title": "Zuegriffskontrolle",
+        "items": [
+          "Prinzip vo de minimale Rächt",
+          "Zwei-Faktor-Authäntifizierig (2FA)",
+          "Regelmässigi Zuegriffsaudits",
+          "Protokollierig vo allne Aktione"
+        ]
+      },
+      {
+        "title": "Überwachiig",
+        "items": [
+          "SIEM-System",
+          "24/7 Bedrohigsüberwachiig",
+          "Automatischi Anomalieerkennig",
+          "Incident-Response-Verfahre"
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "ISO 27001",
+        "description": "Internationale Informationssicherheitsstandard",
+        "status": "in_progress"
+      },
+      {
+        "name": "GDPR Compliant",
+        "description": "Volli Konformität mit EU-Dateschutzaforderige",
+        "status": "confirmed"
+      },
+      {
+        "name": "Swiss DPA",
+        "description": "Konformität mit Schwiizer Dateschutzgsetz",
+        "status": "confirmed"
+      },
+      {
+        "name": "SOC 2 Type II",
+        "description": "Sicherheits-, Verfügbarkeits- und Vertraulichkeitsaudit",
+        "status": "planned"
+      }
+    ],
+    "practices": [
+      "Alli Mitarbeiter dureä Informationssicherheitsschuelig",
+      "Code-Review mit Schwachstelleprüefig (OWASP Top 10)",
+      "Regelmässigi Pentests und Schwachstellescans",
+      "Clean-Desk- und Screen-Policy",
+      "Verschlüssligs vo Arbeitsgerät",
+      "Sicheri Dateentsorgiig nach Projektabschluss"
+    ]
+  }
+}

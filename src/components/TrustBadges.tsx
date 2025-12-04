@@ -12,26 +12,26 @@ export default function TrustBadges() {
   const indicators = t.raw('indicators') as string[];
 
   const clients = [
-    { name: 'UBS', category: 'Banking' },
-    { name: 'Swiss Re', category: 'Insurance' },
-    { name: 'Novartis', category: 'Pharma' },
-    { name: 'Migros', category: 'Retail' },
-    { name: 'SBB', category: 'Transport' },
-    { name: 'Swisscom', category: 'Telecom' },
+    { name: 'UBS', categoryKey: 'banking' },
+    { name: 'Swiss Re', categoryKey: 'insurance' },
+    { name: 'Novartis', categoryKey: 'pharma' },
+    { name: 'Migros', categoryKey: 'retail' },
+    { name: 'SBB', categoryKey: 'transport' },
+    { name: 'Swisscom', categoryKey: 'telecom' },
   ];
 
   const partners = [
-    { name: 'AWS', full: 'Amazon Web Services', tier: 'Partner' },
-    { name: 'GCP', full: 'Google Cloud Platform', tier: 'Partner' },
-    { name: 'Azure', full: 'Microsoft Azure', tier: 'Partner' },
-    { name: 'Stripe', full: 'Stripe Verified', tier: 'Partner' },
+    { name: 'AWS', fullKey: 'aws_full' },
+    { name: 'GCP', fullKey: 'gcp_full' },
+    { name: 'Azure', fullKey: 'azure_full' },
+    { name: 'Stripe', fullKey: 'stripe_full' },
   ];
 
   const certifications = [
-    { name: 'ISO 27001', description: 'Information Security' },
-    { name: 'GDPR', description: 'Data Protection' },
-    { name: 'Swiss DPA', description: 'Swiss Privacy' },
-    { name: 'OWASP', description: 'Web Security' },
+    { name: 'ISO 27001', descKey: 'iso_desc' },
+    { name: 'GDPR', descKey: 'gdpr_desc' },
+    { name: 'Swiss DPA', descKey: 'swiss_dpa_desc' },
+    { name: 'OWASP', descKey: 'owasp_desc' },
   ];
 
   return (
@@ -67,7 +67,7 @@ export default function TrustBadges() {
                   </span>
                 </div>
                 <span className="text-mist-600 text-[10px] mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  {client.category}
+                  {t(`clients.${client.categoryKey}`)}
                 </span>
               </motion.div>
             ))}
@@ -94,7 +94,7 @@ export default function TrustBadges() {
                   className="p-3 rounded-lg bg-void-800/50 border border-mist-700/20 hover:border-laser-cyan/30 transition-colors"
                 >
                   <div className="text-white font-mono font-bold text-sm">{partner.name}</div>
-                  <div className="text-mist-500 text-xs">{partner.tier}</div>
+                  <div className="text-mist-500 text-xs">{t('partners.tier')}</div>
                 </div>
               ))}
             </div>
@@ -118,7 +118,7 @@ export default function TrustBadges() {
                   className="p-3 rounded-lg bg-void-800/50 border border-mist-700/20 hover:border-laser-cyan/30 transition-colors"
                 >
                   <div className="text-white font-mono font-bold text-sm">{cert.name}</div>
-                  <div className="text-mist-500 text-xs">{cert.description}</div>
+                  <div className="text-mist-500 text-xs">{t(`certifications.${cert.descKey}`)}</div>
                 </div>
               ))}
             </div>

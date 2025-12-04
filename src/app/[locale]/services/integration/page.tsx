@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { 
@@ -16,46 +17,24 @@ import {
   Workflow
 } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Интеграции и API | Swiss IT',
-  description: 'Разработка и интеграция API. Связываем системы между собой: CRM, ERP, платёжные системы, внешние сервисы.',
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: 'services_integration' });
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+  };
+}
 
 export default async function IntegrationPage({ params }: { params: { locale: 'en' | 'de' | 'fr' | 'it' | 'de-CH' | 'ru' } }) {
   const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: 'services_integration' });
 
-  const services = [
-    {
-      icon: FileJson,
-      title: 'Разработка API',
-      description: 'REST, GraphQL, gRPC — выбираем подход под задачу. Документация, версионирование, тестирование.'
-    },
-    {
-      icon: Link2,
-      title: 'Интеграция систем',
-      description: 'Связываем ваши системы между собой. Синхронизация данных, единый источник правды.'
-    },
-    {
-      icon: Database,
-      title: 'CRM и ERP',
-      description: 'Salesforce, HubSpot, 1C, SAP — интегрируем с вашими бизнес-системами.'
-    },
-    {
-      icon: Zap,
-      title: 'Платёжные системы',
-      description: 'Stripe, PayPal, Twint — приём платежей и финансовая интеграция.'
-    },
-    {
-      icon: Cloud,
-      title: 'Внешние сервисы',
-      description: 'Маркетплейсы, логистика, банки, государственные системы — любые внешние API.'
-    },
-    {
-      icon: Workflow,
-      title: 'ETL и синхронизация',
-      description: 'Автоматический обмен данными между системами. Трансформация, валидация, мониторинг.'
-    }
-  ];
+  const serviceIcons = [FileJson, Link2, Database, Zap, Cloud, Workflow];
+  const services = serviceIcons.map((icon, index) => ({
+    icon,
+    title: t(`services.${index}.title`),
+    description: t(`services.${index}.description`)
+  }));
 
   const techStack = [
     'REST API', 'GraphQL', 'gRPC', 'WebSocket',
@@ -75,28 +54,27 @@ export default async function IntegrationPage({ params }: { params: { locale: 'e
           <div className="max-w-6xl mx-auto relative">
             <div className="flex items-center gap-2 mb-6">
               <span className="px-3 py-1 bg-laser-blue/10 border border-laser-blue/30 rounded-full text-laser-blue text-sm">
-                API
+                {t('badge1')}
               </span>
               <span className="px-3 py-1 bg-void-800 border border-void-700 rounded-full text-mist-400 text-sm">
-                Интеграции
+                {t('badge2')}
               </span>
             </div>
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              Интеграции и API —{' '}
+              {t('title')}{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-laser-blue via-laser-cyan to-laser-purple">
-                связанная экосистема
+                {t('title_gradient')}
               </span>
             </h1>
             <p className="text-xl text-mist-300 max-w-3xl mb-8">
-              Разрабатываем API и интегрируем системы. CRM, ERP, платёжные шлюзы, внешние сервисы — 
-              ваши данные синхронизированы и доступны там, где нужно.
+              {t('description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={`/${locale}/contact`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-blue to-laser-cyan text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
               >
-                Обсудить интеграцию
+                {t('cta_primary')}
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
@@ -107,7 +85,7 @@ export default async function IntegrationPage({ params }: { params: { locale: 'e
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Что мы делаем
+              {t('services_title')}
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, index) => (
@@ -128,7 +106,7 @@ export default async function IntegrationPage({ params }: { params: { locale: 'e
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Технологии и протоколы
+              {t('tech_title')}
             </h2>
             <div className="flex flex-wrap justify-center gap-3">
               {techStack.map((tech, index) => (
@@ -147,17 +125,17 @@ export default async function IntegrationPage({ params }: { params: { locale: 'e
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Нужна интеграция?
+              {t('cta_title')}
             </h2>
             <p className="text-xl text-mist-400 mb-8">
-              Расскажите, какие системы нужно связать — предложим решение
+              {t('cta_description')}
             </p>
             <a
               href={`/${locale}/contact`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-blue to-laser-cyan text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
             >
               <Plug className="w-5 h-5" />
-              Обсудить проект
+              {t('cta_button')}
             </a>
           </div>
         </section>

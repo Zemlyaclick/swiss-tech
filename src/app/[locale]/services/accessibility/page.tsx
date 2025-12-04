@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { 
@@ -23,11 +24,13 @@ import {
   HelpCircle
 } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Доступность и инклюзивный дизайн | Swiss Made IT',
-  description: 'Аудит доступности, соответствие WCAG 2.1 AA/AAA, инклюзивный дизайн. Сделаем ваш продукт доступным для всех пользователей и соответствующим законодательству.',
-  keywords: ['accessibility', 'доступность', 'WCAG', 'инклюзивный дизайн', 'a11y', 'аудит доступности', 'ARIA', 'screen reader'],
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: 'services_accessibility' });
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+  };
+}
 
 export default async function AccessibilityPage({ 
   params 
@@ -35,189 +38,75 @@ export default async function AccessibilityPage({
   params: { locale: 'en' | 'de' | 'fr' | 'it' | 'de-CH' | 'ru' } 
 }) {
   const { locale } = params;
+  const t = await getTranslations({ locale, namespace: 'services_accessibility' });
 
-  const problems = [
-    {
-      icon: Scale,
-      title: 'Юридические риски',
-      description: 'В ЕС и Швейцарии законы о доступности ужесточаются. Иски за недоступные сайты становятся реальностью'
-    },
-    {
-      icon: Users,
-      title: 'Потеря 15% аудитории',
-      description: '15% населения имеют ограничения по здоровью. Недоступный сайт просто теряет этих клиентов'
-    },
-    {
-      icon: Eye,
-      title: 'Проблемы со зрением',
-      description: 'Слабый контраст, мелкий шрифт, неработающий зум — пожилые пользователи не могут работать с сайтом'
-    },
-    {
-      icon: Keyboard,
-      title: 'Мышь не для всех',
-      description: 'Навигация только мышкой исключает пользователей с моторными нарушениями'
-    },
-    {
-      icon: Volume2,
-      title: 'Контент без альтернатив',
-      description: 'Видео без субтитров, изображения без описаний, аудио без транскриптов'
-    },
-    {
-      icon: Code,
-      title: 'Сломанная семантика',
-      description: 'Screen readers не могут прочитать сайт: div вместо button, нет заголовков, неправильные ARIA-роли'
-    }
+  const problemIcons = [Scale, Users, Eye, Keyboard, Volume2, Code];
+  const benefitIcons = [Users, Scale, Search, Heart, TrendingUp, Globe];
+  const serviceIcons = [Search, FileCheck, Code, TestTube, Keyboard, FileText];
+
+  const problems = problemIcons.map((icon, index) => ({
+    icon,
+    title: t(`problems.${index}.title`),
+    description: t(`problems.${index}.description`)
+  }));
+
+  const benefitColors = [
+    'from-laser-cyan to-laser-blue',
+    'from-laser-blue to-laser-purple',
+    'from-laser-purple to-laser-cyan',
+    'from-laser-cyan to-laser-blue',
+    'from-laser-blue to-laser-purple',
+    'from-laser-purple to-laser-cyan'
   ];
 
-  const benefits = [
-    {
-      icon: Users,
-      title: 'Больше клиентов',
-      description: 'Доступный сайт работает для всех — расширяете аудиторию и повышаете конверсию',
-      color: 'from-laser-cyan to-laser-blue'
-    },
-    {
-      icon: Scale,
-      title: 'Соответствие законам',
-      description: 'WCAG 2.1 AA/AAA, ADA, Section 508, EN 301 549 — защита от исков и штрафов',
-      color: 'from-laser-blue to-laser-purple'
-    },
-    {
-      icon: Search,
-      title: 'Лучшее SEO',
-      description: 'Семантический HTML, alt-тексты, структурированный контент — то, что любят поисковики',
-      color: 'from-laser-purple to-laser-cyan'
-    },
-    {
-      icon: Heart,
-      title: 'Репутация бренда',
-      description: 'Инклюзивность — это ценность. Клиенты выбирают компании, которые заботятся обо всех',
-      color: 'from-laser-cyan to-laser-blue'
-    },
-    {
-      icon: TrendingUp,
-      title: 'Лучший UX для всех',
-      description: 'Крупные кнопки, понятная навигация, читаемые тексты улучшают опыт каждого пользователя',
-      color: 'from-laser-blue to-laser-purple'
-    },
-    {
-      icon: Globe,
-      title: 'Мобильность и контексты',
-      description: 'Доступный сайт работает на улице при ярком солнце, в шумном метро, одной рукой',
-      color: 'from-laser-purple to-laser-cyan'
-    }
-  ];
+  const benefits = benefitIcons.map((icon, index) => ({
+    icon,
+    title: t(`benefits.${index}.title`),
+    description: t(`benefits.${index}.description`),
+    color: benefitColors[index]
+  }));
 
-  const services = [
-    {
-      icon: Search,
-      title: 'Аудит доступности',
-      description: 'Комплексная проверка сайта по WCAG 2.1: автоматическое тестирование + ручной анализ + тестирование с реальными пользователями'
-    },
-    {
-      icon: FileCheck,
-      title: 'Отчёт о соответствии',
-      description: 'Детальный отчёт с каждой найденной проблемой, её влиянием, приоритетом и конкретным решением'
-    },
-    {
-      icon: Code,
-      title: 'Исправление проблем',
-      description: 'Не просто отчёт — мы сами исправляем код: семантика, ARIA, фокус, контрасты, альтернативные тексты'
-    },
-    {
-      icon: TestTube,
-      title: 'Тестирование со screen readers',
-      description: 'Проверка с NVDA, JAWS, VoiceOver, TalkBack — как реально работает ваш сайт для незрячих'
-    },
-    {
-      icon: Keyboard,
-      title: 'Keyboard-only навигация',
-      description: 'Полноценная работа с сайтом без мыши: фокус, порядок табуляции, skip links, keyboard traps'
-    },
-    {
-      icon: FileText,
-      title: 'Документация и обучение',
-      description: 'Гайдлайны для дизайнеров и разработчиков: как сохранять доступность при развитии продукта'
-    }
-  ];
+  const services = serviceIcons.map((icon, index) => ({
+    icon,
+    title: t(`services.${index}.title`),
+    description: t(`services.${index}.description`)
+  }));
 
-  const wcagLevels = [
-    {
-      level: 'A',
-      title: 'Минимальный уровень',
-      description: 'Базовые требования: alt-тексты, управление с клавиатуры, нет мерцающего контента',
-      criteria: '25 критериев'
-    },
-    {
-      level: 'AA',
-      title: 'Рекомендуемый уровень',
-      description: 'Стандарт для бизнеса: контраст 4.5:1, resize до 200%, субтитры для видео',
-      criteria: '13 критериев'
-    },
-    {
-      level: 'AAA',
-      title: 'Продвинутый уровень',
-      description: 'Максимальная доступность: контраст 7:1, язык жестов, расширенное аудиоописание',
-      criteria: '23 критерия'
-    }
-  ];
+  const wcagLevels = [0, 1, 2].map(index => ({
+    level: t(`wcag_levels.${index}.level`),
+    title: t(`wcag_levels.${index}.title`),
+    description: t(`wcag_levels.${index}.description`),
+    criteria: t(`wcag_levels.${index}.criteria`)
+  }));
 
-  const process = [
-    {
-      step: '01',
-      title: 'Аудит',
-      description: 'Автоматическое сканирование axe/WAVE + ручное тестирование + проверка с assistive technologies',
-      duration: '3-5 дней'
-    },
-    {
-      step: '02',
-      title: 'Отчёт',
-      description: 'Структурированный отчёт: проблема → влияние → приоритет → решение → WCAG-критерий',
-      duration: '2-3 дня'
-    },
-    {
-      step: '03',
-      title: 'Исправление',
-      description: 'Устраняем проблемы в порядке приоритета. Критические — сначала, косметические — в конце',
-      duration: '1-4 недели'
-    },
-    {
-      step: '04',
-      title: 'Валидация',
-      description: 'Повторное тестирование, проверка исправлений, сертификат соответствия WCAG',
-      duration: '2-3 дня'
-    }
-  ];
+  const process = [0, 1, 2, 3].map(index => ({
+    step: t(`process.${index}.step`),
+    title: t(`process.${index}.title`),
+    description: t(`process.${index}.description`),
+    duration: t(`process.${index}.duration`)
+  }));
 
   const tools = [
-    { name: 'axe DevTools', category: 'Автотесты' },
-    { name: 'WAVE', category: 'Анализ' },
-    { name: 'Lighthouse', category: 'Аудит' },
+    { name: 'axe DevTools', category: 'Autotests' },
+    { name: 'WAVE', category: 'Analysis' },
+    { name: 'Lighthouse', category: 'Audit' },
     { name: 'NVDA', category: 'Screen reader' },
     { name: 'VoiceOver', category: 'Screen reader' },
-    { name: 'Color Contrast Analyzer', category: 'Контраст' },
-    { name: 'Accessibility Insights', category: 'Тестирование' },
+    { name: 'Color Contrast Analyzer', category: 'Contrast' },
+    { name: 'Accessibility Insights', category: 'Testing' },
     { name: 'Pa11y', category: 'CI/CD' }
   ];
 
-  const faqs = [
-    {
-      question: 'Какой уровень WCAG нам нужен?',
-      answer: 'Для большинства коммерческих сайтов — WCAG 2.1 AA. Это требование законодательства ЕС и Швейцарии, оптимальный баланс между доступностью и затратами. AAA нужен для госсервисов и медицинских приложений.'
-    },
-    {
-      question: 'Сколько времени занимает аудит?',
-      answer: 'Экспресс-аудит главных страниц — 3-5 дней. Полный аудит среднего сайта (50-100 страниц) — 2-3 недели. Для крупных порталов составляем индивидуальный план.'
-    },
-    {
-      question: 'Можно ли сделать сайт на 100% доступным?',
-      answer: 'Идеальная доступность — это процесс, не результат. Мы добиваемся соответствия выбранному уровню WCAG и даём инструменты для поддержания доступности при развитии продукта.'
-    },
-    {
-      question: 'Как это повлияет на дизайн сайта?',
-      answer: 'Доступность ≠ скучный дизайн. Современные техники позволяют сохранить креативность и бренд. Часто доступные решения даже улучшают общий UX для всех пользователей.'
-    }
-  ];
+  const results = [0, 1, 2, 3].map(index => ({
+    value: t(`results.${index}.value`),
+    label: t(`results.${index}.label`),
+    sublabel: t(`results.${index}.sublabel`)
+  }));
+
+  const faqs = [0, 1, 2, 3].map(index => ({
+    question: t(`faq.${index}.question`),
+    answer: t(`faq.${index}.answer`)
+  }));
 
   return (
     <>
@@ -233,27 +122,26 @@ export default async function AccessibilityPage({
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="flex flex-wrap gap-3 mb-6">
               <span className="px-3 py-1 bg-laser-cyan/10 border border-laser-cyan/30 rounded-full text-laser-cyan text-sm">
-                WCAG 2.1
+                {t('badge_1')}
               </span>
               <span className="px-3 py-1 bg-laser-blue/10 border border-laser-blue/30 rounded-full text-laser-blue text-sm">
-                Инклюзивный дизайн
+                {t('badge_2')}
               </span>
               <span className="px-3 py-1 bg-laser-purple/10 border border-laser-purple/30 rounded-full text-laser-purple text-sm">
-                Screen reader friendly
+                {t('badge_3')}
               </span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              <span className="text-white">Сайт для </span>
+              <span className="text-white">{t('hero_title_1')}</span>
               <span className="bg-gradient-to-r from-laser-cyan via-laser-blue to-laser-purple bg-clip-text text-transparent">
-                каждого
+                {t('hero_title_2')}
               </span>
-              <span className="text-white"> пользователя</span>
+              <span className="text-white">{t('hero_title_3')}</span>
             </h1>
             
             <p className="text-xl text-mist-300 max-w-3xl mb-8 leading-relaxed">
-              15% людей имеют ограничения по здоровью. Законы ужесточаются, иски растут. 
-              Мы делаем ваш продукт доступным для всех и соответствующим WCAG 2.1 AA/AAA.
+              {t('hero_description')}
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -261,14 +149,14 @@ export default async function AccessibilityPage({
                 href={`/${locale}/contact`}
                 className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-laser-cyan to-laser-blue rounded-lg font-semibold text-void-950 hover:shadow-lg hover:shadow-laser-cyan/25 transition-all duration-300"
               >
-                Заказать аудит
+                {t('cta_audit')}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <a 
                 href="#wcag"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-mist-700 rounded-lg text-mist-300 hover:border-laser-cyan hover:text-laser-cyan transition-colors"
               >
-                Уровни WCAG
+                {t('cta_wcag')}
               </a>
             </div>
           </div>
@@ -278,12 +166,12 @@ export default async function AccessibilityPage({
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">Проблемы</span>
+              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('problems_label')}</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4">
-                Почему доступность — это не опция
+                {t('problems_title')}
               </h2>
               <p className="text-mist-400 mt-4 max-w-2xl mx-auto">
-                Недоступный сайт — это потерянные клиенты, репутационные риски и юридические проблемы
+                {t('problems_subtitle')}
               </p>
             </div>
 
@@ -308,12 +196,12 @@ export default async function AccessibilityPage({
         <section className="py-20 px-4 md:px-6 bg-void-900/30">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">Преимущества</span>
+              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('benefits_label')}</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4">
-                Доступность — это бизнес-преимущество
+                {t('benefits_title')}
               </h2>
               <p className="text-mist-400 mt-4 max-w-2xl mx-auto">
-                Инвестиции в доступность окупаются расширением аудитории, улучшением SEO и защитой от рисков
+                {t('benefits_subtitle')}
               </p>
             </div>
 
@@ -340,12 +228,12 @@ export default async function AccessibilityPage({
         <section id="wcag" className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">WCAG 2.1</span>
+              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('wcag_label')}</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4">
-                Уровни соответствия
+                {t('wcag_title')}
               </h2>
               <p className="text-mist-400 mt-4 max-w-2xl mx-auto">
-                Web Content Accessibility Guidelines — международный стандарт доступности веб-контента
+                {t('wcag_subtitle')}
               </p>
             </div>
 
@@ -361,7 +249,7 @@ export default async function AccessibilityPage({
                 >
                   {item.level === 'AA' && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-laser-cyan text-void-950 text-xs font-bold rounded-full">
-                      Рекомендуем
+                      {t('wcag_recommended')}
                     </div>
                   )}
                   <div className={`text-5xl font-bold mb-4 ${
@@ -382,12 +270,12 @@ export default async function AccessibilityPage({
         <section className="py-20 px-4 md:px-6 bg-void-900/30">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">Услуги</span>
+              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('services_label')}</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4">
-                Полный цикл работы с доступностью
+                {t('services_title')}
               </h2>
               <p className="text-mist-400 mt-4 max-w-2xl mx-auto">
-                От аудита до исправления и сертификации — берём на себя всю работу
+                {t('services_subtitle')}
               </p>
             </div>
 
@@ -412,9 +300,9 @@ export default async function AccessibilityPage({
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">Инструменты</span>
+              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('tools_label')}</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4">
-                Профессиональный инструментарий
+                {t('tools_title')}
               </h2>
             </div>
 
@@ -436,9 +324,9 @@ export default async function AccessibilityPage({
         <section className="py-20 px-4 md:px-6 bg-void-900/30">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">Процесс</span>
+              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('process_label')}</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4">
-                От аудита до сертификата
+                {t('process_title')}
               </h2>
             </div>
 
@@ -464,19 +352,14 @@ export default async function AccessibilityPage({
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">Результаты</span>
+              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('results_label')}</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4">
-                Что вы получите
+                {t('results_title')}
               </h2>
             </div>
 
             <div className="grid md:grid-cols-4 gap-6">
-              {[
-                { value: '100%', label: 'Соответствие WCAG', sublabel: 'выбранного уровня' },
-                { value: '+15%', label: 'Новая аудитория', sublabel: 'потенциальных клиентов' },
-                { value: '0', label: 'Юридических рисков', sublabel: 'защита от исков' },
-                { value: '↑SEO', label: 'Поисковые позиции', sublabel: 'семантический HTML' }
-              ].map((stat, index) => (
+              {results.map((stat, index) => (
                 <div key={index} className="text-center p-6 bg-void-900/50 border border-mist-800/50 rounded-xl">
                   <div className="text-4xl font-bold bg-gradient-to-r from-laser-cyan to-laser-blue bg-clip-text text-transparent mb-2">
                     {stat.value}
@@ -495,18 +378,17 @@ export default async function AccessibilityPage({
             <div className="p-8 md:p-12 bg-gradient-to-r from-laser-cyan/10 via-laser-blue/10 to-laser-purple/10 border border-laser-cyan/20 rounded-2xl text-center">
               <Award className="w-16 h-16 text-laser-cyan mx-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-                Сертифицированная доступность
+                {t('pricing_title')}
               </h2>
               <p className="text-mist-300 mb-6 max-w-2xl mx-auto">
-                Стоимость зависит от размера сайта и текущего состояния. 
-                Экспресс-аудит от 1 500 CHF, полный аудит + исправление от 5 000 CHF.
+                {t('pricing_description')}
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <a 
                   href={`/${locale}/contact`}
                   className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-cyan to-laser-blue rounded-lg font-semibold text-void-950 hover:shadow-lg hover:shadow-laser-cyan/25 transition-all"
                 >
-                  Получить оценку
+                  {t('pricing_cta')}
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </div>
@@ -518,9 +400,9 @@ export default async function AccessibilityPage({
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">FAQ</span>
+              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('faq_label')}</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4">
-                Частые вопросы
+                {t('faq_title')}
               </h2>
             </div>
 
@@ -547,17 +429,16 @@ export default async function AccessibilityPage({
         <section className="py-20 px-4 md:px-6 bg-void-900/30">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
-              Сделайте свой продукт доступным для всех
+              {t('cta_title')}
             </h2>
             <p className="text-mist-300 mb-8 text-lg">
-              Начните с бесплатной экспресс-проверки главной страницы. 
-              Узнайте, насколько ваш сайт доступен прямо сейчас.
+              {t('cta_description')}
             </p>
             <a 
               href={`/${locale}/contact`}
               className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-cyan to-laser-blue rounded-lg font-semibold text-void-950 hover:shadow-lg hover:shadow-laser-cyan/25 transition-all duration-300"
             >
-              Заказать аудит доступности
+              {t('cta_button')}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>

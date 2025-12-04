@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Servizi",
+    "about": "Chi siamo",
+    "contact": "Contatti"
+  },
+  "footer": {
+    "company": "Swiss Tech Solutions",
+    "tagline": "Ecosistemi digitali che durano",
+    "rights": "Tutti i diritti riservati"
+  },
+  "cta_section": {
+    "title": "Pronto per la trasformazione digitale?",
+    "description": "Parliamo di come possiamo trasformare la tua azienda in un ecosistema digitale fluido. Sessione strategica gratuita inclusa.",
+    "button": "Prenota la tua chiamata"
+  },
+  "trust_badges": {
+    "clients_title": "Affidato da aziende Fortune 500",
+    "partners_title": "Partner tecnologici",
+    "certifications_title": "Certificazioni & Standard",
+    "indicators": [
+      "100% dati in Svizzera",
+      "NDA per ogni progetto",
+      "€5M assicurazione responsabilità"
+    ],
+    "clients": {
+      "banking": "Banche",
+      "insurance": "Assicurazioni",
+      "pharma": "Farmaceutica",
+      "retail": "Retail",
+      "transport": "Trasporti",
+      "telecom": "Telecomunicazioni"
+    },
+    "partners": {
+      "aws_full": "Amazon Web Services",
+      "gcp_full": "Google Cloud Platform",
+      "azure_full": "Microsoft Azure",
+      "stripe_full": "Stripe Verificato",
+      "tier": "Partner"
+    },
+    "certifications": {
+      "iso_desc": "Sicurezza delle informazioni",
+      "gdpr_desc": "Protezione dei dati",
+      "swiss_dpa_desc": "Privacy svizzera",
+      "owasp_desc": "Sicurezza Web"
+    }
+  },
+  "guarantee": {
+    "badge": "Garanzie",
+    "title": "Tranquillità inclusa",
+    "subtitle": "Non promettiamo solo qualità — la garantiamo per iscritto",
+    "items": [
+      {
+        "title": "Codice sorgente completo",
+        "description": "Al termine del progetto, ricevi il codice sorgente completo e documentato. Il tuo progetto — la tua proprietà. Nessun vendor lock-in."
+      },
+      {
+        "title": "Correzione bug gratuita",
+        "description": "Tutti i bug trovati dopo il lancio vengono corretti gratuitamente entro il periodo specificato nel contratto. I dettagli vengono discussi individualmente per ogni progetto."
+      },
+      {
+        "title": "Pagamenti per milestone",
+        "description": "Il pagamento è suddiviso in fasi legate alle milestone del progetto. Controlli il budget e vedi i progressi ad ogni passo."
+      },
+      {
+        "title": "Trasparenza totale",
+        "description": "Accesso al task tracker, report settimanali, demo. Conosci sempre lo stato del progetto e puoi apportare modifiche al volo."
+      },
+      {
+        "title": "NDA e protezione dati",
+        "description": "Firma NDA, conformità GDPR e Swiss DPA. Le tue informazioni aziendali sono protette in modo affidabile."
+      }
+    ],
+    "cta_title": "Pronto a lavorare senza rischi?",
+    "cta_description": "Tutte le condizioni di garanzia sono documentate nei contratti. Siamo aperti a discutere condizioni individuali per il tuo progetto.",
+    "cta_button": "Discuti le garanzie"
+  }
+}

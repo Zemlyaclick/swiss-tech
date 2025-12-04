@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { 
@@ -22,118 +23,45 @@ import {
   Database
 } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'ИИ-интеграции | Swiss IT',
-  description: 'Внедрение искусственного интеллекта в бизнес-процессы. ChatGPT, Claude, собственные модели. Чат-боты, анализ данных, автоматизация.',
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: 'services_ai' });
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+  };
+}
 
 export default async function AIPage({ params }: { params: { locale: 'en' | 'de' | 'fr' | 'it' | 'de-CH' | 'ru' } }) {
   const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: 'services_ai' });
 
-  const problems = [
-    {
-      icon: Clock,
-      title: 'Рутинные задачи',
-      description: 'Сотрудники тратят часы на ответы на типовые вопросы, обработку документов, составление отчётов'
-    },
-    {
-      icon: Users,
-      title: 'Нехватка экспертов',
-      description: 'Дорогие специалисты заняты рутиной вместо стратегических задач'
-    },
-    {
-      icon: Search,
-      title: 'Потеря информации',
-      description: 'Знания разбросаны по документам, чатам, головам сотрудников — найти нужное невозможно'
-    },
-    {
-      icon: TrendingUp,
-      title: 'Упущенные возможности',
-      description: 'Данные есть, но нет времени и инструментов для их анализа и извлечения инсайтов'
-    },
-    {
-      icon: MessageSquare,
-      title: 'Медленная поддержка',
-      description: 'Клиенты ждут ответа часами, а ночью и в выходные поддержка недоступна'
-    },
-    {
-      icon: Target,
-      title: 'Нет персонализации',
-      description: 'Все клиенты получают одинаковый опыт, хотя данные для персонализации есть'
-    }
-  ];
+  const problemIcons = [Clock, Users, Search, TrendingUp, MessageSquare, Target];
+  const benefitIcons = [Bot, FileText, Search, BarChart3, Sparkles, Eye];
+  const useCaseIcons = [MessageSquare, FileText, Search, TrendingUp, Sparkles, Eye];
 
-  const benefits = [
-    {
-      icon: Bot,
-      title: 'ИИ-ассистенты 24/7',
-      description: 'Умные боты отвечают на вопросы, помогают с выбором, обрабатывают заявки. Мгновенно, без выходных, на любом языке'
-    },
-    {
-      icon: FileText,
-      title: 'Умная обработка документов',
-      description: 'ИИ извлекает данные из договоров, счетов, резюме. Классифицирует, суммаризирует, находит аномалии'
-    },
-    {
-      icon: Search,
-      title: 'Семантический поиск',
-      description: 'Поиск по смыслу, а не по словам. Находит релевантное в базе знаний, документах, переписках'
-    },
-    {
-      icon: BarChart3,
-      title: 'Предиктивная аналитика',
-      description: 'Прогнозирование спроса, оттока клиентов, рисков. Принимайте решения на основе данных, а не интуиции'
-    },
-    {
-      icon: Sparkles,
-      title: 'Генерация контента',
-      description: 'Автоматическое создание описаний товаров, ответов на отзывы, маркетинговых текстов в вашем стиле'
-    },
-    {
-      icon: Eye,
-      title: 'Компьютерное зрение',
-      description: 'Распознавание товаров, дефектов, лиц, документов. Автоматизация визуального контроля'
-    }
-  ];
+  const problems = problemIcons.map((icon, index) => ({
+    icon,
+    title: t(`problems.${index}.title`),
+    description: t(`problems.${index}.description`)
+  }));
 
-  const useCases = [
-    {
-      icon: MessageSquare,
-      title: 'Умная поддержка',
-      description: 'Чат-бот, который понимает контекст, помнит историю, решает 80% вопросов без человека',
-      results: ['80% вопросов без оператора', 'Ответ за 2 секунды', 'Работа 24/7/365', 'Любые языки']
-    },
-    {
-      icon: FileText,
-      title: 'Обработка документов',
-      description: 'Извлечение данных из PDF, сканов, фото. Заполнение форм, проверка соответствия',
-      results: ['95% точность OCR', '-90% ручной работы', 'Проверка за секунды', 'Интеграция с CRM']
-    },
-    {
-      icon: Search,
-      title: 'Корпоративный поиск',
-      description: 'Поиск по всем источникам: документы, почта, Slack, Confluence. Ответы на вопросы по базе знаний',
-      results: ['Поиск по смыслу', 'Ответы на вопросы', 'Ранжирование по релевантности', 'Учёт прав доступа']
-    },
-    {
-      icon: TrendingUp,
-      title: 'Бизнес-аналитика',
-      description: 'Прогнозы продаж, анализ трендов, обнаружение аномалий, рекомендации по ценообразованию',
-      results: ['Прогноз спроса', 'Анализ оттока', 'Сегментация клиентов', 'Динамическое ценообразование']
-    },
-    {
-      icon: Sparkles,
-      title: 'Контент и маркетинг',
-      description: 'Генерация описаний, персонализация рассылок, A/B тесты текстов, анализ отзывов',
-      results: ['Описания товаров', 'Email-персонализация', 'Анализ тональности', 'SEO-оптимизация']
-    },
-    {
-      icon: Eye,
-      title: 'Визуальный контроль',
-      description: 'Проверка качества продукции, распознавание дефектов, контроль безопасности',
-      results: ['99% точность', 'Реальное время', 'Интеграция с линией', 'Отчёты и алерты']
-    }
-  ];
+  const benefits = benefitIcons.map((icon, index) => ({
+    icon,
+    title: t(`benefits.${index}.title`),
+    description: t(`benefits.${index}.description`)
+  }));
+
+  const useCases = useCaseIcons.map((icon, index) => ({
+    icon,
+    title: t(`usecases.${index}.title`),
+    description: t(`usecases.${index}.description`),
+    results: [
+      t(`usecases.${index}.results.0`),
+      t(`usecases.${index}.results.1`),
+      t(`usecases.${index}.results.2`),
+      t(`usecases.${index}.results.3`)
+    ]
+  }));
 
   const techStack = [
     { name: 'OpenAI GPT-4', category: 'LLM' },
@@ -147,65 +75,31 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
     { name: 'Hugging Face', category: 'ML' },
     { name: 'PyTorch', category: 'ML' },
     { name: 'FastAPI', category: 'Backend' },
-    { name: 'Python', category: 'Язык' }
+    { name: 'Python', category: 'Language' }
   ];
 
-  const process = [
-    {
-      step: '01',
-      title: 'Аудит и стратегия',
-      duration: '1-2 недели',
-      description: 'Анализируем процессы, находим точки применения ИИ с максимальным ROI. Формируем дорожную карту внедрения.',
-      deliverables: ['Карта процессов', 'Оценка ROI', 'Выбор моделей', 'Roadmap']
-    },
-    {
-      step: '02',
-      title: 'Proof of Concept',
-      duration: '2-4 недели',
-      description: 'Создаём рабочий прототип на реальных данных. Доказываем ценность до полномасштабного внедрения.',
-      deliverables: ['Рабочий прототип', 'Метрики качества', 'Оценка затрат', 'Go/No-Go решение']
-    },
-    {
-      step: '03',
-      title: 'Разработка и интеграция',
-      duration: '4-8 недель',
-      description: 'Разрабатываем production-решение. Интегрируем с вашими системами. Настраиваем мониторинг.',
-      deliverables: ['Production API', 'Интеграции', 'Мониторинг', 'Документация']
-    },
-    {
-      step: '04',
-      title: 'Оптимизация',
-      duration: 'Постоянно',
-      description: 'Fine-tuning моделей на ваших данных, улучшение качества, расширение сценариев использования.',
-      deliverables: ['Fine-tuned модели', 'Улучшение метрик', 'Новые сценарии', 'Обучение команды']
-    }
-  ];
+  const process = [0, 1, 2, 3].map(index => ({
+    step: t(`process.${index}.step`),
+    title: t(`process.${index}.title`),
+    duration: t(`process.${index}.duration`),
+    description: t(`process.${index}.description`),
+    deliverables: [
+      t(`process.${index}.deliverables.0`),
+      t(`process.${index}.deliverables.1`),
+      t(`process.${index}.deliverables.2`),
+      t(`process.${index}.deliverables.3`)
+    ]
+  }));
 
-  const results = [
-    { metric: '80%', label: 'Автоматизация поддержки' },
-    { metric: '10x', label: 'Ускорение обработки' },
-    { metric: '95%', label: 'Точность распознавания' },
-    { metric: '< 2 сек', label: 'Время ответа ИИ' }
-  ];
+  const results = [0, 1, 2, 3].map(index => ({
+    metric: t(`results.${index}.metric`),
+    label: t(`results.${index}.label`)
+  }));
 
-  const faq = [
-    {
-      question: 'Какую модель выбрать: GPT-4, Claude или open-source?',
-      answer: 'GPT-4 — лучший выбор для сложных задач и общения на русском. Claude — отлично для анализа длинных документов. Open-source (LLaMA, Mistral) — когда важна приватность данных или нужно fine-tuning. Часто используем комбинацию: open-source для простых задач, GPT-4 для сложных.'
-    },
-    {
-      question: 'Как обеспечить безопасность данных при использовании ИИ?',
-      answer: 'Несколько уровней защиты: использование API с гарантиями приватности (данные не используются для обучения), развёртывание open-source моделей на вашей инфраструктуре, анонимизация данных перед отправкой, шифрование при передаче и хранении.'
-    },
-    {
-      question: 'Сколько данных нужно для обучения ИИ?',
-      answer: 'Для RAG (поиск по документам) — достаточно ваших существующих документов. Для fine-tuning нужно 100-1000 примеров качественной разметки. Для обучения с нуля — миллионы примеров. В 90% случаев хватает RAG + промпт-инжиниринг.'
-    },
-    {
-      question: 'ИИ будет галлюцинировать и давать неправильные ответы?',
-      answer: 'Риск есть, но мы минимизируем его: RAG привязывает ответы к вашим документам, настраиваем температуру модели, добавляем проверки фактов, показываем источники. Для критичных сценариев добавляем человека в контур.'
-    }
-  ];
+  const faq = [0, 1, 2, 3].map(index => ({
+    question: t(`faq.${index}.question`),
+    answer: t(`faq.${index}.answer`)
+  }));
 
   return (
     <>
@@ -218,35 +112,34 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
           <div className="max-w-6xl mx-auto relative">
             <div className="flex items-center gap-2 mb-6">
               <span className="px-3 py-1 bg-laser-purple/10 border border-laser-purple/30 rounded-full text-laser-purple text-sm">
-                GPT-4 & Claude
+                {t('badge1')}
               </span>
               <span className="px-3 py-1 bg-void-800 border border-void-700 rounded-full text-mist-400 text-sm">
-                LLM & ML
+                {t('badge2')}
               </span>
             </div>
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              Искусственный интеллект —{' '}
+              {t('hero_title_1')}{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-laser-purple via-laser-cyan to-laser-blue">
-                ваше конкурентное преимущество
+                {t('hero_title_2')}
               </span>
             </h1>
             <p className="text-xl text-mist-300 max-w-3xl mb-8">
-              Внедряем ИИ в ваши бизнес-процессы. Умные ассистенты, анализ документов, 
-              предиктивная аналитика — технологии OpenAI и Claude на службе вашего бизнеса.
+              {t('hero_description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={`/${locale}/contact`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-purple to-laser-cyan text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
               >
-                Обсудить внедрение ИИ
+                {t('cta_discuss')}
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a
                 href="#use-cases"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-void-700 text-mist-200 rounded-lg hover:bg-void-800 transition-colors"
               >
-                Примеры использования
+                {t('cta_usecases')}
               </a>
             </div>
           </div>
@@ -256,10 +149,10 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Знакомые проблемы?
+              {t('problems_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              ИИ решает эти задачи лучше и дешевле людей
+              {t('problems_subtitle')}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {problems.map((problem, index) => (
@@ -280,10 +173,10 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Что даёт ИИ вашему бизнесу
+              {t('benefits_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Конкретные решения, которые мы внедряем
+              {t('benefits_subtitle')}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {benefits.map((benefit, index) => (
@@ -304,10 +197,10 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
         <section id="use-cases" className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Сценарии использования
+              {t('usecases_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Типовые решения с доказанным ROI
+              {t('usecases_subtitle')}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {useCases.map((useCase, index) => (
@@ -336,10 +229,10 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Технологии
+              {t('tech_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Используем лучшие модели и фреймворки
+              {t('tech_subtitle')}
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {techStack.map((tech, index) => (
@@ -359,10 +252,10 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Как мы внедряем ИИ
+              {t('process_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              От идеи до production за 2-3 месяца
+              {t('process_subtitle')}
             </p>
             <div className="space-y-6">
               {process.map((step, index) => (
@@ -400,7 +293,7 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Типичные результаты
+              {t('results_title')}
             </h2>
             <div className="grid md:grid-cols-4 gap-6">
               {results.map((result, index) => (
@@ -419,18 +312,17 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Стоимость внедрения ИИ
+              {t('pricing_title')}
             </h2>
             <p className="text-mist-400 mb-8">
-              Proof of Concept — от 5 000 CHF. Production-решение — от 15 000 CHF. 
-              Стоимость зависит от сложности интеграции и объёма данных. Плюс расходы на API моделей (обычно $100-500/мес).
+              {t('pricing_description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={`/${locale}/contact`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-purple to-laser-cyan text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
               >
-                Получить оценку
+                {t('pricing_cta')}
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
@@ -441,7 +333,7 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Частые вопросы
+              {t('faq_title')}
             </h2>
             <div className="space-y-6">
               {faq.map((item, index) => (
@@ -461,17 +353,17 @@ export default async function AIPage({ params }: { params: { locale: 'en' | 'de'
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Готовы внедрить ИИ?
+              {t('cta_title')}
             </h2>
             <p className="text-xl text-mist-400 mb-8">
-              Расскажите о своих процессах — мы найдём точки применения ИИ с максимальным ROI
+              {t('cta_description')}
             </p>
             <a
               href={`/${locale}/contact`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-purple to-laser-cyan text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
             >
               <Brain className="w-5 h-5" />
-              Обсудить проект
+              {t('cta_button')}
             </a>
           </div>
         </section>

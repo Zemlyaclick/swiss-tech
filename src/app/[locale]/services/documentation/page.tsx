@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { 
@@ -16,122 +17,42 @@ import {
   Clock,
   Shield,
   Zap,
-  Globe,
-  Video
+  Globe
 } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Техническая документация | Swiss IT',
-  description: 'Техническая документация, API-референсы, гайды для пользователей. Документация, которую читают, а не игнорируют.',
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: 'services_documentation' });
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+  };
+}
 
 export default async function DocumentationPage({ params }: { params: { locale: 'en' | 'de' | 'fr' | 'it' | 'de-CH' | 'ru' } }) {
   const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: 'services_documentation' });
 
-  const problems = [
-    {
-      icon: Clock,
-      title: 'Нет документации',
-      description: 'Только разработчик знает, как работает система. Уйдёт он — уйдут и знания'
-    },
-    {
-      icon: Users,
-      title: 'Долгий онбординг',
-      description: 'Новые сотрудники неделями разбираются в системе, отвлекая коллег вопросами'
-    },
-    {
-      icon: Search,
-      title: 'Невозможно найти',
-      description: 'Документация есть, но разбросана по Confluence, Google Docs, Notion и головам людей'
-    },
-    {
-      icon: GitBranch,
-      title: 'Устаревшая информация',
-      description: 'Документация написана год назад, с тех пор система изменилась до неузнаваемости'
-    },
-    {
-      icon: Code,
-      title: 'Непонятный API',
-      description: 'Интеграторы не могут подключиться без созвона с вашими разработчиками'
-    },
-    {
-      icon: Shield,
-      title: 'Риски безопасности',
-      description: 'Без документации невозможен аудит, сертификация, compliance'
-    }
-  ];
+  const problemIcons = [Clock, Users, Search, GitBranch, Code, Shield];
+  const problems = problemIcons.map((icon, index) => ({
+    icon,
+    title: t(`problems.${index}.title`),
+    description: t(`problems.${index}.description`)
+  }));
 
-  const benefits = [
-    {
-      icon: BookOpen,
-      title: 'Самодостаточная команда',
-      description: 'Разработчики находят ответы сами, без созвонов и ожидания. Скорость разработки растёт'
-    },
-    {
-      icon: Users,
-      title: 'Быстрый онбординг',
-      description: 'Новый сотрудник становится продуктивным за дни, а не месяцы. Экономия на обучении'
-    },
-    {
-      icon: Zap,
-      title: 'Ускорение интеграций',
-      description: 'Партнёры подключаются по документации без вашего участия. Больше интеграций — больше роста'
-    },
-    {
-      icon: Shield,
-      title: 'Снижение рисков',
-      description: 'Знания не теряются при смене команды. Бизнес-критичные системы защищены'
-    },
-    {
-      icon: Search,
-      title: 'Единый источник правды',
-      description: 'Вся документация в одном месте с версионированием и поиском'
-    },
-    {
-      icon: Globe,
-      title: 'Масштабирование',
-      description: 'Один раз написали — используют сотни людей. Документация масштабируется бесплатно'
-    }
-  ];
+  const benefitIcons = [BookOpen, Users, Zap, Shield, Search, Globe];
+  const benefits = benefitIcons.map((icon, index) => ({
+    icon,
+    title: t(`benefits.${index}.title`),
+    description: t(`benefits.${index}.description`)
+  }));
 
-  const docTypes = [
-    {
-      icon: Code,
-      title: 'API-документация',
-      description: 'Интерактивные референсы для разработчиков',
-      features: ['OpenAPI/Swagger', 'Примеры кода', 'Try it out', 'Автогенерация']
-    },
-    {
-      icon: Terminal,
-      title: 'Техническое описание',
-      description: 'Архитектура, деплой, администрирование',
-      features: ['Диаграммы архитектуры', 'Runbook\'ы', 'Troubleshooting', 'Конфигурация']
-    },
-    {
-      icon: BookOpen,
-      title: 'Пользовательские гайды',
-      description: 'Инструкции для конечных пользователей',
-      features: ['Пошаговые гайды', 'Скриншоты/GIF', 'FAQ', 'Видеоинструкции']
-    },
-    {
-      icon: Lightbulb,
-      title: 'Онбординг',
-      description: 'Быстрый старт для новых членов команды',
-      features: ['Getting Started', 'Tutorials', 'Best Practices', 'Code Examples']
-    },
-    {
-      icon: Layers,
-      title: 'Продуктовая документация',
-      description: 'Описание функциональности продукта',
-      features: ['Release Notes', 'Feature Specs', 'Roadmap', 'Changelog']
-    },
-    {
-      icon: GitBranch,
-      title: 'Процессная документация',
-      description: 'Описание рабочих процессов команды',
-      features: ['Definition of Done', 'Code Review', 'CI/CD', 'Branching Strategy']
-    }
-  ];
+  const docTypeIcons = [Code, Terminal, BookOpen, Lightbulb, Layers, GitBranch];
+  const docTypes = docTypeIcons.map((icon, index) => ({
+    icon,
+    title: t(`doc_types.${index}.title`),
+    description: t(`doc_types.${index}.description`),
+    features: [0, 1, 2, 3].map(f => t(`doc_types.${index}.features.${f}`))
+  }));
 
   const tools = [
     { name: 'Docusaurus', category: 'SSG' },
@@ -148,62 +69,23 @@ export default async function DocumentationPage({ params }: { params: { locale: 
     { name: 'MDX', category: 'Interactive' }
   ];
 
-  const process = [
-    {
-      step: '01',
-      title: 'Аудит знаний',
-      duration: '1 неделя',
-      description: 'Анализируем существующую документацию, выявляем пробелы, интервьюируем ключевых людей.',
-      deliverables: ['Карта знаний', 'Gap-анализ', 'Приоритеты', 'Структура']
-    },
-    {
-      step: '02',
-      title: 'Архитектура документации',
-      duration: '1 неделя',
-      description: 'Проектируем структуру, выбираем инструменты, настраиваем платформу и процессы.',
-      deliverables: ['Information Architecture', 'Платформа', 'Шаблоны', 'Style Guide']
-    },
-    {
-      step: '03',
-      title: 'Создание контента',
-      duration: '2-6 недель',
-      description: 'Пишем документацию, создаём диаграммы, записываем видео. Итеративно с ревью.',
-      deliverables: ['API Reference', 'Гайды', 'Tutorials', 'Диаграммы']
-    },
-    {
-      step: '04',
-      title: 'Поддержка и обновление',
-      duration: 'Постоянно',
-      description: 'Интегрируем документацию в CI/CD, настраиваем процесс обновления, обучаем команду.',
-      deliverables: ['Docs-as-Code', 'Review Process', 'Метрики', 'Обучение']
-    }
-  ];
+  const process = [0, 1, 2, 3].map((index) => ({
+    step: t(`process.${index}.step`),
+    title: t(`process.${index}.title`),
+    duration: t(`process.${index}.duration`),
+    description: t(`process.${index}.description`),
+    deliverables: [0, 1, 2, 3].map(d => t(`process.${index}.deliverables.${d}`))
+  }));
 
-  const results = [
-    { metric: '70%', label: 'Меньше вопросов в Slack' },
-    { metric: '3x', label: 'Быстрее онбординг' },
-    { metric: '50%', label: 'Быстрее интеграции' },
-    { metric: '0', label: 'Потерянных знаний' }
-  ];
+  const results = [0, 1, 2, 3].map((index) => ({
+    metric: t(`results.${index}.metric`),
+    label: t(`results.${index}.label`)
+  }));
 
-  const faq = [
-    {
-      question: 'Документация устареет через месяц. Зачем её писать?',
-      answer: 'Docs-as-Code: документация живёт рядом с кодом, обновляется вместе с ним, проходит ревью. Автогенерация API-доков из кода. Процессы, которые делают обновление частью разработки, а не отдельной задачей.'
-    },
-    {
-      question: 'У нас нет времени на документацию',
-      answer: 'Время на документацию окупается многократно: меньше созвонов, быстрее онбординг, меньше багов из-за недопонимания. Мы пишем документацию сами — вам нужно только ревьюить и отвечать на вопросы.'
-    },
-    {
-      question: 'Какой формат документации лучше?',
-      answer: 'Зависит от аудитории. Для разработчиков — Markdown в репозитории или Docusaurus. Для пользователей — интерактивные гайды с видео. Для enterprise — Confluence или GitBook. Поможем выбрать.'
-    },
-    {
-      question: 'Можете написать документацию к чужому коду?',
-      answer: 'Да, это наша специализация. Проведём code review, поговорим с разработчиками, разберёмся в логике. Документируем legacy-системы, которые писали 10 лет назад люди, которых уже нет.'
-    }
-  ];
+  const faq = [0, 1, 2, 3].map((index) => ({
+    question: t(`faq.${index}.question`),
+    answer: t(`faq.${index}.answer`)
+  }));
 
   return (
     <>
@@ -216,35 +98,34 @@ export default async function DocumentationPage({ params }: { params: { locale: 
           <div className="max-w-6xl mx-auto relative">
             <div className="flex items-center gap-2 mb-6">
               <span className="px-3 py-1 bg-laser-blue/10 border border-laser-blue/30 rounded-full text-laser-blue text-sm">
-                Docs-as-Code
+                {t('badge1')}
               </span>
               <span className="px-3 py-1 bg-void-800 border border-void-700 rounded-full text-mist-400 text-sm">
-                API & User Guides
+                {t('badge2')}
               </span>
             </div>
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              Документация —{' '}
+              {t('title')}{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-laser-blue via-laser-cyan to-laser-purple">
-                знания, которые не теряются
+                {t('title_gradient')}
               </span>
             </h1>
             <p className="text-xl text-mist-300 max-w-3xl mb-8">
-              Создаём техническую документацию, которую читают. API-референсы, гайды, 
-              онбординг — всё, чтобы ваша команда и партнёры работали эффективно.
+              {t('description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={`/${locale}/contact`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-blue to-laser-cyan text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
               >
-                Заказать документацию
+                {t('cta_primary')}
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a
                 href="#types"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-void-700 text-mist-200 rounded-lg hover:bg-void-800 transition-colors"
               >
-                Виды документации
+                {t('cta_secondary')}
               </a>
             </div>
           </div>
@@ -254,10 +135,10 @@ export default async function DocumentationPage({ params }: { params: { locale: 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Знакомые проблемы?
+              {t('problems_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Цена отсутствия документации выше, чем кажется
+              {t('problems_subtitle')}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {problems.map((problem, index) => (
@@ -278,10 +159,10 @@ export default async function DocumentationPage({ params }: { params: { locale: 
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Что даёт хорошая документация
+              {t('benefits_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Инвестиция, которая окупается многократно
+              {t('benefits_subtitle')}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {benefits.map((benefit, index) => (
@@ -302,10 +183,10 @@ export default async function DocumentationPage({ params }: { params: { locale: 
         <section id="types" className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Виды документации
+              {t('doc_types_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Создаём документацию для любой аудитории
+              {t('doc_types_subtitle')}
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {docTypes.map((type, index) => (
@@ -334,10 +215,10 @@ export default async function DocumentationPage({ params }: { params: { locale: 
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Инструменты
+              {t('tools_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Выбираем оптимальный стек под ваши задачи
+              {t('tools_subtitle')}
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {tools.map((tool, index) => (
@@ -357,10 +238,10 @@ export default async function DocumentationPage({ params }: { params: { locale: 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              Как мы создаём документацию
+              {t('process_title')}
             </h2>
             <p className="text-mist-400 text-center mb-12 max-w-2xl mx-auto">
-              Системный подход к сохранению знаний
+              {t('process_subtitle')}
             </p>
             <div className="space-y-6">
               {process.map((step, index) => (
@@ -398,7 +279,7 @@ export default async function DocumentationPage({ params }: { params: { locale: 
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Типичные результаты
+              {t('results_title')}
             </h2>
             <div className="grid md:grid-cols-4 gap-6">
               {results.map((result, index) => (
@@ -417,18 +298,17 @@ export default async function DocumentationPage({ params }: { params: { locale: 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Стоимость документации
+              {t('pricing_title')}
             </h2>
             <p className="text-mist-400 mb-8">
-              API-документация — от 3 000 CHF. Комплексная документация проекта — от 8 000 CHF. 
-              Цена зависит от объёма системы и требуемой глубины. Аудит существующей документации — бесплатно.
+              {t('pricing_description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={`/${locale}/contact`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-blue to-laser-cyan text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
               >
-                Бесплатный аудит
+                {t('pricing_cta')}
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
@@ -439,7 +319,7 @@ export default async function DocumentationPage({ params }: { params: { locale: 
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Частые вопросы
+              {t('faq_title')}
             </h2>
             <div className="space-y-6">
               {faq.map((item, index) => (
@@ -459,17 +339,17 @@ export default async function DocumentationPage({ params }: { params: { locale: 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Готовы сохранить знания?
+              {t('cta_title')}
             </h2>
             <p className="text-xl text-mist-400 mb-8">
-              Не теряйте экспертизу команды. Документация — это инвестиция в будущее проекта.
+              {t('cta_description')}
             </p>
             <a
               href={`/${locale}/contact`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-blue to-laser-cyan text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
             >
               <FileText className="w-5 h-5" />
-              Обсудить документацию
+              {t('cta_button')}
             </a>
           </div>
         </section>

@@ -1,0 +1,1252 @@
+{
+  "about": {
+    "meta_title": "Über uns | Swiss Made IT",
+    "meta_description": "Swiss Made IT — ein Schweizer IT-Unternehmen. Wir entwickeln digitale Produkte für Unternehmen seit 2019. Expertenteam, Schweizer Qualität, transparente Prozesse.",
+    "badge_since": "Seit 2019",
+    "badge_location": "Zürich, Schweiz",
+    "hero_title_1": "Wir entwickeln",
+    "hero_title_2": "digitale Produkte",
+    "hero_title_3": "die funktionieren",
+    "hero_description": "Swiss Made IT ist ein Expertenteam, das Unternehmen hilft, durch Technologie zu wachsen. Wir machen keine 'Websites in 3 Tagen'. Wir schaffen Lösungen, die zum Fundament Ihres Geschäfts werden.",
+    "cta_discuss": "Projekt besprechen",
+    "cta_cases": "Cases ansehen",
+    "stats": [
+      {
+        "value": "100+",
+        "label": "Projekte",
+        "sublabel": "erfolgreich umgesetzt"
+      },
+      {
+        "value": "6",
+        "label": "Jahre",
+        "sublabel": "am Markt"
+      },
+      {
+        "value": "12",
+        "label": "Länder",
+        "sublabel": "Kundengeografie"
+      },
+      {
+        "value": "98%",
+        "label": "Kunden",
+        "sublabel": "empfehlen uns"
+      }
+    ],
+    "mission_label": "Unsere Mission",
+    "mission_title": "Technologie verständlich und nützlich für Unternehmen machen",
+    "mission_p1": "Wir glauben, dass Technologie Probleme lösen sollte, nicht neue schaffen. Unsere Aufgabe ist es, komplexe technische Lösungen in Geschäftssprache zu übersetzen und Kunden zu helfen, konkrete, messbare Ergebnisse zu erzielen.",
+    "mission_p2": "Wir verkaufen keine Entwicklungsstunden — wir verkaufen Ergebnisse. Wir verschwinden nicht nach dem Launch — wir bleiben während der gesamten Produktentwicklung an Ihrer Seite.",
+    "values": [
+      {
+        "title": "Schweizer Qualität",
+        "description": "Wir jagen nicht der Projektmenge hinterher. Jedes Produkt durchläuft mehrstufige Qualitätsprüfungen vor dem Release."
+      },
+      {
+        "title": "Langfristige Beziehungen",
+        "description": "80% unserer Kunden kommen mit neuen Projekten zurück. Wir bauen Partnerschaften auf, nicht nur Aufträge."
+      },
+      {
+        "title": "Ehrlichkeit & Transparenz",
+        "description": "Wenn wir eine einfachere Lösung sehen — sagen wir es. Wir verkaufen nicht, was Kunden nicht brauchen."
+      },
+      {
+        "title": "Ergebnis vor Prozess",
+        "description": "Metriken, KPIs, messbare Ergebnisse — wir konzentrieren uns auf das, was das Geschäft des Kunden wirklich beeinflusst."
+      }
+    ],
+    "history_label": "Geschichte",
+    "history_title": "Unser Weg",
+    "milestones": [
+      {
+        "year": "2019",
+        "title": "Gründung",
+        "description": "Start in Zürich mit Fokus auf Webentwicklung"
+      },
+      {
+        "year": "2020",
+        "title": "Erste Grosskunden",
+        "description": "Verträge mit Fintech- und Medtech-Unternehmen"
+      },
+      {
+        "year": "2021",
+        "title": "Teamexpansion",
+        "description": "Wachstum auf 15 Personen, Eröffnung der AI-Abteilung"
+      },
+      {
+        "year": "2022",
+        "title": "ISO-Zertifizierung",
+        "description": "Erhalt von ISO 27001 für Enterprise-Arbeit"
+      },
+      {
+        "year": "2023",
+        "title": "100+ Projekte",
+        "description": "100 erfolgreiche Projekte erreicht"
+      },
+      {
+        "year": "2024",
+        "title": "Internationales Wachstum",
+        "description": "Kunden in 12 Ländern in Europa und GUS"
+      }
+    ],
+    "team_label": "Team",
+    "team_title": "Menschen, die Produkte bauen",
+    "team_subtitle": "Ein kleines Expertenteam, in dem jeder ein Profi auf seinem Gebiet ist",
+    "team_members": [
+      {
+        "name": "Alexander Novak",
+        "role": "CEO & Founder",
+        "description": "15+ Jahre in IT, ex-Google, ex-UBS. Spezialisierung: Architektur, Strategie.",
+        "initials": "AN"
+      },
+      {
+        "name": "Maria Schmidt",
+        "role": "CTO",
+        "description": "12 Jahre in Entwicklung. Cloud-Lösungen und Sicherheitsexpertin.",
+        "initials": "MS"
+      },
+      {
+        "name": "Dmitry Kuznetsov",
+        "role": "Lead Developer",
+        "description": "Full-Stack-Entwickler. React, Node.js, Python, AI/ML-Integrationen.",
+        "initials": "DK"
+      },
+      {
+        "name": "Anna Weber",
+        "role": "Head of Design",
+        "description": "UX/UI-Designerin. Erstellt Interfaces, die man gerne benutzt.",
+        "initials": "AW"
+      }
+    ],
+    "join_title": "Werden Sie Teil des Teams",
+    "join_description": "Wir suchen immer talentierte Entwickler und Designer",
+    "join_link": "Stellenangebote ansehen",
+    "certs_label": "Zertifikate",
+    "certs_title": "Nachgewiesene Expertise",
+    "certifications": [
+      {
+        "name": "ISO 27001",
+        "description": "Informationssicherheit"
+      },
+      {
+        "name": "OWASP",
+        "description": "Web-Anwendungssicherheit"
+      },
+      {
+        "name": "AWS Partner",
+        "description": "Amazon Web Services Partner"
+      },
+      {
+        "name": "Google Cloud",
+        "description": "Google Cloud Platform Partner"
+      }
+    ],
+    "location_label": "Standort",
+    "location_title": "Sitz in Zürich",
+    "location_description": "Die Schweiz ist nicht nur Uhren und Schokolade. Es ist Stabilität, Zuverlässigkeit und höchste Qualitätsstandards. Diese Prinzipien legen wir in jedes Projekt.",
+    "location_address": "Zürich, Schweiz",
+    "location_global": "Arbeiten mit Kunden in ganz Europa und GUS",
+    "location_timezone": "Zeitzone CET (UTC+1)",
+    "cta_title": "Lernen wir uns kennen",
+    "cta_description": "Erzählen Sie uns von Ihrem Projekt — wir schlagen eine Lösung vor und geben eine ehrliche Schätzung von Zeit und Budget. Unverbindlich.",
+    "cta_button": "Kontaktieren Sie uns"
+  },
+  "contact": {
+    "meta_title": "Kontakt | Swiss Made IT",
+    "meta_description": "Kontaktieren Sie uns für eine kostenlose Beratung. Zürich, Schweiz. Wir antworten innerhalb von 2 Stunden während der Geschäftszeiten.",
+    "badge": "Kontaktieren Sie uns",
+    "hero_title_1": "Lassen Sie uns",
+    "hero_title_2": "Ihr Projekt besprechen",
+    "hero_description": "Erzählen Sie uns von Ihren Herausforderungen — wir schlagen eine Lösung vor und geben eine vorläufige Schätzung von Zeitrahmen und Budget. Kostenlos und unverbindlich.",
+    "form_title": "Anfrage senden",
+    "form_subtitle": "Füllen Sie das Formular aus und wir werden uns in Kürze bei Ihnen melden",
+    "contact_email_label": "E-Mail",
+    "contact_email_description": "Wir antworten innerhalb von 2 Stunden",
+    "contact_phone_label": "Telefon",
+    "contact_phone_description": "Mo-Fr, 9:00-18:00 MEZ",
+    "contact_office_label": "Büro",
+    "contact_office_description": "Termine nach Vereinbarung",
+    "contact_telegram_label": "Telegram",
+    "contact_telegram_description": "Schnelle Antworten 24/7",
+    "benefits_title": "Was Sie bekommen",
+    "benefits": [
+      {
+        "title": "Schnelle Antwort",
+        "description": "Wir antworten innerhalb von 2 Stunden während der Geschäftszeiten"
+      },
+      {
+        "title": "Kostenlose Beratung",
+        "description": "30-minütiges Gespräch zur Besprechung Ihres Projekts"
+      },
+      {
+        "title": "NDA auf Anfrage",
+        "description": "Wir unterzeichnen Vertraulichkeitsvereinbarungen"
+      },
+      {
+        "title": "Keine Verpflichtungen",
+        "description": "Die Beratung verpflichtet Sie zu nichts"
+      }
+    ],
+    "hours_title": "Geschäftszeiten",
+    "hours_weekdays": "Montag — Freitag",
+    "hours_weekdays_time": "9:00 — 18:00 MEZ",
+    "hours_weekend": "Samstag — Sonntag",
+    "hours_weekend_time": "Geschlossen",
+    "hours_support": "24/7 Notfall-Support für Kunden",
+    "faq_label": "FAQ",
+    "faq_title": "Häufig gestellte Fragen zur Zusammenarbeit",
+    "faqs": [
+      {
+        "question": "Wie schnell antworten Sie auf Anfragen?",
+        "answer": "Während der Geschäftszeiten (Mo-Fr, 9:00-18:00 MEZ) — innerhalb von 2 Stunden. Am Wochenende — am ersten Werktag."
+      },
+      {
+        "question": "Können wir uns persönlich treffen?",
+        "answer": "Ja, unser Büro ist in Zürich. Termine nach Vereinbarung. Videoanrufe über Zoom/Google Meet sind ebenfalls möglich."
+      },
+      {
+        "question": "Arbeiten Sie mit Kunden aus anderen Ländern?",
+        "answer": "Ja, wir arbeiten mit Kunden in ganz Europa und GUS. Hauptsprachen: Russisch, Englisch, Deutsch."
+      },
+      {
+        "question": "Was beinhaltet die kostenlose Beratung?",
+        "answer": "Wir besprechen Ihre Herausforderungen, schlagen Lösungen vor und geben vorläufige Schätzungen zu Zeitrahmen und Budget. Es ist ein 30-minütiges Gespräch ohne Verpflichtungen."
+      }
+    ],
+    "map_title": "Unser Büro in Zürich",
+    "map_subtitle": "Termine nach Vereinbarung",
+    "map_button": "In Google Maps öffnen",
+    "messenger_title": "Bevorzugen Sie Messenger?",
+    "messenger_description": "Schreiben Sie uns auf Telegram — wir antworten schneller als per E-Mail. WhatsApp und Signal ebenfalls verfügbar."
+  },
+  "pricing": {
+    "meta_title": "Preise und Tarife | Swiss Made IT",
+    "meta_description": "Transparente IT-Preise. Festpreis, keine versteckten Gebühren. Ab 3.000 CHF pro Projekt.",
+    "badge": "Transparente Preisgestaltung",
+    "hero_title_1": "Festpreis.",
+    "hero_title_2": "Keine Überraschungen.",
+    "hero_description": "Wir nennen die genauen Kosten vor Arbeitsbeginn. Keine versteckten Gebühren, keine Stundenabrechnung, kein 'das kostet extra'.",
+    "popular": "Beliebt",
+    "discuss_project": "Projekt besprechen",
+    "price_list_label": "Preisliste",
+    "price_list_title": "Kosten für einzelne Dienstleistungen",
+    "service": "Dienstleistung",
+    "cost": "Kosten",
+    "timeline": "Zeitrahmen",
+    "price_note": "* Preise sind Richtwerte. Der genaue Preis wird nach Besprechung der Anforderungen festgelegt.",
+    "included_title": "Was in jedem Projekt enthalten ist",
+    "included": [
+      {
+        "title": "Lebenslanger Support",
+        "description": "Fehlerbehebung und Beratung für immer"
+      },
+      {
+        "title": "Dedizierter Manager",
+        "description": "Ein Ansprechpartner für alle Projektfragen"
+      },
+      {
+        "title": "Dokumentation",
+        "description": "Technische Dokumentation und Anleitungen"
+      },
+      {
+        "title": "Quellcode",
+        "description": "Volle Eigentumsrechte am Code ohne Einschränkungen"
+      }
+    ],
+    "faq_label": "FAQ",
+    "faq_title": "Fragen zu Preisen",
+    "faqs": [
+      {
+        "question": "Warum 'ab' bei den Preisen?",
+        "answer": "Jedes Projekt ist einzigartig. Der Endpreis hängt von Komplexität, Umfang und Integrationsanforderungen ab. Nach Besprechung Ihres Projekts geben wir eine genaue Festpreisschätzung — ohne Überraschungen."
+      },
+      {
+        "question": "Gibt es versteckte Gebühren?",
+        "answer": "Nein. Wir nennen die Gesamtkosten vor Arbeitsbeginn. Hosting, Domain und externe Dienste (Stripe, SMS usw.) werden separat zu deren Tarifen bezahlt, aber wir weisen immer im Voraus darauf hin."
+      },
+      {
+        "question": "Wie funktioniert die Zahlung?",
+        "answer": "Standardschema: 30% Anzahlung, 40% nach Design-/MVP-Freigabe, 30% bei Projektabnahme. Für große Projekte ist monatliche Milestone-basierte Zahlung möglich."
+      },
+      {
+        "question": "Was ist im Support enthalten?",
+        "answer": "Basis-Support umfasst: Fehlerbehebung, kleine Anpassungen, Beratung, Sicherheitsupdates. Größere Änderungen und neue Funktionen werden separat besprochen."
+      },
+      {
+        "question": "Können wir mit einem MVP starten?",
+        "answer": "Ja, das ist unser empfohlener Ansatz. Wir starten eine Basisversion in 4-8 Wochen, sammeln Feedback, iterieren. Das reduziert Risiken und ermöglicht es, Hypothesen vor größeren Investitionen zu testen."
+      }
+    ],
+    "cta_title": "Genaue Schätzung benötigt?",
+    "cta_description": "Beschreiben Sie Ihr Projekt — wir erstellen ein detailliertes Angebot mit Festpreis und Zeitrahmen. Kostenlos und unverbindlich.",
+    "cta_button": "Projektschätzung erhalten",
+    "packages": [
+      {
+        "name": "Starter",
+        "description": "Für kleine Projekte und MVPs",
+        "price": "ab 5.000",
+        "period": "CHF",
+        "timeline": "2-3 Wochen",
+        "support": "3 Monate",
+        "features": [
+          {
+            "text": "Landing Page oder einfache Website",
+            "included": true
+          },
+          {
+            "text": "Bis zu 5 Seiten",
+            "included": true
+          },
+          {
+            "text": "Responsives Design",
+            "included": true
+          },
+          {
+            "text": "Basis-SEO",
+            "included": true
+          },
+          {
+            "text": "Kontaktformular",
+            "included": true
+          },
+          {
+            "text": "SSL-Zertifikat",
+            "included": true
+          },
+          {
+            "text": "CMS-System",
+            "included": false
+          },
+          {
+            "text": "Externe Dienst-Integrationen",
+            "included": false
+          },
+          {
+            "text": "Individuelles Design",
+            "included": false
+          }
+        ]
+      },
+      {
+        "name": "Business",
+        "description": "Für wachsende Unternehmen",
+        "price": "ab 15.000",
+        "period": "CHF",
+        "popular": true,
+        "timeline": "4-8 Wochen",
+        "support": "6 Monate",
+        "features": [
+          {
+            "text": "Unternehmenswebsite oder Webanwendung",
+            "included": true
+          },
+          {
+            "text": "Bis zu 20 Seiten/Screens",
+            "included": true
+          },
+          {
+            "text": "Individuelles Design",
+            "included": true
+          },
+          {
+            "text": "CMS-System",
+            "included": true
+          },
+          {
+            "text": "Integrationen (CRM, Zahlungen)",
+            "included": true
+          },
+          {
+            "text": "Erweitertes SEO",
+            "included": true
+          },
+          {
+            "text": "Analytik und Berichte",
+            "included": true
+          },
+          {
+            "text": "Telegram-Bot",
+            "included": true
+          },
+          {
+            "text": "Prioritäts-Support",
+            "included": false
+          }
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "description": "Komplexe Lösungen",
+        "price": "ab 50.000",
+        "period": "CHF",
+        "timeline": "3-12 Monate",
+        "support": "Unbegrenzt",
+        "features": [
+          {
+            "text": "Komplexe Plattformen und Systeme",
+            "included": true
+          },
+          {
+            "text": "Unbegrenzter Funktionsumfang",
+            "included": true
+          },
+          {
+            "text": "Microservices-Architektur",
+            "included": true
+          },
+          {
+            "text": "Enterprise-System-Integration",
+            "included": true
+          },
+          {
+            "text": "AI/ML-Integrationen",
+            "included": true
+          },
+          {
+            "text": "Hohe Last und Skalierung",
+            "included": true
+          },
+          {
+            "text": "Dediziertes Team",
+            "included": true
+          },
+          {
+            "text": "SLA-Garantien",
+            "included": true
+          },
+          {
+            "text": "Prioritäts-Support 24/7",
+            "included": true
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "name": "Telegram-Bot (Basis)",
+        "price": "ab 3.000 CHF",
+        "time": "1-2 Wo."
+      },
+      {
+        "name": "Telegram-Bot (mit AI)",
+        "price": "ab 8.000 CHF",
+        "time": "2-4 Wo."
+      },
+      {
+        "name": "Telegram Mini App",
+        "price": "ab 10.000 CHF",
+        "time": "3-6 Wo."
+      },
+      {
+        "name": "Landing Page",
+        "price": "ab 3.000 CHF",
+        "time": "1-2 Wo."
+      },
+      {
+        "name": "Unternehmenswebsite",
+        "price": "ab 10.000 CHF",
+        "time": "3-6 Wo."
+      },
+      {
+        "name": "E-Commerce-Shop",
+        "price": "ab 20.000 CHF",
+        "time": "6-10 Wo."
+      },
+      {
+        "name": "Mobile Anwendung",
+        "price": "ab 30.000 CHF",
+        "time": "8-16 Wo."
+      },
+      {
+        "name": "Webanwendung (SaaS)",
+        "price": "ab 40.000 CHF",
+        "time": "10-20 Wo."
+      },
+      {
+        "name": "Sicherheitsaudit",
+        "price": "ab 5.000 CHF",
+        "time": "1-2 Wo."
+      },
+      {
+        "name": "Beratung (Stunde)",
+        "price": "200 CHF",
+        "time": "—"
+      }
+    ]
+  },
+  "imprint": {
+    "meta_title": "Impressum | Swiss Made IT",
+    "meta_description": "Rechtliche Informationen über Swiss Tech Solutions GmbH. Impressum gemäß Schweizer Recht.",
+    "badge": "Impressum / Rechtliche Informationen",
+    "title": "Impressum",
+    "company_title": "Unternehmensinformationen",
+    "company_type": "Gesellschaft mit beschränkter Haftung (GmbH)",
+    "legal_address": "Sitz der Gesellschaft",
+    "registration_data": "Registrierungsdaten",
+    "trade_register": "Handelsregister",
+    "entry_number": "Eintragungsnummer",
+    "contact_title": "Kontaktinformationen",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "website": "Webseite",
+    "management_title": "Geschäftsführung",
+    "managing_director": "Geschäftsführer",
+    "director_name": "Alexander Novak",
+    "tax_title": "Steuerinformationen",
+    "vat_number": "UID/MwSt-Nummer",
+    "tax_authority": "Steuerbehörde",
+    "disclaimer_title": "Haftungsausschluss",
+    "disclaimer_content": "Inhalt der Website",
+    "disclaimer_content_text": "Der Inhalt dieser Website wurde mit größter Sorgfalt erstellt. Wir können jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Informationen übernehmen. Als Diensteanbieter sind wir für eigene Inhalte nach den allgemeinen Gesetzen verantwortlich.",
+    "disclaimer_links": "Externe Links",
+    "disclaimer_links_text": "Unsere Website enthält Links zu externen Websites Dritter, auf deren Inhalt wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist der jeweilige Anbieter oder Betreiber verantwortlich.",
+    "disclaimer_copyright": "Urheberrecht",
+    "disclaimer_copyright_text": "Die Inhalte und Werke auf dieser Website unterliegen dem Schweizer Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors oder Erstellers.",
+    "data_protection_title": "Datenschutz",
+    "data_protection_text": "Informationen zur Verarbeitung personenbezogener Daten finden Sie in unserer",
+    "data_protection_link": "Datenschutzerklärung",
+    "data_protection_officer": "Datenschutzbeauftragter",
+    "dispute_title": "Streitbeilegung",
+    "dispute_text_1": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
+    "dispute_text_2": "Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+  },
+  "privacy": {
+    "meta_title": "Datenschutzerklärung | Swiss Made IT",
+    "meta_description": "Datenschutzrichtlinie von Swiss Made IT. DSGVO- und Schweizer DSG-konform.",
+    "last_update": "Letzte Aktualisierung: 1. Dezember 2024",
+    "title": "Datenschutzerklärung",
+    "contact_title": "Fragen zum Datenschutz?",
+    "contact_text": "Kontaktieren Sie unseren Datenschutzbeauftragten",
+    "sections": [
+      {
+        "title": "1. Allgemeine Bestimmungen",
+        "content": "Diese Datenschutzerklärung beschreibt, wie Swiss Tech Solutions GmbH (\"wir\", \"unser\" oder \"Unternehmen\") personenbezogene Daten der Nutzer unserer Website swissmade.it (\"Website\") erhebt, verwendet und schützt.\n\nWir halten die Anforderungen der Datenschutz-Grundverordnung (DSGVO) der Europäischen Union und des Schweizer Bundesgesetzes über den Datenschutz (DSG) ein."
+      },
+      {
+        "title": "2. Verantwortlicher",
+        "content": "Swiss Tech Solutions GmbH\nBahnhofstrasse 1\n8001 Zürich, Schweiz\nE-Mail: privacy@swissmade.it"
+      },
+      {
+        "title": "3. Welche Daten wir erheben",
+        "content": "Wir können folgende Kategorien personenbezogener Daten erheben:\n• Kontaktdaten: Name, E-Mail, Telefonnummer, Firmenname\n• Anfragedaten: Informationen, die Sie über Kontaktformulare bereitstellen\n• Technische Daten: IP-Adresse, Browsertyp, Betriebssystem, Website-Besuchsdaten\n• Cookies: Durch Cookie-Dateien erhobene Daten (siehe Abschnitt Cookies)"
+      },
+      {
+        "title": "4. Zwecke der Datenverarbeitung",
+        "content": "Wir verarbeiten Ihre personenbezogenen Daten für folgende Zwecke:\n• Beantwortung Ihrer Anfragen und Bereitstellung von Informationen über Dienstleistungen\n• Erfüllung vertraglicher Verpflichtungen\n• Verbesserung unserer Website und Dienstleistungen\n• Versand von Marketing-Kommunikation (nur mit Ihrer Einwilligung)\n• Einhaltung gesetzlicher Verpflichtungen"
+      },
+      {
+        "title": "5. Rechtsgrundlagen der Verarbeitung",
+        "content": "Wir verarbeiten Ihre Daten auf folgenden Rechtsgrundlagen:\n• Einwilligung: wenn Sie ausdrücklich der Verarbeitung zustimmen (z.B. Newsletter-Anmeldung)\n• Vertragserfüllung: wenn die Verarbeitung zur Erfüllung eines Vertrags mit Ihnen erforderlich ist\n• Berechtigtes Interesse: zur Verbesserung unserer Dienstleistungen und Gewährleistung der Sicherheit\n• Gesetzliche Verpflichtungen: wenn wir gesetzlich zur Datenspeicherung verpflichtet sind"
+      },
+      {
+        "title": "6. Datenübermittlung an Dritte",
+        "content": "Wir verkaufen oder übermitteln Ihre personenbezogenen Daten nicht zu Marketingzwecken an Dritte. Wir können Daten übermitteln an:\n• Dienstleister, die uns bei der Geschäftstätigkeit unterstützen (Hosting, Analytik)\n• Behörden auf gesetzliche Anforderung\n• Im Rahmen von Unternehmenstransaktionen (Fusion, Übernahme)\n\nAlle unsere Dienstleister sind zur Einhaltung der DSGVO verpflichtet und unterzeichnen Auftragsverarbeitungsverträge (AVV)."
+      },
+      {
+        "title": "7. Internationale Datenübermittlung",
+        "content": "Daten werden auf Servern in der Schweiz und der Europäischen Union gespeichert. Wenn Daten außerhalb der EU/Schweiz übermittelt werden, gewährleisten wir ein angemessenes Schutzniveau durch Standardvertragsklauseln (SCC) oder Angemessenheitsbeschlüsse."
+      },
+      {
+        "title": "8. Datenspeicherung",
+        "content": "Wir speichern Ihre personenbezogenen Daten nur so lange, wie für die in dieser Richtlinie beschriebenen Zwecke erforderlich oder gesetzlich vorgeschrieben:\n• Kundendaten: für die Vertragsdauer + 10 Jahre\n• Kontaktformulardaten: 2 Jahre\n• Analytikdaten: 26 Monate"
+      },
+      {
+        "title": "9. Ihre Rechte",
+        "content": "Sie haben folgende Rechte bezüglich Ihrer personenbezogenen Daten:\n• Auskunftsrecht: eine Kopie Ihrer Daten erhalten\n• Berichtigungsrecht: unrichtige Daten korrigieren\n• Löschungsrecht: Ihre Daten löschen (\"Recht auf Vergessenwerden\")\n• Einschränkungsrecht: die Verarbeitung Ihrer Daten einschränken\n• Datenübertragbarkeit: Daten in maschinenlesbarem Format erhalten\n• Widerspruchsrecht: der Verarbeitung auf Grundlage berechtigter Interessen widersprechen\n• Widerrufsrecht: erteilte Einwilligung jederzeit widerrufen\n\nZur Ausübung Ihrer Rechte kontaktieren Sie uns: privacy@swissmade.it"
+      },
+      {
+        "title": "10. Cookies",
+        "content": "Unsere Website verwendet Cookies zur Verbesserung der Nutzererfahrung. Wir verwenden folgende Arten von Cookies:\n• Notwendige: für den Betrieb der Website (Sitzung, Sprache)\n• Analytische: zum Verständnis der Website-Nutzung\n\nSie können Cookie-Einstellungen in Ihrem Browser oder über unser Einwilligungsbanner verwalten."
+      },
+      {
+        "title": "11. Datensicherheit",
+        "content": "Wir wenden technische und organisatorische Maßnahmen zum Schutz Ihrer Daten an:\n• Datenverschlüsselung bei der Übertragung (TLS/SSL)\n• Datenverschlüsselung bei der Speicherung\n• Zugriffskontrolle und Authentifizierung\n• Regelmäßige Datensicherung\n• Sicherheitsüberwachung"
+      },
+      {
+        "title": "12. Änderungen der Richtlinie",
+        "content": "Wir können diese Datenschutzerklärung aktualisieren. Wesentliche Änderungen werden über die Website oder per E-Mail mitgeteilt. Wir empfehlen, diese Seite regelmäßig zu überprüfen."
+      },
+      {
+        "title": "13. Kontakt und Beschwerden",
+        "content": "Bei Fragen zu unserer Datenschutzerklärung oder wenn Sie eine Beschwerde einreichen möchten, kontaktieren Sie uns:\n\nE-Mail: privacy@swissmade.it\nAdresse: Swiss Tech Solutions GmbH, Bahnhofstrasse 1, 8001 Zürich\n\nSie haben auch das Recht, eine Beschwerde bei einer Datenschutzaufsichtsbehörde einzureichen:\n• Schweiz: EDOB (Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter)\n• EU: Aufsichtsbehörde Ihres Wohnsitzlandes"
+      }
+    ]
+  },
+  "terms": {
+    "meta_title": "Nutzungsbedingungen | Swiss Made IT",
+    "meta_description": "Nutzungsbedingungen der Website und Dienstleistungen von Swiss Made IT.",
+    "last_update": "Letzte Aktualisierung: 1. Dezember 2024",
+    "title": "Nutzungsbedingungen",
+    "contact_title": "Rechtliche Fragen?",
+    "contact_text": "Kontaktieren Sie unsere Rechtsabteilung",
+    "privacy_link": "Datenschutzerklärung",
+    "sections": [
+      {
+        "title": "1. Allgemeine Bestimmungen",
+        "content": "Diese Nutzungsbedingungen (\"Bedingungen\") regeln die Nutzung der Website swissmade.it (\"Website\"), die Swiss Tech Solutions GmbH (\"Unternehmen\", \"wir\", \"unser\") gehört.\n\nDurch die Nutzung unserer Website stimmen Sie diesen Bedingungen zu. Wenn Sie mit irgendwelchen Bestimmungen nicht einverstanden sind, nutzen Sie die Website bitte nicht."
+      },
+      {
+        "title": "2. Beschreibung der Dienstleistungen",
+        "content": "Swiss Made IT bietet Softwareentwicklungsdienste an, einschließlich, aber nicht beschränkt auf:\n• Website- und Webanwendungsentwicklung\n• Mobile App-Entwicklung\n• Erstellung von Telegram-Bots und Mini Apps\n• Integration künstlicher Intelligenz\n• Cloud-Migration und DevOps\n• IT-Systemberatung und -Audit\n\nSpezifische Dienstleistungsbedingungen werden durch individuelle Verträge mit Kunden festgelegt."
+      },
+      {
+        "title": "3. Website-Nutzung",
+        "content": "Sie verpflichten sich:\n• Die Website nur für rechtmäßige Zwecke zu nutzen\n• Den Betrieb der Website nicht durch technische Mittel zu stören\n• Keinen unbefugten Zugriff auf Systeme zu versuchen\n• Keine schädliche Software zu verbreiten\n• In Kontaktformularen korrekte Informationen anzugeben"
+      },
+      {
+        "title": "4. Geistiges Eigentum",
+        "content": "Alle Materialien auf der Website, einschließlich Texte, Grafiken, Logos, Bilder und Softwarecode, sind Eigentum von Swiss Tech Solutions GmbH oder werden unter Lizenz verwendet.\n\nEs ist Ihnen untersagt:\n• Website-Materialien zu kopieren, zu reproduzieren oder zu verbreiten\n• Marken ohne schriftliche Genehmigung zu verwenden\n• Abgeleitete Werke zu modifizieren oder zu erstellen"
+      },
+      {
+        "title": "5. Datenschutz",
+        "content": "Die Verarbeitung personenbezogener Daten wird durch unsere Datenschutzerklärung geregelt, die ein integraler Bestandteil dieser Bedingungen ist."
+      },
+      {
+        "title": "6. Haftungsbeschränkung",
+        "content": "Die Website und ihr Inhalt werden \"wie besehen\" ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt.\n\nDas Unternehmen haftet nicht für:\n• Schäden, die aus der Nutzung oder Unmöglichkeit der Nutzung der Website entstehen\n• Inhalte externer verlinkter Websites\n• Vorübergehende Nichterreichbarkeit der Website aus technischen Gründen\n• Handlungen Dritter"
+      },
+      {
+        "title": "7. Vertragliche Beziehungen",
+        "content": "Informationen auf der Website dienen Informationszwecken und stellen kein öffentliches Angebot dar. Vertragliche Beziehungen entstehen erst nach Unterzeichnung eines individuellen Vertrags.\n\nAuf der Website genannte Preise sind ungefähre Angaben und können je nach spezifischem Projekt variieren."
+      },
+      {
+        "title": "8. Externe Links",
+        "content": "Die Website kann Links zu externen Ressourcen enthalten. Wir kontrollieren den Inhalt dieser Websites nicht und sind nicht dafür verantwortlich. Das Folgen externer Links erfolgt auf eigenes Risiko."
+      },
+      {
+        "title": "9. Änderungen der Bedingungen",
+        "content": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen treten mit der Veröffentlichung auf der Website in Kraft. Wir empfehlen, diese Seite regelmäßig zu überprüfen."
+      },
+      {
+        "title": "10. Anwendbares Recht",
+        "content": "Diese Bedingungen unterliegen dem Recht der Schweiz und werden in Übereinstimmung damit ausgelegt. Alle Streitigkeiten unterliegen der Zuständigkeit der Gerichte in Zürich, Schweiz."
+      },
+      {
+        "title": "11. Salvatorische Klausel",
+        "content": "Sollte eine Bestimmung dieser Bedingungen für ungültig befunden werden, bleiben die übrigen Bestimmungen in vollem Umfang wirksam."
+      },
+      {
+        "title": "12. Kontaktinformationen",
+        "content": "Bei Fragen zu diesen Bedingungen kontaktieren Sie bitte:\n\nSwiss Tech Solutions GmbH\nBahnhofstrasse 1\n8001 Zürich, Schweiz\nE-Mail: legal@swissmade.it"
+      }
+    ]
+  },
+  "cases": {
+    "meta_title": "Fallstudien & Portfolio | Swiss Made IT",
+    "meta_description": "Echte Kundenprojekte. Telegram-Bots, Web-Plattformen, mobile Apps, Automatisierung. Ergebnisse in Zahlen.",
+    "badge": "100+ erfolgreiche Projekte",
+    "hero_title_1": "Projekte, die ",
+    "hero_title_2": "für uns sprechen",
+    "hero_description": "Echte Fallstudien unserer Kunden mit messbaren Ergebnissen. Von Startups bis Enterprise — jedes Projekt ist einzigartig.",
+    "project_details": "Projektdetails",
+    "challenge": "Herausforderung",
+    "solution": "Lösung",
+    "stats_title": "Ergebnisse in Zahlen",
+    "cta_title": "Möchten Sie ähnliche Ergebnisse?",
+    "cta_description": "Erzählen Sie uns von Ihrem Projekt — wir bereiten eine maßgeschneiderte Lösung vor und zeigen, welche Ergebnisse Sie erreichen können.",
+    "cta_button": "Projekt besprechen",
+    "industries": [
+      {
+        "name": "Finanzen",
+        "count": 12
+      },
+      {
+        "name": "Gesundheit",
+        "count": 8
+      },
+      {
+        "name": "E-Commerce",
+        "count": 25
+      },
+      {
+        "name": "Reisen",
+        "count": 6
+      },
+      {
+        "name": "Fertigung",
+        "count": 10
+      }
+    ],
+    "stats": [
+      {
+        "value": "100+",
+        "label": "Projekte",
+        "sublabel": "erfolgreich gestartet"
+      },
+      {
+        "value": "50+",
+        "label": "Kunden",
+        "sublabel": "vertrauen uns"
+      },
+      {
+        "value": "12",
+        "label": "Länder",
+        "sublabel": "Projektgeografie"
+      },
+      {
+        "value": "98%",
+        "label": "Kunden",
+        "sublabel": "empfehlen uns"
+      }
+    ],
+    "projects": [
+      {
+        "id": "fintech-platform",
+        "title": "Investment-Plattform",
+        "client": "Schweizer Fintech-Startup",
+        "industry": "Finanzen",
+        "description": "Voll ausgestattete Retail-Investment-Plattform mit Banking-API-Integration, KYC-Verifizierung und Echtzeit-Kursen.",
+        "challenge": "Kunde wollte einen einfachen Weg zum Investieren für Menschen ohne Finanzbildung schaffen. Benötigte eine zuverlässige Plattform gemäß Schweizer Regulierungsanforderungen.",
+        "solution": "Entwickelten Web-Plattform mit mobiler App. Integrierten Banking-APIs, KYC-System, Trading-Engine. Stellten FINMA-Konformität sicher.",
+        "results": [
+          {
+            "value": "10.000+",
+            "label": "aktive Nutzer"
+          },
+          {
+            "value": "50M CHF",
+            "label": "unter Verwaltung"
+          },
+          {
+            "value": "99,99%",
+            "label": "Plattform-Uptime"
+          },
+          {
+            "value": "4.8",
+            "label": "App Store Bewertung"
+          }
+        ],
+        "technologies": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "AWS",
+          "Kubernetes"
+        ],
+        "duration": "8 Monate"
+      },
+      {
+        "id": "medical-saas",
+        "title": "SaaS für Kliniken",
+        "client": "Medizinisches Zentrum-Netzwerk",
+        "industry": "Gesundheit",
+        "description": "Klinik-Management-System: Arzttermine, elektronische Patientenakten, Telemedizin, Labor-Integration.",
+        "challenge": "Klinik arbeitete mit 5 verschiedenen Systemen, Daten wurden dupliziert, Ärzte verbrachten Zeit mit Routineaufgaben. Mussten alles in einer Plattform vereinen.",
+        "solution": "Erstellten einheitliche SaaS-Plattform mit Modulen für alle Klinikprozesse. Integrierten Videokonsultationen, elektronische Rezepte, automatische Erinnerungen.",
+        "results": [
+          {
+            "value": "-40%",
+            "label": "Admin-Aufwand"
+          },
+          {
+            "value": "+25%",
+            "label": "Durchsatzkapazität"
+          },
+          {
+            "value": "15 Min",
+            "label": "pro Patient gespart"
+          },
+          {
+            "value": "12",
+            "label": "Kliniken verbunden"
+          }
+        ],
+        "technologies": [
+          "Next.js",
+          "Python",
+          "PostgreSQL",
+          "WebRTC",
+          "HL7 FHIR"
+        ],
+        "duration": "12 Monate"
+      },
+      {
+        "id": "telegram-ecommerce",
+        "title": "Telegram Mini App für E-Commerce",
+        "client": "Elektronik-Einzelhandelskette",
+        "industry": "Einzelhandel",
+        "description": "Voll ausgestatteter Online-Shop innerhalb von Telegram mit Katalog, Warenkorb, Zahlung und Bestellverfolgung.",
+        "challenge": "Kunde wollte Telegram-Publikum erreichen ohne Kosten für separate App-Entwicklung. Benötigte schnellen Start mit minimalem Budget.",
+        "solution": "Entwickelten Telegram Mini App mit voller E-Commerce-Funktionalität. Integration mit 1C, Online-Zahlung, Push-Benachrichtigungen über Bestellstatus.",
+        "results": [
+          {
+            "value": "+35%",
+            "label": "Umsatzwachstum"
+          },
+          {
+            "value": "50.000+",
+            "label": "Nutzer"
+          },
+          {
+            "value": "3 Min",
+            "label": "Durchschn. Bestellzeit"
+          },
+          {
+            "value": "2 Wochen",
+            "label": "bis MVP-Start"
+          }
+        ],
+        "technologies": [
+          "React",
+          "Telegram API",
+          "Node.js",
+          "1C Integration",
+          "Stripe"
+        ],
+        "duration": "6 Wochen"
+      },
+      {
+        "id": "travel-automation",
+        "title": "Reisebüro-Automatisierung",
+        "client": "Reiseagentur",
+        "industry": "Reisen",
+        "description": "Umfassende Automatisierung: CRM, Buchungen, Dokumentenmanagement, GDS-System-Integration, Kunden-Chatbot.",
+        "challenge": "Manager verbrachten 70% der Zeit mit Routine: manuelle Toursuche, Papierkram, Beantwortung typischer Fragen. Geschäft skalierte nicht.",
+        "solution": "Implementierten CRM mit Verkaufstrichter-Automatisierung. Erstellten Telegram-Bot für Erstberatung. Automatisierten Dokumentenfluss und Lieferanten-Integration.",
+        "results": [
+          {
+            "value": "-70%",
+            "label": "Routinearbeit"
+          },
+          {
+            "value": "+200%",
+            "label": "Anfragebearbeitung"
+          },
+          {
+            "value": "24/7",
+            "label": "Bot bedient Kunden"
+          },
+          {
+            "value": "3 Monate",
+            "label": "Amortisationszeit"
+          }
+        ],
+        "technologies": [
+          "Python",
+          "Telegram Bot API",
+          "Amadeus API",
+          "PostgreSQL",
+          "n8n"
+        ],
+        "duration": "3 Monate"
+      },
+      {
+        "id": "corporate-portal",
+        "title": "Unternehmensportal",
+        "client": "Internationales Fertigungsunternehmen",
+        "industry": "Fertigung",
+        "description": "Internes Portal für 500+ Mitarbeiter: Dokumentenmanagement, Aufgaben, Wissensdatenbank, HR-Prozesse, SAP-Integration.",
+        "challenge": "Informationen waren über 10+ Systeme verstreut. Mitarbeiter wussten nicht, wo sie Dokumente finden. HR-Prozesse dauerten Wochen statt Tage.",
+        "solution": "Erstellten einheitliches Portal mit SSO-Autorisierung. Zentralisierten Dokumente, automatisierten HR-Anfragen, implementierten Aufgabenmanagement-System.",
+        "results": [
+          {
+            "value": "500+",
+            "label": "Mitarbeiter"
+          },
+          {
+            "value": "-60%",
+            "label": "HR-Anfragezeit"
+          },
+          {
+            "value": "1 Tag",
+            "label": "statt einer Woche"
+          },
+          {
+            "value": "95%",
+            "label": "Adoption Rate"
+          }
+        ],
+        "technologies": [
+          "React",
+          "Node.js",
+          "SAP Integration",
+          "Elasticsearch",
+          "Keycloak"
+        ],
+        "duration": "6 Monate"
+      }
+    ]
+  },
+  "compare": {
+    "meta_title": "In-house vs Freelance vs Offshore vs Swiss Agency | Swiss Made IT",
+    "meta_description": "Ehrlicher Vergleich von IT-Entwicklungsoptionen. In-house-Team, Freelancer, Offshore-Agenturen, Swiss Dev Agency.",
+    "badge": "Ehrlicher Vergleich",
+    "hero_title_1": "In-house vs Freelance vs Offshore vs ",
+    "hero_title_2": "Swiss Agency",
+    "hero_description": "Die Wahl eines Auftragnehmers ist eine strategische Entscheidung. Wir haben einen objektiven Vergleich aller Optionen zusammengestellt.",
+    "criteria": "Kriterium",
+    "legend_yes": "Ja / Gut",
+    "legend_partial": "Teilweise / Abhängig",
+    "legend_no": "Nein / Problem",
+    "detailed_title": "Detaillierte Analyse jeder Option",
+    "advantages": "Vorteile",
+    "disadvantages": "Nachteile",
+    "best_for": "Am besten für",
+    "when_title": "Wann ist Swiss Dev Agency die richtige Wahl?",
+    "discuss_project": "Besprechen Sie Ihr Projekt",
+    "comparison": [
+      {
+        "feature": "Kosten",
+        "inhouse": "€€€€€",
+        "freelancer": "€",
+        "offshore": "€€",
+        "swissdev": "€€€"
+      },
+      {
+        "feature": "Codequalität",
+        "inhouse": "yes",
+        "freelancer": "partial",
+        "offshore": "partial",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Zuverlässigkeit / SLA",
+        "inhouse": "yes",
+        "freelancer": "no",
+        "offshore": "partial",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Schneller Start",
+        "inhouse": "no",
+        "freelancer": "yes",
+        "offshore": "yes",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Team-Skalierung",
+        "inhouse": "no",
+        "freelancer": "no",
+        "offshore": "yes",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "GDPR / Swiss DPA",
+        "inhouse": "yes",
+        "freelancer": "partial",
+        "offshore": "no",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Kommunikation",
+        "inhouse": "yes",
+        "freelancer": "partial",
+        "offshore": "no",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Zeitzone",
+        "inhouse": "yes",
+        "freelancer": "partial",
+        "offshore": "no",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Langfristiger Support",
+        "inhouse": "yes",
+        "freelancer": "no",
+        "offshore": "partial",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Kein HR/Recruiting",
+        "inhouse": "no",
+        "freelancer": "yes",
+        "offshore": "yes",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Festpreis",
+        "inhouse": "no",
+        "freelancer": "partial",
+        "offshore": "partial",
+        "swissdev": "yes"
+      },
+      {
+        "feature": "Haftpflichtversicherung",
+        "inhouse": "partial",
+        "freelancer": "no",
+        "offshore": "no",
+        "swissdev": "yes"
+      }
+    ],
+    "options": [
+      {
+        "title": "In-house-Team",
+        "pros": [
+          "Volle Kontrolle",
+          "Tiefes Produktverständnis",
+          "24/7 Verfügbarkeit"
+        ],
+        "cons": [
+          "Hohe Kosten (Gehälter, Büro, Steuern)",
+          "Lange Einstellung (3-6 Monate)",
+          "Fluktuationsrisiken",
+          "Technisches Management erforderlich"
+        ],
+        "bestFor": "Große Unternehmen mit konstanter IT-Auslastung"
+      },
+      {
+        "title": "Freelancer",
+        "pros": [
+          "Niedrige Kosten",
+          "Schneller Start",
+          "Flexibilität"
+        ],
+        "cons": [
+          "Unvorhersehbare Qualität",
+          "Risiko des Verschwindens",
+          "Keine Garantien und SLA",
+          "Schwierig mit NDA und Compliance"
+        ],
+        "bestFor": "Kleine Aufgaben, Prototypen, persönliche Projekte"
+      },
+      {
+        "title": "Offshore-Agenturen",
+        "pros": [
+          "Niedrige Kosten",
+          "Große Teams",
+          "Erfahrung in verschiedenen Projekten"
+        ],
+        "cons": [
+          "Kommunikationsprobleme",
+          "Zeitzonendifferenz",
+          "GDPR-Risiken",
+          "Kulturelle Unterschiede"
+        ],
+        "bestFor": "Startups mit begrenztem Budget"
+      },
+      {
+        "title": "Swiss Dev Agency",
+        "pros": [
+          "Schweizer Qualität und Compliance",
+          "Europäische Zeitzone",
+          "Festpreise und Garantien",
+          "Langfristige Partnerschaft"
+        ],
+        "cons": [
+          "Höhere Kosten als Offshore",
+          "Begrenzte Kapazität"
+        ],
+        "bestFor": "Mittelständische Unternehmen auf dem europäischen Markt"
+      }
+    ],
+    "when_items": [
+      "Sicherheit und Compliance sind wichtig",
+      "Zuverlässiger Partner, kein einmaliger Ausführer",
+      "Budget ab €15.000 pro Projekt"
+    ]
+  },
+  "discovery": {
+    "meta_title": "Discovery Sprint | Swiss Made IT",
+    "meta_description": "5 Tage bis zur Klarheit. Vollständiger Projektplan, technische Spezifikation, festes Angebot. CHF 3.500.",
+    "badge": "Einstiegsangebot",
+    "hero_title_1": "Discovery Sprint: ",
+    "hero_title_2": "5 Tage bis zur Klarheit",
+    "hero_description": "Unsicher bei den Anforderungen? Kennen Sie die genauen Kosten nicht? In 5 Arbeitstagen erstellen wir einen vollständigen Plan für Ihr Projekt.",
+    "days": "5 Arbeitstage",
+    "fixed_price": "Festpreis",
+    "order_sprint": "Discovery Sprint bestellen",
+    "price_label": "Kosten",
+    "price": "CHF 3.500",
+    "price_note": "Festpreis",
+    "what_you_get": "Was Sie erhalten",
+    "what_you_get_desc": "Komplettes Dokumentationspaket für den Entwicklungsstart",
+    "process_title": "Wie Discovery Sprint funktioniert",
+    "benefits_title": "Warum es sich lohnt",
+    "next_title": "Was passiert nach dem Discovery Sprint?",
+    "next_description": "Sie erhalten ein vollständiges Dokumentenpaket und können:",
+    "next_options": [
+      "Mit uns zum Festpreis fortfahren",
+      "Dokumente an einen anderen Auftragnehmer übergeben",
+      "Für die Investorensuche verwenden"
+    ],
+    "next_note": "* Bei Beauftragung der Entwicklung bei uns werden die Discovery Sprint-Kosten vom Gesamtbetrag abgezogen",
+    "book_sprint": "Discovery Sprint buchen",
+    "deliverables": [
+      {
+        "title": "Technische Spezifikation",
+        "description": "Detaillierte Funktionsbeschreibung, User Stories, Akzeptanzkriterien"
+      },
+      {
+        "title": "Lösungsarchitektur",
+        "description": "Komponentendiagramm, Datenbank, Integrationen, Technologie-Stack"
+      },
+      {
+        "title": "Prototyp / Wireframes",
+        "description": "Klickbarer Prototyp der wichtigsten Bildschirme in Figma"
+      },
+      {
+        "title": "Entwicklungsplan",
+        "description": "Phasen, Zeitrahmen, Meilensteine, kritischer Pfad"
+      },
+      {
+        "title": "Risikobewertung",
+        "description": "Technische Risiken, Abhängigkeiten, Mitigationsplan"
+      },
+      {
+        "title": "Festes Angebot",
+        "description": "Exakte Entwicklungskosten, die sich nicht ändern"
+      }
+    ],
+    "process": [
+      {
+        "day": "Tag 1-2",
+        "title": "Briefing und Analyse",
+        "activities": [
+          "Interviews mit wichtigen Stakeholdern",
+          "Analyse aktueller Prozesse und Probleme",
+          "Definition von Zielen und KPIs",
+          "Wettbewerbsanalyse"
+        ]
+      },
+      {
+        "day": "Tag 3-4",
+        "title": "Design",
+        "activities": [
+          "Erstellung von User Flow und Wireframes",
+          "Architekturdesign",
+          "Auswahl des Technologie-Stacks",
+          "Integrationsplanung"
+        ]
+      },
+      {
+        "day": "Tag 5",
+        "title": "Dokumentation und Angebot",
+        "activities": [
+          "Finalisierung der technischen Spezifikation",
+          "Berechnung des detaillierten Angebots",
+          "Erstellung des Entwicklungsplans",
+          "Ergebnispräsentation"
+        ]
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Minimales Risiko",
+        "description": "Investieren Sie nur CHF 3.500, erhalten Sie volle Projektklarheit"
+      },
+      {
+        "title": "Dokumente gehören Ihnen",
+        "description": "Auch wenn Sie nicht mit uns fortfahren, bleiben alle Materialien bei Ihnen"
+      },
+      {
+        "title": "Festpreis",
+        "description": "Das Angebot nach dem Discovery Sprint ändert sich während der Entwicklung nicht"
+      },
+      {
+        "title": "Schneller Start",
+        "description": "Wir können den Discovery Sprint bereits nächste Woche starten"
+      }
+    ]
+  },
+  "security": {
+    "meta_title": "NDA & Sicherheit | Swiss Made IT",
+    "meta_description": "Schweizer Datenschutzniveau. NDA wird vor Projektbesprechung unterzeichnet. ISO 27001, GDPR-Konformität.",
+    "badge": "Security & Compliance",
+    "hero_title_1": "NDA und Sicherheit: ",
+    "hero_title_2": "Schweizer Standard",
+    "hero_description": "Wir schützen Ihre Ideen und Daten vom ersten Tag an. NDA wird vor der Besprechung von Projektdetails unterzeichnet.",
+    "request_nda": "NDA anfordern",
+    "about_security": "Über Sicherheit",
+    "nda_title": "NDA-Typen",
+    "nda_description": "Wir unterzeichnen NDA vor dem ersten Anruf. Ihre Ideen sind von Anfang an geschützt.",
+    "download_nda": "NDA-Muster herunterladen",
+    "application": "Anwendung",
+    "security_title": "Sicherheitsmaßnahmen",
+    "security_description": "Umfassender Ansatz zum Datenschutz auf allen Ebenen",
+    "certs_title": "Zertifikate & Compliance",
+    "practices_title": "Unsere Sicherheitspraktiken",
+    "insurance_title": "Berufshaftpflichtversicherung",
+    "insurance_description": "Unsere Tätigkeit ist bis zu €5.000.000 versichert. Dies ist eine zusätzliche Garantie zum Schutz Ihrer Interessen.",
+    "cta_title": "Bereit, Ihr Projekt zu besprechen?",
+    "cta_description": "Wir senden das NDA innerhalb einer Stunde nach Ihrer Anfrage. Ihre Ideen sind vor dem ersten Gespräch geschützt.",
+    "confirmed": "Bestätigt",
+    "in_progress": "Im Zertifizierungsprozess",
+    "planned": "Geplant Q4 2024",
+    "nda_types": [
+      {
+        "title": "Mutual NDA",
+        "description": "Bilaterale Vertraulichkeitsvereinbarung",
+        "useCase": "Für Projektbesprechung und Ideenaustausch"
+      },
+      {
+        "title": "Project NDA",
+        "description": "Erweitertes NDA mit technischen Details",
+        "useCase": "Für Übertragung technischer Dokumentation"
+      },
+      {
+        "title": "Employee NDA",
+        "description": "NDA für alle am Projekt arbeitenden Mitarbeiter",
+        "useCase": "Schutz auf Entwicklerebene"
+      }
+    ],
+    "measures": [
+      {
+        "title": "Datenverschlüsselung",
+        "items": [
+          "AES-256 für Daten im Ruhezustand",
+          "TLS 1.3 für Daten im Transit",
+          "End-to-End-Verschlüsselung für sensible Daten",
+          "HSM für kryptografische Schlüssel"
+        ]
+      },
+      {
+        "title": "Infrastruktur",
+        "items": [
+          "Schweizer Rechenzentren (Tier III+)",
+          "AWS / Azure / GCP in europäischen Regionen",
+          "Isolierte VPC für jedes Projekt",
+          "Regelmäßige Backups"
+        ]
+      },
+      {
+        "title": "Zugriffskontrolle",
+        "items": [
+          "Prinzip der minimalen Rechte",
+          "Zwei-Faktor-Authentifizierung (2FA)",
+          "Regelmäßige Zugriffsaudits",
+          "Protokollierung aller Aktionen"
+        ]
+      },
+      {
+        "title": "Überwachung",
+        "items": [
+          "SIEM-Systeme",
+          "24/7 Bedrohungsüberwachung",
+          "Automatische Anomalieerkennung",
+          "Incident-Response-Verfahren"
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "ISO 27001",
+        "description": "Internationaler Informationssicherheitsstandard",
+        "status": "in_progress"
+      },
+      {
+        "name": "GDPR Compliant",
+        "description": "Volle Konformität mit EU-Datenschutzanforderungen",
+        "status": "confirmed"
+      },
+      {
+        "name": "Swiss DPA",
+        "description": "Konformität mit Schweizer Datenschutzgesetz",
+        "status": "confirmed"
+      },
+      {
+        "name": "SOC 2 Type II",
+        "description": "Sicherheits-, Verfügbarkeits- und Vertraulichkeitsaudit",
+        "status": "planned"
+      }
+    ],
+    "practices": [
+      "Alle Mitarbeiter durchlaufen Informationssicherheitsschulung",
+      "Code-Review mit Schwachstellenprüfung (OWASP Top 10)",
+      "Regelmäßige Pentests und Schwachstellenscans",
+      "Clean-Desk- und Screen-Policy",
+      "Verschlüsselung von Arbeitsgeräten",
+      "Sichere Datenentsorgung nach Projektabschluss"
+    ]
+  }
+}

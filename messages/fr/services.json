@@ -1,0 +1,3162 @@
+{
+  "services_mobile": {
+    "meta_title": "Applications mobiles | Swiss IT",
+    "meta_description": "Développement d'applications mobiles natives et multiplateformes pour iOS et Android. React Native, Flutter, Swift, Kotlin.",
+    "hero_title_1": "Application mobile —",
+    "hero_title_2": "votre business dans la poche du client",
+    "hero_description": "Nous développons des applications natives et multiplateformes que les utilisateurs aiment et recommandent. React Native, Flutter, Swift, Kotlin.",
+    "problems_title": "Ça vous dit quelque chose ?",
+    "problems_subtitle": "La plupart des entreprises font face à ces défis lors du développement d'apps mobiles",
+    "problems": [
+      {
+        "title": "Développement long",
+        "description": "Équipes séparées pour iOS et Android — délais et budget doublés"
+      },
+      {
+        "title": "Perte d'utilisateurs",
+        "description": "77% des utilisateurs suppriment une app après la première utilisation"
+      },
+      {
+        "title": "Faible performance",
+        "description": "L'app lag, vide la batterie, occupe trop de mémoire"
+      },
+      {
+        "title": "Problèmes de sécurité",
+        "description": "Fuites de données, hacks, rejet App Store"
+      },
+      {
+        "title": "Scalabilité difficile",
+        "description": "L'architecture ne permet pas d'ajouter de nouvelles fonctionnalités"
+      },
+      {
+        "title": "Pas de mode hors ligne",
+        "description": "Sans internet l'app est inutile"
+      }
+    ],
+    "benefits_title": "Notre approche du développement mobile",
+    "benefits_subtitle": "Nous créons des apps que les utilisateurs notent 4,8+ étoiles",
+    "benefits": [
+      {
+        "title": "Un code — deux plateformes",
+        "description": "React Native et Flutter permettent de sortir l'app pour iOS et Android simultanément, réduisant le budget de 40%"
+      },
+      {
+        "title": "Performance native",
+        "description": "Nous utilisons des modules natifs où la vitesse est nécessaire. Animations 60 FPS, lancement rapide, économie de batterie"
+      },
+      {
+        "title": "Sécurité par défaut",
+        "description": "Chiffrement des données, stockage sécurisé des tokens, protection contre le reverse-engineering, conformité RGPD"
+      },
+      {
+        "title": "Notifications push",
+        "description": "Les pushs personnalisés augmentent la rétention de 3-10x. Segmentation, tests A/B, deep links"
+      },
+      {
+        "title": "Mode hors ligne",
+        "description": "L'app fonctionne sans internet. Synchronisation des données lors du rétablissement de la connexion"
+      },
+      {
+        "title": "Analytics et tests A/B",
+        "description": "Firebase Analytics, Mixpanel, Amplitude. Comprenez les utilisateurs et optimisez la conversion"
+      }
+    ],
+    "comparison_title": "Quelle approche choisir ?",
+    "comparison_subtitle": "Comparaison PWA, développement natif et multiplateforme",
+    "comparison_feature": "Caractéristique",
+    "comparison_pwa": "PWA",
+    "comparison_native": "Natif",
+    "comparison_cross": "Multiplateforme ⭐",
+    "comparison": [
+      {
+        "feature": "Temps de développement",
+        "web": "2-3 mois",
+        "native": "4-6 mois par plateforme",
+        "cross": "3-4 mois pour les deux"
+      },
+      {
+        "feature": "Performance",
+        "web": "70%",
+        "native": "100%",
+        "cross": "95%"
+      },
+      {
+        "feature": "Accès API appareil",
+        "web": "Limité",
+        "native": "Complet",
+        "cross": "Presque complet"
+      },
+      {
+        "feature": "Coût de maintenance",
+        "web": "Faible",
+        "native": "Élevé (2 bases de code)",
+        "cross": "Moyen"
+      },
+      {
+        "feature": "Notifications push",
+        "web": "Limitées",
+        "native": "Complètes",
+        "cross": "Complètes"
+      },
+      {
+        "feature": "Mode hors ligne",
+        "web": "Limité",
+        "native": "Complet",
+        "cross": "Complet"
+      },
+      {
+        "feature": "Publication store",
+        "web": "Non requise",
+        "native": "Requise",
+        "cross": "Requise"
+      }
+    ],
+    "app_types_title": "Quelles apps nous créons",
+    "app_types_subtitle": "Expérience dans diverses industries et types d'apps",
+    "app_types": [
+      {
+        "title": "Apps B2C",
+        "description": "Apps grand public : marketplaces, livraison, fitness, finance",
+        "features": [
+          "Beau UI/UX",
+          "Onboarding",
+          "Paiements",
+          "Fonctions sociales"
+        ]
+      },
+      {
+        "title": "Apps B2B",
+        "description": "Apps entreprise : CRM, ERP, inventaire, logistique",
+        "features": [
+          "Intégration backend",
+          "Accès par rôles",
+          "Reporting",
+          "Mode hors ligne"
+        ]
+      },
+      {
+        "title": "Géolocalisation",
+        "description": "Apps cartographiques : taxi, livraison, tracking, navigation",
+        "features": [
+          "Cartes & itinéraires",
+          "Geofencing",
+          "Suivi",
+          "Localisation en arrière-plan"
+        ]
+      },
+      {
+        "title": "Multimédia",
+        "description": "Caméra, vidéo, AR : scanners, filtres, apps éducatives",
+        "features": [
+          "Caméra & galerie",
+          "Effets AR",
+          "Traitement vidéo",
+          "Modèles ML"
+        ]
+      },
+      {
+        "title": "IoT & maison connectée",
+        "description": "Contrôle d'appareils : maison connectée, wearables, capteurs",
+        "features": [
+          "Bluetooth/BLE",
+          "MQTT/WebSocket",
+          "Widgets",
+          "Notifications"
+        ]
+      },
+      {
+        "title": "Fintech",
+        "description": "Banque, investissements, crypto, assurance",
+        "features": [
+          "Biométrie",
+          "PCI DSS",
+          "KYC/AML",
+          "Systèmes de paiement"
+        ]
+      }
+    ],
+    "tech_title": "Technologies",
+    "tech_subtitle": "Nous utilisons des outils éprouvés pour des solutions fiables",
+    "process_title": "Processus de développement",
+    "process_subtitle": "De l'idée à la publication App Store et Google Play",
+    "process": [
+      {
+        "step": "01",
+        "title": "Design et prototype",
+        "duration": "2-3 semaines",
+        "description": "Recherche UX, wireframes, design UI dans Figma. Prototype interactif pour tests utilisateurs.",
+        "deliverables": [
+          "User Flow",
+          "UI Kit",
+          "Prototype",
+          "Design system"
+        ]
+      },
+      {
+        "step": "02",
+        "title": "Développement MVP",
+        "duration": "6-10 semaines",
+        "description": "Développement des fonctionnalités clés. Builds hebdomadaires pour tests. Intégration backend.",
+        "deliverables": [
+          "TestFlight/Firebase",
+          "Intégration API",
+          "Notifications push",
+          "Analytics"
+        ]
+      },
+      {
+        "step": "03",
+        "title": "Tests et lancement",
+        "duration": "2-3 semaines",
+        "description": "QA sur appareils réels, bêta-test, préparation soumission store, processus de review.",
+        "deliverables": [
+          "Cas de test",
+          "App Store Connect",
+          "Google Play Console",
+          "ASO"
+        ]
+      },
+      {
+        "step": "04",
+        "title": "Croissance et évolution",
+        "duration": "Continu",
+        "description": "Analyse des métriques, tests A/B, nouvelles fonctionnalités selon les retours. Mises à jour pour nouvelles versions iOS/Android.",
+        "deliverables": [
+          "Roadmap",
+          "Métriques de croissance",
+          "Mises à jour",
+          "Support"
+        ]
+      }
+    ],
+    "results_title": "Résultats de nos projets",
+    "results": [
+      {
+        "metric": "4,8+",
+        "label": "Note moyenne stores"
+      },
+      {
+        "metric": "500K+",
+        "label": "Téléchargements d'apps"
+      },
+      {
+        "metric": "40%",
+        "label": "Économie multiplateforme"
+      },
+      {
+        "metric": "< 2 sec",
+        "label": "Temps de démarrage à froid"
+      }
+    ],
+    "pricing_title": "Coût de développement",
+    "pricing_description": "MVP app multiplateforme — à partir de 25 000 CHF. Inclut design, développement, tests et publication stores. Développement natif pour une plateforme — à partir de 20 000 CHF.",
+    "pricing_cta": "Obtenir un devis",
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "React Native ou Flutter ?",
+        "answer": "Si vous avez déjà une app web React — choisissez React Native, votre équipe peut réutiliser ses connaissances. Flutter offre de meilleures performances et un contrôle total de l'UI. Pour la plupart des apps business la différence est minimale."
+      },
+      {
+        "question": "Quand le développement natif est-il nécessaire ?",
+        "answer": "Pour une performance maximale (jeux, AR/VR), des APIs spécifiques (HealthKit, ARKit), ou quand Apple/Google exigent du code natif. Dans les 90% restants le multiplateforme est le choix optimal."
+      },
+      {
+        "question": "Combien de temps prend la publication ?",
+        "answer": "Google Play — 1-3 jours pour la première release. App Store — 1-7 jours, la première release peut prendre jusqu'à 2 semaines. Nous préparons tous les matériaux à l'avance et connaissons les exigences des stores."
+      },
+      {
+        "question": "Comment mettre à jour l'app sans release ?",
+        "answer": "Nous utilisons CodePush pour React Native et Shorebird pour Flutter. Vous pouvez mettre à jour le code JS et l'UI sans publication store. Le code natif nécessite toujours une release."
+      }
+    ],
+    "cta_title": "Prêt pour une app mobile ?",
+    "cta_description": "Parlez-nous de votre idée — nous trouverons l'approche et les technologies optimales",
+    "cta_button": "Discuter du projet",
+    "badge_1": "iOS & Android",
+    "badge_2": "Multiplateforme",
+    "cta_primary": "Discuter de votre app",
+    "cta_secondary": "Comment nous travaillons",
+    "comparison_header_feature": "Paramètre",
+    "comparison_header_pwa": "PWA",
+    "comparison_header_native": "Natif",
+    "comparison_header_cross": "Multiplateforme"
+  },
+  "services_automation": {
+    "meta_title": "Automatisation des processus | Swiss IT",
+    "meta_description": "Automatisation des processus métier, intégration de systèmes, RPA. Réduction de 80% de la routine, élimination des erreurs, accélération des processus.",
+    "badge1": "RPA & Intégrations",
+    "badge2": "No-code & Custom",
+    "hero_title_1": "Automatisez la routine —",
+    "hero_title_2": "libérez vos équipes pour l'essentiel",
+    "hero_description": "Nous intégrons les systèmes, automatisons les processus, éliminons le travail manuel. Vos employés se concentrent sur le business, pas sur la copie de données.",
+    "cta_audit": "Audit des processus",
+    "cta_cases": "Exemples d'automatisation",
+    "problems_title": "Ça vous dit quelque chose ?",
+    "problems_subtitle": "Signes typiques qu'il est temps d'automatiser",
+    "problems": [
+      {
+        "title": "Heures de routine",
+        "description": "Les employés passent 40% du temps sur des tâches répétitives au lieu de travail nécessitant réflexion"
+      },
+      {
+        "title": "Erreurs humaines",
+        "description": "Saisie manuelle = erreurs. Fautes de frappe, emails oubliés, demandes perdues"
+      },
+      {
+        "title": "Systèmes déconnectés",
+        "description": "Données dans Excel, CRM, ERP, email — et nulle part l'image complète"
+      },
+      {
+        "title": "Processus lents",
+        "description": "Les approbations prennent des jours, les clients attendent les réponses, les affaires échouent"
+      },
+      {
+        "title": "Rapports manuels",
+        "description": "Chaque mois — collecte pénible de données de différentes sources dans Excel"
+      },
+      {
+        "title": "Impossible de scaler",
+        "description": "Croissance business = croissance effectifs. Chaque nouveau client nécessite plus de mains"
+      }
+    ],
+    "benefits_title": "Ce qu'apporte l'automatisation",
+    "benefits_subtitle": "Résultats que vous verrez le premier mois",
+    "benefits": [
+      {
+        "title": "80% de temps économisé",
+        "description": "Les tâches qui prenaient des heures s'exécutent en secondes. Les employés se focalisent sur l'essentiel"
+      },
+      {
+        "title": "Zéro erreur",
+        "description": "L'automatisation élimine le facteur humain. Les données sont toujours correctes et à jour"
+      },
+      {
+        "title": "Écosystème unifié",
+        "description": "Intégration de tous les systèmes : CRM, ERP, email, messageries, banques, marketplaces"
+      },
+      {
+        "title": "Réponse instantanée",
+        "description": "Demande → réponse client en secondes. Notifications, statuts, documents — automatiquement"
+      },
+      {
+        "title": "Analytics temps réel",
+        "description": "Les dashboards se mettent à jour automatiquement. Décisions basées sur les données, pas l'intuition"
+      },
+      {
+        "title": "Scaler sans recruter",
+        "description": "Traitez 10x plus de commandes avec la même équipe. Croissance sans croissance des coûts"
+      }
+    ],
+    "automation_title": "Ce que nous automatisons",
+    "automation_subtitle": "Scénarios standard avec impact maximum",
+    "automation_types": [
+      {
+        "title": "Traitement des demandes",
+        "description": "Traitement automatique des demandes entrantes de tous les canaux",
+        "examples": [
+          "Parsing email & formulaires",
+          "Création de deals CRM",
+          "Distribution aux managers",
+          "Notifications clients"
+        ]
+      },
+      {
+        "title": "Workflow documentaire",
+        "description": "Génération, approbation et envoi de documents",
+        "examples": [
+          "Factures & contrats",
+          "Bordereaux & bons",
+          "Signature électronique",
+          "Archivage"
+        ]
+      },
+      {
+        "title": "Synchronisation données",
+        "description": "Échange de données en temps réel entre systèmes",
+        "examples": [
+          "CRM ↔ ERP",
+          "Site ↔ Entrepôt",
+          "Marketplaces",
+          "Relevés bancaires"
+        ]
+      },
+      {
+        "title": "Reporting",
+        "description": "Génération automatique de rapports et dashboards",
+        "examples": [
+          "Résumés quotidiens",
+          "KPIs managers",
+          "Rapports financiers",
+          "Prévisions"
+        ]
+      },
+      {
+        "title": "Chatbots & assistants",
+        "description": "Traitement automatique des demandes standard",
+        "examples": [
+          "Réponses FAQ",
+          "Prise de commandes",
+          "Réservation services",
+          "Statut livraison"
+        ]
+      },
+      {
+        "title": "Processus métier",
+        "description": "Orchestration de processus complexes multi-étapes",
+        "examples": [
+          "Onboarding clients",
+          "Approbations",
+          "Procédures d'appels d'offres",
+          "Processus RH"
+        ]
+      }
+    ],
+    "cases_title": "Exemples d'implémentation",
+    "cases_subtitle": "Cas réels d'automatisation",
+    "cases": [
+      {
+        "title": "E-commerce",
+        "before": "Les managers transféraient manuellement les commandes du site vers l'ERP, envoyaient les statuts aux clients",
+        "after": "Automatisation complète : commande → ERP → entrepôt → livraison → notification client",
+        "result": "Traitement de 500 commandes/jour au lieu de 50, sans augmenter les effectifs"
+      },
+      {
+        "title": "Entreprise logistique",
+        "before": "Les rapports quotidiens étaient collectés manuellement de 5 systèmes pendant 3 heures",
+        "after": "Collecte automatique des données, dashboard mis à jour toutes les 15 minutes",
+        "result": "Économie de 60 heures/mois, décisions basées sur des données actuelles"
+      },
+      {
+        "title": "Cabinet d'avocats",
+        "before": "Les contrats étaient préparés manuellement, l'approbation par email prenait des jours",
+        "after": "Génération de documents depuis templates, routage d'approbations, signature électronique",
+        "result": "Préparation de contrat en 5 minutes au lieu de 2 heures"
+      }
+    ],
+    "before_label": "Avant",
+    "after_label": "Après",
+    "result_label": "Résultat",
+    "tech_title": "Outils",
+    "tech_subtitle": "Nous choisissons le stack optimal pour vos tâches",
+    "process_title": "Comment nous implémentons l'automatisation",
+    "process_subtitle": "Approche par phases avec victoires rapides",
+    "process": [
+      {
+        "step": "01",
+        "title": "Audit des processus",
+        "duration": "1-2 semaines",
+        "description": "Nous analysons les processus actuels, trouvons les goulots d'étranglement et points d'automatisation. Calculons le ROI de chaque intégration.",
+        "deliverables": [
+          "Carte des processus",
+          "Liste des goulots",
+          "Calcul ROI",
+          "Priorités"
+        ]
+      },
+      {
+        "step": "02",
+        "title": "Conception",
+        "duration": "1-2 semaines",
+        "description": "Nous concevons l'architecture d'intégration, choisissons les outils, décrivons les scénarios d'automatisation.",
+        "deliverables": [
+          "Architecture",
+          "Scénarios",
+          "Exigences techniques",
+          "Plan d'implémentation"
+        ]
+      },
+      {
+        "step": "03",
+        "title": "Développement",
+        "duration": "2-6 semaines",
+        "description": "Nous créons les intégrations, configurons les automatisations, testons avec des données réelles. Lancement en mode pilote.",
+        "deliverables": [
+          "Intégrations prêtes",
+          "Documentation",
+          "Monitoring",
+          "Pilote"
+        ]
+      },
+      {
+        "step": "04",
+        "title": "Mise à l'échelle",
+        "duration": "Continu",
+        "description": "Nous étendons l'automatisation aux nouveaux processus, optimisons les existants, ajoutons de nouvelles intégrations.",
+        "deliverables": [
+          "Nouveaux scénarios",
+          "Optimisation",
+          "Formation",
+          "Support"
+        ]
+      }
+    ],
+    "results_title": "Résultats typiques",
+    "results": [
+      {
+        "metric": "80%",
+        "label": "Réduction routine"
+      },
+      {
+        "metric": "95%",
+        "label": "Réduction erreurs"
+      },
+      {
+        "metric": "10x",
+        "label": "Augmentation productivité"
+      },
+      {
+        "metric": "< 6 mois",
+        "label": "Retour sur investissement"
+      }
+    ],
+    "pricing_title": "Coût de l'automatisation",
+    "pricing_description": "Intégration simple de deux systèmes — à partir de 2 000 CHF. Automatisation complète d'un département — à partir de 10 000 CHF. Audit des processus gratuit avec commande d'implémentation.",
+    "pricing_cta": "Audit gratuit",
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Avec quels systèmes intégrez-vous ?",
+        "answer": "Pratiquement tous : Salesforce, SAP, Microsoft Dynamics, HubSpot, APIs bancaires, marketplaces (Amazon, Shopify), services de livraison, messageries, services Google/Microsoft. Si le système a une API — nous intégrons."
+      },
+      {
+        "question": "Et si nous avons un ancien système sans API ?",
+        "answer": "Nous utilisons le RPA (robotisation) — les robots logiciels travaillent avec l'interface comme un humain. Ou nous créons une couche via base de données, échange de fichiers, parsing d'écran."
+      },
+      {
+        "question": "Combien de temps prendra l'implémentation ?",
+        "answer": "Intégration simple de deux systèmes — 1-2 semaines. Automatisation complète d'un département — 1-2 mois. Transformation de toute l'entreprise — 3-6 mois par phases."
+      },
+      {
+        "question": "Et si l'automatisation tombe en panne ?",
+        "answer": "Nous configurons monitoring et alertes — nous sommes au courant des problèmes avant vous. Les intégrations critiques sont redondantes. Nous fournissons un SLA pour le support et une récupération rapide."
+      }
+    ],
+    "cta_title": "Prêt à éliminer la routine ?",
+    "cta_description": "Montrez-nous vos processus — nous vous montrerons où se cachent 80% d'économies",
+    "cta_button": "Demander un audit"
+  },
+  "services_ai": {
+    "meta_title": "Intégration IA | Swiss IT",
+    "meta_description": "Intégration de l'intelligence artificielle dans les processus métier. ChatGPT, Claude, modèles personnalisés. Chatbots, analyse de données, automatisation.",
+    "badge1": "GPT-4 & Claude",
+    "badge2": "LLM & ML",
+    "hero_title_1": "Intelligence Artificielle —",
+    "hero_title_2": "votre avantage concurrentiel",
+    "hero_description": "Nous intégrons l'IA dans vos processus métier. Assistants intelligents, analyse de documents, analytics prédictif — les technologies OpenAI et Claude au service de votre entreprise.",
+    "cta_discuss": "Discuter de l'implémentation IA",
+    "cta_usecases": "Cas d'usage",
+    "problems_title": "Ça vous dit quelque chose ?",
+    "problems_subtitle": "L'IA résout ces tâches mieux et moins cher que les humains",
+    "problems": [
+      {
+        "title": "Tâches routinières",
+        "description": "Les employés passent des heures à répondre aux questions types, traiter des documents, compiler des rapports"
+      },
+      {
+        "title": "Pénurie d'experts",
+        "description": "Les spécialistes coûteux sont occupés par la routine au lieu des tâches stratégiques"
+      },
+      {
+        "title": "Perte d'information",
+        "description": "Les connaissances sont dispersées dans les documents, chats, têtes des employés — trouver ce qu'il faut est impossible"
+      },
+      {
+        "title": "Opportunités manquées",
+        "description": "Les données existent, mais il n'y a pas de temps et d'outils pour les analyser et en extraire des insights"
+      },
+      {
+        "title": "Support lent",
+        "description": "Les clients attendent des heures pour les réponses, et la nuit et le week-end le support est indisponible"
+      },
+      {
+        "title": "Pas de personnalisation",
+        "description": "Tous les clients ont la même expérience, bien que les données de personnalisation existent"
+      }
+    ],
+    "benefits_title": "Ce que l'IA apporte à votre business",
+    "benefits_subtitle": "Solutions concrètes que nous implémentons",
+    "benefits": [
+      {
+        "title": "Assistants IA 24/7",
+        "description": "Des bots intelligents répondent aux questions, aident au choix, traitent les demandes. Instantanément, sans jours fériés, dans toutes les langues"
+      },
+      {
+        "title": "Traitement intelligent de documents",
+        "description": "L'IA extrait les données des contrats, factures, CV. Classifie, résume, trouve les anomalies"
+      },
+      {
+        "title": "Recherche sémantique",
+        "description": "Recherche par sens, pas par mots. Trouve le pertinent dans la base de connaissances, documents, correspondances"
+      },
+      {
+        "title": "Analytics prédictif",
+        "description": "Prévision de la demande, attrition clients, risques. Prenez des décisions basées sur les données, pas l'intuition"
+      },
+      {
+        "title": "Génération de contenu",
+        "description": "Création automatique de descriptions produits, réponses aux avis, textes marketing dans votre style"
+      },
+      {
+        "title": "Vision par ordinateur",
+        "description": "Reconnaissance de produits, défauts, visages, documents. Automatisation du contrôle visuel"
+      }
+    ],
+    "usecases_title": "Cas d'usage",
+    "usecases_subtitle": "Solutions standard avec ROI prouvé",
+    "usecases": [
+      {
+        "title": "Support intelligent",
+        "description": "Chatbot qui comprend le contexte, se souvient de l'historique, résout 80% des questions sans humain",
+        "results": [
+          "80% questions sans opérateur",
+          "Réponse en 2 secondes",
+          "Fonctionnement 24/7/365",
+          "Toutes les langues"
+        ]
+      },
+      {
+        "title": "Traitement de documents",
+        "description": "Extraction de données de PDF, scans, photos. Remplissage de formulaires, vérification de conformité",
+        "results": [
+          "95% précision OCR",
+          "-90% travail manuel",
+          "Vérification en secondes",
+          "Intégration CRM"
+        ]
+      },
+      {
+        "title": "Recherche entreprise",
+        "description": "Recherche dans toutes les sources : documents, email, Slack, Confluence. Réponses aux questions de la base de connaissances",
+        "results": [
+          "Recherche sémantique",
+          "Réponses aux questions",
+          "Classement par pertinence",
+          "Support droits d'accès"
+        ]
+      },
+      {
+        "title": "Business Analytics",
+        "description": "Prévisions de ventes, analyse de tendances, détection d'anomalies, recommandations de prix",
+        "results": [
+          "Prévision de demande",
+          "Analyse d'attrition",
+          "Segmentation clients",
+          "Tarification dynamique"
+        ]
+      },
+      {
+        "title": "Contenu & Marketing",
+        "description": "Génération de descriptions, personnalisation de newsletters, tests A/B de textes, analyse d'avis",
+        "results": [
+          "Descriptions produits",
+          "Personnalisation email",
+          "Analyse de sentiment",
+          "Optimisation SEO"
+        ]
+      },
+      {
+        "title": "Contrôle visuel",
+        "description": "Inspection qualité produit, reconnaissance de défauts, contrôle de sécurité",
+        "results": [
+          "99% précision",
+          "Temps réel",
+          "Intégration ligne",
+          "Rapports & alertes"
+        ]
+      }
+    ],
+    "tech_title": "Technologies",
+    "tech_subtitle": "Nous utilisons les meilleurs modèles et frameworks",
+    "process_title": "Comment nous implémentons l'IA",
+    "process_subtitle": "De l'idée à la production en 2-3 mois",
+    "process": [
+      {
+        "step": "01",
+        "title": "Audit & Stratégie",
+        "duration": "1-2 semaines",
+        "description": "Nous analysons les processus, trouvons les points d'application IA avec ROI maximum. Créons la roadmap d'implémentation.",
+        "deliverables": [
+          "Carte des processus",
+          "Évaluation ROI",
+          "Sélection modèles",
+          "Roadmap"
+        ]
+      },
+      {
+        "step": "02",
+        "title": "Proof of Concept",
+        "duration": "2-4 semaines",
+        "description": "Nous créons un prototype fonctionnel sur données réelles. Prouvons la valeur avant implémentation complète.",
+        "deliverables": [
+          "Prototype fonctionnel",
+          "Métriques qualité",
+          "Estimation coûts",
+          "Décision Go/No-Go"
+        ]
+      },
+      {
+        "step": "03",
+        "title": "Développement & Intégration",
+        "duration": "4-8 semaines",
+        "description": "Nous développons la solution de production. Intégrons avec vos systèmes. Configurons le monitoring.",
+        "deliverables": [
+          "API Production",
+          "Intégrations",
+          "Monitoring",
+          "Documentation"
+        ]
+      },
+      {
+        "step": "04",
+        "title": "Optimisation",
+        "duration": "En continu",
+        "description": "Fine-tuning des modèles sur vos données, amélioration de la qualité, extension des cas d'usage.",
+        "deliverables": [
+          "Modèles fine-tunés",
+          "Amélioration métriques",
+          "Nouveaux scénarios",
+          "Formation équipe"
+        ]
+      }
+    ],
+    "results_title": "Résultats typiques",
+    "results": [
+      {
+        "metric": "80%",
+        "label": "Automatisation support"
+      },
+      {
+        "metric": "10x",
+        "label": "Accélération traitement"
+      },
+      {
+        "metric": "95%",
+        "label": "Précision reconnaissance"
+      },
+      {
+        "metric": "< 2 sec",
+        "label": "Temps réponse IA"
+      }
+    ],
+    "pricing_title": "Coût d'implémentation IA",
+    "pricing_description": "Proof of Concept — à partir de 5 000 CHF. Solution de production — à partir de 15 000 CHF. Le coût dépend de la complexité d'intégration et du volume de données. Plus les coûts API modèles (typiquement $100-500/mois).",
+    "pricing_cta": "Obtenir une estimation",
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Quel modèle choisir : GPT-4, Claude ou open-source ?",
+        "answer": "GPT-4 — meilleur choix pour tâches complexes et communication multilingue. Claude — excellent pour analyse de longs documents. Open-source (LLaMA, Mistral) — quand la confidentialité des données compte ou que le fine-tuning est nécessaire. Nous utilisons souvent des combinaisons : open-source pour tâches simples, GPT-4 pour les complexes."
+      },
+      {
+        "question": "Comment assurer la sécurité des données avec l'IA ?",
+        "answer": "Plusieurs niveaux de protection : utilisation d'APIs avec garanties de confidentialité (données non utilisées pour l'entraînement), déploiement de modèles open-source sur votre infrastructure, anonymisation des données avant envoi, chiffrement en transit et au repos."
+      },
+      {
+        "question": "Combien de données faut-il pour entraîner l'IA ?",
+        "answer": "Pour RAG (recherche documentaire) — vos documents existants suffisent. Pour le fine-tuning il faut 100-1000 exemples de qualité labellés. Pour l'entraînement from scratch — des millions d'exemples. Dans 90% des cas RAG + prompt engineering suffisent."
+      },
+      {
+        "question": "L'IA va-t-elle halluciner et donner de mauvaises réponses ?",
+        "answer": "Le risque existe, mais nous le minimisons : RAG lie les réponses à vos documents, nous ajustons la température du modèle, ajoutons des vérifications de faits, montrons les sources. Pour les scénarios critiques nous ajoutons un humain dans la boucle."
+      }
+    ],
+    "cta_title": "Prêt à implémenter l'IA ?",
+    "cta_description": "Parlez-nous de vos processus — nous trouverons les points d'application IA avec ROI maximum",
+    "cta_button": "Discuter du projet"
+  },
+  "services_websites": {
+    "meta_title": "Développement Web | SwissTech",
+    "meta_description": "Nous créons des sites qui vendent. Temps de chargement <2 sec, conversion au-dessus du marché, SEO inclus. Des landing pages aux plateformes complexes.",
+    "badge": "Développement Web",
+    "hero_title_1": "Des sites qui",
+    "hero_title_2": "vendent, pas qui existent juste",
+    "hero_description": "Nous créons des produits web qui travaillent pour votre business : rapides, beaux, convertissants. D'une landing page en une semaine à une plateforme complexe. Chaque projet est adapté à vos objectifs, pas à un modèle de constructeur.",
+    "cta_benefits": "Pourquoi nous",
+    "cta_types": "Types de sites",
+    "problems_title": "Ça vous dit quelque chose ?",
+    "problems_solution": "Le développement professionnel résout ces problèmes systématiquement.",
+    "problems": [
+      "Votre site ressemble à des milliers d'autres",
+      "Chargement lent — les clients partent",
+      "Pas de demandes malgré le trafic",
+      "Le site n'apparaît pas sur Google",
+      "L'édition du contenu est compliquée",
+      "La version mobile est cassée"
+    ],
+    "benefits_title": "Pourquoi nos sites fonctionnent",
+    "benefits_subtitle": "Pas juste une belle image — un outil business",
+    "benefits": [
+      {
+        "title": "Vitesse <2 secondes",
+        "description": "Optimisation Core Web Vitals, lazy loading, CDN. Site rapide = plus de conversions et meilleur classement Google."
+      },
+      {
+        "title": "SEO inclus",
+        "description": "Balisage sémantique, meta tags, sitemap, schema.org. Votre site est trouvé dès le premier jour."
+      },
+      {
+        "title": "Conversion au-dessus du marché",
+        "description": "Design UX basé sur les données, CTAs clairs, A/B testing. Nous transformons les visiteurs en clients."
+      },
+      {
+        "title": "Mobile-first",
+        "description": "60%+ du trafic depuis mobile. Nous concevons d'abord pour les téléphones, puis adaptons pour desktop."
+      },
+      {
+        "title": "Sécurité",
+        "description": "HTTPS, protection XSS/CSRF, mises à jour régulières. Conformité RGPD pour le marché européen."
+      },
+      {
+        "title": "Code propre",
+        "description": "Stack moderne, documentation, maintenance facile. Votre équipe peut développer le site de manière autonome."
+      }
+    ],
+    "comparison_title": "Constructeur vs Développement",
+    "comparison_subtitle": "Quand vous avez besoin d'un site professionnel",
+    "comparison_template_label": "Constructeur / Template",
+    "comparison_custom_label": "Développement professionnel",
+    "comparison_template": [
+      "Design template comme des milliers de sites",
+      "Chargement lent à cause du code superflu",
+      "Personnalisation limitée",
+      "Problèmes de SEO et d'accessibilité",
+      "Difficile à faire évoluer",
+      "Dépendance au constructeur"
+    ],
+    "comparison_custom": [
+      "Design unique pour votre marque",
+      "Optimisation à la milliseconde",
+      "N'importe quelle fonctionnalité",
+      "SEO et accessibilité from scratch",
+      "Architecture pour la croissance",
+      "Contrôle total sur le code"
+    ],
+    "types_title": "Ce que nous créons",
+    "types_subtitle": "De la simple landing à la plateforme complexe",
+    "types": [
+      {
+        "title": "Landing Pages",
+        "description": "Sites d'une page pour lancements de produits, promotions, génération de leads"
+      },
+      {
+        "title": "Sites corporate",
+        "description": "Représentation d'entreprise avec catalogue de services et portfolio"
+      },
+      {
+        "title": "E-commerce",
+        "description": "Boutiques en ligne avec panier, paiements et intégration ERP"
+      },
+      {
+        "title": "Plateformes de contenu",
+        "description": "Blogs, médias, bases de connaissances avec CMS pratique"
+      },
+      {
+        "title": "SaaS et Web Apps",
+        "description": "Produits complexes avec comptes utilisateurs et API"
+      },
+      {
+        "title": "Refonte",
+        "description": "Mise à jour de sites obsolètes en préservant le SEO"
+      }
+    ],
+    "stack_title": "Technologies",
+    "stack_subtitle": "Stack moderne pour une performance maximale",
+    "stack": [
+      {
+        "category": "Frontend",
+        "items": [
+          "React",
+          "Next.js",
+          "Vue",
+          "TypeScript",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "category": "Backend",
+        "items": [
+          "Node.js",
+          "Python",
+          "PostgreSQL",
+          "Redis"
+        ]
+      },
+      {
+        "category": "CMS",
+        "items": [
+          "Strapi",
+          "Sanity",
+          "WordPress",
+          "Contentful"
+        ]
+      },
+      {
+        "category": "Infrastructure",
+        "items": [
+          "Vercel",
+          "AWS",
+          "Cloudflare",
+          "Docker"
+        ]
+      }
+    ],
+    "process_title": "Comment nous travaillons",
+    "process": [
+      {
+        "step": "01",
+        "title": "Analyse",
+        "description": "Étudier le business, l'audience, les concurrents. Former le cahier des charges."
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "description": "Prototypes, UI-kit, maquettes responsive. Validation."
+      },
+      {
+        "step": "03",
+        "title": "Développement",
+        "description": "Intégration, programmation, intégrations, tests."
+      },
+      {
+        "step": "04",
+        "title": "Lancement",
+        "description": "Déploiement, configuration analytics, formation, support."
+      }
+    ],
+    "results_title": "Résultats de nos projets",
+    "results": [
+      {
+        "value": "<2 sec",
+        "label": "temps de chargement"
+      },
+      {
+        "value": "90+",
+        "label": "PageSpeed Score"
+      },
+      {
+        "value": "+150%",
+        "label": "croissance conversion"
+      },
+      {
+        "value": "Top 10",
+        "label": "Google en 3 mois"
+      }
+    ],
+    "pricing_title": "Tarifs",
+    "pricing_description": "Landing page — à partir de 3000 CHF, site corporate — à partir de 8000 CHF, e-commerce — à partir de 15000 CHF, plateforme complexe — sur devis.",
+    "pricing_hint": "Nous donnerons le prix exact après discussion du projet — première consultation gratuite.",
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Combien de temps prend le développement ?",
+        "answer": "Landing page — 1-2 semaines, site corporate — 3-6 semaines, e-commerce — 6-10 semaines, plateforme complexe — 2-4 mois. Nous montrons les progrès chaque semaine."
+      },
+      {
+        "question": "Puis-je éditer le contenu moi-même ?",
+        "answer": "Oui, nous connectons un CMS pratique (Strapi, Sanity, WordPress). Nous formons votre équipe et fournissons des guides vidéo. L'édition est comme dans Word."
+      },
+      {
+        "question": "Qu'en est-il de l'hébergement et du domaine ?",
+        "answer": "Nous aidons à choisir et configurer. Habituellement nous utilisons Vercel ou AWS — rapide, fiable, évolutif. Nous pouvons héberger sur vos serveurs."
+      },
+      {
+        "question": "Y a-t-il un support après le lancement ?",
+        "answer": "Oui, nous offrons des forfaits de support : mises à jour, sauvegardes, monitoring, petites améliorations. Nous pouvons aussi transférer le projet à votre équipe avec documentation."
+      }
+    ]
+  },
+  "services_telegram_apps": {
+    "meta_title": "Telegram Mini Apps | SwissTech",
+    "meta_description": "Développement Telegram Mini Apps : boutiques en ligne, services de réservation, comptes personnels. 900+ millions d'utilisateurs sans installation App Store.",
+    "badge": "Telegram Mini Apps",
+    "hero_title_1": "Application sans App Store",
+    "hero_title_2": "dans la poche de 900 millions de personnes",
+    "hero_description": "Telegram Mini Apps — applications complètes dans le messager. Boutiques en ligne, services de réservation, jeux, outils financiers. Sans téléchargement, sans modération, avec paiements instantanés. Votre business là où les clients sont déjà.",
+    "cta_benefits": "Avantages Mini Apps",
+    "cta_comparison": "Comparer avec Native",
+    "problems_title": "Pourquoi développer une app native ?",
+    "problems_solution": "Mini App résout tous ces problèmes — et se lance beaucoup plus vite.",
+    "problems": [
+      "Des mois de développement et des dizaines de milliers $",
+      "Les utilisateurs ne veulent rien télécharger",
+      "La modération App Store prend une éternité",
+      "80% des apps sont supprimées après la première utilisation",
+      "Besoin d'équipes iOS et Android séparées",
+      "Difficile de concurrencer les géants dans les stores"
+    ],
+    "benefits_title": "Pourquoi Mini Apps",
+    "benefits_subtitle": "Tous les avantages d'une app mobile sans ses inconvénients",
+    "benefits": [
+      {
+        "title": "Sans installation",
+        "description": "L'app s'ouvre directement dans Telegram — pas besoin de télécharger depuis l'App Store ou Google Play."
+      },
+      {
+        "title": "900+ millions d'audience",
+        "description": "Accès à l'énorme base d'utilisateurs Telegram. Votre app là où les clients sont déjà."
+      },
+      {
+        "title": "Paiements intégrés",
+        "description": "Telegram Payments, cryptomonnaies, Stars — les utilisateurs paient en quelques clics sans saisir de carte."
+      },
+      {
+        "title": "Lancement instantané",
+        "description": "Développement plus rapide et moins cher qu'une app native. MVP en 2-4 semaines."
+      },
+      {
+        "title": "Multiplateforme",
+        "description": "Fonctionne sur iOS, Android, Desktop et Web — un seul code pour toutes les plateformes."
+      },
+      {
+        "title": "Fonctions natives",
+        "description": "Accès à la caméra, géolocalisation, contacts, biométrie — comme une app normale."
+      }
+    ],
+    "comparison_title": "Native vs Mini App",
+    "comparison_subtitle": "Comparez et choisissez le chemin optimal",
+    "comparison_native_label": "Application native",
+    "comparison_miniapp_label": "Telegram Mini App",
+    "comparison_native": [
+      "3-6 mois de développement",
+      "Équipes iOS + Android séparées",
+      "Modération App Store/Google Play",
+      "Mises à jour difficiles",
+      "Faut convaincre de télécharger",
+      "Coût élevé : $50K+"
+    ],
+    "comparison_miniapp": [
+      "2-8 semaines de développement",
+      "Une équipe, un code",
+      "Sans modération des stores",
+      "Mises à jour instantanées",
+      "Déjà installé chez les clients",
+      "Coût à partir de 5K CHF"
+    ],
+    "usecases_title": "Ce que vous pouvez créer",
+    "usecases_subtitle": "Exemples de Mini Apps réussies",
+    "usecases": [
+      {
+        "title": "E-commerce",
+        "description": "Boutiques en ligne complètes avec catalogue, panier et paiement"
+      },
+      {
+        "title": "Réservation",
+        "description": "Prise de rendez-vous, réservation de tables, billets, consultations"
+      },
+      {
+        "title": "Finance",
+        "description": "Portefeuilles, transferts p2p, plateformes d'investissement"
+      },
+      {
+        "title": "Fidélité",
+        "description": "Programmes de fidélité, cartes bonus, coupons de réduction"
+      },
+      {
+        "title": "Jeux",
+        "description": "Jeux casual, quiz, concours avec prix"
+      },
+      {
+        "title": "Comptes personnels",
+        "description": "Gestion des abonnements, historique des commandes, paramètres du profil"
+      }
+    ],
+    "features_title": "Capacités de la plateforme",
+    "features": [
+      "Mode plein écran et gestes natifs",
+      "Authentification Telegram (sans inscription)",
+      "Notifications push et rappels",
+      "Telegram Payments et TON/cryptomonnaies",
+      "Intégration avec bots et canaux",
+      "Géolocalisation et cartes",
+      "Mode hors ligne et cache",
+      "Thème sombre et design responsive"
+    ],
+    "process_title": "Comment nous créons les Mini Apps",
+    "process": [
+      {
+        "step": "01",
+        "title": "Concept",
+        "description": "Définir les fonctionnalités, le flux UX et la monétisation"
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "description": "Créer l'interface selon les guidelines Telegram"
+      },
+      {
+        "step": "03",
+        "title": "Développement",
+        "description": "React/Vue + Telegram SDK, intégrations et paiements"
+      },
+      {
+        "step": "04",
+        "title": "Lancement",
+        "description": "Tests, déploiement et promotion dans Telegram"
+      }
+    ],
+    "results_title": "Résultats Mini Apps",
+    "results": [
+      {
+        "value": "10×",
+        "label": "moins cher que native"
+      },
+      {
+        "value": "2-8",
+        "label": "semaines jusqu'au lancement"
+      },
+      {
+        "value": "70%",
+        "label": "rétention plus élevée"
+      },
+      {
+        "value": "0",
+        "label": "commission App Store"
+      }
+    ],
+    "pricing_title": "Coût de développement",
+    "pricing_description": "MVP Mini App — à partir de 5000 CHF, complexité moyenne avec paiements — à partir de 10000 CHF, solution complète avec intégrations — à partir de 20000 CHF.",
+    "pricing_hint": "5 à 10 fois moins cher qu'une app native avec des fonctionnalités comparables.",
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Quelle est la différence entre Mini App et un bot ?",
+        "answer": "Un bot est une interface textuelle avec des boutons. Mini App est une application graphique complète avec n'importe quel UI. Vous pouvez combiner : bot pour les actions simples, Mini App pour les complexes."
+      },
+      {
+        "question": "Ai-je besoin d'un serveur séparé ?",
+        "answer": "Oui, Mini App est une application web qui nécessite un backend. Nous déployons sur des serveurs cloud avec mise à l'échelle automatique."
+      },
+      {
+        "question": "Comment promouvoir Mini App ?",
+        "answer": "Via les canaux Telegram, les bots, la publicité Telegram Ads. La viralité fonctionne aussi — les utilisateurs partagent les apps avec leurs amis."
+      },
+      {
+        "question": "Puis-je accepter des paiements en devise locale ?",
+        "answer": "Oui, via Telegram Payments avec des fournisseurs locaux. Les cryptomonnaies et TON sont également disponibles — méthodes universelles pour toute région."
+      }
+    ]
+  },
+  "services_telegram_bots": {
+    "meta_title": "Bots Telegram | Swiss Made IT",
+    "meta_description": "Développement de bots Telegram pour entreprises : automatisation des ventes, support client 24/7, intégration CRM et systèmes de paiement.",
+    "badge": "Bots Telegram",
+    "hero_title_1": "Votre entreprise dans la poche",
+    "hero_title_2": "de chaque client",
+    "hero_description": "Bots Telegram qui vendent, supportent et automatisent. Réponses instantanées 24/7, traitement des paiements, intégration avec vos systèmes. Les clients obtiennent le service là où c'est pratique — dans leur messagerie préférée.",
+    "cta_benefits": "Pourquoi vous avez besoin d'un bot",
+    "cta_usecases": "Cas d'utilisation",
+    "problems_title": "Ça vous dit quelque chose?",
+    "problems_solution": "Un bot Telegram résout ces problèmes automatiquement et fonctionne 24h/24.",
+    "problems": [
+      "Les clients écrivent la nuit — pas de réponse avant le matin",
+      "Les managers perdent du temps sur des questions répétitives",
+      "Les leads se perdent entre les canaux",
+      "Les clients partent chez les concurrents avec des réponses plus rapides",
+      "Difficile de suivre toutes les demandes",
+      "Pas de ventes le week-end et les jours fériés"
+    ],
+    "benefits_title": "Pourquoi votre entreprise a besoin d'un bot Telegram",
+    "benefits_subtitle": "Automatisation rentable dès le premier mois",
+    "benefits": [
+      {
+        "title": "Support 24/7 sans personnel",
+        "description": "Le bot répond aux clients instantanément à tout moment. Week-ends, jours fériés, nuit — toujours disponible."
+      },
+      {
+        "title": "Automatisation des routines",
+        "description": "Accepter les demandes, répondre aux FAQ, notifications, rappels — le bot le fait sans les managers."
+      },
+      {
+        "title": "Traitement des paiements",
+        "description": "Intégration avec les systèmes de paiement : les clients achètent directement dans Telegram sans quitter l'app."
+      },
+      {
+        "title": "900+ millions d'utilisateurs",
+        "description": "Telegram est l'une des messageries les plus populaires. Vos clients y sont déjà."
+      },
+      {
+        "title": "Analytiques et métriques",
+        "description": "Suivez les conversions, les requêtes populaires, le temps de réponse — prenez des décisions basées sur les données."
+      },
+      {
+        "title": "IA et NLP",
+        "description": "Bots intelligents avec intégration GPT comprenant le langage naturel et menant des conversations significatives."
+      }
+    ],
+    "usecases_title": "Ce que nos bots peuvent faire",
+    "usecases_subtitle": "Cas d'utilisation typiques",
+    "usecases": [
+      {
+        "title": "Support client",
+        "description": "Réponses FAQ, routage des demandes, escalade vers un agent en direct"
+      },
+      {
+        "title": "Ventes et commandes",
+        "description": "Catalogue de produits, panier, paiement sans quitter Telegram"
+      },
+      {
+        "title": "Notifications",
+        "description": "Statuts de commande, rappels, alertes d'équipe"
+      },
+      {
+        "title": "RH et recrutement",
+        "description": "Réception de CV, screening de candidats, onboarding des employés"
+      },
+      {
+        "title": "Intégrations",
+        "description": "Connexion avec CRM, ERP, Google Sheets, paiements et toute API"
+      },
+      {
+        "title": "Sondages et collecte de données",
+        "description": "Formulaires de feedback, NPS, questionnaires clients"
+      }
+    ],
+    "features_title": "Fonctionnalités des bots",
+    "features": [
+      "Menus multi-niveaux et boutons inline",
+      "Personnalisation basée sur les données utilisateur",
+      "Support multilingue",
+      "Intégration ChatGPT / Claude",
+      "Intégrations Webhook et API",
+      "Traitement des paiements (Stripe, crypto)",
+      "Panneau d'administration",
+      "Analytiques et rapports"
+    ],
+    "process_title": "Comment nous créons les bots",
+    "process": [
+      {
+        "step": "01",
+        "title": "Analyse",
+        "description": "Nous étudions vos processus et déterminons ce qu'il faut automatiser"
+      },
+      {
+        "step": "02",
+        "title": "Conception",
+        "description": "Nous créons les flux de dialogue, menus et intégrations"
+      },
+      {
+        "step": "03",
+        "title": "Développement",
+        "description": "Nous codons le bot, connectons les APIs et paiements"
+      },
+      {
+        "step": "04",
+        "title": "Lancement",
+        "description": "Tests, formation de l'équipe, support"
+      }
+    ],
+    "results_title": "Résultats de nos bots",
+    "results": [
+      {
+        "value": "-60%",
+        "label": "charge de support"
+      },
+      {
+        "value": "24/7",
+        "label": "disponibilité"
+      },
+      {
+        "value": "<3 sec",
+        "label": "temps de réponse"
+      },
+      {
+        "value": "+40%",
+        "label": "conversion des ventes"
+      }
+    ],
+    "pricing_title": "Tarification",
+    "pricing_description": "Le prix dépend de la complexité : bot FAQ simple — à partir de 1 500 CHF, bot avec paiements et intégrations — à partir de 4 000 CHF, solution IA entreprise — sur devis.",
+    "pricing_hint": "Consultation gratuite — nous vous dirons ce dont vous avez vraiment besoin",
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Combien de temps prend le développement?",
+        "answer": "Bot simple — 1-2 semaines, complexité moyenne avec intégrations — 3-4 semaines, entreprise complexe — 1-2 mois. Première version fonctionnelle en une semaine."
+      },
+      {
+        "question": "Pouvez-vous vous connecter à notre CRM?",
+        "answer": "Oui, nous intégrons avec tout système via API : amoCRM, Bitrix24, Salesforce, HubSpot, 1C, Google Sheets et solutions personnalisées."
+      },
+      {
+        "question": "Comment le bot comprend-il différentes formulations?",
+        "answer": "Nous utilisons NLP et l'intégration ChatGPT/Claude pour la compréhension du langage naturel. Le bot reconnaît les intentions même avec des fautes de frappe."
+      },
+      {
+        "question": "Et si le bot ne connaît pas la réponse?",
+        "answer": "Nous configurons l'escalade vers un agent en direct. Le bot transmet le contexte de la conversation pour que le client n'ait pas à se répéter."
+      }
+    ]
+  },
+  "services_cloud": {
+    "meta_title": "Migration Cloud | SwissTech",
+    "meta_description": "Migration cloud sécurisée: AWS, Azure, GCP. Réduction des coûts jusqu'à 40%, évolutivité, conformité GDPR et Swiss DPA.",
+    "badge": "Migration Cloud",
+    "hero_title_1": "Migrez vers le cloud",
+    "hero_title_2": "sans douleur ni risques",
+    "hero_description": "Fatigué des coûts de serveurs et de la mise à l'échelle complexe? Nous migrons vos systèmes vers le cloud: AWS, Azure, GCP ou fournisseurs suisses. Réduction des coûts jusqu'à 40%, uptime 99.99%, conformité GDPR et Swiss DPA.",
+    "cta_benefits": "Avantages du cloud",
+    "cta_compare": "Comparer avec on-premise",
+    "problems_title": "Problèmes familiers?",
+    "problems": [
+      "Les serveurs sont inactifs mais les factures arrivent",
+      "La mise à l'échelle nécessite des semaines de planification",
+      "Chaque mise à jour est un risque d'indisponibilité",
+      "L'équipe IT passe du temps sur des tâches routinières",
+      "Pas de confiance dans la tolérance aux pannes",
+      "Difficile de répondre aux exigences GDPR"
+    ],
+    "problems_conclusion": "Le cloud résout ces problèmes — et nous vous aiderons à migrer sans douleur.",
+    "benefits_title": "Pourquoi le Cloud",
+    "benefits_subtitle": "Pas seulement une tendance — de vrais avantages commerciaux",
+    "benefits": [
+      {
+        "title": "Réduction des coûts jusqu'à 40%",
+        "description": "Payez uniquement pour les ressources utilisées. Pas de dépenses pour serveurs, refroidissement et électricité."
+      },
+      {
+        "title": "Mise à l'échelle en minutes",
+        "description": "Croissance automatique des ressources sous charge. Black Friday ou trafic viral — le système gère."
+      },
+      {
+        "title": "Sécurité entreprise",
+        "description": "Chiffrement des données, isolation réseau, conformité GDPR et Swiss DPA intégrée."
+      },
+      {
+        "title": "Uptime 99.99%",
+        "description": "Infrastructure multi-régionale, récupération automatique, sauvegardes horaires."
+      },
+      {
+        "title": "DevOps intégré",
+        "description": "Pipelines CI/CD, déploiements automatiques, rollback en secondes. Publiez plus vite et plus sûrement."
+      },
+      {
+        "title": "Visibilité totale",
+        "description": "Monitoring, logs, alertes — connaissez l'état du système en temps réel, réagissez avant que les clients ne remarquent."
+      }
+    ],
+    "comparison_title": "On-premise vs Cloud",
+    "comparison_subtitle": "Comparez et voyez les avantages",
+    "comparison_onprem_label": "On-premise",
+    "comparison_cloud_label": "Cloud",
+    "comparison_onprem": [
+      "Dépenses en capital pour les serveurs",
+      "Mise à l'échelle complexe — semaines",
+      "Temps d'arrêt lors des mises à jour matérielles",
+      "Disponibilité géographique limitée",
+      "Vulnérabilité aux pannes locales",
+      "Équipe IT occupée par la routine",
+      "Obsolescence du matériel en 3-5 ans"
+    ],
+    "comparison_cloud": [
+      "Dépenses opérationnelles par abonnement",
+      "Auto-scaling en minutes",
+      "Déploiements sans temps d'arrêt",
+      "CDN global et emplacements edge",
+      "Tolérance aux pannes multi-régionale",
+      "L'IT se concentre sur le produit",
+      "Infrastructure toujours à jour"
+    ],
+    "services_title": "Ce que nous faisons",
+    "services_subtitle": "Cycle complet de migration cloud et support",
+    "services": [
+      {
+        "title": "Migration Cloud",
+        "description": "Lift-and-shift ou refactoring — nous choisissons la stratégie adaptée à vos besoins"
+      },
+      {
+        "title": "Kubernetes & Docker",
+        "description": "Conteneurisation, orchestration, auto-scaling des microservices"
+      },
+      {
+        "title": "Pipelines CI/CD",
+        "description": "Automatisation du build, des tests et du déploiement"
+      },
+      {
+        "title": "Bases de données managées",
+        "description": "PostgreSQL, MySQL, MongoDB — sans problèmes de sauvegardes et réplication"
+      },
+      {
+        "title": "Sécurité",
+        "description": "IAM, chiffrement, VPN, WAF, audit et conformité"
+      },
+      {
+        "title": "Monitoring",
+        "description": "Prometheus, Grafana, alertes et rotation on-call"
+      }
+    ],
+    "providers_title": "Choix du fournisseur",
+    "providers_subtitle": "Nous travaillons avec tous les grands fournisseurs cloud",
+    "providers": [
+      {
+        "name": "AWS",
+        "description": "Plus grand écosystème, idéal pour projets complexes"
+      },
+      {
+        "name": "Azure",
+        "description": "Meilleure intégration avec la stack Microsoft"
+      },
+      {
+        "name": "GCP",
+        "description": "Fort en ML/AI et analytique de données"
+      },
+      {
+        "name": "Swiss Cloud",
+        "description": "Pour les données qui doivent rester en Suisse"
+      }
+    ],
+    "process_title": "Comment nous migrons",
+    "process": [
+      {
+        "step": "01",
+        "title": "Audit",
+        "description": "Analyse de l'infrastructure actuelle, des dépendances et des exigences"
+      },
+      {
+        "step": "02",
+        "title": "Planification",
+        "description": "Choix de la stratégie de migration, du fournisseur et de l'architecture"
+      },
+      {
+        "step": "03",
+        "title": "Migration",
+        "description": "Migration par phases avec temps d'arrêt minimal"
+      },
+      {
+        "step": "04",
+        "title": "Optimisation",
+        "description": "Optimisation des performances et des coûts, formation de l'équipe"
+      }
+    ],
+    "results_title": "Résultats des migrations",
+    "results": [
+      {
+        "value": "-40%",
+        "label": "coûts d'infrastructure"
+      },
+      {
+        "value": "99.99%",
+        "label": "uptime"
+      },
+      {
+        "value": "10×",
+        "label": "vitesse de déploiement"
+      },
+      {
+        "value": "0",
+        "label": "temps d'arrêt pendant migration"
+      }
+    ],
+    "tech_title": "Technologies",
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Combien de temps prend la migration?",
+        "answer": "Dépend de la complexité: services simples — 2-4 semaines, grande infrastructure avec refactoring — 2-4 mois. Nous procédons par phases avec impact minimal sur l'activité."
+      },
+      {
+        "question": "Y aura-t-il un temps d'arrêt pendant la migration?",
+        "answer": "Nous utilisons le déploiement blue-green et la migration progressive. Dans la plupart des cas — zéro temps d'arrêt. Pour les systèmes critiques, nous planifions des fenêtres de maintenance la nuit."
+      },
+      {
+        "question": "Quel fournisseur cloud est le meilleur?",
+        "answer": "Dépend des tâches: AWS — universel et riche en services, Azure — pour la stack Microsoft, GCP — fort en analytique et ML. Pour les données en Suisse, il existe des fournisseurs locaux."
+      },
+      {
+        "question": "Qu'en est-il de la sécurité et du GDPR?",
+        "answer": "Toutes les solutions sont conçues avec GDPR et Swiss DPA en tête: chiffrement, IAM, logging, choix de la région de stockage des données. Nous effectuons une revue de sécurité avant le lancement."
+      }
+    ]
+  },
+  "services_accessibility": {
+    "meta_title": "Accessibilité et Design Inclusif | Swiss Made IT",
+    "meta_description": "Audit d'accessibilité, conformité WCAG 2.1 AA/AAA, design inclusif. Rendez votre produit accessible à tous les utilisateurs et conforme à la législation.",
+    "badge_1": "WCAG 2.1",
+    "badge_2": "Design Inclusif",
+    "badge_3": "Compatible lecteur d'écran",
+    "hero_title_1": "Un site pour ",
+    "hero_title_2": "chaque",
+    "hero_title_3": " utilisateur",
+    "hero_description": "15% des personnes ont des limitations de santé. Les lois se durcissent, les poursuites augmentent. Nous rendons votre produit accessible à tous et conforme aux WCAG 2.1 AA/AAA.",
+    "cta_audit": "Commander un audit",
+    "cta_wcag": "Niveaux WCAG",
+    "problems_label": "Problèmes",
+    "problems_title": "Pourquoi l'accessibilité n'est pas optionnelle",
+    "problems_subtitle": "Un site inaccessible signifie des clients perdus, des risques de réputation et des problèmes juridiques",
+    "problems": [
+      {
+        "title": "Risques Juridiques",
+        "description": "Dans l'UE et en Suisse, les lois sur l'accessibilité se durcissent. Les poursuites pour sites inaccessibles deviennent réalité"
+      },
+      {
+        "title": "Perte de 15% de l'audience",
+        "description": "15% de la population a des limitations de santé. Un site inaccessible perd simplement ces clients"
+      },
+      {
+        "title": "Problèmes de vision",
+        "description": "Mauvais contraste, petites polices, zoom non fonctionnel — les utilisateurs âgés ne peuvent pas utiliser le site"
+      },
+      {
+        "title": "La souris n'est pas pour tous",
+        "description": "La navigation uniquement à la souris exclut les utilisateurs ayant des troubles moteurs"
+      },
+      {
+        "title": "Contenu sans alternatives",
+        "description": "Vidéo sans sous-titres, images sans descriptions, audio sans transcriptions"
+      },
+      {
+        "title": "Sémantique cassée",
+        "description": "Les lecteurs d'écran ne peuvent pas lire le site: div au lieu de button, pas de titres, rôles ARIA incorrects"
+      }
+    ],
+    "benefits_label": "Avantages",
+    "benefits_title": "L'accessibilité est un avantage commercial",
+    "benefits_subtitle": "Les investissements dans l'accessibilité sont rentabilisés par l'expansion de l'audience, l'amélioration du SEO et la protection contre les risques",
+    "benefits": [
+      {
+        "title": "Plus de Clients",
+        "description": "Un site accessible fonctionne pour tous — élargissez votre audience et augmentez la conversion"
+      },
+      {
+        "title": "Conformité Légale",
+        "description": "WCAG 2.1 AA/AAA, ADA, Section 508, EN 301 549 — protection contre les poursuites et amendes"
+      },
+      {
+        "title": "Meilleur SEO",
+        "description": "HTML sémantique, textes alt, contenu structuré — ce que les moteurs de recherche adorent"
+      },
+      {
+        "title": "Réputation de Marque",
+        "description": "L'inclusivité est une valeur. Les clients choisissent les entreprises qui se soucient de tous"
+      },
+      {
+        "title": "Meilleure UX pour Tous",
+        "description": "Grands boutons, navigation claire, textes lisibles améliorent l'expérience de chaque utilisateur"
+      },
+      {
+        "title": "Mobilité et Contextes",
+        "description": "Un site accessible fonctionne dehors en plein soleil, dans le métro bruyant, d'une seule main"
+      }
+    ],
+    "wcag_label": "WCAG 2.1",
+    "wcag_title": "Niveaux de Conformité",
+    "wcag_subtitle": "Web Content Accessibility Guidelines — standard international d'accessibilité du contenu web",
+    "wcag_recommended": "Recommandé",
+    "wcag_levels": [
+      {
+        "level": "A",
+        "title": "Niveau Minimum",
+        "description": "Exigences de base: textes alt, contrôle au clavier, pas de contenu clignotant",
+        "criteria": "25 critères"
+      },
+      {
+        "level": "AA",
+        "title": "Niveau Recommandé",
+        "description": "Standard business: contraste 4,5:1, redimensionnement jusqu'à 200%, sous-titres vidéo",
+        "criteria": "13 critères"
+      },
+      {
+        "level": "AAA",
+        "title": "Niveau Avancé",
+        "description": "Accessibilité maximale: contraste 7:1, langue des signes, audiodescription étendue",
+        "criteria": "23 critères"
+      }
+    ],
+    "services_label": "Services",
+    "services_title": "Flux de travail d'accessibilité complet",
+    "services_subtitle": "De l'audit à la remédiation et certification — nous prenons en charge tout le travail",
+    "services": [
+      {
+        "title": "Audit d'Accessibilité",
+        "description": "Vérification complète du site WCAG 2.1: tests automatisés + analyse manuelle + tests avec de vrais utilisateurs"
+      },
+      {
+        "title": "Rapport de Conformité",
+        "description": "Rapport détaillé avec chaque problème trouvé, son impact, sa priorité et sa solution spécifique"
+      },
+      {
+        "title": "Remédiation des Problèmes",
+        "description": "Pas seulement un rapport — nous corrigeons le code nous-mêmes: sémantique, ARIA, focus, contrastes, textes alternatifs"
+      },
+      {
+        "title": "Tests Lecteur d'Écran",
+        "description": "Tests avec NVDA, JAWS, VoiceOver, TalkBack — comment votre site fonctionne réellement pour les aveugles"
+      },
+      {
+        "title": "Navigation Clavier Seul",
+        "description": "Fonctionnement complet du site sans souris: focus, ordre de tabulation, liens skip, pièges clavier"
+      },
+      {
+        "title": "Documentation et Formation",
+        "description": "Guides pour designers et développeurs: comment maintenir l'accessibilité pendant l'évolution du produit"
+      }
+    ],
+    "tools_label": "Outils",
+    "tools_title": "Boîte à Outils Professionnelle",
+    "process_label": "Processus",
+    "process_title": "De l'Audit au Certificat",
+    "process": [
+      {
+        "step": "01",
+        "title": "Audit",
+        "description": "Scan automatisé axe/WAVE + tests manuels + vérification avec technologies assistives",
+        "duration": "3-5 jours"
+      },
+      {
+        "step": "02",
+        "title": "Rapport",
+        "description": "Rapport structuré: problème → impact → priorité → solution → critère WCAG",
+        "duration": "2-3 jours"
+      },
+      {
+        "step": "03",
+        "title": "Remédiation",
+        "description": "Corriger les problèmes par priorité. Critiques d'abord, cosmétiques en dernier",
+        "duration": "1-4 semaines"
+      },
+      {
+        "step": "04",
+        "title": "Validation",
+        "description": "Re-tests, vérification des corrections, certificat de conformité WCAG",
+        "duration": "2-3 jours"
+      }
+    ],
+    "results_label": "Résultats",
+    "results_title": "Ce que Vous Obtenez",
+    "results": [
+      {
+        "value": "100%",
+        "label": "Conformité WCAG",
+        "sublabel": "du niveau choisi"
+      },
+      {
+        "value": "+15%",
+        "label": "Nouvelle Audience",
+        "sublabel": "clients potentiels"
+      },
+      {
+        "value": "0",
+        "label": "Risques Juridiques",
+        "sublabel": "protection contre les poursuites"
+      },
+      {
+        "value": "↑SEO",
+        "label": "Classements de Recherche",
+        "sublabel": "HTML sémantique"
+      }
+    ],
+    "pricing_title": "Accessibilité Certifiée",
+    "pricing_description": "Le coût dépend de la taille du site et de l'état actuel. Audit express à partir de 1 500 CHF, audit complet + remédiation à partir de 5 000 CHF.",
+    "pricing_cta": "Obtenir un Devis",
+    "faq_label": "FAQ",
+    "faq_title": "Questions Fréquentes",
+    "faq": [
+      {
+        "question": "Quel niveau WCAG nous faut-il?",
+        "answer": "Pour la plupart des sites commerciaux — WCAG 2.1 AA. C'est une exigence légale de l'UE et de la Suisse, un équilibre optimal entre accessibilité et coûts. AAA est nécessaire pour les services gouvernementaux et applications médicales."
+      },
+      {
+        "question": "Combien de temps prend un audit?",
+        "answer": "Audit express des pages principales — 3-5 jours. Audit complet d'un site moyen (50-100 pages) — 2-3 semaines. Pour les grands portails, nous créons un plan individuel."
+      },
+      {
+        "question": "Un site peut-il être rendu 100% accessible?",
+        "answer": "L'accessibilité parfaite est un processus, pas un résultat. Nous atteignons la conformité avec le niveau WCAG choisi et fournissons des outils pour maintenir l'accessibilité pendant l'évolution du produit."
+      },
+      {
+        "question": "Comment cela affectera-t-il le design du site?",
+        "answer": "Accessibilité ≠ design ennuyeux. Les techniques modernes permettent de préserver la créativité et la marque. Souvent, les solutions accessibles améliorent même l'UX globale pour tous les utilisateurs."
+      }
+    ],
+    "cta_title": "Rendez votre produit accessible à tous",
+    "cta_description": "Commencez par une vérification express gratuite de votre page d'accueil. Découvrez maintenant le niveau d'accessibilité de votre site.",
+    "cta_button": "Commander un Audit d'Accessibilité"
+  },
+  "services_devops": {
+    "meta_title": "DevOps & SRE | Swiss IT",
+    "meta_description": "Pipelines CI/CD, conteneurisation, monitoring et infrastructure as code. Livraison et exploitation fiables de vos systèmes.",
+    "badge_devops": "DevOps",
+    "badge_sre": "SRE",
+    "hero_title": "DevOps & SRE —",
+    "hero_title_gradient": "livraison fiable",
+    "hero_description": "Nous mettons en place des processus d'intégration et de livraison continues. Conteneurisation, monitoring, infrastructure as code — vos releases deviennent prévisibles et sécurisées.",
+    "hero_cta": "Discuter de l'Infrastructure",
+    "services_title": "Ce que nous faisons",
+    "services": [
+      {
+        "title": "Pipelines CI/CD",
+        "description": "Automatisation du build, des tests et du déploiement. GitHub Actions, GitLab CI, Jenkins — nous choisissons selon votre stack."
+      },
+      {
+        "title": "Conteneurisation",
+        "description": "Docker, Kubernetes, orchestration. Environnements isolés, mise à l'échelle, déploiement prévisible."
+      },
+      {
+        "title": "Monitoring & Alerting",
+        "description": "Prometheus, Grafana, ELK Stack. Métriques, logs, tracing — voyez tout ce qui se passe dans votre système."
+      },
+      {
+        "title": "Infrastructure as Code",
+        "description": "Terraform, Ansible, CloudFormation. Infrastructure reproductible, versionnement, automatisation."
+      },
+      {
+        "title": "DevSecOps",
+        "description": "Sécurité intégrée au pipeline. Scan des dépendances, secrets, vulnérabilités."
+      },
+      {
+        "title": "Pratiques SRE",
+        "description": "SLI/SLO/SLA, error budgets, gestion des incidents. La fiabilité comme discipline d'ingénierie."
+      }
+    ],
+    "benefits_title": "Résultats de l'Implémentation",
+    "benefits": [
+      {
+        "metric": "↑",
+        "label": "Fréquence des Déploiements"
+      },
+      {
+        "metric": "↓",
+        "label": "Temps de Récupération"
+      },
+      {
+        "metric": "↑",
+        "label": "Stabilité du Système"
+      },
+      {
+        "metric": "↓",
+        "label": "Opérations Manuelles"
+      }
+    ],
+    "benefits_note": "Les métriques concrètes dépendent de l'état initial de l'infrastructure",
+    "tech_title": "Technologies",
+    "cta_title": "Prêt à Optimiser l'Infrastructure ?",
+    "cta_description": "Parlez-nous de l'état actuel — nous proposerons un plan d'amélioration",
+    "cta_button": "Discuter du Projet"
+  },
+  "services_digital_reboot": {
+    "meta_title": "Redémarrage Digital de l'Entreprise | SwissTech",
+    "meta_description": "Transformation complète d'une entreprise obsolète en un écosystème numérique moderne. Redesign, automatisation, intégrations — résultats dès le premier jour.",
+    "badge": "Redémarrage Digital",
+    "hero_title": "Transformez votre entreprise obsolète",
+    "hero_title_gradient": "en machine de croissance digitale",
+    "hero_description": "Redémarrage complet : d'un site web ancien et du chaos dans les processus — vers un écosystème moderne qui vend, automatise et évolue. Les clients voient la différence dès le premier clic.",
+    "hero_cta": "En savoir plus",
+    "hero_cta_secondary": "Voir Avant / Après",
+    "problem_title": "Ça vous dit quelque chose ?",
+    "problems": [
+      "Le site ressemble à 2010",
+      "Les concurrents prennent vos clients",
+      "Les managers se noient dans la routine",
+      "Aucune compréhension de ce qui fonctionne ou non",
+      "Chaque changement coûte du temps et de l'argent",
+      "Les clients partent sans attendre de réponse"
+    ],
+    "problem_conclusion": "Ce n'est pas une condamnation. C'est le point de départ de la transformation.",
+    "benefits_title": "Ce que vous obtiendrez",
+    "benefits_subtitle": "Pas seulement un nouveau site — un écosystème numérique complet qui travaille pour votre entreprise",
+    "benefits": [
+      {
+        "title": "Croissance de conversion jusqu'à 3×",
+        "description": "UX moderne, chargement rapide et CTAs clairs transforment les visiteurs en clients."
+      },
+      {
+        "title": "Économisez 20+ heures par semaine",
+        "description": "Automatisation de la routine : rapports, notifications, synchronisation des données — tout fonctionne sans vous."
+      },
+      {
+        "title": "L'équipe travaille plus efficacement",
+        "description": "Un système au lieu d'une dizaine d'outils disparates. Moins de chaos, plus de résultats."
+      },
+      {
+        "title": "Lancement en 4-8 semaines",
+        "description": "Pas des années de développement, mais des résultats rapides. Approche itérative : premières améliorations visibles immédiatement."
+      },
+      {
+        "title": "Sécurité et RGPD",
+        "description": "Conformité aux normes européennes de protection des données. Chiffrement, audit, contrôle d'accès."
+      },
+      {
+        "title": "Évolutivité",
+        "description": "Architecture qui grandit avec votre entreprise. Ajoutez des fonctionnalités sans reconstruire la base."
+      }
+    ],
+    "before_after_title": "Avant et Après",
+    "before_after_subtitle": "La vraie différence que voient nos clients",
+    "before_label": "Avant",
+    "after_label": "Après",
+    "before": [
+      "Site obsolète avec faible conversion",
+      "Traitement manuel des leads dans Excel",
+      "Les clients attendent des heures pour une réponse",
+      "Données dispersées dans différents systèmes",
+      "Les employés passent du temps sur la routine",
+      "Pas d'analytique — décisions à l'intuition",
+      "Chaque changement est douloureux et coûteux"
+    ],
+    "after": [
+      "Site moderne avec conversion supérieure au marché",
+      "CRM traite automatiquement les leads",
+      "Bot répond aux clients instantanément 24/7",
+      "Écosystème unifié avec synchronisation",
+      "L'automatisation libère 20+ h/sem",
+      "Tableaux de bord avec métriques en temps réel",
+      "Système flexible — changements en heures"
+    ],
+    "included_title": "Ce qui est inclus dans le redémarrage",
+    "included": [
+      {
+        "title": "Refonte du site",
+        "desc": "UI/UX moderne, chargement rapide, version mobile, SEO"
+      },
+      {
+        "title": "Système CRM",
+        "desc": "Automatisation des ventes, entonnoirs, tâches, intégrations"
+      },
+      {
+        "title": "Bot Telegram",
+        "desc": "Support client 24/7, notifications, capture de leads"
+      },
+      {
+        "title": "Analytique",
+        "desc": "Tableaux de bord, métriques, rapports en temps réel"
+      },
+      {
+        "title": "Automatisation",
+        "desc": "Séquences d'emails, rappels, synchronisation des données"
+      },
+      {
+        "title": "Intégrations",
+        "desc": "Systèmes de paiement, livraison, services externes"
+      },
+      {
+        "title": "Formation",
+        "desc": "Guides vidéo et documentation pour votre équipe"
+      },
+      {
+        "title": "Support",
+        "desc": "Support technique et mises à jour après le lancement"
+      }
+    ],
+    "process_title": "Comment ça fonctionne",
+    "process": [
+      {
+        "step": "01",
+        "title": "Audit",
+        "desc": "Nous analysons l'état actuel : site, processus, outils, points de douleur"
+      },
+      {
+        "step": "02",
+        "title": "Stratégie",
+        "desc": "Nous créons un plan de transformation avec priorités et calendrier"
+      },
+      {
+        "step": "03",
+        "title": "Mise en œuvre",
+        "desc": "Implémentation par phases : d'abord le critique, puis les améliorations"
+      },
+      {
+        "step": "04",
+        "title": "Lancement",
+        "desc": "Tests, formation de l'équipe, monitoring et optimisation"
+      }
+    ],
+    "results_title": "Résultats Clients",
+    "results": [
+      {
+        "value": "3×",
+        "label": "croissance de conversion"
+      },
+      {
+        "value": "-60%",
+        "label": "temps sur la routine"
+      },
+      {
+        "value": "24/7",
+        "label": "support client"
+      },
+      {
+        "value": "4-8",
+        "label": "semaines jusqu'au lancement"
+      }
+    ],
+    "faq_title": "Questions Fréquentes",
+    "faq": [
+      {
+        "q": "Combien ça coûte ?",
+        "a": "Dépend de l'échelle : de la simple refonte à l'écosystème complet. Nous estimons après l'audit et proposons des options pour votre budget. Première consultation gratuite."
+      },
+      {
+        "q": "Combien de temps prendra la transformation ?",
+        "a": "Redémarrage de base — 4-8 semaines. Écosystème complet — 2-4 mois. Nous travaillons par itérations : vous verrez les premiers résultats en 2-3 semaines."
+      },
+      {
+        "q": "Et si nous n'avons pas d'équipe technique ?",
+        "a": "Ce n'est pas un problème. Nous gérons tous les aspects techniques et formons votre équipe à utiliser les nouveaux outils. Après le lancement — support et consultations."
+      },
+      {
+        "q": "Peut-on commencer petit ?",
+        "a": "Oui, nous recommandons de commencer par le domaine le plus problématique. Par exemple, d'abord le site, puis le CRM, puis l'automatisation. L'approche par phases réduit les risques et répartit le budget."
+      }
+    ]
+  },
+  "services_discovery": {
+    "meta_title": "Product Discovery | Swiss IT",
+    "meta_description": "Recherche et validation d'idées de produits. User research, prototypage, test d'hypothèses avant le début du développement.",
+    "badge_discovery": "Discovery",
+    "badge_research": "Research",
+    "hero_title": "Product Discovery —",
+    "hero_title_gradient": "avant de construire",
+    "hero_description": "Nous vous aidons à formuler et tester votre idée avant le début du développement. User research, prototypage, validation d'hypothèses — économisez temps et budget.",
+    "hero_cta": "Discuter de l'idée",
+    "services_title": "Ce que Discovery inclut",
+    "services": [
+      {
+        "title": "User Research",
+        "description": "Interviews, enquêtes, analyse comportementale. Nous comprenons les vrais besoins de vos utilisateurs."
+      },
+      {
+        "title": "Validation d'idées",
+        "description": "Nous testons les hypothèses avant le développement. Minimiser le risque de créer un produit inutile."
+      },
+      {
+        "title": "Prototypage",
+        "description": "Prototypes interactifs pour tests utilisateurs. Itérations rapides."
+      },
+      {
+        "title": "Analyse de marché",
+        "description": "Concurrents, tendances, opportunités. Données pour la prise de décision."
+      },
+      {
+        "title": "Expertise technique",
+        "description": "Évaluation de faisabilité, sélection technologique, décisions architecturales."
+      },
+      {
+        "title": "Spécification MVP",
+        "description": "Nous définissons la fonctionnalité minimale pour le lancement et la validation du produit."
+      }
+    ],
+    "process_title": "Processus",
+    "process": [
+      {
+        "step": "01",
+        "title": "Immersion",
+        "description": "Nous étudions votre entreprise, public cible, solutions existantes"
+      },
+      {
+        "step": "02",
+        "title": "Recherche",
+        "description": "Mener des interviews, analyser les données, formuler des hypothèses"
+      },
+      {
+        "step": "03",
+        "title": "Prototype",
+        "description": "Créer des prototypes, tester avec les utilisateurs, itérer"
+      },
+      {
+        "step": "04",
+        "title": "Spécification",
+        "description": "Préparer des spécifications détaillées et un plan de développement MVP"
+      }
+    ],
+    "cta_title": "Avez-vous une idée de produit ?",
+    "cta_description": "Nous vous aiderons à la tester avant le début du développement",
+    "cta_button": "Discuter du projet"
+  },
+  "services_documentation": {
+    "meta_title": "Documentation Technique | Swiss IT",
+    "meta_description": "Documentation technique, références API, guides utilisateur. Documentation qui est lue, pas ignorée.",
+    "problems_title": "Ça vous dit quelque chose ?",
+    "problems_subtitle": "Le coût de l'absence de documentation est plus élevé qu'on ne le pense",
+    "problems": [
+      {
+        "title": "Pas de documentation",
+        "description": "Seul le développeur sait comment le système fonctionne. Il part — les connaissances partent aussi"
+      },
+      {
+        "title": "Onboarding lent",
+        "description": "Les nouveaux employés passent des semaines à comprendre le système, distrayant leurs collègues avec des questions"
+      },
+      {
+        "title": "Introuvable",
+        "description": "La documentation existe mais est dispersée entre Confluence, Google Docs, Notion et les têtes des gens"
+      },
+      {
+        "title": "Informations obsolètes",
+        "description": "Documentation écrite il y a un an, le système a changé au-delà de toute reconnaissance depuis"
+      },
+      {
+        "title": "API peu claire",
+        "description": "Les intégrateurs ne peuvent pas se connecter sans appeler vos développeurs"
+      },
+      {
+        "title": "Risques de sécurité",
+        "description": "Sans documentation, l'audit, la certification et la conformité sont impossibles"
+      }
+    ],
+    "benefits_title": "Ce qu'apporte une bonne documentation",
+    "benefits_subtitle": "Un investissement qui rapporte plusieurs fois",
+    "benefits": [
+      {
+        "title": "Équipe autonome",
+        "description": "Les développeurs trouvent les réponses eux-mêmes, sans appels ni attente. La vitesse de développement augmente"
+      },
+      {
+        "title": "Onboarding rapide",
+        "description": "Le nouvel employé devient productif en jours, pas en mois. Économies sur la formation"
+      },
+      {
+        "title": "Intégrations plus rapides",
+        "description": "Les partenaires se connectent via la documentation sans votre implication. Plus d'intégrations — plus de croissance"
+      },
+      {
+        "title": "Réduction des risques",
+        "description": "Les connaissances ne se perdent pas lors des changements d'équipe. Les systèmes critiques sont protégés"
+      },
+      {
+        "title": "Source unique de vérité",
+        "description": "Toute la documentation en un seul endroit avec versionnement et recherche"
+      },
+      {
+        "title": "Mise à l'échelle",
+        "description": "Écrit une fois — utilisé par des centaines. La documentation se met à l'échelle gratuitement"
+      }
+    ],
+    "doc_types": [
+      {
+        "title": "Documentation API",
+        "description": "Références interactives pour développeurs",
+        "features": [
+          "OpenAPI/Swagger",
+          "Exemples de code",
+          "Try it out",
+          "Auto-génération"
+        ]
+      },
+      {
+        "title": "Description technique",
+        "description": "Architecture, déploiement, administration",
+        "features": [
+          "Diagrammes d'architecture",
+          "Runbooks",
+          "Troubleshooting",
+          "Configuration"
+        ]
+      },
+      {
+        "title": "Guides utilisateur",
+        "description": "Instructions pour les utilisateurs finaux",
+        "features": [
+          "Guides étape par étape",
+          "Captures d'écran/GIF",
+          "FAQ",
+          "Instructions vidéo"
+        ]
+      },
+      {
+        "title": "Onboarding",
+        "description": "Démarrage rapide pour les nouveaux membres",
+        "features": [
+          "Getting Started",
+          "Tutorials",
+          "Best Practices",
+          "Code Examples"
+        ]
+      },
+      {
+        "title": "Documentation produit",
+        "description": "Description des fonctionnalités du produit",
+        "features": [
+          "Release Notes",
+          "Feature Specs",
+          "Roadmap",
+          "Changelog"
+        ]
+      },
+      {
+        "title": "Documentation de processus",
+        "description": "Description des workflows d'équipe",
+        "features": [
+          "Definition of Done",
+          "Code Review",
+          "CI/CD",
+          "Branching Strategy"
+        ]
+      }
+    ],
+    "tools_title": "Outils",
+    "tools_subtitle": "Nous choisissons la stack optimale pour vos tâches",
+    "process_title": "Comment nous créons la documentation",
+    "process_subtitle": "Approche systématique de la préservation des connaissances",
+    "process": [
+      {
+        "step": "01",
+        "title": "Audit des connaissances",
+        "duration": "1 semaine",
+        "description": "Analyser la documentation existante, identifier les lacunes, interviewer les personnes clés.",
+        "deliverables": [
+          "Carte des connaissances",
+          "Analyse des écarts",
+          "Priorités",
+          "Structure"
+        ]
+      },
+      {
+        "step": "02",
+        "title": "Architecture de documentation",
+        "duration": "1 semaine",
+        "description": "Concevoir la structure, choisir les outils, configurer la plateforme et les processus.",
+        "deliverables": [
+          "Architecture de l'information",
+          "Plateforme",
+          "Modèles",
+          "Style Guide"
+        ]
+      },
+      {
+        "step": "03",
+        "title": "Création de contenu",
+        "duration": "2-6 semaines",
+        "description": "Écrire la documentation, créer des diagrammes, enregistrer des vidéos. Itérativement avec révision.",
+        "deliverables": [
+          "API Reference",
+          "Guides",
+          "Tutorials",
+          "Diagrammes"
+        ]
+      },
+      {
+        "step": "04",
+        "title": "Support et mises à jour",
+        "duration": "En continu",
+        "description": "Intégrer la documentation dans CI/CD, configurer le processus de mise à jour, former l'équipe.",
+        "deliverables": [
+          "Docs-as-Code",
+          "Review Process",
+          "Métriques",
+          "Formation"
+        ]
+      }
+    ],
+    "results_title": "Résultats typiques",
+    "results": [
+      {
+        "metric": "70%",
+        "label": "Moins de questions sur Slack"
+      },
+      {
+        "metric": "3x",
+        "label": "Onboarding plus rapide"
+      },
+      {
+        "metric": "50%",
+        "label": "Intégrations plus rapides"
+      },
+      {
+        "metric": "0",
+        "label": "Connaissances perdues"
+      }
+    ],
+    "pricing_title": "Tarifs de documentation",
+    "pricing_description": "Documentation API — à partir de 3 000 CHF. Documentation de projet complète — à partir de 8 000 CHF. Le prix dépend de la taille du système et de la profondeur requise. Audit de documentation existante — gratuit.",
+    "pricing_cta": "Audit gratuit",
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "La documentation sera obsolète dans un mois. Pourquoi l'écrire ?",
+        "answer": "Docs-as-Code : la documentation vit à côté du code, se met à jour avec lui, passe par la révision. Auto-génération des docs API à partir du code. Des processus qui font de la mise à jour une partie du développement, pas une tâche séparée."
+      },
+      {
+        "question": "Nous n'avons pas le temps pour la documentation",
+        "answer": "Le temps consacré à la documentation est rentabilisé plusieurs fois : moins d'appels, onboarding plus rapide, moins de bugs dus aux malentendus. Nous écrivons la documentation nous-mêmes — vous n'avez qu'à réviser et répondre aux questions."
+      },
+      {
+        "question": "Quel format de documentation est le meilleur ?",
+        "answer": "Dépend du public. Pour les développeurs — Markdown dans le repository ou Docusaurus. Pour les utilisateurs — guides interactifs avec vidéo. Pour l'enterprise — Confluence ou GitBook. Nous vous aiderons à choisir."
+      },
+      {
+        "question": "Pouvez-vous documenter le code de quelqu'un d'autre ?",
+        "answer": "Oui, c'est notre spécialité. Nous faisons une revue de code, parlons avec les développeurs, comprenons la logique. Nous documentons des systèmes legacy écrits il y a 10 ans par des gens qui ne sont plus là."
+      }
+    ],
+    "cta_title": "Prêt à préserver les connaissances ?",
+    "cta_description": "Ne perdez pas l'expertise de votre équipe. La documentation est un investissement dans l'avenir du projet.",
+    "cta_button": "Discuter de la documentation",
+    "badge1": "Docs-as-Code",
+    "badge2": "API & User Guides",
+    "title": "Documentation —",
+    "title_gradient": "connaissances qui ne se perdent pas",
+    "description": "Nous créons une documentation technique qui est lue. Références API, guides, onboarding — tout pour que votre équipe et vos partenaires travaillent efficacement.",
+    "cta_primary": "Commander la documentation",
+    "cta_secondary": "Types de documentation",
+    "doc_types_title": "Types de documentation",
+    "doc_types_subtitle": "Nous créons de la documentation pour tout public"
+  },
+  "services_integration": {
+    "meta_title": "Intégrations et API | Swiss IT",
+    "meta_description": "Développement et intégration d'API. Nous connectons les systèmes entre eux : CRM, ERP, systèmes de paiement, services externes.",
+    "badge1": "API",
+    "badge2": "Intégrations",
+    "title": "Intégrations et API —",
+    "title_gradient": "un écosystème connecté",
+    "description": "Nous développons des APIs et intégrons des systèmes. CRM, ERP, passerelles de paiement, services externes — vos données sont synchronisées et disponibles là où c'est nécessaire.",
+    "cta_primary": "Discuter de l'intégration",
+    "services_title": "Ce que nous faisons",
+    "services": [
+      {
+        "title": "Développement API",
+        "description": "REST, GraphQL, gRPC — nous choisissons l'approche pour la tâche. Documentation, versioning, tests."
+      },
+      {
+        "title": "Intégration de systèmes",
+        "description": "Nous connectons vos systèmes entre eux. Synchronisation des données, source unique de vérité."
+      },
+      {
+        "title": "CRM et ERP",
+        "description": "Salesforce, HubSpot, 1C, SAP — nous intégrons avec vos systèmes métier."
+      },
+      {
+        "title": "Systèmes de paiement",
+        "description": "Stripe, PayPal, Twint — acceptation des paiements et intégration financière."
+      },
+      {
+        "title": "Services externes",
+        "description": "Marketplaces, logistique, banques, systèmes gouvernementaux — toutes les APIs externes."
+      },
+      {
+        "title": "ETL et synchronisation",
+        "description": "Échange automatique de données entre systèmes. Transformation, validation, monitoring."
+      }
+    ],
+    "tech_title": "Technologies et protocoles",
+    "cta_title": "Besoin d'intégration ?",
+    "cta_description": "Dites-nous quels systèmes doivent être connectés — nous proposerons une solution",
+    "cta_button": "Discuter du projet"
+  },
+  "services_maintenance": {
+    "meta_title": "Support Technique | Swiss IT",
+    "meta_description": "Support technique et maintenance des systèmes. Monitoring, mises à jour, correction de bugs. Conditions SLA flexibles.",
+    "badge1": "Support",
+    "badge2": "Maintenance",
+    "title": "Support Technique —",
+    "title_gradient": "fonctionnement stable",
+    "description": "Nous assurons le fonctionnement stable de vos systèmes. Monitoring, mises à jour, correction de bugs — conditions SLA flexibles selon vos besoins.",
+    "cta_primary": "Discuter du support",
+    "services_title": "Ce qui est inclus",
+    "services": [
+      {
+        "title": "Monitoring 24/7",
+        "description": "Nous surveillons l'état du système, les métriques de performance, la disponibilité des services."
+      },
+      {
+        "title": "Réponse aux incidents",
+        "description": "Réponse rapide aux problèmes. Le temps de réponse est convenu dans le SLA."
+      },
+      {
+        "title": "Mises à jour et patches",
+        "description": "Mises à jour de sécurité régulières, dépendances, systèmes d'exploitation."
+      },
+      {
+        "title": "Sauvegarde",
+        "description": "Sauvegardes automatiques, vérification de restauration, stockage selon les règlements."
+      },
+      {
+        "title": "Optimisation",
+        "description": "Analyse des performances, élimination des goulots d'étranglement, mise à l'échelle."
+      },
+      {
+        "title": "Reporting",
+        "description": "Rapports réguliers sur l'état du système, travaux effectués, recommandations."
+      }
+    ],
+    "sla_title": "Options SLA",
+    "sla_subtitle": "Les conditions sont discutées individuellement selon vos besoins",
+    "sla": [
+      {
+        "title": "Basic",
+        "response": "jusqu'à 24 heures",
+        "description": "Jours ouvrables, tâches standard",
+        "features": [
+          "Support email",
+          "Mises à jour de sécurité",
+          "Rapports mensuels"
+        ]
+      },
+      {
+        "title": "Business",
+        "response": "jusqu'à 4 heures",
+        "description": "Support étendu",
+        "features": [
+          "Email + chat",
+          "Monitoring 24/7",
+          "Rapports hebdomadaires",
+          "Tâches prioritaires"
+        ]
+      },
+      {
+        "title": "Enterprise",
+        "response": "jusqu'à 1 heure",
+        "description": "Systèmes critiques",
+        "features": [
+          "Manager dédié",
+          "Appels à tout moment",
+          "Monitoring en temps réel",
+          "SLA avec garanties"
+        ]
+      }
+    ],
+    "cta_title": "Besoin de support ?",
+    "cta_description": "Parlez-nous de votre système — nous trouverons le bon format",
+    "cta_button": "Discuter des conditions"
+  },
+  "services_modernization": {
+    "meta_title": "Modernisation des systèmes | SwissTech",
+    "meta_description": "Transformez le code legacy obsolète en un système moderne et évolutif. Refactoring, mise à niveau de la plateforme, amélioration des performances.",
+    "badge": "Modernisation des systèmes",
+    "title": "Transformez le legacy",
+    "title_gradient": "en avantage concurrentiel",
+    "description": "Le code obsolète ralentit votre entreprise ? Nous modernisons les systèmes sans arrêter les opérations : refactoring, mise à niveau de plateforme, amélioration de l'architecture. Résultat — un système rapide, sécurisé et évolutif.",
+    "cta_primary": "Pourquoi moderniser",
+    "cta_secondary": "Exemples de migration",
+    "problems_title": "Symptômes familiers ?",
+    "problems": [
+      "'N'y touche pas, ça marche' — devise de l'équipe",
+      "Une fonctionnalité simple prend des semaines",
+      "Les développeurs démissionnent à cause du legacy",
+      "Les bugs reviennent sans cesse",
+      "Peur avant chaque déploiement",
+      "Impossible de mettre à jour les dépendances"
+    ],
+    "problems_footer": "La dette technique s'accumule au fil des ans, mais vous la payez chaque jour.",
+    "benefits_title": "Pourquoi moderniser",
+    "benefits_subtitle": "L'investissement dans la modernisation se rentabilise plus vite qu'on ne le pense",
+    "benefits": [
+      {
+        "title": "Vitesse de développement 3×",
+        "description": "Code propre, architecture modulaire et autotests — les nouvelles fonctionnalités sortent plus vite sans crainte de casser l'ancien."
+      },
+      {
+        "title": "Coûts de support réduits",
+        "description": "Moins de bugs, onboarding plus facile des nouveaux développeurs, documentation et structure claire."
+      },
+      {
+        "title": "Croissance des performances",
+        "description": "Optimisation des requêtes, cache, frameworks modernes — le système fonctionne plus vite."
+      },
+      {
+        "title": "Sécurité et conformité",
+        "description": "Mises à jour des dépendances, correction des vulnérabilités, conformité aux normes modernes."
+      },
+      {
+        "title": "Attractivité pour les talents",
+        "description": "Les développeurs veulent travailler avec une stack moderne. Plus facile de recruter et de retenir l'équipe."
+      },
+      {
+        "title": "Prêt pour la mise à l'échelle",
+        "description": "Architecture qui grandit avec l'entreprise. Microservices, conteneurs, cloud."
+      }
+    ],
+    "comparison_title": "Legacy vs Moderne",
+    "comparison_subtitle": "Comment le développement change après modernisation",
+    "comparison_legacy_label": "Legacy",
+    "comparison_modern_label": "Après modernisation",
+    "comparison_legacy": [
+      "Chaque changement risque de tout casser",
+      "Les nouvelles fonctionnalités prennent des mois",
+      "Les développeurs ont peur de toucher au code",
+      "Documentation obsolète ou inexistante",
+      "Vulnérabilités dans les anciennes dépendances",
+      "Impossible de mettre à l'échelle",
+      "Difficile de trouver des spécialistes"
+    ],
+    "comparison_modern": [
+      "Déploiement confiant avec autotests",
+      "Releases chaque semaine",
+      "Code clair et prévisible",
+      "Documentation et typage à jour",
+      "Dépendances modernes et sécurisées",
+      "Mise à l'échelle horizontale",
+      "Stack attractive pour le recrutement"
+    ],
+    "services_title": "Ce que nous faisons",
+    "services_subtitle": "Approche complète de la modernisation",
+    "services": [
+      {
+        "title": "Refactoring du code",
+        "description": "Amélioration de la structure sans changement de fonctionnalité"
+      },
+      {
+        "title": "Modernisation de l'architecture",
+        "description": "Du monolithe aux microservices ou monolithe modulaire"
+      },
+      {
+        "title": "Mise à niveau de plateforme",
+        "description": "Mise à jour du langage, du framework, de la base de données"
+      },
+      {
+        "title": "Couverture de tests",
+        "description": "Tests unit, intégration, e2e pour des changements sûrs"
+      },
+      {
+        "title": "Pipelines CI/CD",
+        "description": "Automatisation du build, des tests et du déploiement"
+      },
+      {
+        "title": "Renforcement de la sécurité",
+        "description": "Audit de sécurité et élimination des vulnérabilités"
+      }
+    ],
+    "scenarios_title": "Exemples de migration",
+    "scenarios_subtitle": "Scénarios typiques de modernisation",
+    "scenarios": [
+      {
+        "title": "PHP 5 → PHP 8 / Laravel",
+        "description": "Mise à niveau de legacy WordPress ou PHP personnalisé vers une stack moderne"
+      },
+      {
+        "title": "jQuery → React / Vue",
+        "description": "Migration frontend vers architecture de composants"
+      },
+      {
+        "title": "Monolithe → Microservices",
+        "description": "Décomposition d'un grand système en services gérables"
+      },
+      {
+        "title": "On-premise → Cloud",
+        "description": "Migration cloud avec conteneurisation"
+      },
+      {
+        "title": "Python 2 → Python 3",
+        "description": "Migration depuis une version de langage obsolète"
+      },
+      {
+        "title": ".NET Framework → .NET 8",
+        "description": "Modernisation d'applications Windows"
+      }
+    ],
+    "process_title": "Comment nous modernisons",
+    "process": [
+      {
+        "step": "01",
+        "title": "Audit",
+        "description": "Analyse du code, de l'architecture, des dépendances et de la dette technique"
+      },
+      {
+        "step": "02",
+        "title": "Stratégie",
+        "description": "Choix de l'approche : strangler fig, big bang ou migration progressive"
+      },
+      {
+        "step": "03",
+        "title": "Réalisation",
+        "description": "Modernisation itérative en maintenant l'opérabilité"
+      },
+      {
+        "step": "04",
+        "title": "Transfert",
+        "description": "Documentation, formation de l'équipe, support post-lancement"
+      }
+    ],
+    "results_title": "Résultats de la modernisation",
+    "results": [
+      {
+        "value": "3×",
+        "label": "vitesse de développement"
+      },
+      {
+        "value": "-60%",
+        "label": "bugs en production"
+      },
+      {
+        "value": "80%",
+        "label": "couverture de tests"
+      },
+      {
+        "value": "0",
+        "label": "temps d'arrêt pendant la migration"
+      }
+    ],
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Peut-on moderniser sans arrêter l'entreprise ?",
+        "answer": "Oui, nous utilisons le pattern Strangler Fig — les nouvelles parties du système démarrent en parallèle des anciennes, le trafic bascule progressivement. L'entreprise fonctionne sans interruption."
+      },
+      {
+        "question": "Combien de temps prendra la modernisation ?",
+        "answer": "Dépend de la taille et de la complexité du système. Petits projets — 1-2 mois, grands systèmes enterprise — 6-12 mois. Nous travaillons par itérations, premières améliorations visibles en 2-4 semaines."
+      },
+      {
+        "question": "Et si l'équipe ne connaît pas la nouvelle stack ?",
+        "answer": "Nous formons votre équipe pendant la modernisation : pair programming, code review, workshops. Après le transfert, l'équipe travaille en confiance avec le nouveau code."
+      },
+      {
+        "question": "N'est-il pas plus simple de réécrire de zéro ?",
+        "answer": "Réécrire de zéro signifie des années de développement, une logique métier perdue et des risques élevés. La modernisation préserve les connaissances accumulées et livre des résultats plus rapidement."
+      }
+    ]
+  },
+  "services_research": {
+    "meta_title": "Analytique et Stratégie | SwissTech",
+    "meta_description": "Prenez des décisions basées sur les données. Analyse de marché, recherche concurrentielle, audit de systèmes — plan d'action avec résultats prévisibles.",
+    "badge": "Analytique et Stratégie",
+    "title": "Des décisions basées sur les données,",
+    "title_gradient": "pas sur les suppositions",
+    "description": "Arrêtez de deviner. Nous menons des recherches qui donnent des réponses: ce qui se passe sur le marché, ce que font les concurrents, où votre entreprise doit aller. Vous obtiendrez non seulement un rapport — mais un plan d'action avec des résultats prévisibles.",
+    "cta_primary": "Types de recherche",
+    "cta_secondary": "Ce que vous obtiendrez",
+    "problems_title": "Situations familières?",
+    "problems": [
+      "Lancement de produit sans connaissance du marché",
+      "Les concurrents grandissent et vous ne comprenez pas pourquoi",
+      "Les investisseurs demandent des données que vous n'avez pas",
+      "Les systèmes sont obsolètes, mais on ne sait pas par où commencer",
+      "Beaucoup d'idées mais pas de critères de sélection",
+      "Budget dépensé sur des canaux inefficaces"
+    ],
+    "problems_footer": "L'analytique transforme l'incertitude en un plan d'action clair.",
+    "services_title": "Types de recherche",
+    "services_subtitle": "Choisissez ce dont votre entreprise a besoin maintenant",
+    "services": [
+      {
+        "title": "Analyse concurrentielle",
+        "description": "Étude détaillée des forces et faiblesses des concurrents, leurs stratégies, tarification et positionnement."
+      },
+      {
+        "title": "Étude de marché",
+        "description": "Évaluation de la taille du marché, tendances, public cible et potentiel pour votre produit ou service."
+      },
+      {
+        "title": "Audit technologique",
+        "description": "Analyse des systèmes actuels: architecture, sécurité, performance, dette technique."
+      },
+      {
+        "title": "Stratégie Go-to-Market",
+        "description": "Plan de lancement de produit: canaux, positionnement, tarification, premiers 100 clients."
+      },
+      {
+        "title": "Feuille de route de développement",
+        "description": "Plan étape par étape de transformation digitale avec priorités, délais et budget."
+      },
+      {
+        "title": "Évaluation des risques",
+        "description": "Identification des risques techniques, de marché et réglementaires avec plan de mitigation."
+      }
+    ],
+    "comparison_title": "Intuition vs Données",
+    "comparison_subtitle": "Comment les affaires changent avec l'analytique",
+    "comparison_intuition_label": "Sans analytique",
+    "comparison_data_label": "Avec analytique",
+    "comparison_intuition": [
+      "Décisions basées sur 'le ressenti du marché'",
+      "Copier les concurrents sans compréhension",
+      "Dépenses pour des hypothèses non fonctionnelles",
+      "Opportunités de croissance manquées",
+      "Surprises des régulateurs et du marché",
+      "Difficile de convaincre les investisseurs"
+    ],
+    "comparison_data": [
+      "Décisions soutenues par les chiffres",
+      "Compréhension de votre position unique",
+      "Investissement dans des directions prouvées",
+      "Recherche systématique de points de croissance",
+      "Préparation aux changements du marché",
+      "Arguments convaincants pour les parties prenantes"
+    ],
+    "deliverables_title": "Ce que vous obtiendrez",
+    "deliverables_subtitle": "Le résultat de recherche n'est pas un ensemble de fichiers, mais un outil de décision",
+    "deliverables": [
+      {
+        "title": "Rapport de données",
+        "description": "Analyse structurée avec graphiques, tableaux et sources"
+      },
+      {
+        "title": "Conclusions et insights",
+        "description": "Principales découvertes qui influencent vos décisions"
+      },
+      {
+        "title": "Recommandations",
+        "description": "Étapes concrètes: quoi faire, dans quel ordre, avec quelles ressources"
+      },
+      {
+        "title": "Plan d'action",
+        "description": "Feuille de route prête avec phases, délais et KPIs"
+      },
+      {
+        "title": "Présentation",
+        "description": "Matériels pour présentation aux investisseurs ou à l'équipe"
+      },
+      {
+        "title": "Consultation",
+        "description": "2 heures de discussion des résultats avec un expert"
+      }
+    ],
+    "process_title": "Comment fonctionne la recherche",
+    "process": [
+      {
+        "step": "01",
+        "title": "Brief",
+        "description": "Définir l'objectif de recherche, les questions à répondre"
+      },
+      {
+        "step": "02",
+        "title": "Collecte de données",
+        "description": "Analyse open-source, interviews, sondages, audit technique"
+      },
+      {
+        "step": "03",
+        "title": "Analyse",
+        "description": "Structuration des données, recherche de patterns et insights"
+      },
+      {
+        "step": "04",
+        "title": "Rapport",
+        "description": "Formation du document avec conclusions, recommandations et plan d'action"
+      }
+    ],
+    "use_cases_title": "Quand l'analytique est nécessaire",
+    "use_cases": [
+      {
+        "title": "Lancement de nouveau produit",
+        "description": "Comprendre le marché, les concurrents et le public cible avant de commencer le développement"
+      },
+      {
+        "title": "Entrée sur un nouveau marché",
+        "description": "Évaluer le potentiel, la réglementation et les particularités locales"
+      },
+      {
+        "title": "Attirer des investissements",
+        "description": "Préparer une data room avec analytique de marché pour les investisseurs"
+      },
+      {
+        "title": "Transformation digitale",
+        "description": "Auditer les systèmes actuels et créer un plan de modernisation"
+      },
+      {
+        "title": "Optimisation marketing",
+        "description": "Trouver des canaux efficaces et redistribuer le budget"
+      },
+      {
+        "title": "Planification stratégique",
+        "description": "Définir les priorités de développement basées sur les données"
+      }
+    ],
+    "results_title": "Nos résultats de recherche",
+    "results": [
+      {
+        "value": "50+",
+        "label": "études réalisées"
+      },
+      {
+        "value": "2-4",
+        "label": "semaines par projet"
+      },
+      {
+        "value": "85%",
+        "label": "recommandations mises en œuvre"
+      },
+      {
+        "value": "3×",
+        "label": "ROI moyen"
+      }
+    ],
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Combien coûte la recherche?",
+        "answer": "Dépend de la profondeur et de la portée: analyse concurrentielle express à partir de 2000 CHF, étude de marché complète à partir de 8000 CHF. Coût exact après discussion de la tâche."
+      },
+      {
+        "question": "Quelles sources de données utilisez-vous?",
+        "answer": "Données ouvertes (Statista, rapports sectoriels), scraping des concurrents, interviews d'experts, sondages du public cible, audit technique des systèmes."
+      },
+      {
+        "question": "Travaillez-vous avec des informations confidentielles?",
+        "answer": "Oui, nous signons un NDA. Toutes les informations sont stockées en sécurité, l'accès uniquement aux participants du projet. Suppression sur demande après achèvement."
+      },
+      {
+        "question": "Puis-je obtenir seulement une partie de la recherche?",
+        "answer": "Oui, nous faisons de la recherche modulaire. Par exemple, uniquement l'analyse concurrentielle ou uniquement l'audit technique. Le package est généralement plus rentable mais pas obligatoire."
+      }
+    ]
+  },
+  "services_security": {
+    "meta_title": "Cybersécurité | Swiss IT",
+    "meta_description": "Audits de sécurité, pentests, protection des données. GDPR, Swiss DPA, OWASP. Nous protégeons votre entreprise contre les cybermenaces.",
+    "badge_owasp": "OWASP & ISO 27001",
+    "badge_gdpr": "Conforme GDPR",
+    "title": "Cybersécurité —",
+    "title_gradient": "protection de ce que vous avez construit",
+    "description": "Audits de sécurité, pentests, protection des données. Nous trouvons les vulnérabilités avant les hackers. Conformité GDPR, Swiss DPA et standards internationaux.",
+    "cta_primary": "Commander un audit",
+    "cta_secondary": "Nos services",
+    "threats_title": "Menaces typiques",
+    "threats_subtitle": "Vulnérabilités que nous trouvons dans 80% des projets",
+    "threats": [
+      {
+        "title": "Vulnérabilités de code",
+        "description": "Injections SQL, XSS, CSRF — vulnérabilités typiques que les hackers exploitent en premier"
+      },
+      {
+        "title": "Authentification faible",
+        "description": "Mots de passe simples, pas de 2FA, fuites de tokens — porte ouverte pour les attaquants"
+      },
+      {
+        "title": "Fuites de données",
+        "description": "Bases de données non protégées, sauvegardes exposées, logs avec données personnelles"
+      },
+      {
+        "title": "APIs non sécurisées",
+        "description": "Rate limiting manquant, contrôle d'accès cassé, données excessives dans les réponses"
+      },
+      {
+        "title": "Infrastructure vulnérable",
+        "description": "Versions de logiciels obsolètes, ports ouverts, serveurs mal configurés"
+      },
+      {
+        "title": "Facteur humain",
+        "description": "Phishing, ingénierie sociale, menaces internes — 90% des attaques commencent par les personnes"
+      }
+    ],
+    "services_title": "Services de sécurité",
+    "services_subtitle": "Protection complète de votre infrastructure IT",
+    "services": [
+      {
+        "title": "Audit de sécurité",
+        "description": "Revue complète de votre infrastructure IT, code et processus",
+        "features": [
+          "Analyse d'architecture",
+          "Code review",
+          "Vérification des configurations",
+          "Analyse des écarts"
+        ]
+      },
+      {
+        "title": "Test de pénétration",
+        "description": "Simulation d'attaques réelles pour trouver les vulnérabilités avant les hackers",
+        "features": [
+          "Black/White/Grey box",
+          "Applications web",
+          "API & apps mobiles",
+          "Ingénierie sociale"
+        ]
+      },
+      {
+        "title": "Protection des apps web",
+        "description": "Mise en œuvre des meilleures pratiques de sécurité dans vos applications",
+        "features": [
+          "OWASP Top 10",
+          "Configuration WAF",
+          "En-têtes sécurisés",
+          "Validation des entrées"
+        ]
+      },
+      {
+        "title": "Chiffrement & gestion des clés",
+        "description": "Protection des données au repos et en transit",
+        "features": [
+          "Configuration TLS/SSL",
+          "Chiffrement BD",
+          "Gestion des secrets",
+          "Intégration HSM"
+        ]
+      },
+      {
+        "title": "Authentification & autorisation",
+        "description": "Système robuste de gestion des accès",
+        "features": [
+          "SSO/SAML/OAuth",
+          "2FA/MFA",
+          "RBAC/ABAC",
+          "Zero Trust"
+        ]
+      },
+      {
+        "title": "Surveillance & réponse",
+        "description": "Détection des menaces et incidents en temps réel",
+        "features": [
+          "Configuration SIEM",
+          "Alertes",
+          "Réponse aux incidents",
+          "Forensics"
+        ]
+      }
+    ],
+    "compliance_title": "Standards et conformité",
+    "compliance_subtitle": "Nous vous aidons à respecter les exigences réglementaires",
+    "compliance": [
+      {
+        "name": "GDPR",
+        "description": "Protection des données personnelles des citoyens de l'UE"
+      },
+      {
+        "name": "Swiss DPA",
+        "description": "Loi suisse sur la protection des données"
+      },
+      {
+        "name": "OWASP",
+        "description": "Standards de sécurité des applications web"
+      },
+      {
+        "name": "ISO 27001",
+        "description": "Système de gestion de la sécurité de l'information"
+      },
+      {
+        "name": "PCI DSS",
+        "description": "Standard de sécurité des cartes de paiement"
+      },
+      {
+        "name": "SOC 2",
+        "description": "Contrôles de sécurité pour SaaS"
+      }
+    ],
+    "process_title": "Processus de revue de sécurité",
+    "process_subtitle": "De l'analyse au système sécurisé",
+    "process": [
+      {
+        "step": "01",
+        "title": "Reconnaissance & analyse",
+        "duration": "1-2 semaines",
+        "description": "Collecte d'informations sur votre infrastructure, définition de la surface d'attaque, création du modèle de menaces.",
+        "deliverables": [
+          "Inventaire des actifs",
+          "Modèle de menaces",
+          "Périmètre de test",
+          "Plan de travail"
+        ]
+      },
+      {
+        "step": "02",
+        "title": "Tests",
+        "duration": "2-4 semaines",
+        "description": "Réalisation du pentest, analyse du code, vérification des configurations. Documentation de toutes les découvertes.",
+        "deliverables": [
+          "Vulnérabilités identifiées",
+          "PoCs d'exploits",
+          "Captures & logs",
+          "Scores CVSS"
+        ]
+      },
+      {
+        "step": "03",
+        "title": "Rapport & recommandations",
+        "duration": "1 semaine",
+        "description": "Préparation d'un rapport détaillé avec recommandations de correction priorisées.",
+        "deliverables": [
+          "Résumé exécutif",
+          "Rapport technique",
+          "Plan de correction",
+          "Présentation"
+        ]
+      },
+      {
+        "step": "04",
+        "title": "Correction & retest",
+        "duration": "2-4 semaines",
+        "description": "Aide à la correction des vulnérabilités. Réalisation du retest pour confirmation.",
+        "deliverables": [
+          "Consultations",
+          "Revue des corrections",
+          "Retest",
+          "Rapport final"
+        ]
+      }
+    ],
+    "results_title": "Nos résultats",
+    "results": [
+      {
+        "metric": "100%",
+        "label": "Vulnérabilités critiques corrigées"
+      },
+      {
+        "metric": "0",
+        "label": "Attaques réussies après audit"
+      },
+      {
+        "metric": "< 24h",
+        "label": "Temps de réponse"
+      },
+      {
+        "metric": "GDPR",
+        "label": "Conformité totale"
+      }
+    ],
+    "pricing_title": "Tarification des services",
+    "pricing_description": "Audit express d'app web — à partir de 3 000 CHF. Audit complet de sécurité — à partir de 8 000 CHF. Pentest — à partir de 5 000 CHF. Le coût dépend de la taille de l'infrastructure et de la profondeur de la revue.",
+    "pricing_cta": "Obtenir un devis",
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Quelle est la différence entre audit et pentest?",
+        "answer": "L'audit est une vérification complète de tous les aspects de sécurité: processus, politiques, configurations, code. Le pentest simule une vraie attaque pour trouver et exploiter les vulnérabilités. Nous recommandons généralement de commencer par un audit, puis de réaliser des pentests réguliers."
+      },
+      {
+        "question": "À quelle fréquence faire des vérifications de sécurité?",
+        "answer": "Audit complet — une fois par an ou après des changements majeurs. Pentest — au moins annuellement, idéalement tous les 6 mois. Scan automatisé — hebdomadaire. Pour les systèmes critiques, nous recommandons un programme Bug Bounty."
+      },
+      {
+        "question": "Le pentest ne va-t-il pas casser notre production?",
+        "answer": "Nous définissons le périmètre et les méthodes de test à l'avance. Les tests destructifs ne sont effectués qu'en staging. Pour la production, nous utilisons des méthodes sûres. Nous avons toujours un plan de rollback et travaillons dans des fenêtres convenues."
+      },
+      {
+        "question": "Et si vous trouvez une vulnérabilité critique?",
+        "answer": "Les vulnérabilités critiques sont signalées immédiatement (dans l'heure), sans attendre le rapport final. Nous fournissons des recommandations de mitigation temporaire. Nous aidons aux corrections d'urgence si nécessaire."
+      }
+    ],
+    "cta_title": "N'attendez pas une brèche",
+    "cta_description": "Découvrez les vulnérabilités avant les hackers. Consultation initiale gratuite.",
+    "cta_button": "Commander un audit de sécurité"
+  },
+  "services_training": {
+    "meta_title": "Formation d'équipe | Swiss IT",
+    "meta_description": "Ateliers et formations pour développeurs. Technologies modernes, méthodologies, outils.",
+    "badge_training": "Formation",
+    "badge_workshops": "Ateliers",
+    "title": "Formation d'équipe —",
+    "title_gradient": "investissement dans la croissance",
+    "description": "Nous animons des ateliers et formations pour vos développeurs. Technologies modernes, méthodologies, outils — compétences pratiques, pas de théorie.",
+    "cta_primary": "Discuter du programme",
+    "programs_title": "Domaines de formation",
+    "programs": [
+      {
+        "title": "Stack moderne",
+        "description": "React, Next.js, TypeScript, Node.js — technologies actuelles pour le développement web."
+      },
+      {
+        "title": "Pratiques DevOps",
+        "description": "Docker, CI/CD, monitoring — compétences pour une livraison et exploitation fiables."
+      },
+      {
+        "title": "Agile et Scrum",
+        "description": "Méthodologies de développement, planification de sprints, gestion du backlog."
+      },
+      {
+        "title": "Code Review",
+        "description": "Pratiques de revue de code de qualité, standards de code, automatisation."
+      },
+      {
+        "title": "Architecture",
+        "description": "Patterns de conception, microservices, mise à l'échelle des systèmes."
+      },
+      {
+        "title": "Travail d'équipe",
+        "description": "Communication d'équipe, gestion des exigences, documentation."
+      }
+    ],
+    "formats_title": "Formats",
+    "formats": [
+      {
+        "title": "Ateliers",
+        "description": "Sessions pratiques avec des tâches réelles",
+        "duration": "1-2 jours"
+      },
+      {
+        "title": "Cours",
+        "description": "Immersion approfondie dans le sujet",
+        "duration": "4-8 semaines"
+      },
+      {
+        "title": "Mentorat",
+        "description": "Travail individuel avec les développeurs",
+        "duration": "Sur demande"
+      },
+      {
+        "title": "Consultations",
+        "description": "Analyse des questions spécifiques de l'équipe",
+        "duration": "2-4 heures"
+      }
+    ],
+    "cta_title": "Vous voulez développer votre équipe?",
+    "cta_description": "Parlez-nous de vos besoins — nous créerons un programme",
+    "cta_button": "Discuter de la formation"
+  },
+  "services_turnkey": {
+    "meta_title": "Partenaire IT clé en main | SwissTech",
+    "meta_description": "Votre département IT externe sans embauche. Développement, support, conseil — un partenaire pour toutes vos tâches techniques. Payez uniquement pour les résultats.",
+    "badge": "Partenaire IT clé en main",
+    "title": "Votre département IT",
+    "title_gradient": "sans embauche",
+    "description": "Oubliez la recherche de développeurs et la gestion des freelances. Nous devenons votre partenaire technique permanent: des tâches simples aux projets complexes. Un contrat — toutes les compétences IT.",
+    "cta_primary": "En savoir plus",
+    "cta_secondary": "Comparer avec l'embauche",
+    "problems_title": "Problèmes familiers?",
+    "problems": [
+      "Besoin d'un développeur, mais l'embauche est trop coûteuse",
+      "Les freelances disparaissent au pire moment",
+      "Pas d'expertise pour évaluer les solutions techniques",
+      "Les tâches IT s'accumulent, personne ne s'en occupe",
+      "Un programmeur ne couvre pas toutes les tâches",
+      "Difficile de comprendre ce que vous payez aux agences"
+    ],
+    "problems_footer": "Il y a une solution: un partenaire IT fiable qui travaille comme votre propre équipe.",
+    "benefits_title": "Pourquoi ça fonctionne",
+    "benefits_subtitle": "Vous obtenez tous les avantages d'un département IT interne sans ses inconvénients",
+    "benefits": [
+      {
+        "title": "Jusqu'à 70% d'économie IT",
+        "description": "Aucun coût d'embauche, bureau, taxes, vacances et congés maladie. Payez uniquement pour le travail effectué."
+      },
+      {
+        "title": "Une équipe entière, pas une personne",
+        "description": "Designers, développeurs, DevOps, analystes — toutes les compétences dans un seul contrat. Sans recherche de freelances."
+      },
+      {
+        "title": "Démarrage immédiat",
+        "description": "Pas besoin de chercher et d'intégrer des employés pendant des mois. Nous commençons dans les 48 heures."
+      },
+      {
+        "title": "Évolutivité flexible",
+        "description": "Plus de tâches — plus de ressources. Moins de tâches — moins de coûts. Nous nous adaptons à vos besoins."
+      },
+      {
+        "title": "Responsabilité et garanties",
+        "description": "Contrat, SLA, délais fixes. Nous portons la responsabilité financière du résultat."
+      },
+      {
+        "title": "Partenariat à long terme",
+        "description": "Nous nous immergeons dans votre business et faisons partie de l'équipe. Nous comprenons le contexte, connaissons l'historique des décisions."
+      }
+    ],
+    "comparison_title": "Embauche vs Partenaire IT",
+    "comparison_subtitle": "Comparez et prenez une décision éclairée",
+    "comparison_inhouse_label": "Embauche interne",
+    "comparison_partner_label": "Partenaire IT",
+    "comparison_inhouse": [
+      "Recherche et embauche: 2-6 mois",
+      "Salaire + taxes + bureau + équipement",
+      "Vacances, congés maladie, turnover",
+      "Un spécialiste ≠ toutes les compétences",
+      "Risque de démission au pire moment",
+      "Doit être géré et motivé",
+      "Difficile à faire évoluer rapidement"
+    ],
+    "comparison_partner": [
+      "Début du travail: 48 heures",
+      "Coût fixe par tâche",
+      "Continuité — toujours quelqu'un disponible",
+      "Équipe complète: Dev, Design, DevOps, QA",
+      "Obligations contractuelles et SLA",
+      "Nous gérons les processus nous-mêmes",
+      "Évoluons selon vos tâches"
+    ],
+    "services_title": "Ce que nous couvrons",
+    "services_subtitle": "Toutes les tâches techniques — des simples aux complexes",
+    "services": [
+      {
+        "title": "Développement",
+        "description": "Sites web, applications, bots, intégrations — toutes les tâches techniques"
+      },
+      {
+        "title": "Support",
+        "description": "Monitoring, mises à jour, correction de bugs, optimisation"
+      },
+      {
+        "title": "Conseil",
+        "description": "Choix technologique, audit système, stratégie de développement"
+      },
+      {
+        "title": "Sécurité",
+        "description": "Audit, protection des données, conformité RGPD"
+      },
+      {
+        "title": "Automatisation",
+        "description": "Optimisation des processus, intégration système"
+      },
+      {
+        "title": "Renfort d'équipe",
+        "description": "Spécialistes temporaires pour vos projets"
+      }
+    ],
+    "models_title": "Modèles de collaboration",
+    "models_subtitle": "Choisissez le format adapté à votre entreprise",
+    "models": [
+      {
+        "title": "Forfait heures",
+        "description": "Nombre d'heures fixe par mois. Idéal pour le support continu et les petites améliorations.",
+        "features": [
+          "10-40 heures/mois",
+          "Support prioritaire",
+          "Heures non utilisées reportées"
+        ]
+      },
+      {
+        "title": "Travail par projet",
+        "description": "Prix fixe pour un projet spécifique. Cahier des charges, délais et budget clairs.",
+        "features": [
+          "Prix fixe",
+          "Paiements par étapes",
+          "Garantie de résultat"
+        ]
+      },
+      {
+        "title": "Équipe dédiée",
+        "description": "Équipe de spécialistes travaillant uniquement pour vous. Pour les grands projets à long terme.",
+        "features": [
+          "Spécialistes à temps plein",
+          "Immersion totale dans le projet",
+          "Efficacité maximale"
+        ]
+      }
+    ],
+    "process_title": "Comment commencer",
+    "process": [
+      {
+        "step": "01",
+        "title": "Découverte",
+        "description": "Appel gratuit: nous discutons de vos tâches et besoins"
+      },
+      {
+        "step": "02",
+        "title": "Audit",
+        "description": "Nous analysons la situation actuelle et proposons un plan"
+      },
+      {
+        "step": "03",
+        "title": "Contrat",
+        "description": "Nous choisissons un modèle de collaboration et fixons les conditions"
+      },
+      {
+        "step": "04",
+        "title": "Travail",
+        "description": "Nous commençons à résoudre les tâches. Premiers résultats — dans la semaine"
+      }
+    ],
+    "results_title": "Résultats du partenariat",
+    "results": [
+      {
+        "value": "-70%",
+        "label": "économie vs embauche"
+      },
+      {
+        "value": "48h",
+        "label": "début du travail"
+      },
+      {
+        "value": "5+",
+        "label": "spécialistes dans l'équipe"
+      },
+      {
+        "value": "24/7",
+        "label": "surveillance des systèmes"
+      }
+    ],
+    "faq_title": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "En quoi êtes-vous différent d'une agence classique?",
+        "answer": "Nous construisons des relations à long terme et nous immergeons dans votre business. Nous connaissons le contexte, l'historique des décisions, les spécificités. Ce ne sont pas des projets ponctuels, mais un partenariat permanent."
+      },
+      {
+        "question": "Et si j'ai besoin d'une seule tâche?",
+        "answer": "Pas de problème. Nous travaillons aussi sur des projets ponctuels. Mais beaucoup de clients passent à une collaboration permanente après la première tâche — c'est plus pratique et plus avantageux."
+      },
+      {
+        "question": "À quelle vitesse pouvez-vous commencer?",
+        "answer": "Généralement dans les 48 heures après accord. Pour les tâches urgentes — encore plus vite. Nous avons toujours des ressources disponibles pour les nouveaux partenaires."
+      },
+      {
+        "question": "Et si je ne suis pas satisfait du résultat?",
+        "answer": "Nous avons des SLA et des garanties dans le contrat. Si le travail ne répond pas aux exigences — nous le refaisons à nos frais. La réputation est plus importante pour nous que le profit à court terme."
+      }
+    ]
+  }
+}

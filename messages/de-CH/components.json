@@ -1,0 +1,214 @@
+{
+  "ai_chat": {
+    "greeting": "Grüezi! 👋 Ich bi de KI-Berater vo Swiss Tech Solutions. Wie chan ich hälfe?",
+    "error": "Entschuldigung, es isch en Fehler passiert. Bitte probiere Sie's spöter nomol oder kontaktiere Sie öis übers Formular uf de Website.",
+    "title": "KI-Berater",
+    "company": "Swiss Tech Solutions",
+    "online": "Online",
+    "placeholder": "Nachricht schriibe..."
+  },
+  "contact_form": {
+    "success_title": "Aafrag gschickt!",
+    "success_message": "Mir melde öis innert 2 Stund während de Geschäftsziite.",
+    "send_another": "Weiteri Aafrag schicke",
+    "error_title": "Schicke fehlgschlage",
+    "error_message": "Bitte probiere Sie's nomol oder schriibe Sie öis diräkt uf hello@swissmade.it",
+    "name_label": "Name",
+    "name_placeholder": "Ihre Name",
+    "name_error": "Bitte gäbe Sie Ihre Name ii",
+    "email_label": "E-Mail",
+    "email_error": "Bitte gäbe Sie Ihri E-Mail ii",
+    "email_invalid": "Ungültigi E-Mail",
+    "company_label": "Firma",
+    "company_placeholder": "Firmename",
+    "phone_label": "Telefon",
+    "phone_placeholder": "+41 12 345 67 89",
+    "service_label": "Gwünschti Dienstleistig",
+    "service_placeholder": "Dienst uswähle",
+    "budget_label": "Ungefährs Budget",
+    "budget_placeholder": "Bereich uswähle",
+    "message_label": "Beschriibe Sie Ihri Ufgab",
+    "message_placeholder": "Verzälle Sie öis vo Ihrem Projekt, Ufgabe, Friste...",
+    "message_error": "Bitte beschriibe Sie Ihri Ufgab",
+    "submit": "Aafrag schicke",
+    "submitting": "Am Schicke...",
+    "privacy_text": "Mit em Klick uf de Chnopf stimme Sie de",
+    "privacy_link": "Dateschutzrichtlinie zue",
+    "services": [
+      {
+        "value": "digital-reboot",
+        "label": "Digitale Neustart"
+      },
+      {
+        "value": "turnkey",
+        "label": "Schlüsselfertigi IT-Partnerschaft"
+      },
+      {
+        "value": "websites",
+        "label": "Webentwicklig"
+      },
+      {
+        "value": "mobile",
+        "label": "Mobili Apps"
+      },
+      {
+        "value": "telegram",
+        "label": "Telegram Bots/Mini Apps"
+      },
+      {
+        "value": "automation",
+        "label": "Automatisierig"
+      },
+      {
+        "value": "ai",
+        "label": "KI-Integration"
+      },
+      {
+        "value": "cloud",
+        "label": "Cloud-Migration"
+      },
+      {
+        "value": "security",
+        "label": "Cybersicherheit"
+      },
+      {
+        "value": "other",
+        "label": "Angers"
+      }
+    ],
+    "budgets": [
+      {
+        "value": "under-5k",
+        "label": "Under 5'000 CHF"
+      },
+      {
+        "value": "5k-15k",
+        "label": "5'000 — 15'000 CHF"
+      },
+      {
+        "value": "15k-50k",
+        "label": "15'000 — 50'000 CHF"
+      },
+      {
+        "value": "50k-100k",
+        "label": "50'000 — 100'000 CHF"
+      },
+      {
+        "value": "over-100k",
+        "label": "Über 100'000 CHF"
+      },
+      {
+        "value": "not-sure",
+        "label": "Beratig nötig"
+      }
+    ]
+  },
+  "price_calculator": {
+    "badge": "Schätzig in 30 Sekunde",
+    "title": "Choschtekalkulator",
+    "description": "Überchömed Sie e vorläufigi Schätzig für Ihres Projekt. De genau Priis kläremer nach em Briefing.",
+    "step1": "1. Projekttyp",
+    "step2": "2. Komplexität",
+    "step3": "3. Zusätzlichi Funktione",
+    "collapse": "Iichlape",
+    "show_all": "Alli azeige",
+    "estimate_title": "Vorläufigi Schätzig",
+    "cost_label": "Choschte",
+    "time_label": "Entwickligsziit",
+    "fixed_price": "Festpriis",
+    "support_60": "60 Täg Support",
+    "nda_included": "NDA inklusive",
+    "get_exact": "Genaues Agebot übercho",
+    "preliminary_note": "Das isch e vorläufigi Schätzig",
+    "time_2_4_weeks": "2-4 Wuche",
+    "time_1_2_months": "1-2 Mönet",
+    "time_2_3_months": "2-3 Mönet",
+    "time_3_6_months": "3-6 Mönet",
+    "project_types": [
+      {
+        "id": "webapp",
+        "name": "Web-App",
+        "icon": "🌐"
+      },
+      {
+        "id": "mobile",
+        "name": "Mobili App",
+        "icon": "📱"
+      },
+      {
+        "id": "telegram",
+        "name": "Telegram Mini App",
+        "icon": "✈️"
+      },
+      {
+        "id": "ai",
+        "name": "KI-Integration",
+        "icon": "🤖"
+      },
+      {
+        "id": "automation",
+        "name": "Automatisierig",
+        "icon": "⚡"
+      }
+    ],
+    "complexity_levels": [
+      {
+        "id": "simple",
+        "name": "Basis",
+        "description": "MVP oder Prototyp"
+      },
+      {
+        "id": "medium",
+        "name": "Standard",
+        "description": "Typischs Projekt"
+      },
+      {
+        "id": "complex",
+        "name": "Erwiiteret",
+        "description": "Komplexxi Integration"
+      }
+    ],
+    "features": [
+      {
+        "id": "auth",
+        "name": "Authentifizierig",
+        "description": "OAuth, 2FA, SSO"
+      },
+      {
+        "id": "payments",
+        "name": "Zahlige",
+        "description": "Stripe, Krypto"
+      },
+      {
+        "id": "analytics",
+        "name": "Analytik",
+        "description": "Dashboards, Bricht"
+      },
+      {
+        "id": "multilang",
+        "name": "Mehrsprachigkeit",
+        "description": "i18n, Übersetzig"
+      },
+      {
+        "id": "admin",
+        "name": "Admin-Panel",
+        "description": "CMS, Verwaltig"
+      },
+      {
+        "id": "notifications",
+        "name": "Benachrichtigunge",
+        "description": "Push, E-Mail, SMS"
+      },
+      {
+        "id": "integrations",
+        "name": "API-Integratione",
+        "description": "Drittaabieter-Dienst"
+      },
+      {
+        "id": "security",
+        "name": "Sicherheit+",
+        "description": "Audit, Pentest"
+      }
+    ]
+  }
+}

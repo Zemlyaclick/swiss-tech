@@ -13,6 +13,26 @@ export const localeNames: Record<Locale, string> = {
   'ru': 'Русский',
 };
 
+async function loadMessages(locale: string) {
+  const [common, home, services, industries, pages, components] = await Promise.all([
+    import(`../../messages/${locale}/common.json`),
+    import(`../../messages/${locale}/home.json`),
+    import(`../../messages/${locale}/services.json`),
+    import(`../../messages/${locale}/industries.json`),
+    import(`../../messages/${locale}/pages.json`),
+    import(`../../messages/${locale}/components.json`),
+  ]);
+
+  return {
+    ...common.default,
+    ...home.default,
+    ...services.default,
+    ...industries.default,
+    ...pages.default,
+    ...components.default,
+  };
+}
+
 export default getRequestConfig(async ({ requestLocale }) => {
   const locale = await requestLocale;
   
@@ -22,6 +42,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   return {
     locale,
-    messages: (await import(`../../messages/${locale}.json`)).default
+    messages: await loadMessages(locale),
   };
 });

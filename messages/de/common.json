@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "company": "Swiss Tech Solutions",
+    "tagline": "Digitale Ökosysteme, die Bestand haben",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "cta_section": {
+    "title": "Bereit für die digitale Transformation?",
+    "description": "Lassen Sie uns besprechen, wie wir Ihr Unternehmen in ein nahtloses digitales Ökosystem verwandeln können. Kostenlose Strategiesitzung inklusive.",
+    "button": "Gespräch vereinbaren"
+  },
+  "trust_badges": {
+    "clients_title": "Von Fortune-500-Unternehmen vertraut",
+    "partners_title": "Technologiepartner",
+    "certifications_title": "Zertifizierungen & Standards",
+    "indicators": [
+      "100% Daten in der Schweiz",
+      "NDA für jedes Projekt",
+      "€5M Haftpflichtversicherung"
+    ],
+    "clients": {
+      "banking": "Bankwesen",
+      "insurance": "Versicherung",
+      "pharma": "Pharma",
+      "retail": "Einzelhandel",
+      "transport": "Transport",
+      "telecom": "Telekommunikation"
+    },
+    "partners": {
+      "aws_full": "Amazon Web Services",
+      "gcp_full": "Google Cloud Platform",
+      "azure_full": "Microsoft Azure",
+      "stripe_full": "Stripe Verifiziert",
+      "tier": "Partner"
+    },
+    "certifications": {
+      "iso_desc": "Informationssicherheit",
+      "gdpr_desc": "Datenschutz",
+      "swiss_dpa_desc": "Schweizer Datenschutz",
+      "owasp_desc": "Web-Sicherheit"
+    }
+  },
+  "guarantee": {
+    "badge": "Garantien",
+    "title": "Seelenfrieden inklusive",
+    "subtitle": "Wir versprechen nicht nur Qualität — wir garantieren sie schriftlich",
+    "items": [
+      {
+        "title": "Vollständiger Quellcode",
+        "description": "Nach Projektabschluss erhalten Sie den vollständigen, dokumentierten Quellcode. Ihr Projekt — Ihr Eigentum. Kein Vendor Lock-in."
+      },
+      {
+        "title": "Kostenlose Fehlerbehebung",
+        "description": "Alle nach dem Launch gefundenen Fehler werden innerhalb der im Vertrag festgelegten Frist kostenlos behoben. Details werden für jedes Projekt individuell besprochen."
+      },
+      {
+        "title": "Meilensteinzahlungen",
+        "description": "Die Zahlung wird in Etappen aufgeteilt, die an Projektmeilensteine gebunden sind. Sie kontrollieren das Budget und sehen den Fortschritt bei jedem Schritt."
+      },
+      {
+        "title": "Volle Transparenz",
+        "description": "Zugang zum Task-Tracker, wöchentliche Berichte, Demos. Sie kennen immer den Projektstatus und können spontan Anpassungen vornehmen."
+      },
+      {
+        "title": "NDA & Datenschutz",
+        "description": "NDA-Unterzeichnung, GDPR- und Swiss DPA-Konformität. Ihre Geschäftsinformationen sind zuverlässig geschützt."
+      }
+    ],
+    "cta_title": "Bereit, ohne Risiken zu arbeiten?",
+    "cta_description": "Alle Garantiebedingungen werden in Verträgen dokumentiert. Wir sind offen für individuelle Bedingungen für Ihr Projekt.",
+    "cta_button": "Garantien besprechen"
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "hero": {
+    "title": "La tua azienda merita",
+    "subtitle": "una base solida",
+    "description": "Non costruiamo siti web. Progettiamo ecosistemi digitali che diventano la spina dorsale della tua azienda — sicuri, automatizzati e costruiti per superare la concorrenza.",
+    "cta": "Ottieni il tuo audit gratuito",
+    "explore": "Scopri come lavoriamo",
+    "badge": "Ingegneria di precisione svizzera"
+  },
+  "usp": {
+    "title": "Perché i clienti premium ci scelgono",
+    "subtitle": "Non siamo i più economici. Siamo quelli che chiami quando il fallimento non è un'opzione.",
+    "quality": {
+      "title": "Standard ISO & OWASP",
+      "description": "Sviluppiamo processi di sicurezza delle informazioni tenendo conto dei requisiti ISO 27001 e OWASP Top 10. Se necessario, coinvolgiamo partner certificati per PenTesting indipendente e audit di sicurezza."
+    },
+    "security": {
+      "title": "Zero Vendor Lock-in",
+      "description": "Non ti leghiamo a nessun fornitore, piattaforma o tecnologia. Il codice è tuo. La documentazione è tua. Qualsiasi altro team può mantenere e sviluppare il sistema senza il nostro coinvolgimento."
+    },
+    "support": {
+      "title": "Supporto a vita",
+      "description": "Non scompariamo dopo il lancio. Per ogni progetto, offriamo opzioni di supporto a lungo termine flessibili — dalle consulenze una tantum al SLA completo. Le condizioni vengono discusse individualmente."
+    },
+    "ecosystem": {
+      "title": "Architettura Microservices",
+      "description": "L'architettura modulare con servizi indipendenti ti permette di scalare i singoli componenti, aggiornare il sistema gradualmente e minimizzare i rischi durante le modifiche."
+    },
+    "guarantee": {
+      "title": "Nessun costo nascosto. Nessun abbonamento.",
+      "description": "Paga per i risultati, non per le promesse. Le condizioni di supporto vengono discusse individualmente per ogni progetto.",
+      "badge": "GARANTITO"
+    }
+  },
+  "metrics": {
+    "title": "Risultati a cui puntiamo",
+    "subtitle": "Ogni progetto è unico. Le metriche specifiche sono definite negli accordi SLA individuali.",
+    "speed": {
+      "value": "↑",
+      "label": "Prestazioni sistema"
+    },
+    "cost": {
+      "value": "↓",
+      "label": "Costi di supporto"
+    },
+    "uptime": {
+      "value": "SLA",
+      "label": "Disponibilità contrattuale"
+    },
+    "efficiency": {
+      "value": "↑",
+      "label": "Efficienza operativa"
+    },
+    "disclaimer": "I risultati variano in base al progetto. Le garanzie vengono discusse individualmente e specificate nei contratti."
+  },
+  "stats": {
+    "projects": "Progetti consegnati",
+    "satisfaction": "Soddisfazione clienti",
+    "years": "Anni di esperienza",
+    "support": "Risposta supporto"
+  },
+  "services": {
+    "title": "I Nostri Servizi",
+    "subtitle": "Soluzioni IT complete su misura per le tue esigenze. Dal concept al deployment, puntiamo a risultati impeccabili.",
+    "cloud": {
+      "title": "Migrazione Cloud",
+      "description": "Aiutiamo a migrare l'infrastruttura nel cloud con rischio minimo di downtime. AWS, Azure, GCP — selezioniamo la piattaforma in base alle tue esigenze e budget."
+    },
+    "telegram_bots": {
+      "title": "Bot Telegram",
+      "description": "Sviluppiamo bot per l'automazione delle comunicazioni e dei processi aziendali. Dalle notifiche a scenari complessi con integrazione pagamenti e CRM."
+    },
+    "telegram_apps": {
+      "title": "Mini App Telegram",
+      "description": "Creiamo app all'interno di Telegram — nessuna installazione dall'App Store. Negozi, servizi di prenotazione, portali clienti. Accesso al pubblico del messenger senza barriere."
+    },
+    "websites": {
+      "title": "Sviluppo Web",
+      "description": "Sviluppiamo siti focalizzati su performance e conversione. Stack moderno, ottimizzazione SEO, design responsive. Dalle landing page a piattaforme web complesse."
+    },
+    "mobile": {
+      "title": "App Mobile",
+      "description": "Creiamo app iOS e Android con performance native. Design UX, sviluppo e assistenza per la pubblicazione sugli store."
+    },
+    "automation": {
+      "title": "Automazione Aziendale",
+      "description": "Automatizziamo operazioni di routine: report, sincronizzazione dati, notifiche. Obiettivo — ridurre il lavoro manuale e minimizzare gli errori."
+    },
+    "ai": {
+      "title": "Integrazione IA",
+      "description": "Implementiamo soluzioni basate su IA: chatbot, analisi dati, personalizzazione. Utilizziamo OpenAI, Claude e altre piattaforme — selezionate per compiti specifici."
+    },
+    "digital_reboot": {
+      "title": "Trasformazione Digitale",
+      "description": "Aggiornamento completo della presenza digitale: redesign, automazione, integrazione CRM e analytics. Creiamo un ecosistema connesso invece di strumenti isolati."
+    },
+    "turnkey": {
+      "title": "Partnership IT Chiavi in Mano",
+      "description": "Lavoriamo come il tuo dipartimento IT esterno. Sviluppo, supporto, consulenza — senza dover assumere personale. Condizioni di cooperazione flessibili per progetti specifici."
+    },
+    "research": {
+      "title": "Ricerca di Mercato & Strategia",
+      "description": "Ricerchiamo il mercato, analizziamo i competitor e sviluppiamo strategie. Ricevi un piano strutturato con raccomandazioni e priorità."
+    },
+    "security": {
+      "title": "Cybersicurezza",
+      "description": "Conduciamo audit di sicurezza e implementiamo misure di protezione: crittografia, 2FA, monitoraggio. Aiutiamo nella conformità GDPR e Swiss DPA."
+    },
+    "documentation": {
+      "title": "Documentazione Completa",
+      "description": "Prepariamo documentazione completa per ogni progetto: specifiche tecniche, guide utente, istruzioni di deployment."
+    },
+    "accessibility": {
+      "title": "Soluzioni di Accessibilità",
+      "description": "Adattiamo i prodotti per utenti con disabilità. Conformità WCAG, supporto screen reader, modalità ad alto contrasto."
+    },
+    "devops": {
+      "title": "DevOps & SRE",
+      "description": "Configuriamo pipeline CI/CD, containerizzazione, monitoring e alerting. Aiutiamo a costruire processi di delivery e operatività affidabili."
+    },
+    "integration": {
+      "title": "Integrazioni & API",
+      "description": "Connettiamo i tuoi sistemi tra loro e con servizi esterni. Sviluppiamo e documentiamo API. Integrazione con CRM, ERP, sistemi di pagamento."
+    },
+    "discovery": {
+      "title": "Product Discovery",
+      "description": "Aiutiamo a formulare e validare idee prima dello sviluppo. Ricerca utenti, prototipazione, validazione di ipotesi."
+    },
+    "training": {
+      "title": "Formazione Team",
+      "description": "Conduciamo workshop e formazione per i tuoi dipendenti. Tecnologie moderne, metodologie di sviluppo, competenza negli strumenti."
+    },
+    "maintenance": {
+      "title": "Supporto Tecnico",
+      "description": "Garantiamo il funzionamento stabile dei tuoi sistemi. Monitoraggio, aggiornamenti, correzione bug. Condizioni SLA flessibili secondo le tue esigenze."
+    },
+    "modernization": {
+      "title": "Modernizzazione dei Sistemi",
+      "description": "Aggiorniamo sistemi legacy preservando le funzionalità core. Refactoring del codice, miglioramenti architetturali, ottimizzazione UX."
+    }
+  },
+  "tech": {
+    "title": "Tecnologie che padroneggiamo",
+    "subtitle": "Utilizziamo le ultime tecnologie per soluzioni robuste e scalabili",
+    "more": "Docker • Kubernetes • AWS • Azure • GCP • Microservices • CI/CD"
+  },
+  "process": {
+    "title": "Come lavoriamo",
+    "subtitle": "Una metodologia collaudata che consegna risultati nei tempi e nel budget",
+    "discovery": {
+      "title": "Scoperta",
+      "description": "Ci immergiamo nelle tue esigenze aziendali, obiettivi e sfide per comprendere il quadro completo."
+    },
+    "planning": {
+      "title": "Pianificazione",
+      "description": "Roadmap dettagliata con milestone chiare, tempistiche e deliverable su misura."
+    },
+    "development": {
+      "title": "Sviluppo",
+      "description": "Sviluppo agile con aggiornamenti regolari, code review e quality assurance."
+    },
+    "launch": {
+      "title": "Lancio",
+      "description": "Test approfonditi, deployment e ottimizzazione per un lancio di successo."
+    },
+    "support": {
+      "title": "Supporto",
+      "description": "Manutenzione continua, aggiornamenti e supporto 24/7 per un funzionamento perfetto."
+    }
+  },
+  "not_for_everyone": {
+    "badge": "Onestà prima di tutto",
+    "title": "Non siamo per tutti",
+    "subtitle": "E va bene così. Preferiamo essere onesti con voi fin dall'inizio per risparmiare tempo a entrambe le parti.",
+    "not_for_title": "Non siamo adatti se...",
+    "perfect_for_title": "Siamo perfetti se...",
+    "not_for": [
+      {
+        "text": "Cercate l'opzione più economica",
+        "detail": "Non competiamo con freelancer dall'India o dall'Ucraina sul prezzo"
+      },
+      {
+        "text": "Vi serve \"per ieri\"",
+        "detail": "Lo sviluppo di qualità richiede tempo. Minimo 2-4 settimane per MVP"
+      },
+      {
+        "text": "Volete controllare ogni riga di codice",
+        "detail": "Apprezziamo fiducia e autonomia. Il micromanagement non è il nostro stile"
+      },
+      {
+        "text": "Avete un progetto senza budget",
+        "detail": "Non lavoriamo per equity o \"quando avremo investimenti\""
+      }
+    ],
+    "perfect_for": [
+      {
+        "text": "Apprezzate qualità e affidabilità",
+        "detail": "Pronti a investire in una soluzione che durerà anni"
+      },
+      {
+        "text": "La sicurezza dei dati conta",
+        "detail": "GDPR, Swiss DPA, dati finanziari o medici"
+      },
+      {
+        "text": "Lavorate per il mercato europeo",
+        "detail": "Qualità svizzera e conformità contano"
+      },
+      {
+        "text": "Avete bisogno di un partner affidabile a lungo termine",
+        "detail": "Non un progetto una tantum, ma una partnership per anni"
+      }
+    ],
+    "cta_text": "Vi siete riconosciuti a destra? Parliamone.",
+    "cta_button": "Discuti il progetto"
+  },
+  "testimonials": {
+    "title": "Cosa dicono i nostri clienti",
+    "subtitle": "Feedback autentici da aziende con cui abbiamo lavorato",
+    "items": [
+      {
+        "quote": "Swiss Tech Solutions ha completamente cambiato il nostro approccio alla tecnologia. In 6 mesi abbiamo automatizzato l'80% delle attività di routine e aumentato il fatturato del 40%.",
+        "author": "Marcus Hofer",
+        "role": "CEO",
+        "company": "FinanceHub AG"
+      },
+      {
+        "quote": "Professionalità e attenzione ai dettagli distinguono questo team. Il nostro bot Telegram gestisce 5000+ richieste al giorno, zero downtime in 2 anni.",
+        "author": "Anna Müller",
+        "role": "Head of Digital",
+        "company": "TravelSmart GmbH"
+      },
+      {
+        "quote": "Abbiamo provato 3 agenzie prima di trovare Swiss Tech Solutions. Finalmente partner che pensano al nostro business come al loro.",
+        "author": "Dmitry Kozlov",
+        "role": "Founder",
+        "company": "MedTech Solutions"
+      },
+      {
+        "quote": "Redesign del sito e integrazione CRM hanno richiesto solo 2 mesi. Il tasso di conversione è passato dall'1,2% al 4,5%.",
+        "author": "Laura Schmidt",
+        "role": "Marketing Director",
+        "company": "Alpine Retail"
+      },
+      {
+        "quote": "Apprezzo particolarmente la loro onestà. Quando volevo aggiungere una funzionalità inutile, mi hanno dissuaso e fatto risparmiare il 30% del budget.",
+        "author": "Thomas Weber",
+        "role": "Product Owner",
+        "company": "CloudServices AG"
+      },
+      {
+        "quote": "Il supporto 24/7 non è un trucco di marketing. Quando il server è andato giù di sabato notte, hanno risolto tutto in 20 minuti.",
+        "author": "Sergey Ivanov",
+        "role": "CTO",
+        "company": "LogiTrans"
+      }
+    ],
+    "stats": [
+      {
+        "value": "98%",
+        "label": "dei clienti ci raccomanda"
+      },
+      {
+        "value": "4.9",
+        "label": "valutazione media dei progetti"
+      },
+      {
+        "value": "80%",
+        "label": "tornano con nuovi progetti"
+      },
+      {
+        "value": "0",
+        "label": "progetti consegnati in ritardo"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "subtitle": "Risposte alle domande che ci vengono poste più spesso",
+    "items": [
+      {
+        "question": "Quanto costano i vostri servizi?",
+        "answer": "Il costo dipende dalla complessità del progetto. Un piccolo bot Telegram da 3.000 CHF, sito web da 8.000 CHF, piattaforma complessa da 30.000 CHF. Forniamo una stima precisa dopo aver discusso i requisiti."
+      },
+      {
+        "question": "Quanto dura lo sviluppo?",
+        "answer": "L'MVP è solitamente pronto in 4-8 settimane. Prodotto completo — 2-4 mesi. Soluzioni enterprise complesse — 6-12 mesi. Lavoriamo in Agile con demo settimanali."
+      },
+      {
+        "question": "Lavorate con clienti fuori dalla Svizzera?",
+        "answer": "Sì, il 40% dei nostri clienti proviene da altri paesi: Germania, Austria, paesi CSI. Lavoriamo da remoto, comunichiamo in russo, inglese e tedesco."
+      },
+      {
+        "question": "Cosa succede se il progetto non mi piace?",
+        "answer": "Lavoriamo con un modello a milestone: pagate le fasi man mano che vengono completate e approvate. Se qualcosa non va — rifacciamo a nostre spese."
+      },
+      {
+        "question": "Offrite supporto dopo il lancio?",
+        "answer": "Sì, il supporto a vita è incluso in ogni progetto. Rispondiamo davvero alle domande e aiutiamo con piccoli miglioramenti."
+      },
+      {
+        "question": "Posso iniziare con un piccolo progetto?",
+        "answer": "Certo. Molti clienti iniziano con MVP o progetto pilota. L'80% di loro torna con compiti più grandi."
+      },
+      {
+        "question": "Come garantite la sicurezza dei dati?",
+        "answer": "Lavoriamo secondo gli standard ISO 27001 e OWASP. Tutti i progetti passano una revisione di sicurezza. Conformità GDPR e Swiss DPA."
+      },
+      {
+        "question": "Cosa include la documentazione tecnica?",
+        "answer": "Pacchetto completo: documentazione architetturale, riferimento API, guide per sviluppatori, istruzioni di distribuzione e manutenzione."
+      }
+    ],
+    "cta_text": "Non hai trovato la risposta alla tua domanda?",
+    "cta_link": "Scrivici — risponderemo entro 2 ore"
+  }
+}

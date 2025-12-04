@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Let's Talk"
+  },
+  "footer": {
+    "company": "Swiss Tech Solutions",
+    "tagline": "Engineering digital ecosystems that last",
+    "rights": "All rights reserved"
+  },
+  "cta_section": {
+    "title": "Ready for Digital Transformation?",
+    "description": "Let's discuss how we can transform your business into a seamless digital ecosystem. Free strategy session included.",
+    "button": "Schedule Your Call"
+  },
+  "trust_badges": {
+    "clients_title": "Trusted by Fortune 500 companies",
+    "partners_title": "Technology Partners",
+    "certifications_title": "Certifications & Standards",
+    "indicators": [
+      "100% data in Switzerland",
+      "NDA for every project",
+      "€5M liability insurance"
+    ],
+    "clients": {
+      "banking": "Banking",
+      "insurance": "Insurance",
+      "pharma": "Pharma",
+      "retail": "Retail",
+      "transport": "Transport",
+      "telecom": "Telecom"
+    },
+    "partners": {
+      "aws_full": "Amazon Web Services",
+      "gcp_full": "Google Cloud Platform",
+      "azure_full": "Microsoft Azure",
+      "stripe_full": "Stripe Verified",
+      "tier": "Partner"
+    },
+    "certifications": {
+      "iso_desc": "Information Security",
+      "gdpr_desc": "Data Protection",
+      "swiss_dpa_desc": "Swiss Privacy",
+      "owasp_desc": "Web Security"
+    }
+  },
+  "guarantee": {
+    "badge": "Guarantees",
+    "title": "Peace of Mind Included",
+    "subtitle": "We don't just promise quality — we guarantee it in writing",
+    "items": [
+      {
+        "title": "Full Source Code",
+        "description": "Upon project completion, you receive complete, documented source code. Your project — your property. No vendor lock-in."
+      },
+      {
+        "title": "Free Bug Fixes",
+        "description": "All bugs found after launch are fixed for free within a period specified in the contract. Details are discussed individually for each project."
+      },
+      {
+        "title": "Milestone Payments",
+        "description": "Payment is split into stages linked to project milestones. You control the budget and see progress at every step."
+      },
+      {
+        "title": "Full Transparency",
+        "description": "Access to task tracker, weekly reports, demos. You always know the project status and can make adjustments on the fly."
+      },
+      {
+        "title": "NDA & Data Protection",
+        "description": "NDA signature, GDPR and Swiss DPA compliance. Your business information is reliably protected."
+      }
+    ],
+    "cta_title": "Ready to Work Without Risks?",
+    "cta_description": "All guarantee terms are documented in contracts. We're open to discuss individual conditions for your project.",
+    "cta_button": "Discuss Guarantees"
+  }
+}

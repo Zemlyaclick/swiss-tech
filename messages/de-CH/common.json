@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Hei",
+    "services": "Dienschtleischtige",
+    "about": "Über üs",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "company": "Swiss Tech Solutions",
+    "tagline": "Digitali Ökosystem wo Bestand händ",
+    "rights": "Alli Rächt vorbehalte"
+  },
+  "cta_section": {
+    "title": "Parat für d'digitali Transformation?",
+    "description": "Lönd üs bespräche, wie mir Ihres Unternähme i es nahtloses digitals Ökosystem verwandle chönd. Gratis Strategiesitzig inbegriffe.",
+    "button": "Gspräch vereinbare"
+  },
+  "trust_badges": {
+    "clients_title": "Vo Fortune-500-Firmene vertraut",
+    "partners_title": "Technologiepartner",
+    "certifications_title": "Zertifizierige & Standards",
+    "indicators": [
+      "100% Date i de Schwiiz",
+      "NDA für jedes Projekt",
+      "€5M Haftpflichtversicherig"
+    ],
+    "clients": {
+      "banking": "Bankwese",
+      "insurance": "Versicherig",
+      "pharma": "Pharma",
+      "retail": "Detailhandel",
+      "transport": "Transport",
+      "telecom": "Telekommunikation"
+    },
+    "partners": {
+      "aws_full": "Amazon Web Services",
+      "gcp_full": "Google Cloud Platform",
+      "azure_full": "Microsoft Azure",
+      "stripe_full": "Stripe Verifiziert",
+      "tier": "Partner"
+    },
+    "certifications": {
+      "iso_desc": "Informatiunssicherheit",
+      "gdpr_desc": "Dateschutz",
+      "swiss_dpa_desc": "Schwiizer Dateschutz",
+      "owasp_desc": "Web-Sicherheit"
+    }
+  },
+  "guarantee": {
+    "badge": "Garantie",
+    "title": "Seeläfride inbegriffe",
+    "subtitle": "Mir verspräched nöd nur Qualität — mir garantiered sie schriftlich",
+    "items": [
+      {
+        "title": "Vollständige Quellcode",
+        "description": "Nach em Projektabschluss überchömed Sie de vollständig, dokumentiert Quellcode. Ihres Projekt — Ihres Eigetum. Kei Vendor Lock-in."
+      },
+      {
+        "title": "Gratis Fählerbehebig",
+        "description": "Alli Fähler wo nach em Launch gfunde werded, werded innerhalb vo de im Vertrag fäschtglegta Frischt gratis behoben. Details werded für jedes Projekt individuell bsproche."
+      },
+      {
+        "title": "Miilesteizahlige",
+        "description": "D'Zahlig wird i Etappe ufteilt, wo a Projektmiilestein bunde sind. Sie kontrolliered s'Budget und gsehnd de Fortschritt bi jedem Schritt."
+      },
+      {
+        "title": "Volli Transparänz",
+        "description": "Zuägang zum Task-Tracker, wöchentlichi Bricht, Demos. Sie wüssed immer de Projektstatus und chönd spontan Apassige mache."
+      },
+      {
+        "title": "NDA & Dateschutz",
+        "description": "NDA-Unterzeichnig, GDPR- und Swiss DPA-Konformität. Ihri Gschäftsinformatione sind zuverläsig gschützt."
+      }
+    ],
+    "cta_title": "Parat, ohni Risike z'schaffe?",
+    "cta_description": "Alli Garantiebedingige werded i Verträg dokumentiert. Mir sind offe für individuelli Bedingige für Ihres Projekt.",
+    "cta_button": "Garantie bspräche"
+  }
+}

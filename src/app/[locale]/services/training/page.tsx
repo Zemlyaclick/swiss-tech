@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { getTranslations } from 'next-intl/server';
 import { 
   GraduationCap, 
   Users, 
@@ -14,69 +15,30 @@ import {
   Target
 } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Обучение команд | Swiss IT',
-  description: 'Воркшопы и тренинги для разработчиков. Современные технологии, методологии, инструменты.',
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: 'services_training' });
+  return {
+    title: t('meta_title'),
+    description: t('meta_description')
+  };
+}
 
 export default async function TrainingPage({ params }: { params: { locale: 'en' | 'de' | 'fr' | 'it' | 'de-CH' | 'ru' } }) {
   const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: 'services_training' });
 
-  const programs = [
-    {
-      icon: Code,
-      title: 'Современный стек',
-      description: 'React, Next.js, TypeScript, Node.js — актуальные технологии для веб-разработки.'
-    },
-    {
-      icon: Monitor,
-      title: 'DevOps практики',
-      description: 'Docker, CI/CD, мониторинг — навыки для надёжной доставки и эксплуатации.'
-    },
-    {
-      icon: Zap,
-      title: 'Agile и Scrum',
-      description: 'Методологии разработки, планирование спринтов, работа с backlog.'
-    },
-    {
-      icon: Target,
-      title: 'Code Review',
-      description: 'Практики качественного код-ревью, стандарты кода, автоматизация.'
-    },
-    {
-      icon: BookOpen,
-      title: 'Архитектура',
-      description: 'Паттерны проектирования, микросервисы, масштабирование систем.'
-    },
-    {
-      icon: Users,
-      title: 'Командная работа',
-      description: 'Коммуникация в команде, работа с требованиями, документация.'
-    }
-  ];
+  const programIcons = [Code, Monitor, Zap, Target, BookOpen, Users];
+  const programs = [0, 1, 2, 3, 4, 5].map((i) => ({
+    icon: programIcons[i],
+    title: t(`programs.${i}.title`),
+    description: t(`programs.${i}.description`)
+  }));
 
-  const formats = [
-    {
-      title: 'Воркшопы',
-      description: 'Практические занятия с реальными задачами',
-      duration: '1-2 дня'
-    },
-    {
-      title: 'Курсы',
-      description: 'Глубокое погружение в тему',
-      duration: '4-8 недель'
-    },
-    {
-      title: 'Менторинг',
-      description: 'Индивидуальная работа с разработчиками',
-      duration: 'По запросу'
-    },
-    {
-      title: 'Консультации',
-      description: 'Разбор конкретных вопросов команды',
-      duration: '2-4 часа'
-    }
-  ];
+  const formats = [0, 1, 2, 3].map((i) => ({
+    title: t(`formats.${i}.title`),
+    description: t(`formats.${i}.description`),
+    duration: t(`formats.${i}.duration`)
+  }));
 
   return (
     <>
@@ -89,28 +51,27 @@ export default async function TrainingPage({ params }: { params: { locale: 'en' 
           <div className="max-w-6xl mx-auto relative">
             <div className="flex items-center gap-2 mb-6">
               <span className="px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 rounded-full text-emerald-400 text-sm">
-                Training
+                {t('badge_training')}
               </span>
               <span className="px-3 py-1 bg-void-800 border border-void-700 rounded-full text-mist-400 text-sm">
-                Workshops
+                {t('badge_workshops')}
               </span>
             </div>
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              Обучение команд —{' '}
+              {t('title')}{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
-                инвестиция в рост
+                {t('title_gradient')}
               </span>
             </h1>
             <p className="text-xl text-mist-300 max-w-3xl mb-8">
-              Проводим воркшопы и тренинги для ваших разработчиков. 
-              Современные технологии, методологии, инструменты — практические навыки, а не теория.
+              {t('description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={`/${locale}/contact`}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
               >
-                Обсудить программу
+                {t('cta_primary')}
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
@@ -121,7 +82,7 @@ export default async function TrainingPage({ params }: { params: { locale: 'en' 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Направления обучения
+              {t('programs_title')}
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {programs.map((program, index) => (
@@ -142,7 +103,7 @@ export default async function TrainingPage({ params }: { params: { locale: 'en' 
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-12 text-center">
-              Форматы
+              {t('formats_title')}
             </h2>
             <div className="grid md:grid-cols-4 gap-6">
               {formats.map((format, index) => (
@@ -162,17 +123,17 @@ export default async function TrainingPage({ params }: { params: { locale: 'en' 
         <section className="py-20 px-4 md:px-6 bg-void-900/50">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Хотите развить команду?
+              {t('cta_title')}
             </h2>
             <p className="text-xl text-mist-400 mb-8">
-              Расскажите о потребностях — составим программу
+              {t('cta_description')}
             </p>
             <a
               href={`/${locale}/contact`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-void-950 font-semibold rounded-lg hover:opacity-90 transition-opacity"
             >
               <GraduationCap className="w-5 h-5" />
-              Обсудить обучение
+              {t('cta_button')}
             </a>
           </div>
         </section>
