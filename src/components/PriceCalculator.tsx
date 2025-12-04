@@ -180,7 +180,7 @@ export default function PriceCalculator() {
               transition={{ delay: 0.1 }}
             >
               <h3 className="text-white font-semibold mb-4">{t('step2')}</h3>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {complexityLevels.map((level) => (
                   <button
                     key={level.id}
