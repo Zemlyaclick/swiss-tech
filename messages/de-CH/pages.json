@@ -475,158 +475,182 @@
   },
   "imprint": {
     "meta_title": "Impressum | Swiss Made IT",
-    "meta_description": "Rächtlichi Informatione über Swiss Tech Solutions GmbH. Impressum gmäss Schwiizer Rächt.",
+    "meta_description": "Rächtlichi Informatione über Swiss Tech Solutions GmbH. Impressum gmäss Schwiizer Rächt (OR Art. 958f).",
     "badge": "Impressum / Rächtlichi Informatione",
     "title": "Impressum",
     "company_title": "Unternehmensinfos",
-    "company_type": "Gesellschaft mit beschränkter Haftung (GmbH)",
+    "company_type": "Gsellschaft mit beschränkter Haftig (GmbH) gmäss Art. 772 ff. OR",
     "legal_address": "Sitz vo de Gsellschaft",
     "registration_data": "Registrierigsdaten",
     "trade_register": "Handelsregister",
-    "entry_number": "Iiträgigsnummere",
+    "entry_number": "Firmenummere (CH-ID)",
     "contact_title": "Kontaktinformatione",
     "email": "E-Mail",
     "phone": "Telefon",
     "website": "Websiite",
     "management_title": "Gschäftsfüehrig",
-    "managing_director": "Gschäftsfüehrer",
+    "managing_director": "Gschäftsfüehrer (einzelzeichnigsberechtigt)",
     "director_name": "Alexander Novak",
     "tax_title": "Stüürinformatione",
-    "vat_number": "UID/MwSt-Nummere",
-    "tax_authority": "Stüürbehörde",
+    "vat_number": "UID (Unternehmens-Identifikationsnummere)",
+    "tax_authority": "Kantonal Stüüramt",
     "disclaimer_title": "Haftigsusschluss",
     "disclaimer_content": "Inhalt vo de Website",
-    "disclaimer_content_text": "De Inhalt vo dere Website isch mit grösster Sorgfalt erstellt worde. Mir chönd aber kei Gwähr für d Richtigkeit, Vollständigkeit und Aktualität vo de bereitgstellte Informatione übernäh. Als Diensteanbieter sind mir für eigni Inhält nach de allgemeine Gsetz verantwortlich.",
+    "disclaimer_content_text": "De Inhalt vo dere Website isch mit grösster Sorgfalt erstellt worde. Mir chönd aber kei Gwähr für d Richtigkeit, Vollständigkeit und Aktualität vo de bereitgstellte Informatione übernäh. D Haftig richtet sich nach de Bestimmige vom Schwiizer Obligationerächt (OR).",
     "disclaimer_links": "Externi Links",
-    "disclaimer_links_text": "Üsi Website enthält Links zu externe Websites vo Dritte, uf deren Inhalt mir kei Iifluss händ. Drum chönd mir für die fremde Inhält kei Gwähr übernäh. Für d Inhält vo de verlinkte Siite isch de jeweilig Abieter oder Betrieber verantwortlich.",
+    "disclaimer_links_text": "Üsi Website enthält Links zu externe Websites vo Dritte, uf deren Inhalt mir kei Iifluss händ. Drum chönd mir für die fremde Inhält kei Gwähr übernäh. D Verantwortig für d Inhält vo de verlinkte Siite ligt uusschliesslech bim jeweilige Abieter.",
     "disclaimer_copyright": "Urheberrächt",
-    "disclaimer_copyright_text": "D Inhält und Wärk uf dere Website underliege em Schwiizer Urheberrächt. Vervielfältigung, Bearbeitig, Verbreitig und jedi Art vo Verwärtig usserhalb vo de Grenze vom Urheberrächt bedürfed de schriftliche Zuestimmig vom jeweilige Autor oder Ersteller.",
+    "disclaimer_copyright_text": "D Inhält und Wärk uf dere Website sind urheberrächtlech gschützt gmäss em Schwiizer Bundesgsetz über s Urheberrächt (URG). Jedi Verwendig usserhalb vo de gsetzlech zuelässige Schranke bruucht d schriftlichi Zuestimmig vom Rächtshaber.",
     "data_protection_title": "Dateschutz",
-    "data_protection_text": "Informatione zur Verarbeitig vo personebezogene Date finded Sie in üsere",
+    "data_protection_text": "Informatione zur Verarbeitig vo Personedaten finded Sie in üsere",
     "data_protection_link": "Dateschutzerklärig",
-    "data_protection_officer": "Dateschutzbeuftragte",
-    "dispute_title": "Striitbiilägig",
-    "dispute_text_1": "D Europäischi Kommission stellt e Plattform zur Online-Striitbiilägig (OS) bereit:",
-    "dispute_text_2": "Mir sind weder bereit no verpflichtet, a Striitbiilägigsverfaare vor ere Verbrucherschlichtigsstell teilznäh."
+    "data_protection_officer": "Dateschutz-Verantwortlicher",
+    "dispute_title": "Awändbars Rächt und Grichtsstand",
+    "dispute_text_1": "Es gilt uusschliesslech Schwiizer Rächt. De uusschliesslech Grichtsstand isch Zürich, Schwiiz.",
+    "dispute_text_2": "Vor ere allefälllige Grichtsklage empfähle mir, direkt mit üs Kontakt ufznäh, um e güetlichi Einigung z sueche."
   },
   "privacy": {
     "meta_title": "Dateschutzerklärig | Swiss Made IT",
-    "meta_description": "Dateschutzrichtlinie vo Swiss Made IT. DSGVO- und Schwiizer DSG-konform.",
-    "last_update": "Letscht Aktualisierig: 1. Dezember 2024",
+    "meta_description": "Dateschutzrichtlinie vo Swiss Made IT. Konform mit em neue Schwiizer Dateschutzgsetz (nDSG/revDSG).",
+    "last_update": "Letscht Aktualisierig: 4. Dezember 2024",
     "title": "Dateschutzerklärig",
     "contact_title": "Frage zum Dateschutz?",
-    "contact_text": "Kontaktiere Sie üse Dateschutzbeuftragte",
+    "contact_text": "Kontaktiere Sie üse Dateschutz-Verantwortliche",
     "sections": [
       {
-        "title": "1. Allgemeini Bestimmige",
-        "content": "Die Dateschutzerklärig beschriibt, wie Swiss Tech Solutions GmbH (\"mir\", \"euses\" oder \"Unternehme\") personebezogeni Date vo de Nutzer vo üsere Website swissmade.it (\"Website\") erhebt, verwendet und schützt.\n\nMir halte d Aforderige vo de Dateschutz-Grundverordnig (DSGVO) vo de Europäische Union und em Schwiizer Bundesgsetz über de Dateschutz (DSG) ii."
+        "title": "1. Verantwortlicher und Gältigsbereich",
+        "content": "Verantwortlech für d Bearbeitig vo Personedaten isch:\n\nSwiss Tech Solutions GmbH\nBahnhofstrasse 1\n8001 Züri, Schwiiz\nE-Mail: privacy@swissmade.it\n\nDie Dateschutzerklärig gilt für d Bearbeitig vo Personedaten im Zämehang mit de Nutzig vo üsere Website swissmade.it und üsne Dienstleistige.\n\nMir halte d Vorgabe vom neue Bundesgsetz über de Dateschutz (nDSG/revDSG) vo de Schwiiz ii, wo sit em 1. September 2023 gültig isch."
       },
       {
-        "title": "2. Verantwortliche",
-        "content": "Swiss Tech Solutions GmbH\nBahnhofstrasse 1\n8001 Züri, Schwiiz\nE-Mail: privacy@swissmade.it"
+        "title": "2. Begriffsdefinitione",
+        "content": "Im Sinn vom Schwiizer Dateschutzgsetz (nDSG) gälte folgendi Begriffsdefinitione:\n• Personedaten: Alli Informatione, wo sich uf e bestimmti oder bestimmbar Person beziehnd\n• Bsunders schützenswärti Personedaten: Date über religiösi, weltaschaulichi, politischi oder gwärkschaftlichi Asichte; Gsundheitsdate; genetischi und biometrischi Date; Date über Sozialhilfe oder administrativi und strafrechtlichi Verfolgige\n• Bearbeitig: Jede Umgang mit Personedaten, unabhängig vo de agwendte Mittel und Verfahre\n• Verantwortlicher: Privati Person oder Bundesorgan, wo allei oder zämme mit andere über de Zwäck und d Mittel vo de Bearbeitig entscheidet"
       },
       {
-        "title": "3. Weli Date mir erhebe",
-        "content": "Mir chönd folgendi Kategorie vo personebezogene Date erhebe:\n• Kontaktdate: Name, E-Mail, Telefonnummere, Firmename\n• Afragdate: Informatione, wo Sie über Kontaktformular bereitstelle\n• Technischi Date: IP-Adresse, Browsertyp, Betriebssystem, Website-Bsuechsdate\n• Cookies: Dur Cookie-Dateie erhobeni Date (lueg Abschnitt Cookies)"
+        "title": "3. Weli Personedaten mir bearbeite",
+        "content": "Mir chönd folgendi Kategorie vo Personedaten bearbeite:\n\n• Kontaktdate: Name, E-Mail-Adresse, Telefonnummere, Firmename\n• Afragdate: Informatione, wo Sie über Kontaktformular bereitstelle\n• Technischi Date: IP-Adresse, Browsertyp, Betriebssystem, Datum und Ziit vo Sitebesuech\n• Nutzigsdaten: Informatione über Ihri Nutzung vo üsere Website\n• Cookies: Date, wo dur Cookie-Dateie erhoben wärde (lueg Abschnitt Cookies)"
       },
       {
-        "title": "4. Zwäck vo de Dateverarbeitig",
-        "content": "Mir verarbeite Ihri personebezogene Date für folgendi Zwäck:\n• Beantwortig vo Ihre Afrage und Bereitstellig vo Informatione über Dienstleistige\n• Erfüllig vo vertragliche Verpflichtige\n• Verbesserig vo üsere Website und Dienstleistige\n• Versand vo Marketing-Kommunikation (nur mit Ihrer Iiwilligung)\n• Iihaltung vo gsetzliche Verpflichtige"
+        "title": "4. Zwäck vo de Datenbearbeitig",
+        "content": "Mir bearbeite Ihri Personedaten für folgendi Zwäck:\n\n• Beantwortig vo Ihre Afrage und Bereitstellig vo Informatione über üsi Dienstleistige\n• Erfüllig vo vertragleche Verpflichtige\n• Verbesserig vo üsere Website und Dienstleistige\n• Versand vo Marketing-Kommunikation (nur mit Ihrer Iiwilligung)\n• Iihaltung vo gsetzleche Verpflichtige\n• Wahrnehmig vo berechtigte Interesse, sofern Ihri Interesse nid überwiege"
       },
       {
-        "title": "5. Rächtsgrundlage vo de Verarbeitig",
-        "content": "Mir verarbeite Ihri Date uf folgende Rächtsgrundlage:\n• Iiwilligung: wenn Sie usdrücklich de Verarbeitig zuestimme (z.B. Newsletter-Ameldig)\n• Vertragserfüllig: wenn d Verarbeitig zur Erfüllig vomene Vertrag mit Ihne erforderlech isch\n• Berechtigts Interesse: zur Verbesserig vo üsere Dienstleistige und Gwährleistig vo de Sicherheit\n• Gsetzlichi Verpflichtige: wenn mir gsetzlich zur Datespiicherig verpflichtet sind"
+        "title": "5. Rächtsgrundlage (gmäss nDSG)",
+        "content": "Mir bearbeite Ihri Personedaten gsetzeskonform. Im Schwiizer Rächt isch d Bearbeitig vo Personedaten grundsätzlech erlaubt, sofern:\n\n• D Bearbeitig nach Treu und Glaube erfolgt und verhältnismässig isch\n• D Bearbeitig für de betroffene Person erkennbar isch\n• Personedaten nur für de Zwäck bearbeitet wärde, wo bi de Beschaffig agäh oder erkennbar isch\n• D Iihaltung vo Mindestmassnahme zur Datensicherheit gwährleistet isch\n\nBi de Bearbeitig vo bsunders schützenswärte Personedaten oder Profiling mit hohem Risiko bruuche mir Ihri usdrücklechi Iiwilligung."
       },
       {
-        "title": "6. Dateübermittlig a Dritti",
-        "content": "Mir verchöufe oder übermittle Ihri personebezogene Date nid zu Marketingzwäck a Dritti. Mir chönd Date übermittle a:\n• Dienstleister, wo üs bi de Gschäftstätigkeit unterstütze (Hosting, Analytik)\n• Behörde uf gsetzlichi Aforderig\n• Im Rahme vo Unternehmenstransaktione (Fusion, Übernahm)\n\nAlli üseri Dienstleister sind zur Iihaltung vo de DSGVO verpflichtet und unterschriibe Uftragsverarbeitigsverträg (AVV)."
+        "title": "6. Wiiergab vo Personedaten",
+        "content": "Mir verkoufe Ihri Personedaten nid a Dritti. Mir chönd Personedaten wiiergäh a:\n\n• Dienstleister (Uftragsbearbeiter), wo üs bi de Erfüllig vo üsne Ufgabe unterstütze (z.B. Hosting, IT-Support)\n• Behörde uf gsetzlechi Aforderig\n• Im Rahme vo Unternehmenstransaktione (Fusion, Übernahm)\n\nMir schliesse mit allne Uftragsbearbeiter e Vereinbarig ab, wo d Pflichte bezüglich Dateschutz reglet (Art. 9 nDSG)."
       },
       {
-        "title": "7. Internationali Dateübermittlig",
-        "content": "Date wärde uf Server in de Schwiiz und de Europäische Union gspiicheret. Wenn Date usserhalb vo de EU/Schwiiz übermittlet wärde, gwährleiste mir es agemessens Schutzniveau dur Standardvertragsklausle (SCC) oder Agemesseheitsbeschlüss."
+        "title": "7. Date ins Usland",
+        "content": "Personedaten wärde grundsätzlech uf Server in de Schwiiz gspiicheret.\n\nWenn mir Personedaten ins Usland übermittle, stelle mir sicher, dass s Ziland e agemessene Dateschutz gwährleistet (Staatelist vom EDÖB) oder dass mir geigneti Garantie vorgsehe:\n\n• Standardvertragsklausle (SCC)\n• Verbindlechi Unternehmensvorschrifte\n• Usdrücklechi Iiwilligung\n\nAktuell nutze mir Dienstleister, wo Date au in de EU oder USA bearbeite chönd. In dene Fäll stelle mir sicher, dass agemesseni Schutzmassnahme vorhande sind."
       },
       {
-        "title": "8. Datespiicherig",
-        "content": "Mir spiichere Ihri personebezogene Date nur so lang, wie für d in dere Richtlinie beschriibene Zwäck erforderlech oder gsetzlich vorgschriibe:\n• Chundedate: für d Vertragsduur + 10 Jahr\n• Kontaktformulardate: 2 Jahr\n• Analytikdate: 26 Mönat"
+        "title": "8. Speicheriduur",
+        "content": "Mir bearbeite und speichere Ihri Personedaten nur so lang, wie für d Erfüllig vo de Bearbeitigszwäck nötig oder gsetzlech vorgschriibe:\n\n• Chundedate: für d Vertragsduur + 10 Jahr (gsetzlechi Ufbewarigspflicht Art. 958f OR)\n• Kontaktformulardate: 2 Jahr\n• Analytikdate: 26 Mönat\n• Buechhaltigs- und Gschäftsdate: 10 Jahr (Art. 958f OR)"
       },
       {
-        "title": "9. Ihri Rächt",
-        "content": "Sie händ folgendi Rächt bezüglich Ihre personebezogene Date:\n• Uskumftsrächt: e Kopie vo Ihre Date erhalte\n• Berichtigungsrächt: unrichtigi Date korrigiere\n• Löschigsrächt: Ihri Date lösche (\"Rächt uf Vergessewerden\")\n• Iischränkigsrächt: d Verarbeitig vo Ihre Date iischränke\n• Dateübertragbarkeit: Date in maschineleslichem Format erhalte\n• Widerspruchsrächt: de Verarbeitig uf Grundlag berechtigter Interesse widerspräche\n• Widerrufsrächt: erteili Iiwilligung jederzit widerruefe\n\nZur Usüebig vo Ihre Rächt kontaktiere Sie üs: privacy@swissmade.it"
+        "title": "9. Ihri Rächt gmäss nDSG",
+        "content": "Sie händ folgendi Rächt bezüglich Ihre Personedaten:\n\n• Uskumftsrächt (Art. 25 nDSG): Sie chönd Uskunft über d Bearbeitig vo Ihre Personedaten verlange\n• Rächt uf Dateherausgab (Art. 28 nDSG): Sie chönd verlange, dass mir Ihne Ihri Date in em gängige elektronische Format übergänd\n• Berichtigigsrächt (Art. 32 nDSG): Sie chönd d Berichtigig vo unrichtige Date verlange\n• Löschrächt: Sie chönd d Löschig vo Ihre Date verlange, sofern kei gsetzlechi Ufbewarigspflichte entgägstönd\n• Widerrufsrächt: Sie chönd erteilti Iiwilligunge jederzit widerrüefe\n\nBi Frage wände Sie sich a: privacy@swissmade.it\n\nSie händ au s Rächt, e Asträg oder e Klage bim zuständige Kanton (Zürich) oder em Eidgenössische Dateschutz- und Öffentlichkeitsbeauftragte (EDÖB) iizriiche."
       },
       {
-        "title": "10. Cookies",
-        "content": "Üsi Website verwendet Cookies zur Verbesserig vo de Nutzererfahrig. Mir verwende folgendi Arte vo Cookies:\n• Notwendägi: für de Betrieb vo de Website (Sitzig, Sprach)\n• Analytischi: zum Verstah vo de Website-Nutzig\n\nSie chönd Cookie-Istellige in Ihrem Browser oder über üses Iiwilligungsbanner verwalte."
+        "title": "10. Cookies und Analysedienscht",
+        "content": "Üsi Website verwendet Cookies. Cookies sind chliini Textdateie, wo uf Ihrem Gerät gspiicheret wärde.\n\nMir verwende:\n• Technisch notwendigi Cookies: für de Betrieb vo de Website (Sitzig, Sprachiistellige)\n• Analytischi Cookies: zum Verstah vo de Website-Nutzig (mit Ihrer Iiwilligung)\n\nSie chönd Cookie-Iistellige in Ihrem Browser oder über üses Iiwilligungsbanner verwalte. Meh Informatione finde Sie in üsere Cookie-Richtlinie."
       },
       {
-        "title": "11. Datesicherheit",
-        "content": "Mir wände technischi und organisatorischi Massnahme zum Schutz vo Ihre Date a:\n• Dateverschlüsseelig bi de Übertraagig (TLS/SSL)\n• Dateverschlüsseelig bi de Spiicherig\n• Zuegriffskontrolle und Authäntifizierig\n• Regelmässigi Datesicherig\n• Sicherheitsüberwachig"
+        "title": "11. Datensicherheit",
+        "content": "Mir träffe geigneti technischi und organisatorischi Massnahme (TOM), um Ihri Personedaten vor unbefugtem Zuegriff, Verlust oder Missbruuch z schütze (Art. 8 nDSG):\n\n• Verschlüsselig vo Date bi de Übertraagig (TLS/SSL)\n• Verschlüsselig vo Date bi de Speicherig\n• Zuegriffskontrolle und Authäntifizierig\n• Regelmässigi Backups\n• Sicherheitsüberwachig\n• Schulig vo Mitarbeitende"
       },
       {
-        "title": "12. Änderige vo de Richtlinie",
-        "content": "Mir chönd die Dateschutzerklärig aktualisiere. Wesentlichi Änderige wärde über d Website oder per E-Mail mitteilt. Mir empfähle, die Siite regelmässig z überprüefe."
+        "title": "12. Meldepflicht bi Datensicherheitsverletzige",
+        "content": "Im Fall vonere Verletzung vo de Datensicherheit, wo vorussichtlech zu eme hohe Risiko für d betroffene Persone füehrt, informiere mir unverzügeli de EDÖB und, wo nötig, d betroffene Persone (Art. 24 nDSG)."
       },
       {
-        "title": "13. Kontakt und Beschwärde",
-        "content": "Bi Frage zu üsere Dateschutzerklärig oder wenn Sie e Beschwärde iriiche möchte, kontaktiere Sie üs:\n\nE-Mail: privacy@swissmade.it\nAdresse: Swiss Tech Solutions GmbH, Bahnhofstrasse 1, 8001 Züri\n\nSie händ au s Rächt, e Beschwärde bi ere Dateschutzufsichtsbehörde iizriiche:\n• Schwiiz: EDOB (Eidgenössische Dateschutz- und Öffentlichkeitsbeuftragte)\n• EU: Ufsichtsbehörde vo Ihrem Wohnsitzland"
+        "title": "13. Änderige vo de Dateschutzerklärig",
+        "content": "Mir chönd die Dateschutzerklärig vo Ziit zu Ziit aapasse, um gsetzlechi Aforderige z erfülle oder Änderige vo üsne Dienstleistige umzsetze. D aktuelli Version finde Sie immer uf dere Siite."
+      },
+      {
+        "title": "14. Kontakt",
+        "content": "Bi Frage zu üsere Dateschutzerklärig oder zum Usüebe vo Ihre Rächt, kontaktiere Sie üs:\n\nSwiss Tech Solutions GmbH\nDatenschutz-Verantwortlicher\nBahnhofstrasse 1\n8001 Züri, Schwiiz\nE-Mail: privacy@swissmade.it\n\nUfsichtsbehörde:\nEidgenössische Dateschutz- und Öffentlichkeitsbeuftragte (EDÖB)\nFeldeggweg 1\n3003 Bern\nwww.edoeb.admin.ch"
       }
     ]
   },
   "terms": {
-    "meta_title": "Nutzigsbedingie | Swiss Made IT",
-    "meta_description": "Nutzigsbedingie vo de Website und Dienstleistige vo Swiss Made IT.",
-    "last_update": "Letscht Aktualisierig: 1. Dezember 2024",
-    "title": "Nutzigsbedingie",
+    "meta_title": "Allgemeini Gschäftsbedingie (AGB) | Swiss Made IT",
+    "meta_description": "Allgemeini Gschäftsbedingie vo Swiss Made IT. Schwiizer Rächt, Grichtsstand Zürich.",
+    "last_update": "Letscht Aktualisierig: 4. Dezember 2024",
+    "title": "Allgemeini Gschäftsbedingie (AGB)",
     "contact_title": "Rächtlichi Frage?",
     "contact_text": "Kontaktiere Sie üsi Rächtsabteilig",
     "privacy_link": "Dateschutzerklärig",
     "sections": [
       {
-        "title": "1. Allgemeini Bestimmige",
-        "content": "Die Nutzigsbedingie (\"Bedingie\") regle d Nutzig vo de Website swissmade.it (\"Website\"), wo Swiss Tech Solutions GmbH (\"Unternehme\", \"mir\", \"euses\") gehört.\n\nDur d Nutzig vo üsere Website stimme Sie diese Bedingie zue. Wenn Sie mit irgendwelche Bestimmige nid ivershtande sind, nutze Sie d Website bitte nid."
+        "title": "1. Gältigsbereich",
+        "content": "Die Allgemeine Gschäftsbedingie (\"AGB\") regle d Nutzig vo de Website swissmade.it (\"Website\") und d Gschäftsbeziehige mit Swiss Tech Solutions GmbH (\"Unternehme\", \"mir\", \"üs\").\n\nDur d Nutzig vo üsere Website oder dur s Usschliesse vonere Gschäftsbeziehig stimme Sie diese AGB zue. Bitte läse Sie die AGB sorgfältig dur."
       },
       {
-        "title": "2. Beschriibig vo de Dienstleistige",
-        "content": "Swiss Made IT bietet Softwareentwickligsdienscht a, inklusive, aber nid beschränkt uf:\n• Website- und Webawendigsentwicklig\n• Mobile App-Entwicklig\n• Erstellig vo Telegram-Bots und Mini Apps\n• Integration vo künstlicher Intelligenz\n• Cloud-Migration und DevOps\n• IT-Systemberatig und -Audit\n\nSpezifischi Dienstleistigsbedingie wärde dur individuelli Verträg mit Chunde festgleit."
+        "title": "2. Aabieter",
+        "content": "Swiss Tech Solutions GmbH\nBahnhofstrasse 1\n8001 Zürich, Schwiiz\n\nHandelsregister: Zürich\nUID: CHE-123.456.789\nE-Mail: legal@swissmade.it"
       },
       {
-        "title": "3. Website-Nutzig",
-        "content": "Sie verpflichte sich:\n• D Website nur für rächtmässigi Zwäck z nutze\n• De Betrieb vo de Website nid dur technischi Mittel z störe\n• Kei unbefugte Zuegriff uf Systeme z versuäche\n• Kei schädlichi Software z verbreite\n• In Kontaktformular korrekti Informatione azgee"
+        "title": "3. Dienstleistige",
+        "content": "Swiss Made IT bietet folgendi Dienstleistige aa:\n• Website- und Webawendigsentwicklig\n• Mobile App-Entwicklig\n• Erstellig vo Telegram-Bots und Mini Apps\n• Integration vo künschtlicher Intelligenz\n• Cloud-Migration und DevOps\n• IT-Systemberatig und -Audit\n\nDe genaue Umfang vo einzelne Dienstleistige wird dur individuelli Verträg geregled."
       },
       {
-        "title": "4. Geistigs Eigetum",
-        "content": "Alli Materialie uf de Website, inklusive Textwärk, Grafik, Logos, Bilder und Softwarecode, sind Eigetum vo Swiss Tech Solutions GmbH oder wärde unter Lizenz verwendet.\n\nEs isch Ihne unterseit:\n• Website-Materialie z kopiere, z reproduziere oder z verbreite\n• Marke ohni schriftlichi Genehmigig z verwende\n• Abgleiteti Wärk z modifiziere oder z erstelle"
+        "title": "4. Vertragsuusschluss",
+        "content": "D Informatione uf de Website stelle keis verbindlechs Agebot dar (Art. 7 OR).\n\nEs Vertragsverhältnis chunnt erscht zustande, wenn:\n• Sie üs e konkreti Afrag schicke\n• Mir Ihne es individuells Agebot erstelle\n• Sie das Agebot schriftlech (au elektronisch) ahnähme\n• Mir d Ahnnahm bestätige\n\nPriise uf de Website sind unverbindlechi Richtwärte und chönd je nach Projekt variiere."
       },
       {
         "title": "5. Dateschutz",
-        "content": "D Verarbeitig vo personebezogene Date wird dur üsi Dateschutzerklärig greglet, wo en integrale Bestandteil vo dene Bedingie isch."
+        "content": "D Bearbeitig vo Personedaten erfolgt in Übereiistimmig mit üsere Dateschutzerklärig, wo Bestandteil vo diese AGB bildet."
       },
       {
-        "title": "6. Haftigsbeschränkig",
-        "content": "D Website und ihre Inhalt wärde \"wie bsehe\" ohni jeglihi usdrücklichi oder stillschwigendi Gwährleistig bereitgstellt.\n\nS Unternehme haftet nid für:\n• Schäde, wo us de Nutzig oder Unmöglichkeit vo de Nutzig vo de Website entstah\n• Inhalt vo externe verlinkte Websites\n• Vorübergehendi Nid-Erreichbarkeit vo de Website us technische Gründ\n• Handlige vo Dritte"
+        "title": "6. Pflichte vo de Nutzer",
+        "content": "Bi de Nutzig vo üsere Website verpflichte Sie sich:\n• D Website nur für rächtmässigi Zwäck z nutze\n• De Betrieb vo de Website nid dur technischi Mittel z störe\n• Kei unbefugte Zuegriff uf System z versueche\n• Kei schädlichi Software z verbreite\n• Korrekti Informatione in Kontaktformular azgäh\n• Kei Rächt vo Dritte z verletze"
       },
       {
-        "title": "7. Vertraglichi Beziehige",
-        "content": "Informatione uf de Website diene Informationszwäck und stelle keis öffentlichs Agebot dar. Vertraglichi Beziehige entstah erscht nach Underzeichnig vomene individuelle Vertrag.\n\nUf de Website gnenni Priise sind ungefähri Agabe und chönd je nach spezifischem Projekt variiere."
+        "title": "7. Geistigs Eigetum",
+        "content": "Alli Materialie uf de Website, inklusive Textwärk, Grafike, Logos, Bilder und Softwarecode, sind Eigetum vo Swiss Tech Solutions GmbH oder wärde unter Lizenz verwendet.\n\nOhni usdrücklechi schriftlechi Zuestimmig isch es verbote:\n• Website-Materialie z kopiere, z reproduziere oder z verbreite\n• Marke oder Logos z verwende\n• Abgleiteti Wärk z erstelle\n\nD Rächt wärde dur s Schwiizer Bundesgsetz über s Urheberrächt (URG) und s Markeschutzgsetz (MSchG) gschützt."
       },
       {
-        "title": "8. Externi Links",
-        "content": "D Website cha Links zu externe Ressource enthalte. Mir kontrolliere de Inhalt vo dene Websites nid und sind nid dafür verantwortlich. S Folge vo externe Links erfolgt uf eigni Gfahr."
+        "title": "8. Haftig",
+        "content": "D Website und ihre Inhalt wärde \"wie bsehe\" (as is) ohni Gwähr bereitgstellt.\n\nSwiss Tech Solutions GmbH haftet nid für:\n• Schäde, wo us de Nutzig oder Unmöglichkeit vo de Nutzig vo de Website entstönd\n• Inhalt vo externe verlinkte Websites\n• Vorübergehendi Nid-Erreichbarkeit vo de Website us technische Gründ\n• Handlige vo Dritte\n\nD Haftig beschränkt sich uf de Betrag, wo de Chund tatsächlech zahlt het (gmäss Art. 97 ff. OR). Indirekte Schäde und entgangene Gwinn sind usgeschlosse, sowiet gsetzlech zuelässig."
       },
       {
-        "title": "9. Änderige vo de Bedingie",
-        "content": "Mir behalte üs s Rächt vor, die Bedingie jederzit z ändere. Änderige trete mit de Veröffentlichig uf de Website in Chraft. Mir empfähle, die Siite regelmässig z überprüefe."
+        "title": "9. Gwährleistig bi Dienstleistige",
+        "content": "Für vertragslech vereinbarti Dienstleistige gälted d Gwährleistigsrächt gmäss Schwiizer Obligationerächt (Art. 368 ff. OR für Wärkverträg).\n\nD Mängelfrist beträgt 2 Jahr ab Abnahm, sofern vertraglech nüt anders vereinbart isch.\n\nMängelrügen sind unverzüglech schriftlech mitzteile."
       },
       {
-        "title": "10. Awändbars Rächt",
-        "content": "Die Bedingie underliege em Rächt vo de Schwiiz und wärde in Überiiestimmig damit usgeleigt. Alli Stritigkeite underliege de Zuständigkeit vo de Gricht z Züri, Schwiiz."
+        "title": "10. Zahligsbedingie",
+        "content": "Sofern nüt anders vereinbart:\n• Aaschlag: 30% bi Vertragsunterschrift\n• Zwischezahlig: 40% nach Design-/MVP-Freigab\n• Schlusszahlig: 30% bi Projektabnahm\n\nZahlige sind innert 30 Täg ab Rächnigsstellig fällig.\n\nBi Verzug gilt de gsetzlech Verzugszins vo 5% (Art. 104 OR)."
       },
       {
-        "title": "11. Salvatorischi Klausel",
-        "content": "Setti e Bestimmig vo dene Bedingie für ungültig befunde wärde, bliibe d übrige Bestimmige in vollem Umfang wirksam."
+        "title": "11. Kündigung und Rücktritt",
+        "content": "Website-Nutzig:\nSie chönd d Nutzig jederzit iistelle.\n\nVertraglichi Beziehige:\nKündigig oder Rücktritt richtet sich nach de individuell vereinbarte Vertragsbedingie und em Schwiizer Obligationerächt.\n\nBi Wärkverträg het de Bsteller s Rächt, jederzit gäge Vergüetig vom Wärk zurückzträtte (Art. 377 OR)."
       },
       {
-        "title": "12. Kontaktinformatione",
-        "content": "Bi Frage zu dene Bedingie kontaktiere Sie bitte:\n\nSwiss Tech Solutions GmbH\nBahnhofstrasse 1\n8001 Züri, Schwiiz\nE-Mail: legal@swissmade.it"
+        "title": "12. Externi Links",
+        "content": "D Website cha Links zu externe Ressource enthalte. Mir händ kei Iifluss uf de Inhalt vo dene Websites und übernähme kei Verantwortig dafür.\n\nS Folge vo externe Links erfolgt uf eigni Verantwortig."
+      },
+      {
+        "title": "13. Vertraulichkeit",
+        "content": "Beidi Parteje verpflichte sich, alli vertrauliche Informatione, wo im Rahme vo de Gschäftsbeziehig erhalte wärde, vertraulech z behandle und nid a Dritti wiiterzgäh.\n\nÜber d Underzeichnig vonere separaten Vertraulichkeitsvereinbarig (NDA) cha bi Bedarf separat vereinbart wärde."
+      },
+      {
+        "title": "14. Änderige vo de AGB",
+        "content": "Mir behalte üs s Rächt vor, die AGB jederzit z ändere. Änderige trete mit de Veröffentlichig uf de Website in Chraft.\n\nBi wesentleche Änderige informiere mir Sie über E-Mail oder dur e Hiwiis uf de Website.\n\nD witeri Nutzig vo de Website gilt als Zuestimmig zu de gänderte AGB."
+      },
+      {
+        "title": "15. Awändbars Rächt und Grichtsstand",
+        "content": "Für alli Stritigkeite us oder im Zämehang mit dene AGB oder de Nutzig vo de Website gilt uusschliesslech Schwiizer Rächt under Usschluss vom Kollisionsrächt und em UN-Kaufrächt (CISG).\n\nUusschliesslecher Grichtsstand für alli Stritigkeite isch Zürich, Schwiiz.\n\nZwingendi Grichtsständ (z.B. am Wohnsitz vo Konsumente) bliibe vorbehalte."
+      },
+      {
+        "title": "16. Salvatorischi Klausel",
+        "content": "Setti einzelni Bestimmige vo dene AGB ungültig oder undurchführbar sii oder wärde, bliibe d übrige Bestimmige davon unberüehrt. D ungültigi oder undurchführbar Bestimmig wird dur e Regelig ersetzt, wo em wirtschaftleche Zwäck vo de ursprüngleche Bestimmig am nächste chunnt."
+      },
+      {
+        "title": "17. Kontakt",
+        "content": "Bi Frage zu dene AGB kontaktiere Sie bitte:\n\nSwiss Tech Solutions GmbH\nBahnhofstrasse 1\n8001 Zürich, Schwiiz\nE-Mail: legal@swissmade.it\nTelefon: +41 44 123 45 67"
       }
     ]
   },
@@ -1141,71 +1165,71 @@
   },
   "security": {
     "meta_title": "NDA & Sicherheit | Swiss Made IT",
-    "meta_description": "Schwiizer Dateschutzstandard. NDA wird vor Projektbesprächig unterschriibe. ISO 27001, GDPR-Konformität.",
+    "meta_description": "Schwiizer Dateschutzstandard. NDA gmäss Schwiizer Rächt. ISO 27001, nDSG/revDSG-Konformität.",
     "badge": "Security & Compliance",
     "hero_title_1": "NDA und Sicherheit: ",
     "hero_title_2": "Schwiizer Standard",
-    "hero_description": "Mir schütze Ihri Ideie und Date vom erschte Tag a. NDA wird vor de Besprächig vo Projektdetails unterschriibe.",
+    "hero_description": "Mir schütze Ihri Ideie und Date vom erschte Tag a. NDA gmäss Schwiizer Rächt (Art. 321a OR Treuepflicht) wird vor de Besprächig vo Projektdetails unterschriibe.",
     "request_nda": "NDA afrage",
     "about_security": "Über Sicherheit",
-    "nda_title": "NDA-Type",
-    "nda_description": "Mir unterschriibe NDA vor em erschte Aruf. Ihri Ideie sind vo Afang a gschützt.",
+    "nda_title": "NDA-Type gmäss Schwiizer Rächt",
+    "nda_description": "Mir unterschriibe NDA vor em erschte Aruf. Ihri Ideie sind vo Afang a gschützt gmäss Schwiizer Geheimhaltigsrächt.",
     "download_nda": "NDA-Muschter abelade",
     "application": "Awendig",
     "security_title": "Sicherheitsmassnahme",
-    "security_description": "Umfassende Asatz zum Dateschutz uf allne Ebene",
+    "security_description": "Umfassende Asatz zum Dateschutz uf allne Ebene gmäss Art. 8 nDSG (TOM)",
     "certs_title": "Zertifikat & Compliance",
     "practices_title": "Üsi Sicherheitspraktike",
     "insurance_title": "Beruefshaftpflichtversicherig",
-    "insurance_description": "Üsi Tätigkeit isch bis zu €5'000'000 versicheret. Das isch e zusätzlichi Garantie zum Schutz vo Ihre Interesse.",
+    "insurance_description": "Üsi Tätigkeit isch bis zu CHF 5'000'000 versicheret. Das isch e zusätzlichi Garantie zum Schutz vo Ihre Interesse gmäss Schwiizer Versicherigsrächt.",
     "cta_title": "Bereit, Ihres Projekt z bespräche?",
-    "cta_description": "Mir schicke s NDA innerhalb vonere Stünd nach Ihrer Afrag. Ihri Ideie sind vor em erschte Gspräch gschützt.",
+    "cta_description": "Mir schicke s NDA innerhalb vonere Stund nach Ihrer Afrag. Ihri Ideie sind vor em erschte Gspräch gschützt.",
     "confirmed": "Bestätiget",
     "in_progress": "Im Zertifizierigsprozess",
-    "planned": "Gplant Q4 2024",
+    "planned": "Gplant Q1 2025",
     "nda_types": [
       {
-        "title": "Mutual NDA",
-        "description": "Bilaterali Vertraulichkeitsvereinbarig",
+        "title": "Mutual NDA (Gegesiitigi Vertraulichkeit)",
+        "description": "Bilaterali Vertraulichkeitsvereinbarig gmäss Art. 321a OR",
         "useCase": "Für Projektbesprächig und Ideie-Uustuusch"
       },
       {
-        "title": "Project NDA",
-        "description": "Erwiiterets NDA mit technische Details",
+        "title": "Project NDA (Projektbezogeni Vertraulichkeit)",
+        "description": "Erwiiterets NDA mit technische Details und Gschäftsgeheimnisschutz",
         "useCase": "Für Übertraig vo technischer Dokumentation"
       },
       {
-        "title": "Employee NDA",
-        "description": "NDA für alli am Projekt schaffende Mitarbeiter",
+        "title": "Employee NDA (Mitarbeiter-Vertraulichkeit)",
+        "description": "NDA für alli am Projekt schaffende Mitarbeiter gmäss Arbetsrächt",
         "useCase": "Schutz uf Entwicklerebeni"
       }
     ],
     "measures": [
       {
-        "title": "Datevershlüssligs",
+        "title": "Dateverschlüsselig",
         "items": [
           "AES-256 für Date im Ruehestand",
           "TLS 1.3 für Date im Transit",
-          "End-to-End-Verschlüssligs für sensitivi Date",
+          "End-to-End-Verschlüsselig für sensitivi Date",
           "HSM für kryptografischi Schlüssel"
         ]
       },
       {
-        "title": "Infrastruktur",
+        "title": "Infrastruktur (Schwiizer Hosting)",
         "items": [
           "Schwiizer Rechezentere (Tier III+)",
-          "AWS / Azure / GCP i europäische Regione",
+          "Datehoheit in de Schwiiz garantiert",
           "Isolierti VPC für jedes Projekt",
-          "Regelmässigi Backups"
+          "Regelmässigi Backups uf Schwiizer Server"
         ]
       },
       {
         "title": "Zuegriffskontrolle",
         "items": [
-          "Prinzip vo de minimale Rächt",
-          "Zwei-Faktor-Authäntifizierig (2FA)",
+          "Prinzip vo de minimale Rächt (Least Privilege)",
+          "Zwei-Faktor-Authentifizierig (2FA)",
           "Regelmässigi Zuegriffsaudits",
-          "Protokollierig vo allne Aktione"
+          "Protokollierig vo allne Aktione (Art. 8 nDSG)"
         ]
       },
       {
@@ -1214,7 +1238,7 @@
           "SIEM-System",
           "24/7 Bedrohigsüberwachiig",
           "Automatischi Anomalieerkennig",
-          "Incident-Response-Verfahre"
+          "Incident-Response-Verfahre (Art. 24 nDSG Meldepflicht)"
         ]
       }
     ],
@@ -1225,13 +1249,13 @@
         "status": "in_progress"
       },
       {
-        "name": "GDPR Compliant",
-        "description": "Volli Konformität mit EU-Dateschutzaforderige",
+        "name": "nDSG/revDSG Compliant",
+        "description": "Volli Konformität mit em neue Schwiizer Dateschutzgsetz (sit 1. Sept. 2023)",
         "status": "confirmed"
       },
       {
-        "name": "Swiss DPA",
-        "description": "Konformität mit Schwiizer Dateschutzgsetz",
+        "name": "EDÖB-konform",
+        "description": "Erfüllig vo allne Aforderige vom Eidg. Dateschutz- und Öffentlichkeitsbeauftragte",
         "status": "confirmed"
       },
       {
@@ -1241,12 +1265,12 @@
       }
     ],
     "practices": [
-      "Alli Mitarbeiter dureä Informationssicherheitsschuelig",
+      "Alli Mitarbeiter dureä Informationssicherheitsschuelig (Art. 8 nDSG)",
       "Code-Review mit Schwachstelleprüefig (OWASP Top 10)",
       "Regelmässigi Pentests und Schwachstellescans",
       "Clean-Desk- und Screen-Policy",
-      "Verschlüssligs vo Arbeitsgerät",
-      "Sicheri Dateentsorgiig nach Projektabschluss"
+      "Verschlüsselig vo Arbeitsgerät",
+      "Sicheri Datevernichtig nach Projektabschluss gmäss Ufbewarigspflichte"
     ]
   }
 }
