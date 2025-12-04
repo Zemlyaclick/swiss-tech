@@ -51,7 +51,7 @@ export default function TrustBadges() {
             {t('clients_title')}
           </motion.p>
           
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {clients.map((client, index) => (
               <motion.div
                 key={client.name}
@@ -61,11 +61,9 @@ export default function TrustBadges() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
               >
-                <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl bg-void-800/50 border border-mist-700/30 flex items-center justify-center group-hover:border-laser-cyan/30 transition-colors">
-                  <span className="text-mist-300 font-display font-bold text-sm md:text-base group-hover:text-white transition-colors">
-                    {client.name}
-                  </span>
-                </div>
+                <span className="text-laser-cyan font-display font-bold text-lg md:text-xl drop-shadow-[0_0_10px_rgba(0,255,255,0.5)] group-hover:drop-shadow-[0_0_20px_rgba(0,255,255,0.8)] transition-all duration-300">
+                  {client.name}
+                </span>
                 <span className="text-mist-600 text-[10px] mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
                   {t(`clients.${client.categoryKey}`)}
                 </span>
