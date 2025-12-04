@@ -11,15 +11,17 @@ import {
   MessageSquare,
   Calendar,
   Shield,
-  Zap,
-  CheckCircle2
+  Zap
 } from 'lucide-react';
+import { getTranslations } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: 'Контакты | Swiss Made IT',
-  description: 'Свяжитесь с нами для бесплатной консультации. Цюрих, Швейцария. Ответим в течение 2 часов в рабочее время.',
-  keywords: ['контакты', 'связаться', 'консультация', 'Цюрих', 'Швейцария', 'IT компания'],
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: 'contact' });
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+  };
+}
 
 export default async function ContactPage({ 
   params 
@@ -27,77 +29,43 @@ export default async function ContactPage({
   params: { locale: 'en' | 'de' | 'fr' | 'it' | 'de-CH' | 'ru' } 
 }) {
   const { locale } = params;
+  const t = await getTranslations({ locale, namespace: 'contact' });
+
+  const benefitIcons = [Clock, Calendar, Shield, Zap];
+  const benefits = (t.raw('benefits') as Array<{ title: string; description: string }>).map((b, i) => ({
+    ...b,
+    icon: benefitIcons[i]
+  }));
+  const faqs = t.raw('faqs') as Array<{ question: string; answer: string }>;
 
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
+      label: t('contact_email_label'),
       value: 'hello@swissmade.it',
       href: 'mailto:hello@swissmade.it',
-      description: 'Ответим в течение 2 часов'
+      description: t('contact_email_description')
     },
     {
       icon: Phone,
-      label: 'Телефон',
+      label: t('contact_phone_label'),
       value: '+41 44 123 45 67',
       href: 'tel:+41441234567',
-      description: 'Пн-Пт, 9:00-18:00 CET'
+      description: t('contact_phone_description')
     },
     {
       icon: MapPin,
-      label: 'Офис',
+      label: t('contact_office_label'),
       value: 'Zürich, Switzerland',
       href: 'https://maps.google.com/?q=Zurich,Switzerland',
-      description: 'Встречи по предварительной записи'
+      description: t('contact_office_description')
     },
     {
       icon: Send,
-      label: 'Telegram',
+      label: t('contact_telegram_label'),
       value: '@swissmadeit',
       href: 'https://t.me/swissmadeit',
-      description: 'Быстрые ответы 24/7'
-    }
-  ];
-
-  const benefits = [
-    {
-      icon: Clock,
-      title: 'Быстрый ответ',
-      description: 'Отвечаем в течение 2 часов в рабочее время'
-    },
-    {
-      icon: Calendar,
-      title: 'Бесплатная консультация',
-      description: '30-минутный звонок для обсуждения вашего проекта'
-    },
-    {
-      icon: Shield,
-      title: 'NDA по запросу',
-      description: 'Подписываем соглашение о конфиденциальности'
-    },
-    {
-      icon: Zap,
-      title: 'Без обязательств',
-      description: 'Консультация ни к чему не обязывает'
-    }
-  ];
-
-  const faqs = [
-    {
-      question: 'Как быстро вы отвечаете на заявки?',
-      answer: 'В рабочее время (Пн-Пт, 9:00-18:00 CET) — в течение 2 часов. В выходные — в первый рабочий день.'
-    },
-    {
-      question: 'Можно ли встретиться лично?',
-      answer: 'Да, наш офис находится в Цюрихе. Встречи проводим по предварительной записи. Также доступны видеозвонки через Zoom/Google Meet.'
-    },
-    {
-      question: 'Работаете ли вы с клиентами из других стран?',
-      answer: 'Да, мы работаем с клиентами по всей Европе и СНГ. Основные языки: русский, английский, немецкий.'
-    },
-    {
-      question: 'Что включает бесплатная консультация?',
-      answer: 'Обсуждаем ваши задачи, предлагаем решения, даём предварительную оценку сроков и бюджета. Это 30-минутный звонок без каких-либо обязательств.'
+      description: t('contact_telegram_description')
     }
   ];
 
@@ -114,19 +82,18 @@ export default async function ContactPage({
           
           <div className="max-w-6xl mx-auto relative z-10 text-center">
             <span className="inline-block px-4 py-2 bg-laser-cyan/10 border border-laser-cyan/30 rounded-full text-laser-cyan text-sm mb-6">
-              Свяжитесь с нами
+              {t('badge')}
             </span>
             
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              <span className="text-white">Давайте обсудим </span>
+              <span className="text-white">{t('hero_title_1')} </span>
               <span className="bg-gradient-to-r from-laser-cyan via-laser-blue to-laser-purple bg-clip-text text-transparent">
-                ваш проект
+                {t('hero_title_2')}
               </span>
             </h1>
             
             <p className="text-xl text-mist-300 max-w-2xl mx-auto">
-              Расскажите о своих задачах — мы предложим решение и дадим 
-              предварительную оценку сроков и бюджета. Бесплатно и без обязательств.
+              {t('hero_description')}
             </p>
           </div>
         </section>
@@ -139,10 +106,10 @@ export default async function ContactPage({
               <div className="order-2 lg:order-1">
                 <div className="bg-void-900/50 border border-mist-800/50 rounded-2xl p-5 sm:p-8">
                   <h2 className="text-xl sm:text-2xl font-display font-bold text-white mb-2">
-                    Оставить заявку
+                    {t('form_title')}
                   </h2>
                   <p className="text-mist-400 mb-8">
-                    Заполните форму, и мы свяжемся с вами в ближайшее время
+                    {t('form_subtitle')}
                   </p>
                   
                   <ContactForm locale={locale} />
@@ -177,7 +144,7 @@ export default async function ContactPage({
 
                 {/* Benefits */}
                 <div className="p-6 bg-gradient-to-br from-laser-cyan/5 to-laser-purple/5 border border-laser-cyan/20 rounded-xl">
-                  <h3 className="text-lg font-semibold text-white mb-4">Что вы получите</h3>
+                  <h3 className="text-lg font-semibold text-white mb-4">{t('benefits_title')}</h3>
                   <div className="space-y-4">
                     {benefits.map((benefit, index) => (
                       <div key={index} className="flex items-start gap-3">
@@ -197,21 +164,21 @@ export default async function ContactPage({
                 <div className="p-6 bg-void-900/50 border border-mist-800/50 rounded-xl">
                   <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
                     <Clock className="w-5 h-5 text-laser-cyan" />
-                    Часы работы
+                    {t('hours_title')}
                   </h3>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
-                      <span className="text-mist-400">Понедельник — Пятница</span>
-                      <span className="text-white">9:00 — 18:00 CET</span>
+                      <span className="text-mist-400">{t('hours_weekdays')}</span>
+                      <span className="text-white">{t('hours_weekdays_time')}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-mist-400">Суббота — Воскресенье</span>
-                      <span className="text-mist-500">Выходной</span>
+                      <span className="text-mist-400">{t('hours_weekend')}</span>
+                      <span className="text-mist-500">{t('hours_weekend_time')}</span>
                     </div>
                     <div className="pt-2 mt-2 border-t border-mist-800/50">
                       <div className="flex items-center gap-2 text-laser-cyan">
                         <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                        <span className="text-sm">Экстренная поддержка 24/7 для клиентов</span>
+                        <span className="text-sm">{t('hours_support')}</span>
                       </div>
                     </div>
                   </div>
@@ -225,9 +192,9 @@ export default async function ContactPage({
         <section className="py-16 px-4 md:px-6 bg-void-900/30">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">FAQ</span>
+              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('faq_label')}</span>
               <h2 className="text-3xl font-display font-bold text-white mt-4">
-                Частые вопросы о сотрудничестве
+                {t('faq_title')}
               </h2>
             </div>
 
@@ -252,10 +219,10 @@ export default async function ContactPage({
               <div className="p-6 border-b border-mist-800/50">
                 <h3 className="text-xl font-semibold text-white flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-laser-cyan" />
-                  Наш офис в Цюрихе
+                  {t('map_title')}
                 </h3>
                 <p className="text-mist-400 mt-1">
-                  Встречи проводим по предварительной записи
+                  {t('map_subtitle')}
                 </p>
               </div>
               <div className="aspect-[2/1] bg-void-800 flex items-center justify-center">
@@ -268,7 +235,7 @@ export default async function ContactPage({
                     rel="noopener noreferrer"
                     className="inline-block mt-4 px-4 py-2 bg-laser-cyan/10 border border-laser-cyan/30 rounded-lg text-laser-cyan text-sm hover:bg-laser-cyan/20 transition-colors"
                   >
-                    Открыть в Google Maps
+                    {t('map_button')}
                   </a>
                 </div>
               </div>
@@ -282,11 +249,10 @@ export default async function ContactPage({
             <div className="p-8 md:p-12 bg-gradient-to-r from-laser-cyan/10 via-laser-blue/10 to-laser-purple/10 border border-laser-cyan/20 rounded-2xl">
               <MessageSquare className="w-12 h-12 text-laser-cyan mx-auto mb-6" />
               <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
-                Предпочитаете мессенджеры?
+                {t('messenger_title')}
               </h2>
               <p className="text-mist-300 mb-6 max-w-xl mx-auto">
-                Напишите нам в Telegram — ответим быстрее, чем на email. 
-                Также доступны WhatsApp и Signal.
+                {t('messenger_description')}
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <a 

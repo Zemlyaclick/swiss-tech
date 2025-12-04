@@ -2,31 +2,27 @@ import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { 
-  Users, 
-  Target, 
   Shield, 
   Award, 
   Heart, 
   Zap,
   Globe,
   Clock,
-  CheckCircle2,
   ArrowRight,
   MapPin,
-  Building,
-  Calendar,
-  TrendingUp,
   Handshake,
-  Code,
   Lightbulb,
   Linkedin
 } from 'lucide-react';
+import { getTranslations } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: 'О компании | Swiss Made IT',
-  description: 'Swiss Made IT — швейцарская IT-компания. Разрабатываем цифровые продукты для бизнеса с 2019 года. Команда экспертов, швейцарское качество, прозрачные процессы.',
-  keywords: ['о компании', 'швейцарская IT компания', 'разработка', 'Цюрих', 'команда', 'история'],
-};
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: 'about' });
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+  };
+}
 
 export default async function AboutPage({ 
   params 
@@ -34,87 +30,18 @@ export default async function AboutPage({
   params: { locale: 'en' | 'de' | 'fr' | 'it' | 'de-CH' | 'ru' } 
 }) {
   const { locale } = params;
+  const t = await getTranslations({ locale, namespace: 'about' });
 
-  const values = [
-    {
-      icon: Shield,
-      title: 'Швейцарское качество',
-      description: 'Мы не гонимся за количеством проектов. Каждый продукт проходит многоуровневую проверку качества перед релизом.'
-    },
-    {
-      icon: Heart,
-      title: 'Долгосрочные отношения',
-      description: '80% наших клиентов возвращаются с новыми проектами. Мы строим партнёрства, а не просто выполняем заказы.'
-    },
-    {
-      icon: Lightbulb,
-      title: 'Честность и прозрачность',
-      description: 'Если видим, что задачу можно решить проще — скажем. Не продаём то, что клиенту не нужно.'
-    },
-    {
-      icon: Zap,
-      title: 'Результат важнее процесса',
-      description: 'Метрики, KPI, измеримые результаты — мы фокусируемся на том, что реально влияет на бизнес клиента.'
-    }
-  ];
+  const valueIcons = [Shield, Heart, Lightbulb, Zap];
+  const values = (t.raw('values') as Array<{ title: string; description: string }>).map((v, i) => ({
+    ...v,
+    icon: valueIcons[i]
+  }));
 
-  const team = [
-    {
-      name: 'Александр Новак',
-      role: 'CEO & Founder',
-      description: '15+ лет в IT, ex-Google, ex-UBS. Специализация: архитектура, стратегия.',
-      image: '/team/alex.jpg',
-      linkedin: 'https://linkedin.com/in/',
-      initials: 'АН'
-    },
-    {
-      name: 'Мария Шмидт',
-      role: 'CTO',
-      description: '12 лет в разработке. Эксперт по облачным решениям и безопасности.',
-      image: '/team/maria.jpg',
-      linkedin: 'https://linkedin.com/in/',
-      initials: 'МШ'
-    },
-    {
-      name: 'Дмитрий Кузнецов',
-      role: 'Lead Developer',
-      description: 'Full-stack разработчик. React, Node.js, Python, AI/ML интеграции.',
-      image: '/team/dmitry.jpg',
-      linkedin: 'https://linkedin.com/in/',
-      initials: 'ДК'
-    },
-    {
-      name: 'Анна Вебер',
-      role: 'Head of Design',
-      description: 'UX/UI дизайнер. Создаёт интерфейсы, которыми хочется пользоваться.',
-      image: '/team/anna.jpg',
-      linkedin: 'https://linkedin.com/in/',
-      initials: 'АВ'
-    }
-  ];
-
-  const milestones = [
-    { year: '2019', title: 'Основание', description: 'Старт в Цюрихе с фокусом на веб-разработку' },
-    { year: '2020', title: 'Первые крупные клиенты', description: 'Контракты с финтех и медтех компаниями' },
-    { year: '2021', title: 'Расширение команды', description: 'Рост до 15 человек, открытие направления AI' },
-    { year: '2022', title: 'ISO сертификация', description: 'Получение ISO 27001 для работы с enterprise' },
-    { year: '2023', title: '100+ проектов', description: 'Достигли отметки в 100 успешных проектов' },
-    { year: '2024', title: 'Международное развитие', description: 'Клиенты в 12 странах Европы и СНГ' }
-  ];
-
-  const stats = [
-    { value: '100+', label: 'Проектов', sublabel: 'успешно реализовано' },
-    { value: '6', label: 'Лет', sublabel: 'на рынке' },
-    { value: '12', label: 'Стран', sublabel: 'география клиентов' },
-    { value: '98%', label: 'Клиентов', sublabel: 'рекомендуют нас' }
-  ];
-
-  const certifications = [
-    { name: 'ISO 27001', description: 'Информационная безопасность' },
-    { name: 'OWASP', description: 'Безопасность веб-приложений' },
-    { name: 'AWS Partner', description: 'Партнёр Amazon Web Services' },
-    { name: 'Google Cloud', description: 'Партнёр Google Cloud Platform' }
-  ];
+  const stats = t.raw('stats') as Array<{ value: string; label: string; sublabel: string }>;
+  const milestones = t.raw('milestones') as Array<{ year: string; title: string; description: string }>;
+  const team = t.raw('team_members') as Array<{ name: string; role: string; description: string; initials: string }>;
+  const certifications = t.raw('certifications') as Array<{ name: string; description: string }>;
 
   return (
     <>
@@ -130,26 +57,24 @@ export default async function AboutPage({
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="flex flex-wrap gap-3 mb-6">
               <span className="px-3 py-1 bg-laser-cyan/10 border border-laser-cyan/30 rounded-full text-laser-cyan text-sm">
-                С 2019 года
+                {t('badge_since')}
               </span>
               <span className="px-3 py-1 bg-laser-blue/10 border border-laser-blue/30 rounded-full text-laser-blue text-sm">
-                Цюрих, Швейцария
+                {t('badge_location')}
               </span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-              <span className="text-white">Мы создаём </span>
+              <span className="text-white">{t('hero_title_1')} </span>
               <span className="bg-gradient-to-r from-laser-cyan via-laser-blue to-laser-purple bg-clip-text text-transparent">
-                цифровые продукты
+                {t('hero_title_2')}
               </span>
               <br />
-              <span className="text-white">которые работают</span>
+              <span className="text-white">{t('hero_title_3')}</span>
             </h1>
             
             <p className="text-xl text-mist-300 max-w-3xl mb-8 leading-relaxed">
-              Swiss Made IT — это команда экспертов, которая помогает бизнесу расти 
-              с помощью технологий. Не делаем «сайты за 3 дня». Создаём решения, 
-              которые становятся основой вашего бизнеса.
+              {t('hero_description')}
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -157,14 +82,14 @@ export default async function AboutPage({
                 href={`/${locale}/contact`}
                 className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-laser-cyan to-laser-blue rounded-lg font-semibold text-void-950 hover:shadow-lg hover:shadow-laser-cyan/25 transition-all duration-300"
               >
-                Обсудить проект
+                {t('cta_discuss')}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <a 
                 href={`/${locale}/cases`}
                 className="inline-flex items-center gap-2 px-6 py-3 border border-mist-700 rounded-lg text-mist-300 hover:border-laser-cyan hover:text-laser-cyan transition-colors"
               >
-                Смотреть кейсы
+                {t('cta_cases')}
               </a>
             </div>
           </div>
@@ -192,18 +117,15 @@ export default async function AboutPage({
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">Наша миссия</span>
+                <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('mission_label')}</span>
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4 mb-6">
-                  Делать технологии понятными и полезными для бизнеса
+                  {t('mission_title')}
                 </h2>
                 <p className="text-mist-300 leading-relaxed mb-6">
-                  Мы верим, что технологии должны решать проблемы, а не создавать новые. 
-                  Наша задача — перевести сложные технические решения на язык бизнеса 
-                  и помочь клиентам достичь конкретных, измеримых результатов.
+                  {t('mission_p1')}
                 </p>
                 <p className="text-mist-300 leading-relaxed">
-                  Не продаём часы разработки — продаём результат. Не исчезаем после 
-                  запуска — остаёмся рядом на всём пути развития продукта.
+                  {t('mission_p2')}
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -226,14 +148,13 @@ export default async function AboutPage({
         <section className="py-20 px-4 md:px-6 bg-void-900/30">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">История</span>
+              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('history_label')}</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4">
-                Наш путь
+                {t('history_title')}
               </h2>
             </div>
 
             <div className="relative">
-              {/* Timeline line */}
               <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-mist-800 md:-translate-x-px" />
               
               <div className="space-y-8">
@@ -250,7 +171,6 @@ export default async function AboutPage({
                       </div>
                     </div>
                     
-                    {/* Node */}
                     <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-8 h-8 rounded-full bg-void-900 border-2 border-laser-cyan flex items-center justify-center">
                       <div className="w-3 h-3 rounded-full bg-laser-cyan" />
                     </div>
@@ -267,12 +187,12 @@ export default async function AboutPage({
         <section className="py-20 px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">Команда</span>
+              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('team_label')}</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4">
-                Люди, которые делают продукты
+                {t('team_title')}
               </h2>
               <p className="text-mist-400 mt-4 max-w-2xl mx-auto">
-                Небольшая команда экспертов, где каждый — профессионал в своей области
+                {t('team_subtitle')}
               </p>
             </div>
 
@@ -286,16 +206,14 @@ export default async function AboutPage({
                     <div className="w-full h-full rounded-full bg-gradient-to-br from-laser-cyan/20 to-laser-purple/20 flex items-center justify-center overflow-hidden">
                       <span className="text-2xl font-bold text-laser-cyan">{member.initials}</span>
                     </div>
-                    {member.linkedin && (
-                      <a 
-                        href={member.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="absolute -bottom-1 -right-1 w-8 h-8 bg-[#0A66C2] rounded-full flex items-center justify-center hover:bg-[#004182] transition-colors shadow-lg"
-                      >
-                        <Linkedin className="w-4 h-4 text-white" />
-                      </a>
-                    )}
+                    <a 
+                      href="https://linkedin.com/in/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute -bottom-1 -right-1 w-8 h-8 bg-[#0A66C2] rounded-full flex items-center justify-center hover:bg-[#004182] transition-colors shadow-lg"
+                    >
+                      <Linkedin className="w-4 h-4 text-white" />
+                    </a>
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-1">{member.name}</h3>
                   <div className="text-laser-cyan text-sm mb-3">{member.role}</div>
@@ -305,15 +223,15 @@ export default async function AboutPage({
             </div>
 
             <div className="mt-12 p-8 bg-gradient-to-r from-laser-cyan/5 to-laser-purple/5 border border-laser-cyan/20 rounded-xl text-center">
-              <h3 className="text-xl font-semibold text-white mb-2">Присоединяйтесь к команде</h3>
+              <h3 className="text-xl font-semibold text-white mb-2">{t('join_title')}</h3>
               <p className="text-mist-400 mb-4">
-                Мы всегда в поиске талантливых разработчиков и дизайнеров
+                {t('join_description')}
               </p>
               <a 
                 href={`/${locale}/careers`}
                 className="inline-flex items-center gap-2 text-laser-cyan hover:underline"
               >
-                Смотреть вакансии
+                {t('join_link')}
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -324,9 +242,9 @@ export default async function AboutPage({
         <section className="py-20 px-4 md:px-6 bg-void-900/30">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">Сертификаты</span>
+              <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('certs_label')}</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4">
-                Подтверждённая экспертиза
+                {t('certs_title')}
               </h2>
             </div>
 
@@ -350,34 +268,32 @@ export default async function AboutPage({
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">Локация</span>
+                <span className="text-laser-cyan text-sm font-medium tracking-wider uppercase">{t('location_label')}</span>
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-4 mb-6">
-                  Базируемся в Цюрихе
+                  {t('location_title')}
                 </h2>
                 <p className="text-mist-300 leading-relaxed mb-6">
-                  Швейцария — это не только часы и шоколад. Это стабильность, надёжность 
-                  и высочайшие стандарты качества. Именно эти принципы мы закладываем 
-                  в каждый проект.
+                  {t('location_description')}
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <MapPin className="w-5 h-5 text-laser-cyan" />
-                    <span className="text-mist-300">Zürich, Switzerland</span>
+                    <span className="text-mist-300">{t('location_address')}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Globe className="w-5 h-5 text-laser-cyan" />
-                    <span className="text-mist-300">Работаем с клиентами по всей Европе и СНГ</span>
+                    <span className="text-mist-300">{t('location_global')}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-laser-cyan" />
-                    <span className="text-mist-300">Часовой пояс CET (UTC+1)</span>
+                    <span className="text-mist-300">{t('location_timezone')}</span>
                   </div>
                 </div>
               </div>
               <div className="bg-void-900/50 border border-mist-800/50 rounded-xl aspect-video flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="w-16 h-16 text-mist-600 mx-auto mb-4" />
-                  <p className="text-mist-500">Zürich, Switzerland</p>
+                  <p className="text-mist-500">{t('location_address')}</p>
                 </div>
               </div>
             </div>
@@ -389,17 +305,16 @@ export default async function AboutPage({
           <div className="max-w-4xl mx-auto text-center">
             <Handshake className="w-16 h-16 text-laser-cyan mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
-              Давайте познакомимся
+              {t('cta_title')}
             </h2>
             <p className="text-mist-300 mb-8 text-lg max-w-2xl mx-auto">
-              Расскажите о своём проекте — мы предложим решение и дадим 
-              честную оценку сроков и бюджета. Без обязательств.
+              {t('cta_description')}
             </p>
             <a 
               href={`/${locale}/contact`}
               className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-laser-cyan to-laser-blue rounded-lg font-semibold text-void-950 hover:shadow-lg hover:shadow-laser-cyan/25 transition-all duration-300"
             >
-              Связаться с нами
+              {t('cta_button')}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
