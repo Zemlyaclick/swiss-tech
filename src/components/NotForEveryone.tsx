@@ -2,11 +2,14 @@
 
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 import { XCircle, CheckCircle, AlertTriangle, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export default function NotForEveryone() {
   const t = useTranslations('not_for_everyone');
+  const params = useParams();
+  const locale = params.locale as string;
   
   const notFor = t.raw('not_for') as Array<{ text: string; detail: string }>;
   const perfectFor = t.raw('perfect_for') as Array<{ text: string; detail: string }>;
@@ -113,7 +116,7 @@ export default function NotForEveryone() {
             {t('cta_text')}
           </p>
           <Link
-            href="/contact"
+            href={`/${locale}/contact`}
             className="inline-flex items-center gap-2 px-6 py-3 bg-laser-cyan hover:bg-laser-cyan/90 text-void-950 font-semibold rounded-xl transition-colors"
           >
             {t('cta_button')}

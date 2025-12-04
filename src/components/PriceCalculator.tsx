@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Calculator, Check, Info, ChevronRight, Zap } from 'lucide-react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 
 type ProjectType = 'webapp' | 'mobile' | 'telegram' | 'ai' | 'automation';
 type Complexity = 'simple' | 'medium' | 'complex';
@@ -66,6 +67,8 @@ const featurePrices: Record<string, number> = {
 
 export default function PriceCalculator() {
   const t = useTranslations('price_calculator');
+  const params = useParams();
+  const locale = params.locale as string;
   const [projectType, setProjectType] = useState<ProjectType>('webapp');
   const [complexity, setComplexity] = useState<Complexity>('medium');
   const [selectedFeatures, setSelectedFeatures] = useState<string[]>([]);
@@ -283,7 +286,7 @@ export default function PriceCalculator() {
               </div>
 
               <Link
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-laser-cyan hover:bg-laser-cyan/90 text-void-950 font-semibold rounded-xl transition-colors"
               >
                 {t('get_exact')}
