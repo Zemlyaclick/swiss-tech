@@ -237,6 +237,7 @@ export default function Footer() {
             <Link href={`/${locale}/privacy`} className="cursor-target hover:text-mist-400 transition-colors touch-manipulation py-1">Privacy</Link>
             <Link href={`/${locale}/terms`} className="cursor-target hover:text-mist-400 transition-colors touch-manipulation py-1">Terms</Link>
             <Link href={`/${locale}/imprint`} className="cursor-target hover:text-mist-400 transition-colors touch-manipulation py-1">Imprint</Link>
+            <Link href={`/${locale}/security`} className="cursor-target hover:text-mist-400 transition-colors touch-manipulation py-1">Security</Link>
           </div>
         </div>
       </div>
